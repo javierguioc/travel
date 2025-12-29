@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario Europa - Barcelona, París, Ámsterdam, Suiza - Septiembre 2026</title>
+    <link rel="stylesheet" href="styles.css?v=26">
+</head>
+<body>
+    <!-- Menú hamburguesa móvil -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menú">
+        ☰
+    </button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🇪🇺 Itinerario Europa</h1>
+            <p>Septiembre 2026 - Barcelona → París → Ámsterdam → Suiza → Milán (15 días)</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="daySelector">Navegación:</label>
+                <select id="daySelector">
+                    <option value="summary">🏠 Resumen General</option>
+                    <option value="all">📅 Ver todos los días</option>
+                    <option value="">--- Días individuales ---</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="searchInput">Buscar:</label>
+                <input type="text" id="searchInput" placeholder="Ciudad o actividad...">
+            </div>
+            
+            <div class="toggle-group">
+                <label for="transportOnly">Solo días con traslado</label>
+                <label class="toggle">
+                    <input type="checkbox" id="transportOnly">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="toggle-group">
+                <label for="costMode">Costos Realistas 2025</label>
+                <label class="toggle">
+                    <input type="checkbox" id="costMode" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-group">
+                <label for="showRecommendations">Mostrar recomendaciones</label>
+                <label class="toggle">
+                    <input type="checkbox" id="showRecommendations">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div id="dayContent">
+            <!-- El contenido se cargará aquí dinámicamente -->
+            <div class="day-card" style="text-align: center; padding: 50px;">
+                <h3>🔄 Cargando itinerario...</h3>
+                <p>Por favor espera mientras se cargan los datos del viaje.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-buttons">
+                <button class="btn btn-primary" onclick="saveToLocalStorage()">💾 Guardar Cambios</button>
+                <button class="btn btn-secondary" onclick="exportJSON()">📤 Exportar JSON</button>
+                <button class="btn btn-secondary" onclick="importJSON()">📥 Importar JSON</button>
+                <button class="btn btn-success" onclick="exportCSV()">📊 Exportar CSV</button>
+                <button class="btn btn-warning" onclick="printPDF()">🖨️ Imprimir PDF</button>
+            </div>
+            <p>Los cambios se guardan automáticamente en el navegador. Creado para el viaje de 15 días por Europa 🌍</p>
+        </div>
+    </div>
+
+    <!-- Botón flotante "Volver arriba" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+        ↑
+    </button>
+
+    <!-- Archivo de datos JSON externo -->
+    <script src="script.js?v=40"></script>
+</body>
+</html>
