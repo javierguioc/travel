@@ -2009,3 +2009,377 @@ input:checked + .slider:before {
         margin: 2cm;
     }
 }
+
+/* ============================================
+   MÓDULO DE EDICIÓN
+   ============================================ */
+
+/* Toggle de modo edición */
+.edit-mode-toggle-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.edit-mode-toggle-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.edit-mode-toggle-label:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.edit-mode-toggle-label input[type="checkbox"] {
+    display: none;
+}
+
+.edit-mode-slider {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.edit-mode-slider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.edit-mode-toggle-label input[type="checkbox"]:checked + .edit-mode-slider {
+    background: #4CAF50;
+}
+
+.edit-mode-toggle-label input[type="checkbox"]:checked + .edit-mode-slider::before {
+    transform: translateX(26px);
+}
+
+.edit-mode-text {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Panel de edición del día */
+.edit-panel {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 100%);
+    border: 2px dashed #ff6b6b;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.2);
+}
+
+.edit-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.edit-panel-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d63031;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-section {
+    margin-bottom: 25px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.edit-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-field {
+    margin-bottom: 15px;
+}
+
+.edit-field label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.edit-field input,
+.edit-field textarea,
+.edit-field select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.edit-field input:focus,
+.edit-field textarea:focus,
+.edit-field select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.edit-field textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.edit-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.edit-array-item {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.edit-array-item.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.edit-array-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.edit-array-item-handle {
+    cursor: move;
+    color: #667eea;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.edit-array-item-handle:hover {
+    color: #764ba2;
+}
+
+.edit-array-item-remove {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.edit-array-item-remove:hover {
+    background: #d63031;
+    transform: scale(1.1);
+}
+
+.edit-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.edit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.edit-btn-primary:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.edit-btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.edit-btn-secondary:hover {
+    background: #5a6268;
+}
+
+.edit-btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.edit-btn-success:hover {
+    background: #218838;
+}
+
+.edit-btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.edit-btn-danger:hover {
+    background: #c82333;
+}
+
+.edit-btn-small {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+/* Upload de imágenes */
+.image-upload-container {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.image-upload-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.image-upload-input {
+    flex: 1;
+}
+
+.image-upload-btn {
+    background: #17a2b8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.image-upload-btn:hover {
+    background: #138496;
+}
+
+/* Indicador de guardado */
+.save-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    animation: slideInUp 0.3s;
+}
+
+.save-indicator.show {
+    display: flex;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modo edición activo - estilos adicionales */
+body.edit-mode .day-card {
+    position: relative;
+}
+
+body.edit-mode .day-card::before {
+    content: '✏️ Modo Edición';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6b6b;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive para modo edición */
+@media (max-width: 768px) {
+    .edit-field-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .edit-buttons {
+        flex-direction: column;
+    }
+    
+    .edit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .image-upload-container {
+        flex-direction: column;
+    }
+}

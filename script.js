@@ -30,6 +30,21 @@ document.addEventListener('DOMContentLoaded', function() {
 // Cargar datos del itinerario
 async function loadItineraryData(version = null) {
     try {
+        // Primero intentar cargar desde localStorage
+        const savedData = localStorage.getItem('itineraryData');
+        const savedVersion = localStorage.getItem('itineraryDataVersion');
+        
+        if (savedData && savedVersion === (version || currentDataVersion)) {
+            try {
+                itineraryData = JSON.parse(savedData);
+                console.log('Datos cargados desde localStorage:', itineraryData);
+                renderCurrentView();
+                return;
+            } catch (e) {
+                console.warn('Error al parsear datos de localStorage, cargando desde archivo:', e);
+            }
+        }
+        
         const dataFile = version || currentDataVersion;
         // Usar ruta relativa para GitHub Pages (sin ./ al inicio si ya está)
         const dataPath = dataFile.startsWith('http') ? dataFile : dataFile;
@@ -587,7 +602,10 @@ function renderDayCard(day) {
     const countryFlag = getCountryFlag(day.country);
     const currencySymbol = getCurrencySymbol(day.currencyLocal);
 
+    const editPanel = editMode ? renderEditPanel(day) : '';
+    
     return `
+        ${editPanel}
         <div class="day-card">
             ${heroImageUrl ? `<div class="hero-image-container">
                 <img src="${heroImageUrl}" alt="${day.city} landmark" class="hero-image" loading="lazy">
@@ -1984,4 +2002,450 @@ function setupScrollToTop() {
 document.addEventListener('DOMContentLoaded', function() {
     setupMobileMenu();
     setupScrollToTop();
+    setupEditMode();
 });
+
+// ============================================
+// MÓDULO DE EDICIÓN
+// ============================================
+
+let editMode = false;
+let draggedElement = null;
+
+// Configurar modo edición
+function setupEditMode() {
+    const toggle = document.getElementById('editModeToggle');
+    if (toggle) {
+        toggle.addEventListener('change', function() {
+            editMode = this.checked;
+            document.body.classList.toggle('edit-mode', editMode);
+            // Recargar vista actual
+            if (showAllDays) {
+                renderAllDays();
+            } else if (currentDay) {
+                renderCurrentDay();
+            }
+        });
+    }
+}
+
+// Renderizar panel de edición para un día
+function renderEditPanel(day) {
+    if (!editMode) return '';
+    
+    return `
+        <div class="edit-panel" data-day="${day.day}">
+            <div class="edit-panel-header">
+                <div class="edit-panel-title">✏️ Editar Día ${day.day}</div>
+                <button class="edit-btn edit-btn-secondary edit-btn-small" onclick="toggleEditPanel(${day.day})">
+                    ▲ Minimizar
+                </button>
+            </div>
+            
+            <div class="edit-section">
+                <div class="edit-section-title">📋 Información Básica</div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Ciudad</label>
+                        <input type="text" value="${day.city || ''}" onchange="updateDayField(${day.day}, 'city', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>País</label>
+                        <input type="text" value="${day.country || ''}" onchange="updateDayField(${day.day}, 'country', this.value)">
+                    </div>
+                </div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Fecha</label>
+                        <input type="date" value="${day.date || ''}" onchange="updateDayField(${day.day}, 'date', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>Código Ciudad</label>
+                        <input type="text" value="${day.cityCode || ''}" onchange="updateDayField(${day.day}, 'cityCode', this.value)">
+                    </div>
+                </div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Moneda Local</label>
+                        <input type="text" value="${day.currencyLocal || ''}" onchange="updateDayField(${day.day}, 'currencyLocal', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>Área de Estadía</label>
+                        <input type="text" value="${day.stayArea || ''}" onchange="updateDayField(${day.day}, 'stayArea', this.value)">
+                    </div>
+                </div>
+                <div class="edit-field">
+                    <label>Imagen Hero (URL o query)</label>
+                    <input type="text" value="${day.heroImageQuery || ''}" placeholder="URL de imagen o query de búsqueda" onchange="updateDayField(${day.day}, 'heroImageQuery', this.value)">
+                </div>
+                <div class="edit-field">
+                    <label>Notas del Día</label>
+                    <textarea onchange="updateDayField(${day.day}, 'notes', this.value)">${day.notes || ''}</textarea>
+                </div>
+            </div>
+            
+            <div class="edit-section">
+                <div class="edit-section-title">🎯 Actividades Principales</div>
+                <div id="activities-list-${day.day}">
+                    ${day.mainActivities.map((activity, index) => renderEditActivity(day.day, activity, index)).join('')}
+                </div>
+                <button class="edit-btn edit-btn-primary" onclick="addActivity(${day.day})">
+                    ➕ Agregar Actividad
+                </button>
+            </div>
+            
+            <div class="edit-section">
+                <div class="edit-section-title">🚗 Traslado al Siguiente Día</div>
+                ${renderEditTransport(day)}
+            </div>
+            
+            <div class="edit-section">
+                <div class="edit-section-title">💰 Costos</div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Alojamiento Base</label>
+                        <input type="number" value="${day.costs?.lodgingBase || 0}" onchange="updateDayCost(${day.day}, 'lodgingBase', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>Alojamiento Real</label>
+                        <input type="number" value="${day.costs?.lodgingReal || 0}" onchange="updateDayCost(${day.day}, 'lodgingReal', this.value)">
+                    </div>
+                </div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Comida Base</label>
+                        <input type="number" value="${day.costs?.foodBase || 0}" onchange="updateDayCost(${day.day}, 'foodBase', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>Comida Real</label>
+                        <input type="number" value="${day.costs?.foodReal || 0}" onchange="updateDayCost(${day.day}, 'foodReal', this.value)">
+                    </div>
+                </div>
+                <div class="edit-field-row">
+                    <div class="edit-field">
+                        <label>Transporte Base</label>
+                        <input type="number" value="${day.costs?.transportBase || 0}" onchange="updateDayCost(${day.day}, 'transportBase', this.value)">
+                    </div>
+                    <div class="edit-field">
+                        <label>Actividades Base</label>
+                        <input type="number" value="${day.costs?.activitiesBase || 0}" onchange="updateDayCost(${day.day}, 'activitiesBase', this.value)">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="edit-buttons">
+                <button class="edit-btn edit-btn-success" onclick="saveItinerary()">
+                    💾 Guardar Cambios
+                </button>
+                <button class="edit-btn edit-btn-primary" onclick="downloadJSON()">
+                    📥 Descargar JSON
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+// Renderizar actividad editable
+function renderEditActivity(dayNum, activity, index) {
+    return `
+        <div class="edit-array-item" draggable="true" data-day="${dayNum}" data-index="${index}" 
+             ondragstart="handleDragStart(event)" 
+             ondragover="handleDragOver(event)" 
+             ondrop="handleDrop(event)"
+             ondragend="handleDragEnd(event)">
+            <div class="edit-array-item-header">
+                <span class="edit-array-item-handle">☰</span>
+                <button class="edit-array-item-remove" onclick="removeActivity(${dayNum}, ${index})">×</button>
+            </div>
+            <div class="edit-field-row">
+                <div class="edit-field">
+                    <label>Nombre</label>
+                    <input type="text" value="${activity.name || ''}" onchange="updateActivityField(${dayNum}, ${index}, 'name', this.value)">
+                </div>
+                <div class="edit-field">
+                    <label>Hora Inicio</label>
+                    <input type="time" value="${activity.start || ''}" onchange="updateActivityField(${dayNum}, ${index}, 'start', this.value)">
+                </div>
+            </div>
+            <div class="edit-field-row">
+                <div class="edit-field">
+                    <label>Duración (minutos)</label>
+                    <input type="number" value="${activity.durationMin || 0}" onchange="updateActivityField(${dayNum}, ${index}, 'durationMin', parseInt(this.value))">
+                </div>
+                <div class="edit-field">
+                    <label>Link</label>
+                    <input type="url" value="${activity.link || ''}" onchange="updateActivityField(${dayNum}, ${index}, 'link', this.value)">
+                </div>
+            </div>
+            <div class="edit-field">
+                <label>Notas</label>
+                <textarea onchange="updateActivityField(${dayNum}, ${index}, 'notes', this.value)">${activity.notes || ''}</textarea>
+            </div>
+            <div class="edit-field">
+                <label>Imagen (URL)</label>
+                <div class="image-upload-container">
+                    ${activity.imageUrl ? `<img src="${activity.imageUrl}" class="image-upload-preview" alt="Preview">` : ''}
+                    <div class="image-upload-input">
+                        <input type="url" value="${activity.imageUrl || ''}" placeholder="URL de imagen" onchange="updateActivityField(${dayNum}, ${index}, 'imageUrl', this.value)">
+                        <input type="file" accept="image/*" onchange="handleImageUpload(event, ${dayNum}, ${index})" style="margin-top: 5px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Renderizar traslado editable
+function renderEditTransport(day) {
+    const transport = day.transportToNext || {};
+    return `
+        <div class="edit-field-row">
+            <div class="edit-field">
+                <label>Modo</label>
+                <select onchange="updateTransportField(${day.day}, 'mode', this.value)">
+                    <option value="">Ninguno</option>
+                    <option value="vuelo" ${transport.mode === 'vuelo' ? 'selected' : ''}>Vuelo</option>
+                    <option value="tren" ${transport.mode === 'tren' ? 'selected' : ''}>Tren</option>
+                    <option value="bus" ${transport.mode === 'bus' ? 'selected' : ''}>Bus</option>
+                    <option value="carro" ${transport.mode === 'carro' ? 'selected' : ''}>Carro</option>
+                </select>
+            </div>
+            <div class="edit-field">
+                <label>Desde</label>
+                <input type="text" value="${transport.from || ''}" onchange="updateTransportField(${day.day}, 'from', this.value)">
+            </div>
+        </div>
+        <div class="edit-field-row">
+            <div class="edit-field">
+                <label>Hacia</label>
+                <input type="text" value="${transport.to || ''}" onchange="updateTransportField(${day.day}, 'to', this.value)">
+            </div>
+            <div class="edit-field">
+                <label>Código</label>
+                <input type="text" value="${transport.code || ''}" onchange="updateTransportField(${day.day}, 'code', this.value)">
+            </div>
+        </div>
+        <div class="edit-field-row">
+            <div class="edit-field">
+                <label>Salida</label>
+                <input type="datetime-local" value="${transport.depart ? transport.depart.replace(' ', 'T') : ''}" onchange="updateTransportField(${day.day}, 'depart', this.value)">
+            </div>
+            <div class="edit-field">
+                <label>Llegada</label>
+                <input type="datetime-local" value="${transport.arrive ? transport.arrive.replace(' ', 'T') : ''}" onchange="updateTransportField(${day.day}, 'arrive', this.value)">
+            </div>
+        </div>
+        <div class="edit-field-row">
+            <div class="edit-field">
+                <label>Duración (minutos)</label>
+                <input type="number" value="${transport.durationMin || 0}" onchange="updateTransportField(${day.day}, 'durationMin', parseInt(this.value))">
+            </div>
+            <div class="edit-field">
+                <label>Link de Reserva</label>
+                <input type="url" value="${transport.bookingLink || ''}" onchange="updateTransportField(${day.day}, 'bookingLink', this.value)">
+            </div>
+        </div>
+    `;
+}
+
+// Funciones de actualización
+function updateDayField(dayNum, field, value) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day) {
+        day[field] = value;
+        saveToLocalStorage();
+        showSaveIndicator();
+    }
+}
+
+function updateActivityField(dayNum, activityIndex, field, value) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day && day.mainActivities[activityIndex]) {
+        day.mainActivities[activityIndex][field] = value;
+        saveToLocalStorage();
+        showSaveIndicator();
+    }
+}
+
+function updateTransportField(dayNum, field, value) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day) {
+        if (!day.transportToNext) day.transportToNext = {};
+        day.transportToNext[field] = value;
+        saveToLocalStorage();
+        showSaveIndicator();
+    }
+}
+
+function updateDayCost(dayNum, field, value) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day) {
+        if (!day.costs) day.costs = {};
+        day.costs[field] = parseFloat(value) || 0;
+        // Recalcular totales
+        if (!day.totals) day.totals = {};
+        day.totals.totalBase = (day.costs.lodgingBase || 0) + (day.costs.foodBase || 0) + (day.costs.transportBase || 0) + (day.costs.activitiesBase || 0);
+        day.totals.totalReal = (day.costs.lodgingReal || 0) + (day.costs.foodReal || 0) + (day.costs.transportBase || 0) + (day.costs.activitiesBase || 0);
+        saveToLocalStorage();
+        showSaveIndicator();
+        renderCurrentView();
+    }
+}
+
+// Agregar actividad
+function addActivity(dayNum) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day) {
+        if (!day.mainActivities) day.mainActivities = [];
+        day.mainActivities.push({
+            name: 'Nueva Actividad',
+            start: '10:00',
+            durationMin: 60,
+            link: '',
+            notes: '',
+            imageQuery: '',
+            imageUrl: ''
+        });
+        saveToLocalStorage();
+        renderCurrentView();
+    }
+}
+
+// Eliminar actividad
+function removeActivity(dayNum, activityIndex) {
+    if (!itineraryData) return;
+    const day = itineraryData.days.find(d => d.day === dayNum);
+    if (day && day.mainActivities[activityIndex]) {
+        if (confirm('¿Estás seguro de eliminar esta actividad?')) {
+            day.mainActivities.splice(activityIndex, 1);
+            saveToLocalStorage();
+            renderCurrentView();
+        }
+    }
+}
+
+// Drag & Drop
+function handleDragStart(e) {
+    draggedElement = e.target;
+    e.target.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+}
+
+function handleDragOver(e) {
+    if (e.preventDefault) e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    return false;
+}
+
+function handleDrop(e) {
+    if (e.stopPropagation) e.stopPropagation();
+    
+    if (draggedElement !== e.target && draggedElement.dataset.day === e.target.dataset.day) {
+        const dayNum = parseInt(draggedElement.dataset.day);
+        const fromIndex = parseInt(draggedElement.dataset.index);
+        const toIndex = parseInt(e.target.dataset.index);
+        
+        if (!itineraryData) return;
+        const day = itineraryData.days.find(d => d.day === dayNum);
+        if (day && day.mainActivities) {
+            const activity = day.mainActivities.splice(fromIndex, 1)[0];
+            day.mainActivities.splice(toIndex, 0, activity);
+            saveToLocalStorage();
+            renderCurrentView();
+        }
+    }
+    return false;
+}
+
+function handleDragEnd(e) {
+    e.target.classList.remove('dragging');
+    draggedElement = null;
+}
+
+// Upload de imagen
+function handleImageUpload(event, dayNum, activityIndex) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    if (!file.type.startsWith('image/')) {
+        alert('Por favor selecciona un archivo de imagen');
+        return;
+    }
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        // Convertir a base64 data URL
+        const imageUrl = e.target.result;
+        updateActivityField(dayNum, activityIndex, 'imageUrl', imageUrl);
+        renderCurrentView();
+    };
+    reader.readAsDataURL(file);
+}
+
+// Guardar en localStorage
+function saveToLocalStorage() {
+    if (itineraryData) {
+        localStorage.setItem('itineraryData', JSON.stringify(itineraryData));
+        localStorage.setItem('itineraryDataVersion', currentDataVersion);
+    }
+}
+
+// Guardar cambios
+function saveItinerary() {
+    saveToLocalStorage();
+    showSaveIndicator('Cambios guardados en el navegador');
+}
+
+// Descargar JSON
+function downloadJSON() {
+    if (!itineraryData) return;
+    
+    const dataStr = JSON.stringify(itineraryData, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'data-v2-edited.json';
+    link.click();
+    URL.revokeObjectURL(url);
+    showSaveIndicator('JSON descargado');
+}
+
+// Mostrar indicador de guardado
+function showSaveIndicator(message = 'Guardado') {
+    let indicator = document.getElementById('saveIndicator');
+    if (!indicator) {
+        indicator = document.createElement('div');
+        indicator.id = 'saveIndicator';
+        indicator.className = 'save-indicator';
+        document.body.appendChild(indicator);
+    }
+    indicator.textContent = `✓ ${message}`;
+    indicator.classList.add('show');
+    setTimeout(() => {
+        indicator.classList.remove('show');
+    }, 2000);
+}
+
+// Toggle panel de edición
+function toggleEditPanel(dayNum) {
+    const panel = document.querySelector(`.edit-panel[data-day="${dayNum}"]`);
+    if (panel) {
+        const content = panel.querySelector('.edit-section');
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    }
+}
+
+// Función para recargar la vista actual
+function renderCurrentView() {
+    if (showAllDays) {
+        renderAllDays();
+    } else {
+        renderCurrentDay();
+    }
+}
