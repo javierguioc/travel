@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itinerario Europa - Barcelona, París, Ámsterdam, Suiza - Septiembre 2026</title>
-    <link rel="stylesheet" href="styles.css?v=26">
+    <title>Itinerario Europa - Barcelona, París, Ámsterdam, Suiza, Milán, Venecia, Roma, Puglia, Madrid - Septiembre 2026</title>
+    <link rel="stylesheet" href="styles.css?v=34">
 </head>
 <body>
     <!-- Menú hamburguesa móvil -->
@@ -15,7 +15,14 @@
     <div class="container">
         <div class="header">
             <h1>🇪🇺 Itinerario Europa</h1>
-            <p>Septiembre 2026 - Barcelona → París → Ámsterdam → Suiza → Milán (15 días)</p>
+            <p>Septiembre 2026 - Barcelona → París → Ámsterdam → Suiza → Milán → Venecia → Roma → Puglia → Madrid (23 días)</p>
+            <div class="edit-mode-toggle-container">
+                <label class="edit-mode-toggle-label">
+                    <input type="checkbox" id="editModeToggle">
+                    <span class="edit-mode-slider"></span>
+                    <span class="edit-mode-text">✏️ Modo Edición</span>
+                </label>
+            </div>
         </div>
 
         <div class="controls">
@@ -74,7 +81,7 @@
                 <button class="btn btn-success" onclick="exportCSV()">📊 Exportar CSV</button>
                 <button class="btn btn-warning" onclick="printPDF()">🖨️ Imprimir PDF</button>
             </div>
-            <p>Los cambios se guardan automáticamente en el navegador. Creado para el viaje de 15 días por Europa 🌍</p>
+            <p>Los cambios se guardan automáticamente en el navegador. Creado para el viaje de 23 días por Europa 🌍</p>
         </div>
     </div>
 
@@ -84,6 +91,7 @@
     </button>
 
     <!-- Archivo de datos JSON externo -->
-    <script src="script.js?v=40"></script>
+    <script src="script.js?v=48"></script>
+    <div id="saveIndicator" class="save-indicator"></div>
 </body>
 </html>
