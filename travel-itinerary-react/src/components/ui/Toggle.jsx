@@ -13,7 +13,7 @@ export function Toggle({
       className={`flex items-center gap-3 ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'} ${className}`}
       {...props}
     >
-      {label && <span className="text-sm font-medium text-dark-text">{label}</span>}
+      {label && <span className="text-sm font-medium text-light-text">{label}</span>}
 
       <div className="relative">
         <input
@@ -25,17 +25,17 @@ export function Toggle({
         />
         <div
           className="
-            w-11 h-6 bg-dark-bgTertiary border border-dark-border rounded-full peer
-            peer-checked:bg-purple-600 peer-checked:border-purple-600
+            w-11 h-6 bg-light-border rounded-full peer
+            peer-checked:bg-blue-500
             transition-colors duration-300
           "
         >
           <div
-            className="
-              absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full
+            className={`
+              absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-sm
               transition-transform duration-300
-              peer-checked:translate-x-5
-            "
+              ${checked ? 'translate-x-[22px]' : 'translate-x-0.5'}
+            `}
           />
         </div>
       </div>

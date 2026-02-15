@@ -4,54 +4,63 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx}",
   ],
-  darkMode: 'class', // Habilitar dark mode con clase
   theme: {
     extend: {
       colors: {
-        // Dark mode colors
-        dark: {
-          bg: '#0f172a', // slate-900
-          bgSecondary: '#1e293b', // slate-800
-          bgTertiary: '#334155', // slate-700
-          border: '#475569', // slate-600
-          text: '#f1f5f9', // slate-100
-          textSecondary: '#cbd5e1', // slate-300
-          textMuted: '#94a3b8', // slate-400
+        // Light mode - Clean & Professional
+        light: {
+          bg: '#f8fafc',         // slate-50 - fondo principal
+          bgSecondary: '#ffffff', // white - cards
+          bgTertiary: '#f1f5f9',  // slate-100 - elementos secundarios
+          border: '#e2e8f0',      // slate-200 - bordes sutiles
+          borderDark: '#cbd5e1',  // slate-300 - bordes más visibles
+          text: '#1e293b',        // slate-800 - texto principal
+          textSecondary: '#475569', // slate-600 - texto secundario
+          textMuted: '#64748b',   // slate-500 - texto atenuado
         },
-        // Purple accent colors (mantener el tema púrpura)
-        purple: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea', // Primary
-          700: '#7e22ce',
-          800: '#6b21a8',
-          900: '#581c87',
+        // Blue accent - Travel theme
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        // Warm accent for highlights
+        amber: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
         },
         primary: {
-          DEFAULT: '#9333ea',
-          dark: '#7e22ce',
-          light: '#a855f7',
+          DEFAULT: '#2563eb',
+          dark: '#1d4ed8',
+          light: '#3b82f6',
         },
       },
       backgroundImage: {
-        'gradient-purple-dark': 'linear-gradient(135deg, #7e22ce 0%, #581c87 100%)',
-        'gradient-purple': 'linear-gradient(135deg, #9333ea 0%, #6b21a8 100%)',
-        'gradient-dark': 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+        'gradient-blue': 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+        'gradient-blue-light': 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #1e40af 0%, #7c3aed 100%)',
+        'gradient-warm': 'linear-gradient(135deg, #f59e0b 0%, #ea580c 100%)',
       },
       boxShadow: {
-        'dark': '0 4px 14px 0 rgba(0, 0, 0, 0.4)',
-        'dark-lg': '0 10px 28px 0 rgba(0, 0, 0, 0.5)',
-        'card': '0 5px 20px rgba(0,0,0,0.3)',
-        'card-hover': '0 8px 25px rgba(0,0,0,0.4)',
+        'soft': '0 2px 8px rgba(0, 0, 0, 0.06)',
+        'card': '0 4px 12px rgba(0, 0, 0, 0.08)',
+        'card-hover': '0 8px 24px rgba(0, 0, 0, 0.12)',
+        'elevated': '0 12px 32px rgba(0, 0, 0, 0.1)',
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'fade-in-up': 'fadeInUp 0.6s ease-out',
+        'fade-in': 'fadeIn 0.4s ease-out',
+        'slide-up': 'slideUp 0.4s ease-out',
+        'fade-in-up': 'fadeInUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -59,19 +68,24 @@ export default {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '0%': { transform: 'translateY(16px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         fadeInUp: {
-          '0%': { transform: 'translateY(30px)', opacity: '0' },
+          '0%': { transform: 'translateY(24px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
       minHeight: {
-        'touch': '44px', // Touch-friendly para móvil
+        'touch': '44px',
       },
       minWidth: {
         'touch': '44px',
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.25rem',
+        '3xl': '1.5rem',
       },
     },
   },

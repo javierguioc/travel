@@ -10,7 +10,6 @@ export function Footer() {
   const importData = useItineraryStore((state) => state.importData);
 
   const handleSave = () => {
-    // Los datos se guardan automáticamente con Zustand persist
     alert('✅ Cambios guardados automáticamente');
   };
 
@@ -37,34 +36,62 @@ export function Footer() {
   };
 
   return (
-    <footer className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-dark-border">
-      <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 justify-center mb-4 sm:mb-6">
-        <Button variant="primary" icon="💾" onClick={handleSave} size="sm" className="w-full sm:w-auto">
-          <span className="hidden sm:inline">Guardar Cambios</span>
-          <span className="sm:hidden">Guardar</span>
-        </Button>
-        <Button variant="secondary" icon="📤" onClick={handleExportJSON} size="sm" className="w-full sm:w-auto">
-          <span className="hidden sm:inline">Exportar JSON</span>
-          <span className="sm:hidden">JSON</span>
-        </Button>
-        <Button variant="secondary" icon="📥" onClick={handleImportJSON} size="sm" className="w-full sm:w-auto">
-          <span className="hidden sm:inline">Importar JSON</span>
-          <span className="sm:hidden">Importar</span>
-        </Button>
-        <Button variant="success" icon="📊" onClick={handleExportCSV} size="sm" className="w-full sm:w-auto">
-          <span className="hidden sm:inline">Exportar CSV</span>
-          <span className="sm:hidden">CSV</span>
-        </Button>
-        <Button variant="warning" icon="🖨️" onClick={printPDF} size="sm" className="w-full sm:w-auto col-span-2 sm:col-span-1">
-          <span className="hidden sm:inline">Imprimir PDF</span>
-          <span className="sm:hidden">PDF</span>
-        </Button>
-      </div>
+    <footer className="mt-8 sm:mt-12">
+      <div className="bg-gradient-to-br from-slate-50 to-gray-100 rounded-2xl p-6 shadow-sm border border-light-border">
+        <div className="flex items-center justify-center gap-2 mb-5">
+          <div className="bg-gradient-to-br from-blue-500 to-indigo-600 w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+            <span className="text-xl">🛠️</span>
+          </div>
+          <h3 className="text-lg font-bold text-light-text">Herramientas</h3>
+        </div>
 
-      <p className="text-center text-dark-textMuted text-xs sm:text-sm px-4 leading-relaxed">
-        Los cambios se guardan automáticamente en el navegador.<br className="sm:hidden" />
-        <span className="hidden sm:inline"> </span>Creado para el viaje de 23 días por Europa 🌍
-      </p>
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
+          <button
+            onClick={handleSave}
+            className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-blue-500 to-indigo-600 text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
+          >
+            <span className="text-2xl">💾</span>
+            <span className="text-sm font-semibold">Guardar</span>
+          </button>
+          <button
+            onClick={handleExportJSON}
+            className="flex flex-col items-center gap-2 p-4 bg-white text-light-text rounded-xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 border border-light-border"
+          >
+            <span className="text-2xl">📤</span>
+            <span className="text-sm font-semibold">JSON</span>
+          </button>
+          <button
+            onClick={handleImportJSON}
+            className="flex flex-col items-center gap-2 p-4 bg-white text-light-text rounded-xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 border border-light-border"
+          >
+            <span className="text-2xl">📥</span>
+            <span className="text-sm font-semibold">Importar</span>
+          </button>
+          <button
+            onClick={handleExportCSV}
+            className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-emerald-500 to-teal-600 text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
+          >
+            <span className="text-2xl">📊</span>
+            <span className="text-sm font-semibold">CSV</span>
+          </button>
+          <button
+            onClick={printPDF}
+            className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 col-span-2 sm:col-span-1"
+          >
+            <span className="text-2xl">🖨️</span>
+            <span className="text-sm font-semibold">PDF</span>
+          </button>
+        </div>
+
+        <div className="text-center">
+          <p className="text-light-textMuted text-xs sm:text-sm leading-relaxed">
+            Los cambios se guardan automáticamente en el navegador
+          </p>
+          <p className="text-light-textSecondary text-xs mt-2 flex items-center justify-center gap-1">
+            <span className="text-lg">🌍</span> Viaje de 23 días por Europa • Septiembre 2026
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }

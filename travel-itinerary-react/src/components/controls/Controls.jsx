@@ -1,6 +1,6 @@
 // Componente Controls - Barra de navegación y filtros
 import { useItineraryStore } from '../../store/store';
-import { Select, Input, Toggle } from '../ui';
+import { Toggle } from '../ui';
 import useCalendar from '../../hooks/useCalendar';
 
 export function Controls() {
@@ -55,11 +55,11 @@ export function Controls() {
   };
 
   return (
-    <div className="bg-dark-bgSecondary rounded-xl p-4 md:p-6 shadow-dark mb-6">
+    <div className="bg-white rounded-xl p-4 md:p-6 shadow-card mb-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Navegación */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-medium text-dark-text">Navegación:</label>
+          <label className="text-sm font-medium text-light-text">Navegación:</label>
           <select
             value={getCurrentValue()}
             onChange={handleDayChange}
@@ -79,7 +79,7 @@ export function Controls() {
 
         {/* Búsqueda */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-medium text-dark-text">Buscar:</label>
+          <label className="text-sm font-medium text-light-text">Buscar:</label>
           <input
             type="text"
             value={searchTerm}

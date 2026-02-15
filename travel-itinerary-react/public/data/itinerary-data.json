@@ -57,6 +57,51 @@
     ],
     "days": [
       {
+        "day": 0,
+        "date": "2025-09-04",
+        "city": "Medellín → Barcelona",
+        "country": "Colombia / España",
+        "cityCode": "MDE-BCN",
+        "currencyLocal": "COP/EUR",
+        "stayArea": "Vuelo nocturno",
+        "heroImageQuery": "Airplane flying over Atlantic ocean sunset",
+        "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+        "imageHints": ["airplane flight", "travel departure"],
+        "perks": ["Llegar al aeropuerto 3 horas antes", "Llevar snacks y entretenimiento para el vuelo"],
+        "accommodation": {
+          "name": "Vuelo nocturno - Sin hospedaje",
+          "neighborhood": "N/A",
+          "link": "",
+          "notes": "Noche en vuelo"
+        },
+        "mainActivities": [
+          {
+            "name": "Salida desde Medellín",
+            "start": "18:00",
+            "durationMin": 180,
+            "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
+            "notes": "Check-in, seguridad y embarque en Aeropuerto José María Córdova (MDE)",
+            "imageQuery": "Medellin airport departure",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg/1200px-Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg"
+          },
+          {
+            "name": "Vuelo MDE → BCN",
+            "start": "21:00",
+            "durationMin": 600,
+            "link": "",
+            "notes": "Vuelo nocturno ~10 horas. Escala posible en Madrid o conexión directa",
+            "imageQuery": "Night flight airplane",
+            "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800"
+          }
+        ],
+        "secondaryActivities": [],
+        "transportToNext": { "mode": "flight", "from": "Medellín (MDE)", "to": "Barcelona (BCN)", "depart": "21:00", "arrive": "13:00+1", "durationMin": 600, "code": "Vuelo Internacional", "bookingLink": "https://www.skyscanner.com" },
+        "costs": { "lodgingBase": 0, "foodBase": 20, "transportBase": 450, "activitiesBase": 0, "lodgingReal": 0, "foodReal": 30 },
+        "totals": { "totalBase": 470, "totalReal": 480 },
+        "mapPoints": ["Aeropuerto José María Córdova"],
+        "notes": "Día de viaje - Salida desde Medellín hacia Barcelona. Vuelo nocturno transatlántico."
+      },
+      {
         "day": 1,
         "date": "2025-09-05",
         "city": "Barcelona",
@@ -67,15 +112,21 @@
         "heroImageQuery": "Barcelona city skyline landmark",
         "imageHints": ["best photo viewpoint Barcelona", "Barcelona top attractions"],
         "perks": ["Tapas hour 19:00–21:00", "Compra ticket Sagrada con horario"],
+        "accommodation": {
+          "name": "Hotel en Eixample",
+          "neighborhood": "Eixample (L2/L4)",
+          "link": "",
+          "notes": "Cerca de metro Passeig de Gràcia"
+        },
         "mainActivities": [
           {
-            "name": "Llegada y check-in",
-            "start": "15:00",
-            "durationMin": 60,
+            "name": "Llegada a Barcelona",
+            "start": "13:00",
+            "durationMin": 120,
             "link": "",
-            "notes": "Aeropuerto → hotel",
-            "imageQuery": "Llegada y check-in Barcelona",
-            "imageUrl": ""
+            "notes": "Llegada al aeropuerto El Prat, transporte al hotel y check-in",
+            "imageQuery": "Barcelona airport arrival",
+            "imageUrl": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
           },
           {
             "name": "Arco de Triunfo",
@@ -132,6 +183,12 @@
         "heroImageQuery": "Barcelona city skyline landmark",
         "imageHints": ["best photo viewpoint Barcelona", "Barcelona top attractions"],
         "perks": ["Tapas hour 19:00–21:00", "Compra ticket Sagrada con horario"],
+        "accommodation": {
+          "name": "Hotel en Eixample",
+          "neighborhood": "Eixample - cerca de Passeig de Gràcia",
+          "link": "",
+          "notes": "Mismo hotel que día 1"
+        },
         "mainActivities": [
           { 
             "name": "Sagrada Familia", 
@@ -206,11 +263,67 @@
           { "name": "Regreso a Barcelona", "start": "17:30", "durationMin": 80, "link": "https://www.moventis.es", "notes": "Bus de regreso", "imageQuery": "Bus Tossa de Mar Barcelona" }
         ],
         "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
+        "transportToNext": {
+          "mode": "train",
+          "from": "Barcelona Sants",
+          "to": "Paris Gare de Lyon",
+          "depart": "08:00",
+          "arrive": "14:30",
+          "durationMin": 390,
+          "code": "TGV INOUI",
+          "bookingLink": "https://www.sncf-connect.com"
+        },
+        "transportOptions": {
+          "recommended": "train",
+          "options": [
+            {
+              "type": "train",
+              "name": "TGV INOUI (Tren Alta Velocidad)",
+              "from": "Barcelona Sants",
+              "to": "Paris Gare de Lyon",
+              "duration": "6h 30min",
+              "durationMin": 390,
+              "cost": "$80-150 USD",
+              "costPerPerson": 100,
+              "frequency": "3-4 trenes diarios",
+              "pros": ["Centro a centro", "Sin límite equipaje", "WiFi gratis", "Vistas paisaje"],
+              "cons": ["Más largo que vuelo"],
+              "bookingLink": "https://www.sncf-connect.com",
+              "recommended": true
+            },
+            {
+              "type": "flight",
+              "name": "Vuelo directo",
+              "from": "Barcelona El Prat (BCN)",
+              "to": "Paris CDG u Orly",
+              "duration": "2h (+ traslados ~3h total)",
+              "durationMin": 180,
+              "cost": "$50-120 USD",
+              "costPerPerson": 80,
+              "frequency": "10+ vuelos diarios",
+              "pros": ["Más rápido en el aire", "Precios bajos con anticipación"],
+              "cons": ["Traslados aeropuerto", "Límite equipaje", "Check-in 2h antes"],
+              "bookingLink": "https://www.skyscanner.com",
+              "airlines": ["Vueling", "Ryanair", "Air France", "Iberia"],
+              "recommended": false
+            }
+          ]
+        },
+        "accommodation": {
+          "name": "Última noche en Barcelona",
+          "neighborhood": "Eixample - Passeig de Gràcia",
+          "link": "",
+          "costPerPerson": 35,
+          "options": [
+            { "type": "hotel", "name": "Hotel económico", "cost": "$35/persona", "neighborhood": "Eixample" },
+            { "type": "airbnb", "name": "Apartamento compartido", "cost": "$25/persona", "neighborhood": "Gràcia" }
+          ],
+          "notes": "Mismo alojamiento que días anteriores"
+        },
         "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 25, "activitiesBase": 10, "lodgingReal": 50, "foodReal": 32 },
         "totals": { "totalBase": 95, "totalReal": 117 },
         "mapPoints": ["Tossa de Mar", "Platja Gran", "Cala Es Codolar", "Vila Vella"],
-        "notes": "Excursión de día completo a la Costa Brava"
+        "notes": "Excursión de día completo a la Costa Brava. Noche: preparar para salir temprano a París"
       },
       {
         "day": 4,
@@ -223,8 +336,20 @@
         "heroImageQuery": "París city skyline landmark",
         "imageHints": ["best photo viewpoint París", "París top attractions"],
         "perks": ["Ver París iluminado (después de 20:30)", "Reservas con hora (Louvre/Eiffel)"],
+        "accommodation": {
+          "name": "Hotel en Le Marais",
+          "neighborhood": "Le Marais / Châtelet",
+          "link": "",
+          "costPerPerson": 45,
+          "options": [
+            { "type": "hotel", "name": "Hotel 3 estrellas", "cost": "$45/persona", "neighborhood": "Le Marais" },
+            { "type": "hotel", "name": "Hotel cerca Gare du Nord", "cost": "$40/persona", "neighborhood": "10ème" },
+            { "type": "airbnb", "name": "Apartamento", "cost": "$35/persona", "neighborhood": "Bastille" }
+          ],
+          "notes": "Zona céntrica con fácil acceso a metro"
+        },
         "mainActivities": [
-          { "name": "Traslado Barcelona → París", "start": "08:00", "durationMin": 120, "link": "https://www.sncf-connect.com", "notes": "Vuelo o tren TGV", "imageQuery": "TGV Barcelona París" },
+          { "name": "Llegada a París (TGV)", "start": "14:30", "durationMin": 90, "link": "https://www.sncf-connect.com", "notes": "Llegada a Gare de Lyon, traslado al hotel", "imageQuery": "Paris Gare de Lyon" },
           { "name": "Check-in y descanso", "start": "12:00", "durationMin": 120, "link": "", "notes": "Instalación en hotel", "imageQuery": "hotel check-in París" },
           { "name": "Montmartre (Sacré-Cœur)", "start": "15:00", "durationMin": 180, "link": "https://www.google.com/maps/search/Montmartre+Paris", "notes": "Sacré-Cœur y artistas", "imageQuery": "Montmartre París", "imageUrl": "https://www.cometoparis.com/data/layout_image/475_sacr%C3%A9%20coeur_landscape_3-2_xl.jpg?ver=1739891695" },
           { "name": "Jardines de Versalles", "start": "18:00", "durationMin": 120, "link": "https://www.chateauversailles.fr", "notes": "Paseo por los jardines del palacio", "imageQuery": "Jardines Versalles", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg" },
@@ -248,6 +373,12 @@
         "heroImageQuery": "París city skyline landmark",
         "imageHints": ["best photo viewpoint París", "París top attractions"],
         "perks": ["Ver París iluminado (después de 20:30)", "Reservas con hora (Louvre/Eiffel)"],
+        "accommodation": {
+          "name": "Hotel en Le Marais",
+          "neighborhood": "Le Marais / Châtelet",
+          "link": "",
+          "notes": "Zona céntrica con fácil acceso a metro"
+        },
         "mainActivities": [
           { "name": "The Louvre (por fuera)", "start": "09:00", "durationMin": 90, "link": "https://www.louvre.fr", "notes": "Exterior del museo más famoso", "imageQuery": "Museo Louvre París", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9q-8SMMLW37hIbCCQY2tuZ_fZL6M3Xb5bdhTLQGSVzXvjNFyv6cCsHua-BfK-m8T3v0&usqp=CAU" },
           { "name": "Rivoli 59", "start": "11:00", "durationMin": 60, "link": "https://www.google.com/maps/search/Rivoli+59+Paris", "notes": "Galería de arte alternativa", "imageQuery": "Rivoli 59 París", "imageUrl": "https://media.traveler.es/photos/62cdac398dc3f100195210d3/16:9/w_2240,c_limit/2G25WXK.jpg" },
@@ -307,11 +438,67 @@
           { "name": "Montmartre nocturno", "start": "18:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Montmartre+Paris", "notes": "Atardecer y ambiente nocturno", "imageQuery": "Montmartre nocturno París" }
         ],
         "secondaryActivities": [],
-        "transportToNext": { "mode": "tren", "from": "Gare du Nord", "to": "Amsterdam Centraal", "depart": "08:00", "arrive": "11:20", "durationMin": 200, "code": "Eurostar (ex-Thalys)", "bookingLink": "https://www.eurostar.com" },
+        "transportToNext": {
+          "mode": "train",
+          "from": "Paris Gare du Nord",
+          "to": "Amsterdam Centraal",
+          "depart": "08:00",
+          "arrive": "11:20",
+          "durationMin": 200,
+          "code": "Eurostar",
+          "bookingLink": "https://www.eurostar.com"
+        },
+        "transportOptions": {
+          "recommended": "train",
+          "options": [
+            {
+              "type": "train",
+              "name": "Eurostar (antes Thalys)",
+              "from": "Paris Gare du Nord",
+              "to": "Amsterdam Centraal",
+              "duration": "3h 20min",
+              "durationMin": 200,
+              "cost": "$80-180 USD",
+              "costPerPerson": 120,
+              "frequency": "8+ trenes diarios",
+              "pros": ["Centro a centro", "Rápido y cómodo", "WiFi", "Sin control fronteras"],
+              "cons": ["Reserva obligatoria", "Precio variable"],
+              "bookingLink": "https://www.eurostar.com",
+              "recommended": true
+            },
+            {
+              "type": "flight",
+              "name": "Vuelo directo",
+              "from": "Paris CDG/Orly",
+              "to": "Amsterdam Schiphol (AMS)",
+              "duration": "1h 15min (+ traslados ~4h total)",
+              "durationMin": 75,
+              "cost": "$60-150 USD",
+              "costPerPerson": 90,
+              "frequency": "10+ vuelos diarios",
+              "pros": ["Rápido en el aire"],
+              "cons": ["Traslados largos", "No ahorra tiempo real", "Huella carbono"],
+              "bookingLink": "https://www.skyscanner.com",
+              "airlines": ["KLM", "Air France", "Transavia"],
+              "recommended": false
+            }
+          ]
+        },
+        "accommodation": {
+          "name": "Última noche en París",
+          "neighborhood": "Le Marais / Châtelet",
+          "link": "",
+          "costPerPerson": 45,
+          "options": [
+            { "type": "hotel", "name": "Hotel 3 estrellas", "cost": "$45/persona", "neighborhood": "Le Marais" },
+            { "type": "hotel", "name": "Hotel cerca Gare du Nord", "cost": "$40/persona", "neighborhood": "10ème" }
+          ],
+          "notes": "Cerca de Gare du Nord para salir temprano"
+        },
         "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 10, "activitiesBase": 35, "lodgingReal": 55, "foodReal": 32 },
         "totals": { "totalBase": 105, "totalReal": 132 },
         "mapPoints": ["Louvre", "Torre Eiffel", "Montmartre"],
-        "notes": "Último día en París - Louvre y Torre Eiffel"
+        "notes": "Último día en París - Louvre y Torre Eiffel. Noche: preparar maletas para Amsterdam"
       },
       {
         "day": 8,
@@ -324,6 +511,12 @@
         "heroImageQuery": "Amsterdam city skyline landmark",
         "imageHints": ["best photo viewpoint Amsterdam", "Amsterdam top attractions"],
         "perks": ["Compra Rijks/Anne Frank con antelación"],
+        "accommodation": {
+          "name": "Hotel en Jordaan",
+          "neighborhood": "Jordaan / Centrum",
+          "link": "",
+          "notes": "Barrio bohemio con canales, cerca de Anne Frank House"
+        },
         "mainActivities": [
           { "name": "Traslado París → Ámsterdam", "start": "08:00", "durationMin": 200, "link": "https://www.eurostar.com", "notes": "Tren Eurostar (antes Thalys) - centro a centro ~3h20", "imageQuery": "Eurostar train París Ámsterdam" },
           { "name": "Check-in y descanso", "start": "12:00", "durationMin": 60, "link": "", "notes": "Instalación en hotel", "imageQuery": "hotel check-in Amsterdam" },
@@ -380,7 +573,63 @@
           { "name": "Día libre en Ámsterdam", "start": "09:00", "durationMin": 480, "link": "", "notes": "Actividades pendientes o exploración libre", "imageQuery": "Amsterdam city center" }
         ],
         "secondaryActivities": [],
-        "transportToNext": { "mode": "vuelo", "from": "Ámsterdam (AMS)", "to": "Zúrich (ZRH)", "depart": "08:00", "arrive": "09:40", "durationMin": 100, "code": "", "bookingLink": "https://www.skyscanner.com" },
+        "transportToNext": {
+          "mode": "flight",
+          "from": "Amsterdam Schiphol (AMS)",
+          "to": "Zürich (ZRH)",
+          "depart": "08:00",
+          "arrive": "09:40",
+          "durationMin": 100,
+          "code": "KLM/Swiss",
+          "bookingLink": "https://www.skyscanner.com"
+        },
+        "transportOptions": {
+          "recommended": "flight",
+          "options": [
+            {
+              "type": "flight",
+              "name": "Vuelo directo",
+              "from": "Amsterdam Schiphol (AMS)",
+              "to": "Zürich (ZRH)",
+              "duration": "1h 40min",
+              "durationMin": 100,
+              "cost": "$80-180 USD",
+              "costPerPerson": 120,
+              "frequency": "10+ vuelos diarios",
+              "pros": ["Rápido", "Conexión directa", "Aeropuerto céntrico Schiphol"],
+              "cons": ["Traslados aeropuerto", "Huella carbono"],
+              "bookingLink": "https://www.skyscanner.com",
+              "airlines": ["KLM", "Swiss", "Transavia", "easyJet"],
+              "recommended": true
+            },
+            {
+              "type": "train",
+              "name": "Tren (ICE + conexiones)",
+              "from": "Amsterdam Centraal",
+              "to": "Zürich HB",
+              "duration": "8-10 horas",
+              "durationMin": 540,
+              "cost": "$120-200 USD",
+              "costPerPerson": 150,
+              "frequency": "Varias combinaciones diarias",
+              "pros": ["Paisajes espectaculares", "Centro a centro", "Sin límite equipaje"],
+              "cons": ["Muy largo", "Requiere cambios (Colonia/Frankfurt)"],
+              "bookingLink": "https://www.bahn.de",
+              "recommended": false
+            }
+          ]
+        },
+        "accommodation": {
+          "name": "Última noche en Ámsterdam",
+          "neighborhood": "Jordaan / Centrum",
+          "link": "",
+          "costPerPerson": 50,
+          "options": [
+            { "type": "hotel", "name": "Hotel boutique Jordaan", "cost": "$50/persona", "neighborhood": "Jordaan" },
+            { "type": "hotel", "name": "Hotel cerca Centraal", "cost": "$45/persona", "neighborhood": "Centrum" }
+          ],
+          "notes": "Preparar para madrugar - vuelo temprano"
+        },
         "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 0, "activitiesBase": 20, "lodgingReal": 75, "foodReal": 32 },
         "totals": { "totalBase": 85, "totalReal": 127 },
         "mapPoints": ["Ámsterdam"],
@@ -707,6 +956,78 @@
         "totals": { "totalBase": 105, "totalReal": 200 },
         "mapPoints": ["Estadio Santiago Bernabéu"],
         "notes": "Día en Madrid - Tour del Estadio Santiago Bernabéu"
+      },
+      {
+        "day": 24,
+        "date": "2025-09-28",
+        "city": "Madrid → Medellín",
+        "country": "España / Colombia",
+        "cityCode": "MAD-MDE",
+        "currencyLocal": "EUR/COP",
+        "stayArea": "Vuelo de regreso",
+        "heroImageQuery": "Madrid Barajas airport departure",
+        "heroImageUrl": "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800",
+        "imageHints": ["airport departure", "airplane takeoff"],
+        "perks": ["Llegar al aeropuerto 3 horas antes", "Verificar límite de equipaje"],
+        "accommodation": {
+          "name": "Vuelo de regreso - Sin hospedaje",
+          "neighborhood": "N/A",
+          "link": "",
+          "notes": "Regreso a casa"
+        },
+        "mainActivities": [
+          {
+            "name": "Check-out del hotel",
+            "start": "08:00",
+            "durationMin": 60,
+            "link": "",
+            "notes": "Preparar equipaje y dejar el hotel",
+            "imageQuery": "Hotel checkout luggage",
+            "imageUrl": ""
+          },
+          {
+            "name": "Últimas compras y souvenirs",
+            "start": "09:00",
+            "durationMin": 120,
+            "link": "https://www.google.com/maps/search/Gran+Via+Madrid+shopping",
+            "notes": "Últimas compras en Gran Vía o El Corte Inglés",
+            "imageQuery": "Gran Via Madrid shopping",
+            "imageUrl": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800"
+          },
+          {
+            "name": "Traslado al aeropuerto",
+            "start": "12:00",
+            "durationMin": 60,
+            "link": "https://www.google.com/maps/search/Aeropuerto+Madrid+Barajas",
+            "notes": "Metro o taxi al Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)",
+            "imageQuery": "Madrid Barajas airport",
+            "imageUrl": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800"
+          },
+          {
+            "name": "Vuelo MAD → MDE",
+            "start": "15:00",
+            "durationMin": 660,
+            "link": "",
+            "notes": "Vuelo de regreso ~11 horas. Escala posible en Bogotá o conexión",
+            "imageQuery": "Airplane flying clouds",
+            "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+          },
+          {
+            "name": "Llegada a Medellín",
+            "start": "21:00",
+            "durationMin": 120,
+            "link": "",
+            "notes": "Llegada al Aeropuerto José María Córdova. ¡Fin del viaje!",
+            "imageQuery": "Medellin city night arrival",
+            "imageUrl": "https://images.unsplash.com/photo-1599408169214-9e064a2eb04c?w=800"
+          }
+        ],
+        "secondaryActivities": [],
+        "transportToNext": { "mode": "flight", "from": "Madrid (MAD)", "to": "Medellín (MDE)", "depart": "15:00", "arrive": "21:00", "durationMin": 660, "code": "Vuelo Internacional", "bookingLink": "https://www.skyscanner.com" },
+        "costs": { "lodgingBase": 0, "foodBase": 25, "transportBase": 450, "activitiesBase": 50, "lodgingReal": 0, "foodReal": 35 },
+        "totals": { "totalBase": 525, "totalReal": 535 },
+        "mapPoints": ["Gran Vía", "Aeropuerto Madrid Barajas"],
+        "notes": "Día de regreso - Últimas compras y vuelo de vuelta a Medellín. ¡Fin del viaje!"
       }
     ],
     "totals": {

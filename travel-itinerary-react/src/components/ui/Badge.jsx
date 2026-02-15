@@ -12,10 +12,10 @@ export function Badge({
   const variantClasses = {
     primary: 'badge-primary',
     secondary: 'badge-secondary',
-    success: 'bg-green-600 text-white',
-    warning: 'bg-yellow-600 text-white',
-    danger: 'bg-red-600 text-white',
-    info: 'bg-blue-600 text-white',
+    success: 'badge-success',
+    warning: 'badge-warning',
+    danger: 'bg-red-100 text-red-700',
+    info: 'badge-info',
   };
 
   const classes = `

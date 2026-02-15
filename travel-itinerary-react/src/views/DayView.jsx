@@ -21,7 +21,7 @@ export function DayView() {
   if (!day) {
     return (
       <div className="text-center py-12">
-        <p className="text-dark-textMuted text-lg">Día no encontrado</p>
+        <p className="text-light-textMuted text-lg">Día no encontrado</p>
       </div>
     );
   }

@@ -9,7 +9,7 @@ export function Spinner({ size = 'md', className = '' }) {
 
   return (
     <div className={`inline-block ${sizeClasses[size]} ${className}`}>
-      <div className="animate-spin rounded-full border-4 border-dark-border border-t-purple-600 w-full h-full" />
+      <div className="animate-spin rounded-full border-4 border-light-border border-t-blue-500 w-full h-full" />
     </div>
   );
 }
