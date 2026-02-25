@@ -8,7 +8,7 @@ export function useCalendar() {
 
   const calculateDayDate = useCallback(
     (dayNumber) => {
-      return addDays(new Date(tripStartDate), dayNumber - 1);
+      return addDays(new Date(tripStartDate), dayNumber);
     },
     [tripStartDate]
   );

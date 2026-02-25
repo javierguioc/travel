@@ -1,6 +1,6 @@
 // Constantes y valores por defecto
 
-export const DEFAULT_START_DATE = '2026-09-05';
+export const DEFAULT_START_DATE = '2026-05-22';
 export const DEFAULT_EXCHANGE_RATE = 4200;
 export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;

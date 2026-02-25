@@ -35,7 +35,7 @@ export function DayCardCompact({ day }) {
   const setCurrentDay = useItineraryStore((state) => state.setCurrentDay);
   const setCurrentView = useItineraryStore((state) => state.setCurrentView);
   const useRealisticCosts = useItineraryStore((state) => state.useRealisticCosts);
-  const { getShortDate } = useCalendar();
+  const { getShortDate, getFormattedDate } = useCalendar();
   const { formatCost } = useCurrency();
 
   if (!day) return null;
@@ -107,7 +107,7 @@ export function DayCardCompact({ day }) {
             </h3>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="text-sm">{flag}</span>
-              <span className="text-white/90 text-xs">{shortDate}</span>
+              <span className="text-white/90 text-xs">{getFormattedDate(day.day)}</span>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export function DayCardCompact({ day }) {
       {/* Actividades con imágenes */}
       <div className="p-3">
         <div className="space-y-2">
-          {day.mainActivities && day.mainActivities.slice(0, 4).map((activity, index) => {
+          {day.mainActivities && day.mainActivities.map((activity, index) => {
             const isTransport = isTransportActivity(activity.name);
 
             if (isTransport) {
@@ -153,11 +153,6 @@ export function DayCardCompact({ day }) {
             <span>📍 {day.mainActivities?.length || 0} actividades</span>
             {transportCount > 0 && <span>• 🚌 {transportCount}</span>}
           </div>
-          {day.mainActivities && day.mainActivities.length > 4 && (
-            <span className="text-blue-600 text-xs font-semibold">
-              +{day.mainActivities.length - 4} más
-            </span>
-          )}
         </div>
       </div>
     </div>

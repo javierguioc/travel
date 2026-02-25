@@ -39,7 +39,11 @@ export const useItineraryStore = create(
               throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            set({ itineraryData: data, isLoading: false });
+            // Usar la fecha del primer día del JSON como fecha de inicio
+            const startDate = data.days?.[0]?.date
+              ? new Date(data.days[0].date + 'T12:00:00')
+              : new Date(DEFAULT_START_DATE);
+            set({ itineraryData: data, isLoading: false, tripStartDate: startDate });
           } catch (error) {
             set({ error: error.message, isLoading: false });
           }

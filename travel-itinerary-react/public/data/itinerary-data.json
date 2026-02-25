@@ -58,7 +58,7 @@
     "days": [
       {
         "day": 0,
-        "date": "2025-09-04",
+        "date": "2026-05-22",
         "city": "Medellín → Barcelona",
         "country": "Colombia / España",
         "cityCode": "MDE-BCN",
@@ -103,7 +103,7 @@
       },
       {
         "day": 1,
-        "date": "2025-09-05",
+        "date": "2026-05-23",
         "city": "Barcelona",
         "country": "España",
         "cityCode": "BCN",
@@ -174,7 +174,7 @@
       },
       {
         "day": 2,
-        "date": "2025-09-06",
+        "date": "2026-05-24",
         "city": "Barcelona",
         "country": "España",
         "cityCode": "BCN",
@@ -245,7 +245,7 @@
       },
       {
         "day": 3,
-        "date": "2025-09-07",
+        "date": "2026-05-25",
         "city": "Costa Brava (Tossa de Mar)",
         "country": "España",
         "cityCode": "BCN",
@@ -327,7 +327,7 @@
       },
       {
         "day": 4,
-        "date": "2025-09-08",
+        "date": "2026-05-26",
         "city": "París",
         "country": "Francia",
         "cityCode": "PAR",
@@ -364,7 +364,7 @@
       },
       {
         "day": 5,
-        "date": "2025-09-09",
+        "date": "2026-05-27",
         "city": "París",
         "country": "Francia",
         "cityCode": "PAR",
@@ -398,7 +398,7 @@
       },
       {
         "day": 6,
-        "date": "2025-09-10",
+        "date": "2026-05-28",
         "city": "Disneyland París",
         "country": "Francia",
         "cityCode": "PAR",
@@ -423,7 +423,7 @@
       },
       {
         "day": 7,
-        "date": "2025-09-11",
+        "date": "2026-05-29",
         "city": "París",
         "country": "Francia",
         "cityCode": "PAR",
@@ -502,7 +502,7 @@
       },
       {
         "day": 8,
-        "date": "2025-09-12",
+        "date": "2026-05-30",
         "city": "Ámsterdam",
         "country": "Países Bajos",
         "cityCode": "AMS",
@@ -534,7 +534,7 @@
       },
       {
         "day": 9,
-        "date": "2025-09-13",
+        "date": "2026-05-31",
         "city": "Ámsterdam",
         "country": "Países Bajos",
         "cityCode": "AMS",
@@ -560,7 +560,7 @@
       },
       {
         "day": 10,
-        "date": "2025-09-14",
+        "date": "2026-06-01",
         "city": "Ámsterdam",
         "country": "Países Bajos",
         "cityCode": "AMS",
@@ -637,7 +637,7 @@
       },
       {
         "day": 11,
-        "date": "2025-09-15",
+        "date": "2026-06-02",
         "city": "Suiza (vía Zúrich)",
         "country": "Suiza",
         "cityCode": "ZRH",
@@ -661,7 +661,7 @@
       },
       {
         "day": 12,
-        "date": "2025-09-16",
+        "date": "2026-06-03",
         "city": "Suiza (día 1)",
         "country": "Suiza",
         "cityCode": "ZRH",
@@ -684,7 +684,7 @@
       },
       {
         "day": 13,
-        "date": "2025-09-17",
+        "date": "2026-06-04",
         "city": "Suiza (día 2)",
         "country": "Suiza",
         "cityCode": "ZRH",
@@ -706,7 +706,7 @@
       },
       {
         "day": 14,
-        "date": "2025-09-18",
+        "date": "2026-06-05",
         "city": "Suiza (día 3)",
         "country": "Suiza",
         "cityCode": "ZRH",
@@ -729,7 +729,7 @@
       },
       {
         "day": 15,
-        "date": "2025-09-19",
+        "date": "2026-06-06",
         "city": "Suiza → Venecia (vía Milán)",
         "country": "Italia",
         "cityCode": "VCE",
@@ -754,7 +754,7 @@
       },
       {
         "day": 16,
-        "date": "2025-09-20",
+        "date": "2026-06-07",
         "city": "Venecia",
         "country": "Italia",
         "cityCode": "VCE",
@@ -783,7 +783,7 @@
       },
       {
         "day": 17,
-        "date": "2025-09-21",
+        "date": "2026-06-08",
         "city": "Venecia → Florencia → Pisa → Roma",
         "country": "Italia",
         "cityCode": "ROM",
@@ -810,7 +810,7 @@
       },
       {
         "day": 18,
-        "date": "2025-09-22",
+        "date": "2026-06-09",
         "city": "Roma",
         "country": "Italia",
         "cityCode": "ROM",
@@ -836,7 +836,7 @@
       },
       {
         "day": 19,
-        "date": "2025-09-23",
+        "date": "2026-06-10",
         "city": "Roma",
         "country": "Italia",
         "cityCode": "ROM",
@@ -861,7 +861,7 @@
       },
       {
         "day": 20,
-        "date": "2025-09-24",
+        "date": "2026-06-11",
         "city": "Puglia",
         "country": "Italia",
         "cityCode": "BRI",
@@ -885,7 +885,7 @@
       },
       {
         "day": 21,
-        "date": "2025-09-25",
+        "date": "2026-06-12",
         "city": "Madrid",
         "country": "España",
         "cityCode": "MAD",
@@ -912,7 +912,7 @@
       },
       {
         "day": 22,
-        "date": "2025-09-26",
+        "date": "2026-06-13",
         "city": "Madrid",
         "country": "España",
         "cityCode": "MAD",
@@ -938,7 +938,7 @@
       },
       {
         "day": 23,
-        "date": "2025-09-27",
+        "date": "2026-06-14",
         "city": "Madrid",
         "country": "España",
         "cityCode": "MAD",
@@ -959,7 +959,7 @@
       },
       {
         "day": 24,
-        "date": "2025-09-28",
+        "date": "2026-06-15",
         "city": "Madrid → Medellín",
         "country": "España / Colombia",
         "cityCode": "MAD-MDE",
