@@ -5,7 +5,7 @@ export const DEFAULT_EXCHANGE_RATE = 4200;
 export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;
 
-export const DATA_FILE_PATH = '/data/itinerary-data.json';
+export const DATA_FILE_PATH = `${import.meta.env.BASE_URL}data/itinerary-data.json`;
 
 export const VIEWS = {
   SUMMARY: 'summary',
