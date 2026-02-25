@@ -10,7 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/', // Cambiar a '/nombre-repo/' para GitHub Pages
+  base: '/travel/',
   build: {
     outDir: 'dist',
     sourcemap: false,
