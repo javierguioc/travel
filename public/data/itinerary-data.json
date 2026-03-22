@@ -1,1040 +1,2614 @@
 {
-    "version": "1.2-enriched-with-images-and-totals",
-    "meta": {
-      "currency": "USD",
-      "intl_flight_estimate": 900,
-      "group_sizes": [6, 8]
+  "version": "1.2-enriched-with-images-and-totals",
+  "meta": {
+    "currency": "USD",
+    "intl_flight_estimate": 900,
+    "group_sizes": [
+      6,
+      8
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "Gastronomía",
+      "title": "Restaurantes locales auténticos",
+      "description": "Prueba la cocina local en cada ciudad: paella en Valencia, pasta fresca en Roma, fondue en Suiza, y tapas en Madrid. Evita restaurantes turísticos cerca de monumentos principales.",
+      "link": "https://www.tripadvisor.com/Restaurants"
     },
-    "recommendations": [
-      {
-        "type": "Gastronomía",
-        "title": "Restaurantes locales auténticos",
-        "description": "Prueba la cocina local en cada ciudad: paella en Valencia, pasta fresca en Roma, fondue en Suiza, y tapas en Madrid. Evita restaurantes turísticos cerca de monumentos principales.",
-        "link": "https://www.tripadvisor.com/Restaurants"
-      },
-      {
-        "type": "Transporte",
-        "title": "Pases de transporte urbano",
-        "description": "Compra pases de 2-3 días en cada ciudad para ahorrar en transporte público. Barcelona, París, Roma y Madrid tienen excelentes sistemas de metro.",
-        "link": "https://www.rome2rio.com"
-      },
-      {
-        "type": "Entradas",
-        "title": "Reserva con anticipación",
-        "description": "Sagrada Familia, Louvre, Torre Eiffel, Coliseo y Rijksmuseum requieren reserva previa. Compra online para evitar colas y asegurar tu entrada.",
-        "link": "https://www.getyourguide.com"
-      },
-      {
-        "type": "Alojamiento",
-        "title": "Ubicación estratégica",
-        "description": "Elige hoteles cerca de estaciones de metro principales. Eixample en Barcelona, Ópera en París, Termini en Roma, y Sol en Madrid son zonas ideales.",
-        "link": "https://www.booking.com"
-      },
-      {
-        "type": "Presupuesto",
-        "title": "Control de gastos",
-        "description": "Lleva un registro diario de gastos. Los costos realistas incluyen propinas (10-15% en restaurantes) y gastos imprevistos. Considera un 20% extra para emergencias.",
-        "link": ""
-      },
-      {
-        "type": "Seguridad",
-        "title": "Precauciones básicas",
-        "description": "Mantén copias digitales de documentos importantes. Usa riñoneras para dinero y pasaportes. En Las Ramblas y Le Marais, cuidado con carteristas.",
-        "link": ""
-      },
-      {
-        "type": "Conexión",
-        "title": "Internet y comunicación",
-        "description": "Considera un SIM europeo o eSIM para datos ilimitados. Muchos cafés y restaurantes tienen WiFi gratuito. Descarga mapas offline de Google Maps.",
-        "link": "https://www.airalo.com"
-      },
-      {
-        "type": "Cultura",
-        "title": "Etiqueta local",
-        "description": "Aprende frases básicas en cada idioma. En Italia, el café se toma de pie en la barra. En España, la cena es tarde (21:00+). En Suiza, la puntualidad es sagrada.",
-        "link": "https://www.duolingo.com"
-      }
-    ],
-    "days": [
-      {
-        "day": 0,
-        "date": "2026-05-22",
-        "city": "Medellín → Barcelona",
-        "country": "Colombia / España",
-        "cityCode": "MDE-BCN",
-        "currencyLocal": "COP/EUR",
-        "stayArea": "Vuelo nocturno",
-        "heroImageQuery": "Airplane flying over Atlantic ocean sunset",
-        "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-        "imageHints": ["airplane flight", "travel departure"],
-        "perks": ["Llegar al aeropuerto 3 horas antes", "Llevar snacks y entretenimiento para el vuelo"],
-        "accommodation": {
-          "name": "Vuelo nocturno - Sin hospedaje",
-          "neighborhood": "N/A",
-          "link": "",
-          "notes": "Noche en vuelo"
-        },
-        "mainActivities": [
-          {
-            "name": "Salida desde Medellín",
-            "start": "18:00",
-            "durationMin": 180,
-            "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
-            "notes": "Check-in, seguridad y embarque en Aeropuerto José María Córdova (MDE)",
-            "imageQuery": "Medellin airport departure",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg/1200px-Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg"
-          },
-          {
-            "name": "Vuelo MDE → BCN",
-            "start": "21:00",
-            "durationMin": 600,
-            "link": "",
-            "notes": "Vuelo nocturno ~10 horas. Escala posible en Madrid o conexión directa",
-            "imageQuery": "Night flight airplane",
-            "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800"
-          }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": "flight", "from": "Medellín (MDE)", "to": "Barcelona (BCN)", "depart": "21:00", "arrive": "13:00+1", "durationMin": 600, "code": "Vuelo Internacional", "bookingLink": "https://www.skyscanner.com" },
-        "costs": { "lodgingBase": 0, "foodBase": 20, "transportBase": 450, "activitiesBase": 0, "lodgingReal": 0, "foodReal": 30 },
-        "totals": { "totalBase": 470, "totalReal": 480 },
-        "mapPoints": ["Aeropuerto José María Córdova"],
-        "notes": "Día de viaje - Salida desde Medellín hacia Barcelona. Vuelo nocturno transatlántico."
-      },
-      {
-        "day": 1,
-        "date": "2026-05-23",
-        "city": "Barcelona",
-        "country": "España",
-        "cityCode": "BCN",
-        "currencyLocal": "EUR",
-        "stayArea": "Eixample (L2/L4) o Born/Gòtic",
-        "heroImageQuery": "Barcelona city skyline landmark",
-        "imageHints": ["best photo viewpoint Barcelona", "Barcelona top attractions"],
-        "perks": ["Tapas hour 19:00–21:00", "Compra ticket Sagrada con horario"],
-        "accommodation": {
-          "name": "Hotel en Eixample",
-          "neighborhood": "Eixample (L2/L4)",
-          "link": "",
-          "notes": "Cerca de metro Passeig de Gràcia"
-        },
-        "mainActivities": [
-          {
-            "name": "Llegada a Barcelona",
-            "start": "13:00",
-            "durationMin": 120,
-            "link": "",
-            "notes": "Llegada al aeropuerto El Prat, transporte al hotel y check-in",
-            "imageQuery": "Barcelona airport arrival",
-            "imageUrl": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
-          },
-          {
-            "name": "Arco de Triunfo",
-            "start": "17:00",
-            "durationMin": 45,
-            "link": "https://www.google.com/maps/search/Arc+de+Triomf+Barcelona",
-            "notes": "Monumento emblemático para fotos",
-            "imageQuery": "Arc de Triomf Barcelona",
-            "imageUrl": "https://www.barcelo.com/guia-turismo/wp-content/uploads/ok-arc-de-triomf.jpg"
-          },
-          {
-            "name": "Las Ramblas",
-            "start": "18:00",
-            "durationMin": 90,
-            "link": "https://www.google.com/maps/search/Las+Ramblas+Barcelona",
-            "notes": "Paseo icónico y ambiente",
-            "imageQuery": "Las Ramblas Barcelona",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg/960px-15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg"
-          },
-          {
-            "name": "Mercado de la Boquería",
-            "start": "19:30",
-            "durationMin": 60,
-            "link": "https://www.boqueria.barcelona",
-            "notes": "Tapas y productos locales",
-            "imageQuery": "Mercado Boquería Barcelona",
-            "imageUrl": "https://www.shutterstock.com/shutterstock/photos/2292736191/display_1500/stock-photo-barcelona-september-tourists-in-famous-la-boqueria-market-in-the-las-ramblas-area-of-2292736191.jpg"
-          },
-          {
-            "name": "Jardines de La Tamarita",
-            "start": "20:30",
-            "durationMin": 60,
-            "notes": "Jardines históricos con vistas panorámicas, perfecto para relajarse",
-            "link": "https://www.google.com/maps/search/Jardines+La+Tamarita+Barcelona",
-            "imageQuery": "Jardines La Tamarita Barcelona",
-            "imageUrl": "https://guiavi.com/wp-content/uploads/2023/10/jardines-de-La-tamarita.jpg.webp"
-          }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 0, "foodBase": 15, "transportBase": 0, "activitiesBase": 0, "lodgingReal": 0, "foodReal": 32 },
-        "totals": { "totalBase": 15, "totalReal": 32 },
-        "mapPoints": ["Arco de Triunfo", "Las Ramblas", "Mercado Boquería"],
-        "notes": "Día de llegada - actividades suaves y primeras impresiones"
-      },
-      {
-        "day": 2,
-        "date": "2026-05-24",
-        "city": "Barcelona",
-        "country": "España",
-        "cityCode": "BCN",
-        "currencyLocal": "EUR",
-        "stayArea": "Eixample (L2/L4) o Born/Gòtic",
-        "heroImageQuery": "Barcelona city skyline landmark",
-        "imageHints": ["best photo viewpoint Barcelona", "Barcelona top attractions"],
-        "perks": ["Tapas hour 19:00–21:00", "Compra ticket Sagrada con horario"],
-        "accommodation": {
-          "name": "Hotel en Eixample",
-          "neighborhood": "Eixample - cerca de Passeig de Gràcia",
-          "link": "",
-          "notes": "Mismo hotel que día 1"
-        },
-        "mainActivities": [
-          { 
-            "name": "Sagrada Familia", 
-            "start": "09:00", 
-            "durationMin": 150, 
-            "link": "https://sagradafamilia.org", 
-            "notes": "Entrada previa - arquitectura Gaudí", 
-            "imageQuery": "Sagrada Familia Barcelona",
-            "imageUrl": "https://images.adsttc.com/media/images/5cff/5ec5/284d/d16d/6a00/1111/slideshow/1.jpg?1560239805"
-          },
-          { 
-            "name": "Casa Batlló", 
-            "start": "12:00", 
-            "durationMin": 90, 
-            "link": "https://www.casabatllo.es", 
-            "notes": "Obra maestra de Gaudí", 
-            "imageQuery": "Casa Batlló Barcelona",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Casa_Batll%C3%B3%2C_Antoni_Gaud%C3%AD.jpg/960px-Casa_Batll%C3%B3%2C_Antoni_Gaud%C3%AD.jpg"
-          },
-          { 
-            "name": "Passeig de Gràcia", 
-            "start": "14:00", 
-            "durationMin": 120, 
-            "link": "https://www.google.com/maps/search/Passeig+de+Gràcia+Barcelona", 
-            "notes": "Avenida de compras y arquitectura modernista", 
-            "imageQuery": "Passeig de Gràcia Barcelona",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Via_Barcelona_Casa_Mil%C3%A0.JPG"
-          },
-          {
-            "name": "Hotel W Barcelona (Playa)", 
-            "start": "16:30", 
-            "durationMin": 120, 
-            "link": "https://www.google.com/maps/search/Hotel+W+Barcelona", 
-            "notes": "Playa y vista del hotel icónico", 
-            "imageQuery": "Hotel W Barcelona playa",
-            "imageUrl": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/2015%2C09%2CHotel-W-1.jpg"
-          },
-          {
-            "name": "Recinte Modernista de Sant Pau",
-            "start": "19:00",
-            "durationMin": 60,
-            "notes": "Hospital modernista de Domènech i Montaner, Patrimonio UNESCO",
-            "link": "https://www.santpaubarcelona.org",
-            "imageQuery": "Recinte Modernista Sant Pau Barcelona",
-            "imageUrl": "https://s3.eu-west-1.amazonaws.com/pro.static.portalstdo.tmb.cat/styles/galeria_slider/s3/2025-05/REF_HOSPITAL_SANTPAU_CT6A8983.jpg.webp?itok=dSE4upJp"
-          }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 10, "activitiesBase": 35, "lodgingReal": 50, "foodReal": 32 },
-        "totals": { "totalBase": 105, "totalReal": 127 },
-        "mapPoints": ["Sagrada Familia", "Casa Batlló", "Passeig de Gràcia", "Hotel W Barcelona"],
-        "notes": "Día completo en Barcelona - arquitectura Gaudí y playa"
-      },
-      {
-        "day": 3,
-        "date": "2026-05-25",
-        "city": "Costa Brava (Tossa de Mar)",
-        "country": "España",
-        "cityCode": "BCN",
-        "currencyLocal": "EUR",
-        "stayArea": "Eixample (continuar)",
-        "heroImageQuery": "Tossa de Mar city skyline landmark",
-        "heroImageUrl": "https://www.lavanguardia.com/files/image_990_484/uploads/2019/02/22/5fa52219c8e3b.jpeg",
-        "imageHints": ["best photo viewpoint Tossa de Mar", "Tossa de Mar top attractions"],
-        "perks": ["Tapas hour 19:00–21:00", "Compra ticket Sagrada con horario"],
-        "mainActivities": [
-          { "name": "Bus Barcelona → Tossa de Mar", "start": "09:00", "durationMin": 80, "link": "https://www.moventis.es", "notes": "Salida desde Estació del Nord", "imageQuery": "Bus Barcelona Tossa de Mar" },
-          { "name": "Platja Gran", "start": "10:30", "durationMin": 120, "link": "https://www.google.com/maps/search/Platja+Gran+Tossa+de+Mar", "notes": "Playa principal", "imageQuery": "Platja Gran Tossa de Mar", "imageUrl": "https://visittossa.com/wp-content/uploads/2022/02/cales_tossa_low_027.jpg" },
-          { "name": "Cala Es Codolar", "start": "13:00", "durationMin": 90, "link": "https://www.google.com/maps/search/Cala+Es+Codolar+Tossa", "notes": "Cala más pequeña y tranquila", "imageQuery": "Cala Es Codolar Tossa de Mar", "imageUrl": "https://visittossa.com/wp-content/uploads/2022/02/cales_tossa_low_036.jpg" },
-          { "name": "Casco amurallado (Vila Vella)", "start": "15:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Vila+Vella+Tossa+de+Mar", "notes": "Murallas medievales", "imageQuery": "Vila Vella Tossa de Mar", "imageUrl": "https://www.lavanguardia.com/files/image_990_484/uploads/2019/02/22/5fa52219c8e3b.jpeg" },
-          { "name": "Regreso a Barcelona", "start": "17:30", "durationMin": 80, "link": "https://www.moventis.es", "notes": "Bus de regreso", "imageQuery": "Bus Tossa de Mar Barcelona" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": {
-          "mode": "train",
-          "from": "Barcelona Sants",
-          "to": "Paris Gare de Lyon",
-          "depart": "08:00",
-          "arrive": "14:30",
-          "durationMin": 390,
-          "code": "TGV INOUI",
-          "bookingLink": "https://www.sncf-connect.com"
-        },
-        "transportOptions": {
-          "recommended": "train",
-          "options": [
-            {
-              "type": "train",
-              "name": "TGV INOUI (Tren Alta Velocidad)",
-              "from": "Barcelona Sants",
-              "to": "Paris Gare de Lyon",
-              "duration": "6h 30min",
-              "durationMin": 390,
-              "cost": "$80-150 USD",
-              "costPerPerson": 100,
-              "frequency": "3-4 trenes diarios",
-              "pros": ["Centro a centro", "Sin límite equipaje", "WiFi gratis", "Vistas paisaje"],
-              "cons": ["Más largo que vuelo"],
-              "bookingLink": "https://www.sncf-connect.com",
-              "recommended": true
-            },
-            {
-              "type": "flight",
-              "name": "Vuelo directo",
-              "from": "Barcelona El Prat (BCN)",
-              "to": "Paris CDG u Orly",
-              "duration": "2h (+ traslados ~3h total)",
-              "durationMin": 180,
-              "cost": "$50-120 USD",
-              "costPerPerson": 80,
-              "frequency": "10+ vuelos diarios",
-              "pros": ["Más rápido en el aire", "Precios bajos con anticipación"],
-              "cons": ["Traslados aeropuerto", "Límite equipaje", "Check-in 2h antes"],
-              "bookingLink": "https://www.skyscanner.com",
-              "airlines": ["Vueling", "Ryanair", "Air France", "Iberia"],
-              "recommended": false
-            }
-          ]
-        },
-        "accommodation": {
-          "name": "Última noche en Barcelona",
-          "neighborhood": "Eixample - Passeig de Gràcia",
-          "link": "",
-          "costPerPerson": 35,
-          "options": [
-            { "type": "hotel", "name": "Hotel económico", "cost": "$35/persona", "neighborhood": "Eixample" },
-            { "type": "airbnb", "name": "Apartamento compartido", "cost": "$25/persona", "neighborhood": "Gràcia" }
-          ],
-          "notes": "Mismo alojamiento que días anteriores"
-        },
-        "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 25, "activitiesBase": 10, "lodgingReal": 50, "foodReal": 32 },
-        "totals": { "totalBase": 95, "totalReal": 117 },
-        "mapPoints": ["Tossa de Mar", "Platja Gran", "Cala Es Codolar", "Vila Vella"],
-        "notes": "Excursión de día completo a la Costa Brava. Noche: preparar para salir temprano a París"
-      },
-      {
-        "day": 4,
-        "date": "2026-05-26",
-        "city": "París",
-        "country": "Francia",
-        "cityCode": "PAR",
-        "currencyLocal": "EUR",
-        "stayArea": "Ópera/Grands Boulevards o Gare du Nord",
-        "heroImageQuery": "París city skyline landmark",
-        "imageHints": ["best photo viewpoint París", "París top attractions"],
-        "perks": ["Ver París iluminado (después de 20:30)", "Reservas con hora (Louvre/Eiffel)"],
-        "accommodation": {
-          "name": "Hotel en Le Marais",
-          "neighborhood": "Le Marais / Châtelet",
-          "link": "",
-          "costPerPerson": 45,
-          "options": [
-            { "type": "hotel", "name": "Hotel 3 estrellas", "cost": "$45/persona", "neighborhood": "Le Marais" },
-            { "type": "hotel", "name": "Hotel cerca Gare du Nord", "cost": "$40/persona", "neighborhood": "10ème" },
-            { "type": "airbnb", "name": "Apartamento", "cost": "$35/persona", "neighborhood": "Bastille" }
-          ],
-          "notes": "Zona céntrica con fácil acceso a metro"
-        },
-        "mainActivities": [
-          { "name": "Llegada a París (TGV)", "start": "14:30", "durationMin": 90, "link": "https://www.sncf-connect.com", "notes": "Llegada a Gare de Lyon, traslado al hotel", "imageQuery": "Paris Gare de Lyon" },
-          { "name": "Check-in y descanso", "start": "12:00", "durationMin": 120, "link": "", "notes": "Instalación en hotel", "imageQuery": "hotel check-in París" },
-          { "name": "Montmartre (Sacré-Cœur)", "start": "15:00", "durationMin": 180, "link": "https://www.google.com/maps/search/Montmartre+Paris", "notes": "Sacré-Cœur y artistas", "imageQuery": "Montmartre París", "imageUrl": "https://www.cometoparis.com/data/layout_image/475_sacr%C3%A9%20coeur_landscape_3-2_xl.jpg?ver=1739891695" },
-          { "name": "Jardines de Versalles", "start": "18:00", "durationMin": 120, "link": "https://www.chateauversailles.fr", "notes": "Paseo por los jardines del palacio", "imageQuery": "Jardines Versalles", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg" },
-          { "name": "Crucero por el Sena de noche", "start": "20:30", "durationMin": 90, "link": "https://www.bateaux-mouches.fr", "notes": "Crucero nocturno romántico", "imageQuery": "Crucero Sena noche París", "imageUrl": "https://www.francetourisme.fr/images/soirees_a_paris/diner_croisiere/diner-croisiere-paris-romantique.webp" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 60, "activitiesBase": 0, "lodgingReal": 55, "foodReal": 32 },
-        "totals": { "totalBase": 120, "totalReal": 147 },
-        "mapPoints": ["Montmartre", "Sacré-Cœur", "Le Marais"],
-        "notes": "Primer día en París - Montmartre y Le Marais"
-      },
-      {
-        "day": 5,
-        "date": "2026-05-27",
-        "city": "París",
-        "country": "Francia",
-        "cityCode": "PAR",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro (Ópera/Châtelet)",
-        "heroImageQuery": "París city skyline landmark",
-        "imageHints": ["best photo viewpoint París", "París top attractions"],
-        "perks": ["Ver París iluminado (después de 20:30)", "Reservas con hora (Louvre/Eiffel)"],
-        "accommodation": {
-          "name": "Hotel en Le Marais",
-          "neighborhood": "Le Marais / Châtelet",
-          "link": "",
-          "notes": "Zona céntrica con fácil acceso a metro"
-        },
-        "mainActivities": [
-          { "name": "The Louvre (por fuera)", "start": "09:00", "durationMin": 90, "link": "https://www.louvre.fr", "notes": "Exterior del museo más famoso", "imageQuery": "Museo Louvre París", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9q-8SMMLW37hIbCCQY2tuZ_fZL6M3Xb5bdhTLQGSVzXvjNFyv6cCsHua-BfK-m8T3v0&usqp=CAU" },
-          { "name": "Rivoli 59", "start": "11:00", "durationMin": 60, "link": "https://www.google.com/maps/search/Rivoli+59+Paris", "notes": "Galería de arte alternativa", "imageQuery": "Rivoli 59 París", "imageUrl": "https://media.traveler.es/photos/62cdac398dc3f100195210d3/16:9/w_2240,c_limit/2G25WXK.jpg" },
-          { "name": "Notre Dame", "start": "12:30", "durationMin": 90, "link": "https://www.notredamedeparis.fr", "notes": "Catedral gótica icónica", "imageQuery": "Notre Dame París", "imageUrl": "https://cdn-imgix.headout.com/media/images/33cbe0bcfe63ae44b3e6f8ccea48f14f-31916-paris-notre-dame-outdoor-walking-tour---entry-to-the-cathedral-01.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&ar=14%3A9&crop=faces&fit=crop" },
-          { "name": "Chocolat Chapon", "start": "14:30", "durationMin": 45, "link": "https://www.google.com/maps/search/Chocolat+Chapon+Paris", "notes": "Chocolatería artesanal", "imageQuery": "Chocolat Chapon París", "imageUrl": "https://mostlovelythings.com/wp-content/uploads/2025/06/a-paper-cone-cup-with-chapon-mousse.jpg" },
-          { "name": "Champs Élysées (Arco del Triunfo)", "start": "15:30", "durationMin": 120, "link": "https://www.google.com/maps/search/Arc+de+Triomphe+Paris", "notes": "Avenida más famosa y monumento", "imageQuery": "Arco Triunfo París", "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b0/d1/f8/the-champs-elysees-in.jpg?w=900&h=500&s=1" },
-          { "name": "Torre Eiffel", "start": "18:00", "durationMin": 120, "link": "https://www.toureiffel.paris", "notes": "Símbolo de París", "imageQuery": "Torre Eiffel París", "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/ar_1:1,c_fill,f_auto,q_auto,w_800/v1645844269/gd99ktjpmrtkwwlyn8hx.jpg" },
-          { "name": "Galeries Lafayette", "start": "20:30", "durationMin": 60, "link": "https://www.galerieslafayette.com", "notes": "Grandes almacenes históricos", "imageQuery": "Galeries Lafayette París", "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/aa/fb/74/underneath-the-glass.jpg?w=900&h=500&s=1" },
-          { "name": "Moulin Rouge (tentativo)", "start": "22:00", "durationMin": 120, "link": "https://www.moulinrouge.fr", "notes": "Cabaret nocturno icónico (opcional)", "imageQuery": "Moulin Rouge París", "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/08/39/fc/0a.jpg" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 10, "activitiesBase": 100, "lodgingReal": 55, "foodReal": 32 },
-        "totals": { "totalBase": 170, "totalReal": 197 },
-        "mapPoints": ["Disneyland Paris"],
-        "notes": "Día completo en Disneyland - experiencia mágica"
-      },
-      {
-        "day": 6,
-        "date": "2026-05-28",
-        "city": "Disneyland París",
-        "country": "Francia",
-        "cityCode": "PAR",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro (Ópera/Châtelet)",
-        "heroImageQuery": "Disneyland París castle",
-        "heroImageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg",
-        "imageHints": ["best photo viewpoint Disneyland París", "Disneyland París castle"],
-        "perks": ["Madrugar para aprovechar", "FastPass para atracciones populares"],
-        "mainActivities": [
-          { "name": "RER A hacia Disneyland", "start": "08:00", "durationMin": 60, "link": "https://www.ratp.fr", "notes": "Desde Châtelet-Les Halles - madrugar", "imageQuery": "RER A Disneyland París" },
-          { "name": "Disneyland Park (parque completo)", "start": "09:00", "durationMin": 660, "link": "https://www.disneylandparis.com", "notes": "Parque completo - aprovechar todo el día", "imageQuery": "Disneyland Park París", "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg" },
-          { "name": "Desfile nocturno", "start": "20:00", "durationMin": 45, "link": "https://www.disneylandparis.com", "notes": "Espectáculo de luces y música", "imageQuery": "Disneyland París desfile nocturno" },
-          { "name": "Regreso a París", "start": "21:30", "durationMin": 60, "link": "https://www.ratp.fr", "notes": "RER A de regreso", "imageQuery": "RER regreso Disneyland París" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 35, "foodBase": 30, "transportBase": 15, "activitiesBase": 75, "lodgingReal": 55, "foodReal": 40 },
-        "totals": { "totalBase": 155, "totalReal": 175 },
-        "mapPoints": ["Disneyland París", "Marne-la-Vallée"],
-        "notes": "Día completo en Disneyland París - madrugar y ver desfile nocturno"
-      },
-      {
-        "day": 7,
-        "date": "2026-05-29",
-        "city": "París",
-        "country": "Francia",
-        "cityCode": "PAR",
-        "currencyLocal": "EUR",
-        "stayArea": "Barrio Latino / Ópera",
-        "heroImageQuery": "París city skyline landmark",
-        "imageHints": ["best photo viewpoint París", "París top attractions"],
-        "perks": ["Ver París iluminado (después de 20:30)", "Reservas con hora (Louvre/Eiffel)"],
-        "mainActivities": [
-          { "name": "Louvre", "start": "09:00", "durationMin": 180, "link": "https://www.louvre.fr", "notes": "Museo del Louvre - entrada previa", "imageQuery": "Louvre París" },
-          { "name": "Torre Eiffel", "start": "14:00", "durationMin": 150, "link": "https://www.toureiffel.paris", "notes": "Vistas panorámicas de París", "imageQuery": "Torre Eiffel París" },
-          { "name": "Montmartre nocturno", "start": "18:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Montmartre+Paris", "notes": "Atardecer y ambiente nocturno", "imageQuery": "Montmartre nocturno París" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": {
-          "mode": "train",
-          "from": "Paris Gare du Nord",
-          "to": "Amsterdam Centraal",
-          "depart": "08:00",
-          "arrive": "11:20",
-          "durationMin": 200,
-          "code": "Eurostar",
-          "bookingLink": "https://www.eurostar.com"
-        },
-        "transportOptions": {
-          "recommended": "train",
-          "options": [
-            {
-              "type": "train",
-              "name": "Eurostar (antes Thalys)",
-              "from": "Paris Gare du Nord",
-              "to": "Amsterdam Centraal",
-              "duration": "3h 20min",
-              "durationMin": 200,
-              "cost": "$80-180 USD",
-              "costPerPerson": 120,
-              "frequency": "8+ trenes diarios",
-              "pros": ["Centro a centro", "Rápido y cómodo", "WiFi", "Sin control fronteras"],
-              "cons": ["Reserva obligatoria", "Precio variable"],
-              "bookingLink": "https://www.eurostar.com",
-              "recommended": true
-            },
-            {
-              "type": "flight",
-              "name": "Vuelo directo",
-              "from": "Paris CDG/Orly",
-              "to": "Amsterdam Schiphol (AMS)",
-              "duration": "1h 15min (+ traslados ~4h total)",
-              "durationMin": 75,
-              "cost": "$60-150 USD",
-              "costPerPerson": 90,
-              "frequency": "10+ vuelos diarios",
-              "pros": ["Rápido en el aire"],
-              "cons": ["Traslados largos", "No ahorra tiempo real", "Huella carbono"],
-              "bookingLink": "https://www.skyscanner.com",
-              "airlines": ["KLM", "Air France", "Transavia"],
-              "recommended": false
-            }
-          ]
-        },
-        "accommodation": {
-          "name": "Última noche en París",
-          "neighborhood": "Le Marais / Châtelet",
-          "link": "",
-          "costPerPerson": 45,
-          "options": [
-            { "type": "hotel", "name": "Hotel 3 estrellas", "cost": "$45/persona", "neighborhood": "Le Marais" },
-            { "type": "hotel", "name": "Hotel cerca Gare du Nord", "cost": "$40/persona", "neighborhood": "10ème" }
-          ],
-          "notes": "Cerca de Gare du Nord para salir temprano"
-        },
-        "costs": { "lodgingBase": 35, "foodBase": 25, "transportBase": 10, "activitiesBase": 35, "lodgingReal": 55, "foodReal": 32 },
-        "totals": { "totalBase": 105, "totalReal": 132 },
-        "mapPoints": ["Louvre", "Torre Eiffel", "Montmartre"],
-        "notes": "Último día en París - Louvre y Torre Eiffel. Noche: preparar maletas para Amsterdam"
-      },
-      {
-        "day": 8,
-        "date": "2026-05-30",
-        "city": "Ámsterdam",
-        "country": "Países Bajos",
-        "cityCode": "AMS",
-        "currencyLocal": "EUR",
-        "stayArea": "Centrum/Jordaan (tram/metro)",
-        "heroImageQuery": "Amsterdam city skyline landmark",
-        "imageHints": ["best photo viewpoint Amsterdam", "Amsterdam top attractions"],
-        "perks": ["Compra Rijks/Anne Frank con antelación"],
-        "accommodation": {
-          "name": "Hotel en Jordaan",
-          "neighborhood": "Jordaan / Centrum",
-          "link": "",
-          "notes": "Barrio bohemio con canales, cerca de Anne Frank House"
-        },
-        "mainActivities": [
-          { "name": "Traslado París → Ámsterdam", "start": "08:00", "durationMin": 200, "link": "https://www.eurostar.com", "notes": "Tren Eurostar (antes Thalys) - centro a centro ~3h20", "imageQuery": "Eurostar train París Ámsterdam" },
-          { "name": "Check-in y descanso", "start": "12:00", "durationMin": 60, "link": "", "notes": "Instalación en hotel", "imageQuery": "hotel check-in Amsterdam" },
-          { "name": "Zaandam", "start": "14:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Zaandam+Amsterdam", "notes": "Pueblo holandés con arquitectura tradicional", "imageQuery": "Zaandam Netherlands traditional houses", "imageUrl": "pictures/zaandam.png" },
-          { "name": "Jordaan", "start": "17:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Jordaan+Amsterdam", "notes": "Barrio bohemio de Ámsterdam", "imageQuery": "Jordaan Amsterdam canals", "imageUrl": "pictures/Jordaan.png" },
-          { "name": "Barrio Rojo (de día)", "start": "19:00", "durationMin": 60, "link": "https://www.google.com/maps/search/Red+Light+District+Amsterdam", "notes": "De Wallen - solo de día", "imageQuery": "Red Light District Amsterdam daytime", "imageUrl": "pictures/barrioRojo.png" },
-          { "name": "Damrak al atardecer", "start": "20:00", "durationMin": 60, "link": "https://www.google.com/maps/search/Damrak+Amsterdam", "notes": "Canal principal de Ámsterdam", "imageQuery": "Damrak Amsterdam sunset" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 70, "activitiesBase": 0, "lodgingReal": 75, "foodReal": 32 },
-        "totals": { "totalBase": 135, "totalReal": 177 },
-        "mapPoints": ["Zaandam", "Jordaan", "Red Light District", "Damrak"],
-        "notes": "Llegada a Ámsterdam - Zaandam, Jordaan y Barrio Rojo"
-      },
-      {
-        "day": 9,
-        "date": "2026-05-31",
-        "city": "Ámsterdam",
-        "country": "Países Bajos",
-        "cityCode": "AMS",
-        "currencyLocal": "EUR",
-        "stayArea": "Centrum / De Pijp",
-        "heroImageQuery": "Amsterdam city skyline landmark",
-        "imageHints": ["best photo viewpoint Amsterdam", "Amsterdam top attractions"],
-        "perks": ["Compra Rijks/Anne Frank con antelación"],
-        "mainActivities": [
-          { "name": "Zaanse Schans", "start": "09:00", "durationMin": 180, "link": "https://www.zaanseschans.nl", "notes": "Pueblo de molinos holandeses", "imageQuery": "Zaanse Schans windmills Amsterdam", "imageUrl": "pictures/zaanse schans amsterdam.png" },
-          { "name": "A'DAM Lookout (opcional)", "start": "13:00", "durationMin": 90, "link": "https://www.adamlookout.com", "notes": "Mirador opcional - vistas panorámicas", "imageQuery": "A'DAM Lookout swing Amsterdam", "imageUrl": "pictures/adam lookout.png" },
-          { "name": "Fábrica de Heineken", "start": "15:00", "durationMin": 120, "link": "https://www.heineken.com/experiencia", "notes": "Tour de la cervecería", "imageQuery": "Heineken Experience Amsterdam", "imageUrl": "pictures/heiniken.png" },
-          { "name": "Moco Museum", "start": "17:30", "durationMin": 90, "link": "https://www.mocomuseum.com", "notes": "Museo de arte moderno y contemporáneo", "imageQuery": "Moco Museum Amsterdam", "imageUrl": "pictures/moco museum.png" },
-          { "name": "Rijksmuseum (reserva)", "start": "19:30", "durationMin": 120, "link": "https://www.rijksmuseum.nl", "notes": "Museo nacional - reserva previa", "imageQuery": "Rijksmuseum exterior Amsterdam" },
-          { "name": "Crucero por canales", "start": "21:30", "durationMin": 60, "link": "https://www.canal.nl", "notes": "Vista de Ámsterdam desde el agua", "imageQuery": "Amsterdam canal cruise boat" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 10, "activitiesBase": 35, "lodgingReal": 75, "foodReal": 32 },
-        "totals": { "totalBase": 110, "totalReal": 152 },
-        "mapPoints": ["Zaanse Schans", "A'DAM Lookout", "Heineken Experience", "Moco Museum", "Rijksmuseum"],
-        "notes": "Día completo en Ámsterdam - molinos, museos y canales"
-      },
-      {
-        "day": 10,
-        "date": "2026-06-01",
-        "city": "Ámsterdam",
-        "country": "Países Bajos",
-        "cityCode": "AMS",
-        "currencyLocal": "EUR",
-        "stayArea": "Centrum / Jordaan",
-        "heroImageQuery": "Amsterdam city skyline landmark",
-        "imageHints": ["best photo viewpoint Amsterdam", "Amsterdam top attractions"],
-        "perks": ["A'DAM Lookout opcional si no se hizo"],
-        "mainActivities": [
-          { "name": "Día libre en Ámsterdam", "start": "09:00", "durationMin": 480, "link": "", "notes": "Actividades pendientes o exploración libre", "imageQuery": "Amsterdam city center" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": {
-          "mode": "flight",
-          "from": "Amsterdam Schiphol (AMS)",
-          "to": "Zürich (ZRH)",
-          "depart": "08:00",
-          "arrive": "09:40",
-          "durationMin": 100,
-          "code": "KLM/Swiss",
-          "bookingLink": "https://www.skyscanner.com"
-        },
-        "transportOptions": {
-          "recommended": "flight",
-          "options": [
-            {
-              "type": "flight",
-              "name": "Vuelo directo",
-              "from": "Amsterdam Schiphol (AMS)",
-              "to": "Zürich (ZRH)",
-              "duration": "1h 40min",
-              "durationMin": 100,
-              "cost": "$80-180 USD",
-              "costPerPerson": 120,
-              "frequency": "10+ vuelos diarios",
-              "pros": ["Rápido", "Conexión directa", "Aeropuerto céntrico Schiphol"],
-              "cons": ["Traslados aeropuerto", "Huella carbono"],
-              "bookingLink": "https://www.skyscanner.com",
-              "airlines": ["KLM", "Swiss", "Transavia", "easyJet"],
-              "recommended": true
-            },
-            {
-              "type": "train",
-              "name": "Tren (ICE + conexiones)",
-              "from": "Amsterdam Centraal",
-              "to": "Zürich HB",
-              "duration": "8-10 horas",
-              "durationMin": 540,
-              "cost": "$120-200 USD",
-              "costPerPerson": 150,
-              "frequency": "Varias combinaciones diarias",
-              "pros": ["Paisajes espectaculares", "Centro a centro", "Sin límite equipaje"],
-              "cons": ["Muy largo", "Requiere cambios (Colonia/Frankfurt)"],
-              "bookingLink": "https://www.bahn.de",
-              "recommended": false
-            }
-          ]
-        },
-        "accommodation": {
-          "name": "Última noche en Ámsterdam",
-          "neighborhood": "Jordaan / Centrum",
-          "link": "",
-          "costPerPerson": 50,
-          "options": [
-            { "type": "hotel", "name": "Hotel boutique Jordaan", "cost": "$50/persona", "neighborhood": "Jordaan" },
-            { "type": "hotel", "name": "Hotel cerca Centraal", "cost": "$45/persona", "neighborhood": "Centrum" }
-          ],
-          "notes": "Preparar para madrugar - vuelo temprano"
-        },
-        "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 0, "activitiesBase": 20, "lodgingReal": 75, "foodReal": 32 },
-        "totals": { "totalBase": 85, "totalReal": 127 },
-        "mapPoints": ["Ámsterdam"],
-        "notes": "Día libre en Ámsterdam - preparación para viaje a Suiza"
-      },
-      {
-        "day": 11,
-        "date": "2026-06-02",
-        "city": "Suiza (vía Zúrich)",
-        "country": "Suiza",
-        "cityCode": "ZRH",
-        "currencyLocal": "CHF",
-        "stayArea": "Lucerna centro / Altstadt",
-        "heroImageQuery": "Rhine Falls Switzerland",
-        "imageHints": ["best photo viewpoint Rhine Falls", "Rhine Falls top attractions"],
-        "perks": ["Swiss Half Fare/Travel Pass evalúa", "Capas y cortavientos para montaña"],
-        "mainActivities": [
-          { "name": "Vuelo Ámsterdam → Zúrich (ZRH)", "start": "08:00", "durationMin": 100, "link": "https://www.skyscanner.com", "notes": "Vuelo AMS→ZRH (~1h40)", "imageQuery": "Flight Amsterdam Zurich" },
-          { "name": "Rhine Falls (Cascadas del Rin)", "start": "11:00", "durationMin": 180, "link": "https://www.rheinfall.ch", "notes": "Pasarelas + barco al peñón (Schloss Laufen / Neuhausen)", "imageQuery": "Rhine Falls Switzerland cascadas", "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1666256536/post_images/Zurich/rhine-falls/Excursi%C3%B3n_en_las_cataratas_del_Rin.jpg" },
-          { "name": "Tren ZRH → Lucerna", "start": "15:00", "durationMin": 60, "link": "https://www.sbb.ch", "notes": "Tren ZRH Airpt→Zürich HB→Lucerna (~1h)", "imageQuery": "Train Zurich Lucerne" },
-          { "name": "Check-in + Kapellbrücke", "start": "17:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Kapellbrücke+Lucerna", "notes": "Check-in hotel + visita al puente de la capilla (símbolo de Lucerna)", "imageQuery": "Kapellbrücke Lucerne", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6cE-ujuN_1FdW-jz-2qA2uVIjmzNtefcSw&s" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 20, "transportBase": 85, "activitiesBase": 15, "lodgingReal": 85, "foodReal": 32 },
-        "totals": { "totalBase": 160, "totalReal": 217 },
-        "mapPoints": ["Rhine Falls", "Zúrich", "Lucerna Altstadt", "Kapellbrücke"],
-        "notes": "Llegada a Suiza vía Zúrich - visita a Rhine Falls + llegada a Lucerna"
-      },
-      {
-        "day": 12,
-        "date": "2026-06-03",
-        "city": "Suiza (día 1)",
-        "country": "Suiza",
-        "cityCode": "ZRH",
-        "currencyLocal": "CHF",
-        "stayArea": "Lucerna Altstadt",
-        "heroImageQuery": "Interlaken city skyline landmark",
-        "imageHints": ["best photo viewpoint Interlaken", "Interlaken top attractions"],
-        "perks": ["Swiss Half Fare/Travel Pass evalúa", "Capas y cortavientos para montaña"],
-        "mainActivities": [
-          { "name": "Luzern–Interlaken Express (Lucerna → Interlaken)", "start": "09:00", "durationMin": 110, "link": "https://www.goldenpass.ch", "notes": "Tren panorámico por los Alpes (ventanas panorámicas) - 1h50", "imageQuery": "Luzern Interlaken Express panorama train Switzerland", "imageUrl": "https://trenviajero.com/wp-content/uploads/2025/03/goldenpass-line-express-recorrido.jpg" },
-          { "name": "Barco Lago Brienz (o Thun)", "start": "11:30", "durationMin": 75, "link": "https://www.bls.ch", "notes": "Crucero por el lago alpino - 1h-1h15", "imageQuery": "Lake Brienz Switzerland boat cruise", "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/5d/75/d6.jpg" },
-          { "name": "Regreso a Lucerna", "start": "14:00", "durationMin": 110, "link": "https://www.sbb.ch", "notes": "LIR Interlaken → Lucerna (1h50)", "imageQuery": "Train Interlaken Lucerne" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 20, "transportBase": 15, "activitiesBase": 25, "lodgingReal": 85, "foodReal": 32 },
-        "totals": { "totalBase": 100, "totalReal": 152 },
-        "mapPoints": ["Luzern–Interlaken Express", "Lago Brienz", "Lago Thun", "Lucerna"],
-        "notes": "Día de naturaleza alpina - trenes panorámicos y lagos"
-      },
-      {
-        "day": 13,
-        "date": "2026-06-04",
-        "city": "Suiza (día 2)",
-        "country": "Suiza",
-        "cityCode": "ZRH",
-        "currencyLocal": "CHF",
-        "stayArea": "Lucerna Altstadt",
-        "heroImageQuery": "Mount Titlis Switzerland",
-        "imageHints": ["best photo viewpoint Titlis", "Titlis top attractions"],
-        "perks": ["Swiss Half Fare/Travel Pass evalúa", "Capas y cortavientos para montaña"],
-        "mainActivities": [
-          { "name": "Tren Lucerna → Engelberg", "start": "08:00", "durationMin": 50, "link": "https://www.sbb.ch", "notes": "Tren a Engelberg (45-50 min)", "imageQuery": "Train Lucerne Engelberg" },
-          { "name": "Monte Titlis (incluye skateboard y cueva de hielo)", "start": "09:00", "durationMin": 360, "link": "https://www.titlis.com", "notes": "Titlis Xpress (góndolas 30-40 min cada tramo) + Cueva de hielo + Titlis Cliff Walk (snow/tubing según apertura). Actividades incluidas: Ice Flyer (skateboard sobre hielo) y Glacier Cave (cueva de hielo glaciar)", "imageQuery": "Mount Titlis Switzerland", "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/eb/73/01/titlis.jpg?w=2000&h=-1&s=1" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 20, "transportBase": 20, "activitiesBase": 50, "lodgingReal": 85, "foodReal": 32 },
-        "totals": { "totalBase": 130, "totalReal": 187 },
-        "mapPoints": ["Lucerna", "Engelberg", "Monte Titlis"],
-        "notes": "Día completo en Monte Titlis - skateboard y cueva de hielo"
-      },
-      {
-        "day": 14,
-        "date": "2026-06-05",
-        "city": "Suiza (día 3)",
-        "country": "Suiza",
-        "cityCode": "ZRH",
-        "currencyLocal": "CHF",
-        "stayArea": "Lucerna (o Interlaken si prefieren)",
-        "heroImageQuery": "Grindelwald Lauterbrunnen Switzerland",
-        "imageHints": ["best photo viewpoint Grindelwald", "Lauterbrunnen top attractions"],
-        "perks": ["Swiss Half Fare/Travel Pass evalúa", "Capas y cortavientos para montaña"],
-        "mainActivities": [
-          { "name": "Tren Lucerna → Interlaken → Lauterbrunnen", "start": "08:00", "durationMin": 130, "link": "https://www.sbb.ch", "notes": "Tren a Interlaken (1h50) + tramo a Lauterbrunnen (20-45 min)", "imageQuery": "Train Lucerne Interlaken Lauterbrunnen" },
-          { "name": "Lauterbrunnen (Valle 72 cascadas)", "start": "10:30", "durationMin": 180, "link": "https://www.google.com/maps/search/Lauterbrunnen+Switzerland", "notes": "Valle de las 72 cascadas - opcional: Mürren/Grütschalp o Trümmelbachfälle", "imageQuery": "Lauterbrunnen valley Switzerland", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmGfCrz6AAUq1bM0w-SQK8e3CH9Exhgvpzg&s" },
-          { "name": "Grindelwald", "start": "14:00", "durationMin": 240, "link": "https://www.google.com/maps/search/Grindelwald+Switzerland", "notes": "Pueblo alpino con vistas espectaculares", "imageQuery": "Grindelwald Switzerland", "imageUrl": "https://ik.imgkit.net/3vlqs5axxjf/TAW/ik-seo/uploadedImages/All_Gateways/Europe/Features/Grindelwald_Hero/What-to-Do-in-Grindelwald-Switzerland.jpg?tr=w-1008%2Ch-567%2Cfo-auto" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 20, "transportBase": 15, "activitiesBase": 10, "lodgingReal": 85, "foodReal": 32 },
-        "totals": { "totalBase": 85, "totalReal": 152 },
-        "mapPoints": ["Lucerna", "Interlaken", "Lauterbrunnen", "Mürren", "Trümmelbachfälle", "Grindelwald"],
-        "notes": "Exploración de valles alpinos - Lauterbrunnen y Grindelwald"
-      },
-      {
-        "day": 15,
-        "date": "2026-06-06",
-        "city": "Suiza → Venecia (vía Milán)",
-        "country": "Italia",
-        "cityCode": "VCE",
-        "currencyLocal": "EUR",
-        "stayArea": "Mestre o Venecia centro",
-        "heroImageQuery": "Venice city skyline landmark",
-        "imageHints": ["best photo viewpoint Venice", "Venice top attractions"],
-        "perks": ["Reserva trenes con anticipación", "Check-in temprano en Venecia"],
-        "mainActivities": [
-          { "name": "Check-out Lucerna → Tren a Arth-Goldau", "start": "08:00", "durationMin": 30, "link": "https://www.sbb.ch", "notes": "Tren regional Lucerna → Arth-Goldau", "imageQuery": "Train Lucerne Arth-Goldau" },
-          { "name": "EuroCity Arth-Goldau → Milano Centrale", "start": "08:45", "durationMin": 195, "link": "https://www.sbb.ch", "notes": "EuroCity a Milán (3h15 aprox)", "imageQuery": "EuroCity Switzerland Milan" },
-          { "name": "Alta Velocidad Milano → Venezia S. Lucia", "start": "13:00", "durationMin": 150, "link": "https://www.trenitalia.com", "notes": "Tren de alta velocidad a Venecia (~2h30)", "imageQuery": "High speed train Milan Venice" },
-          { "name": "Check-in Venecia", "start": "16:00", "durationMin": 60, "link": "", "notes": "Instalación en hotel en Venecia o Mestre", "imageQuery": "hotel check-in Venice" },
-          { "name": "Tarde libre en Venecia", "start": "17:00", "durationMin": 180, "link": "", "notes": "Primera exploración de Venecia - paseo por canales", "imageQuery": "Venice canals evening" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 80, "activitiesBase": 0, "lodgingReal": 60, "foodReal": 35 },
-        "totals": { "totalBase": 145, "totalReal": 195 },
-        "mapPoints": ["Lucerna", "Milano Centrale", "Venezia S. Lucia"],
-        "notes": "Traslado completo Suiza → Venecia (vía Milán) - día de viaje"
-      },
-      {
-        "day": 16,
-        "date": "2026-06-07",
-        "city": "Venecia",
-        "country": "Italia",
-        "cityCode": "VCE",
-        "currencyLocal": "EUR",
-        "stayArea": "Mestre o Venecia centro",
-        "heroImageQuery": "Venice city skyline landmark",
-        "imageHints": ["best photo viewpoint Venice", "Venice top attractions"],
-        "perks": ["ACTV Vaporetto: pase 24h ~25€ si tomarán 3+ barcos", "Góndola mejor 10:00-11:00 o 17:30-18:30"],
-        "mainActivities": [
-          { "name": "San Marcos (Basílica y Plaza)", "start": "09:00", "durationMin": 150, "link": "https://www.basilicasanmarco.it", "notes": "Basílica (exterior/interior rápido) + Plaza San Marcos", "imageQuery": "San Marco Venice", "imageUrl": "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/52/73/e7.jpg" },
-          { "name": "Góndola compartida", "start": "10:00", "durationMin": 35, "link": "https://www.google.com/maps/search/gondola+venice", "notes": "Góndola compartida 25-35 min (mejor horario para evitar pico)", "imageQuery": "Gondola Venice" },
-          { "name": "Traslado a Rialto", "start": "11:30", "durationMin": 30, "link": "https://www.actv.it", "notes": "Caminando (30 min) o vaporetto línea 1 (San Zaccaria → Rialto, ~15-20 min)", "imageQuery": "Vaporetto Venice" },
-          { "name": "Puente de Rialto + mercadito", "start": "12:00", "durationMin": 60, "link": "https://www.google.com/maps/search/Ponte+Rialto+Venice", "notes": "Fotos, vistazo a tiendas", "imageQuery": "Rialto Bridge Venice", "imageUrl": "https://www.venise.style/wp-content/uploads/pont-rialto-venise-nuit.jpg.webp" },
-          { "name": "Almuerzo", "start": "13:00", "durationMin": 60, "link": "", "notes": "Cerca de Rialto o en Fondamenta della Misericordia", "imageQuery": "Restaurant Venice" },
-          { "name": "Vaporetto a Murano", "start": "14:00", "durationMin": 30, "link": "https://www.actv.it", "notes": "Línea 4.1/4.2 o 3 desde Fondamente Nove/Rialto", "imageQuery": "Vaporetto Murano Venice" },
-          { "name": "Murano (vidrio)", "start": "14:30", "durationMin": 150, "link": "https://www.google.com/maps/search/Murano+Venice", "notes": "Demostración de soplado (30-45 min) + paseo por canales y tiendas", "imageQuery": "Murano glass Venice", "imageUrl": "https://www.turismoenvenecia.com/wp-content/uploads/2021/05/Murano.jpg" },
-          { "name": "Regreso a Venecia", "start": "17:00", "durationMin": 60, "link": "https://www.actv.it", "notes": "Vaporetto a Fondamente Nove / San Zaccaria", "imageQuery": "Vaporetto return Venice" },
-          { "name": "Perderse por canales (Cannaregio / Dorsoduro)", "start": "18:00", "durationMin": 90, "link": "https://www.google.com/maps/search/Cannaregio+Venice", "notes": "Golden hour para fotos y un spritz", "imageQuery": "Venice canals Cannaregio" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": "tren", "from": "Venezia S. Lucia", "to": "Roma Termini", "depart": "08:00", "arrive": "12:00", "durationMin": 240, "code": "Tren AV directo", "bookingLink": "https://www.trenitalia.com" },
-        "costs": { "lodgingBase": 40, "foodBase": 30, "transportBase": 15, "activitiesBase": 40, "lodgingReal": 60, "foodReal": 40 },
-        "totals": { "totalBase": 125, "totalReal": 200 },
-        "mapPoints": ["San Marcos", "Rialto", "Murano", "Cannaregio"],
-        "notes": "Día completo en Venecia - San Marcos, Rialto, Murano y canales"
-      },
-      {
-        "day": 17,
-        "date": "2026-06-08",
-        "city": "Venecia → Florencia → Pisa → Roma",
-        "country": "Italia",
-        "cityCode": "ROM",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro histórico / Trastevere",
-        "heroImageQuery": "Pisa Tower Leaning Tower",
-        "imageHints": ["Pisa Tower Campo dei Miracoli", "Leaning Tower of Pisa"],
-        "perks": ["Guardar maletas en Florencia SMN (Santa Maria Novella)", "Reservar trenes con anticipación"],
-        "mainActivities": [
-          { "name": "AV Venecia → Florencia", "start": "08:00", "durationMin": 150, "link": "https://www.trenitalia.com", "notes": "Tren AV Venezia S. Lucia → Firenze S.M.N. (~2h30)", "imageQuery": "High speed train Venice Florence" },
-          { "name": "Guardar maletas en Florencia SMN", "start": "10:30", "durationMin": 30, "link": "https://www.firenzesantamarianovella.it", "notes": "Depósito de equipaje en estación Santa Maria Novella", "imageQuery": "luggage storage Florence station" },
-          { "name": "Regional Florencia → Pisa", "start": "11:00", "durationMin": 60, "link": "https://www.trenitalia.com", "notes": "Tren regional Firenze S.M.N. → Pisa Centrale (~1h)", "imageQuery": "Regional train Florence Pisa" },
-          { "name": "Campo dei Miracoli (Torre de Pisa, Duomo, Baptisterio)", "start": "12:30", "durationMin": 150, "link": "https://www.opapisa.it", "notes": "Torre inclinada, Duomo y Baptisterio - visita completa (2-3h)", "imageQuery": "Leaning Tower of Pisa Campo dei Miracoli", "imageUrl": "https://cdn-3.expansion.mx/dims4/default/ce1fd7e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F18%2F43%2F76b0252b4e7c88be82d143574647%2Ftorre-de-pisa-istock.jpg" },
-          { "name": "Regional Pisa → Florencia", "start": "15:30", "durationMin": 60, "link": "https://www.trenitalia.com", "notes": "Tren regional Pisa Centrale → Firenze S.M.N. (~1h)", "imageQuery": "Regional train Pisa Florence" },
-          { "name": "Recoger maletas y AV Florencia → Roma", "start": "17:00", "durationMin": 120, "link": "https://www.trenitalia.com", "notes": "Recoger equipaje y tren AV Firenze S.M.N. → Roma Termini (~1h30)", "imageQuery": "High speed train Florence Rome" },
-          { "name": "Check-in Roma", "start": "19:00", "durationMin": 60, "link": "", "notes": "Instalación en hotel en Roma", "imageQuery": "hotel check-in Rome" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 30, "transportBase": 80, "activitiesBase": 20, "lodgingReal": 60, "foodReal": 40 },
-        "totals": { "totalBase": 170, "totalReal": 200 },
-        "mapPoints": ["Florencia SMN", "Pisa Centrale", "Campo dei Miracoli", "Roma Termini"],
-        "notes": "Día de traslado con visita a la Torre de Pisa - Venecia → Florencia → Pisa → Roma"
-      },
-      {
-        "day": 18,
-        "date": "2026-06-09",
-        "city": "Roma",
-        "country": "Italia",
-        "cityCode": "ROM",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro histórico / Trastevere",
-        "heroImageQuery": "Rome city skyline landmark",
-        "imageHints": ["best photo viewpoint Rome", "Rome top attractions"],
-        "perks": ["Reserva Coliseo con anticipación", "Vaticano: reserva con anticipación (museos + Sixtina)", "Roma Pass evalúa"],
-        "mainActivities": [
-          { "name": "Trastevere", "start": "09:00", "durationMin": 120, "link": "https://www.google.com/maps/search/Trastevere+Rome", "notes": "Barrio bohemio con calles empedradas y ambiente auténtico", "imageQuery": "Trastevere Rome", "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/85/90/fd/bancarelle.jpg?w=900&h=500&s=1" },
-          { "name": "Coliseo (exterior)", "start": "11:30", "durationMin": 90, "link": "https://www.coopculture.it", "notes": "Visita exterior del anfiteatro más famoso del mundo", "imageQuery": "Colosseum Rome exterior", "imageUrl": "https://www.losviajesdegrimes.com/wp-content/uploads/2019/06/coliseo.jpg" },
-          { "name": "Foro Romano (peatonal)", "start": "13:30", "durationMin": 90, "link": "https://www.coopculture.it", "notes": "Paseo peatonal por las ruinas del Foro Romano - almuerzo en la zona", "imageQuery": "Roman Forum Rome", "imageUrl": "https://www.monumentosderoma.es/media/itjgc3hz/roman-forum.jpg" },
-          { "name": "Fontana de Trevi", "start": "15:30", "durationMin": 60, "link": "https://www.google.com/maps/search/Fontana+di+Trevi+Rome", "notes": "Fuente barroca más famosa - lanzar moneda", "imageQuery": "Trevi Fountain Rome", "imageUrl": "https://gemelosviajeros.net/wp-content/uploads/2021/10/La-fontana-de-trevi-de-noche-e1635409582735-edited.jpg" },
-          { "name": "Panteón", "start": "17:00", "durationMin": 60, "link": "https://www.pantheonroma.com", "notes": "Templo romano mejor conservado - entrada gratuita", "imageQuery": "Pantheon Rome", "imageUrl": "https://www.enroma.com/wp-content/uploads/2018/01/Pantheon_de_noche.jpg" },
-          { "name": "Piazza Navona", "start": "18:30", "durationMin": 90, "link": "https://www.google.com/maps/search/Piazza+Navona+Rome", "notes": "Plaza barroca con fuentes de Bernini", "imageQuery": "Piazza Navona Rome" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 30, "transportBase": 10, "activitiesBase": 0, "lodgingReal": 60, "foodReal": 40 },
-        "totals": { "totalBase": 80, "totalReal": 200 },
-        "mapPoints": ["Trastevere", "Coliseo", "Foro Romano", "Fontana de Trevi", "Panteón", "Piazza Navona"],
-        "notes": "Día completo en Roma - Trastevere, Coliseo, Foro Romano, Trevi, Panteón y Navona"
-      },
-      {
-        "day": 19,
-        "date": "2026-06-10",
-        "city": "Roma",
-        "country": "Italia",
-        "cityCode": "ROM",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro histórico",
-        "heroImageQuery": "Rome city skyline landmark",
-        "imageHints": ["best photo viewpoint Rome", "Rome top attractions"],
-        "perks": ["Catacumbas: reserva con anticipación", "Testaccio: mercado cierra temprano (13:00-14:00)"],
-        "mainActivities": [
-          { "name": "Vaticano (Museos + Capilla Sixtina)", "start": "09:00", "durationMin": 240, "link": "https://www.museivaticani.va", "notes": "Museos Vaticanos y Capilla Sixtina - reserva previa obligatoria", "imageQuery": "Vatican Museums Sistine Chapel", "imageUrl": "https://cdn-imgix.headout.com/microbrands-content-image/image/70c7e9051c3411a0653fa26b23c7bd6c-history%20of%20Vatican%20City.jpeg" },
-          { "name": "Catacumbas", "start": "14:00", "durationMin": 120, "link": "https://www.catacombe.roma.it", "notes": "Catacumbas de Roma - tour guiado (San Calixto, Domitila o Priscilla)", "imageQuery": "Catacombs Rome", "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1689037311/post_images/rome-124/catacumbas-de-roma/293127976_c566ec4d4f_k_Cropped.jpg" },
-          { "name": "Testaccio (mercado)", "start": "16:30", "durationMin": 90, "link": "https://www.google.com/maps/search/Mercato+Testaccio+Rome", "notes": "Mercado local auténtico - comida callejera y productos frescos (si aún está abierto)", "imageQuery": "Testaccio market Rome" },
-          { "name": "Tarde libre / Preparación", "start": "18:00", "durationMin": 120, "link": "", "notes": "Tarde libre o actividades alternativas pendientes", "imageQuery": "Rome city center" },
-          { "name": "Tren Roma → Bari", "start": "20:00", "durationMin": 300, "link": "https://www.trenitalia.com", "notes": "Tren nocturno o AV Roma Termini → Bari Centrale (~5h)", "imageQuery": "Train Rome Bari" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": "tren", "from": "Roma Termini", "to": "Bari Centrale", "depart": "20:00", "arrive": "01:00", "durationMin": 300, "code": "Tren nocturno o AV", "bookingLink": "https://www.trenitalia.com" },
-        "costs": { "lodgingBase": 40, "foodBase": 25, "transportBase": 50, "activitiesBase": 65, "lodgingReal": 60, "foodReal": 35 },
-        "totals": { "totalBase": 180, "totalReal": 200 },
-        "mapPoints": ["Vaticano", "Catacumbas", "Testaccio", "Roma", "Bari"],
-        "notes": "Día buffer en Roma - Vaticano, Catacumbas, Testaccio y viaje a Puglia"
-      },
-      {
-        "day": 20,
-        "date": "2026-06-11",
-        "city": "Puglia",
-        "country": "Italia",
-        "cityCode": "BRI",
-        "currencyLocal": "EUR",
-        "stayArea": "Bari",
-        "heroImageQuery": "Polignano a Mare Puglia",
-        "imageHints": ["Polignano a Mare cliffs", "Lama Monachile beach"],
-        "perks": ["Alquiler de coche recomendado para moverse por Puglia", "Reservar alojamiento en Bari con anticipación"],
-        "mainActivities": [
-          { "name": "Llegada a Bari / Check-in", "start": "01:00", "durationMin": 60, "link": "", "notes": "Llegada nocturna y descanso", "imageQuery": "Bari arrival hotel" },
-          { "name": "Polignano a Mare (miradores + Lama Monachile)", "start": "09:00", "durationMin": 180, "link": "https://www.google.com/maps/search/Polignano+a+Mare+Italy", "notes": "Pueblo costero con acantilados espectaculares y playa Lama Monachile", "imageQuery": "Polignano a Mare Lama Monachile", "imageUrl": "https://www.turismovieste.it/index/wp-content/uploads/2023/02/polignano-amre.jpg" },
-          { "name": "Santa Maria di Leuca", "start": "13:00", "durationMin": 180, "link": "https://www.google.com/maps/search/Santa+Maria+di+Leuca+Italy", "notes": "Punto más al sur de Puglia - faro y acantilados", "imageQuery": "Santa Maria di Leuca Puglia", "imageUrl": "https://www.hdsalento.com/wp-content/webp-express/webp-images/uploads/2021/02/1024px-Tramonto_Santa_Maria_di_Leuca_-_panoramio.jpg.webp" },
-          { "name": "Regreso a Bari (noche)", "start": "17:00", "durationMin": 120, "link": "", "notes": "Regreso a Bari para pasar la noche", "imageQuery": "Bari city center" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": "vuelo", "from": "Bari (BRI) o Brindisi (BDS)", "to": "Madrid (MAD)", "depart": "10:00", "arrive": "13:00", "durationMin": 180, "code": "Vuelo directo o con escala", "bookingLink": "https://www.skyscanner.es" },
-        "costs": { "lodgingBase": 30, "foodBase": 25, "transportBase": 40, "activitiesBase": 0, "lodgingReal": 50, "foodReal": 35 },
-        "totals": { "totalBase": 95, "totalReal": 200 },
-        "mapPoints": ["Bari", "Polignano a Mare", "Santa Maria di Leuca"],
-        "notes": "Día completo en Puglia - Polignano a Mare y Santa Maria di Leuca"
-      },
-      {
-        "day": 21,
-        "date": "2026-06-12",
-        "city": "Madrid",
-        "country": "España",
-        "cityCode": "MAD",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro (Sol / Gran Vía)",
-        "heroImageQuery": "Madrid city skyline Gran Via",
-        "imageHints": ["Madrid Gran Via", "Puerta del Sol Madrid"],
-        "perks": ["Vuelo: reservar con anticipación para mejores precios", "Madrid Card evalúa para transporte y entradas"],
-        "mainActivities": [
-          { "name": "Vuelo Bari/Brindisi → Madrid", "start": "10:00", "durationMin": 180, "link": "https://www.skyscanner.es", "notes": "Vuelo BRI/Bari o BDS/Brindisi → MAD (mañana/mediodía, ~3h)", "imageQuery": "Flight Bari Brindisi Madrid" },
-          { "name": "Check-in Madrid", "start": "14:00", "durationMin": 60, "link": "", "notes": "Llegada a Madrid y instalación en hotel", "imageQuery": "hotel check-in Madrid" },
-          { "name": "Gran Vía", "start": "16:00", "durationMin": 90, "link": "https://www.google.com/maps/search/Gran+Via+Madrid", "notes": "Avenida principal de Madrid - arquitectura y ambiente", "imageQuery": "Gran Via Madrid", "imageUrl": "https://madridando.com/wp-content/uploads/2018/07/gran-via-noche.jpeg" },
-          { "name": "Plaza Mayor", "start": "17:30", "durationMin": 45, "link": "https://www.google.com/maps/search/Plaza+Mayor+Madrid", "notes": "Plaza histórica de Madrid - arquitectura barroca", "imageQuery": "Plaza Mayor Madrid", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBjurgxw-MF_PiELMyB_OOHFDCpSMcgP7tQ&s" },
-          { "name": "Puerta del Sol", "start": "18:30", "durationMin": 60, "link": "https://www.google.com/maps/search/Puerta+del+Sol+Madrid", "notes": "Plaza central de Madrid - kilómetro cero", "imageQuery": "Puerta del Sol Madrid", "imageUrl": "https://www.ifema.es/img/xl/vista-general-puerta-del-sol-madrid/vista-puerta-del-sol-madrid.jpeg" },
-          { "name": "La Latina (tapas)", "start": "19:30", "durationMin": 90, "link": "https://www.google.com/maps/search/La+Latina+Madrid", "notes": "Barrio de tapas tradicional - cena y ambiente madrileño", "imageQuery": "La Latina Madrid tapas", "imageUrl": "https://i0.wp.com/viajarcomerytapear.com/wp-content/uploads/2021/09/IMG_20200829_205439-31.jpg?resize=740%2C564&ssl=1" },
-          { "name": "Mercado San Miguel", "start": "21:00", "durationMin": 60, "link": "https://www.mercadodesanmiguel.es", "notes": "Mercado gastronómico histórico - tapas y productos gourmet", "imageQuery": "Mercado San Miguel Madrid", "imageUrl": "https://blog.guruwalk.com/wp-content/uploads/img/mercado_de_san_miguel.webp" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 35, "transportBase": 100, "activitiesBase": 0, "lodgingReal": 60, "foodReal": 50 },
-        "totals": { "totalBase": 175, "totalReal": 200 },
-        "mapPoints": ["Gran Vía", "Plaza Mayor", "Puerta del Sol", "La Latina", "Mercado San Miguel"],
-        "notes": "Llegada a Madrid - Gran Vía, Plaza Mayor, Sol, La Latina y Mercado San Miguel"
-      },
-      {
-        "day": 22,
-        "date": "2026-06-13",
-        "city": "Madrid",
-        "country": "España",
-        "cityCode": "MAD",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro (Sol / Gran Vía)",
-        "heroImageQuery": "Madrid city skyline",
-        "imageHints": ["Madrid Prado Museum", "Retiro Park Madrid"],
-        "perks": ["Museo del Prado: reserva con anticipación", "Parque del Retiro: entrada gratuita"],
-        "mainActivities": [
-          { "name": "Museo del Prado", "start": "10:00", "durationMin": 180, "link": "https://www.museodelprado.es", "notes": "Museo de arte más importante de España - Goya, Velázquez, El Greco", "imageQuery": "Museo del Prado Madrid", "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/330px-Museo_del_Prado_2016_%2825185969599%29.jpg" },
-          { "name": "Parque del Retiro (barquita)", "start": "13:30", "durationMin": 120, "link": "https://www.google.com/maps/search/Parque+del+Retiro+Madrid", "notes": "Parque histórico - paseo en barquita por el estanque", "imageQuery": "Parque del Retiro Madrid barquita", "imageUrl": "https://estaticos.esmadrid.com/cdn/farfuture/d9AYuHi3vQ0uKCi8OcaoTXg3OOZCQaqzdv6Sk2a1JPE/mtime:1524832495/sites/default/files/recursosturisticos/infoturistica/estanque_parquedeelretiro.jpg" },
-          { "name": "Puerta de Alcalá", "start": "16:00", "durationMin": 30, "link": "https://www.google.com/maps/search/Puerta+de+Alcala+Madrid", "notes": "Monumento neoclásico - símbolo de Madrid", "imageQuery": "Puerta de Alcalá Madrid", "imageUrl": "https://estaticos.esmadrid.com/cdn/farfuture/KsrOkEPSJFN4UoFn6AnGBD9LRQDKzO5nw2J6pbDcW_s/mtime:1524832498/sites/default/files/recursosturisticos/infoturistica/puerta_alcala_1396965031.778.jpg" },
-          { "name": "Palacio de Cibeles", "start": "16:30", "durationMin": 60, "link": "https://www.madrid-destino.com/palacio-de-cibeles", "notes": "Palacio y centro cultural - mirador con vistas panorámicas", "imageQuery": "Palacio de Cibeles Madrid", "imageUrl": "https://www.madrid-destino.com/sites/default/files/styles/galeria_de_imagenes_1200_x_600/public/2018-07/PalacioCibeles.jpg?itok=RPxoLuVb" },
-          { "name": "Palacio Real", "start": "17:30", "durationMin": 90, "link": "https://www.patrimonionacional.es/visita/palacio-real-de-madrid", "notes": "Palacio Real de Madrid - residencia oficial del rey (exterior o tour interior)", "imageQuery": "Palacio Real Madrid", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KfFPduC2pwkEZwMEBNLuZFFpnhHQEPOk3Q&s" },
-          { "name": "Gran Vía", "start": "19:00", "durationMin": 90, "link": "https://www.google.com/maps/search/Gran+Via+Madrid", "notes": "Avenida principal de Madrid - arquitectura y ambiente nocturno", "imageQuery": "Gran Via Madrid night", "imageUrl": "https://madridando.com/wp-content/uploads/2018/07/gran-via-noche.jpeg" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 30, "transportBase": 10, "activitiesBase": 30, "lodgingReal": 60, "foodReal": 40 },
-        "totals": { "totalBase": 110, "totalReal": 200 },
-        "mapPoints": ["Museo del Prado", "Parque del Retiro", "Puerta de Alcalá", "Palacio de Cibeles", "Palacio Real", "Gran Vía"],
-        "notes": "Día completo en Madrid - Prado, Retiro, Puerta de Alcalá, Cibeles, Palacio Real y Gran Vía"
-      },
-      {
-        "day": 23,
-        "date": "2026-06-14",
-        "city": "Madrid",
-        "country": "España",
-        "cityCode": "MAD",
-        "currencyLocal": "EUR",
-        "stayArea": "Centro (Sol / Gran Vía)",
-        "heroImageQuery": "Santiago Bernabéu Stadium Madrid",
-        "imageHints": ["Real Madrid stadium", "Bernabéu tour"],
-        "perks": ["Estadio Bernabéu: reserva tour con anticipación", "Verificar horarios de partidos o eventos"],
-        "mainActivities": [
-          { "name": "Estadio Santiago Bernabéu", "start": "10:00", "durationMin": 180, "link": "https://www.realmadrid.com/es-ES/santiago-bernabeu", "notes": "Tour del estadio del Real Madrid - museo, campo, vestuarios", "imageQuery": "Estadio Santiago Bernabéu Madrid", "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/c3/e0/caption.jpg?w=1200&h=-1&s=1" }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": null, "from": null, "to": null, "depart": "", "arrive": "", "durationMin": 0, "code": "", "bookingLink": "" },
-        "costs": { "lodgingBase": 40, "foodBase": 30, "transportBase": 10, "activitiesBase": 25, "lodgingReal": 60, "foodReal": 40 },
-        "totals": { "totalBase": 105, "totalReal": 200 },
-        "mapPoints": ["Estadio Santiago Bernabéu"],
-        "notes": "Día en Madrid - Tour del Estadio Santiago Bernabéu"
-      },
-      {
-        "day": 24,
-        "date": "2026-06-15",
-        "city": "Madrid → Medellín",
-        "country": "España / Colombia",
-        "cityCode": "MAD-MDE",
-        "currencyLocal": "EUR/COP",
-        "stayArea": "Vuelo de regreso",
-        "heroImageQuery": "Madrid Barajas airport departure",
-        "heroImageUrl": "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800",
-        "imageHints": ["airport departure", "airplane takeoff"],
-        "perks": ["Llegar al aeropuerto 3 horas antes", "Verificar límite de equipaje"],
-        "accommodation": {
-          "name": "Vuelo de regreso - Sin hospedaje",
-          "neighborhood": "N/A",
-          "link": "",
-          "notes": "Regreso a casa"
-        },
-        "mainActivities": [
-          {
-            "name": "Check-out del hotel",
-            "start": "08:00",
-            "durationMin": 60,
-            "link": "",
-            "notes": "Preparar equipaje y dejar el hotel",
-            "imageQuery": "Hotel checkout luggage",
-            "imageUrl": ""
-          },
-          {
-            "name": "Últimas compras y souvenirs",
-            "start": "09:00",
-            "durationMin": 120,
-            "link": "https://www.google.com/maps/search/Gran+Via+Madrid+shopping",
-            "notes": "Últimas compras en Gran Vía o El Corte Inglés",
-            "imageQuery": "Gran Via Madrid shopping",
-            "imageUrl": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800"
-          },
-          {
-            "name": "Traslado al aeropuerto",
-            "start": "12:00",
-            "durationMin": 60,
-            "link": "https://www.google.com/maps/search/Aeropuerto+Madrid+Barajas",
-            "notes": "Metro o taxi al Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)",
-            "imageQuery": "Madrid Barajas airport",
-            "imageUrl": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800"
-          },
-          {
-            "name": "Vuelo MAD → MDE",
-            "start": "15:00",
-            "durationMin": 660,
-            "link": "",
-            "notes": "Vuelo de regreso ~11 horas. Escala posible en Bogotá o conexión",
-            "imageQuery": "Airplane flying clouds",
-            "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-          },
-          {
-            "name": "Llegada a Medellín",
-            "start": "21:00",
-            "durationMin": 120,
-            "link": "",
-            "notes": "Llegada al Aeropuerto José María Córdova. ¡Fin del viaje!",
-            "imageQuery": "Medellin city night arrival",
-            "imageUrl": "https://images.unsplash.com/photo-1599408169214-9e064a2eb04c?w=800"
-          }
-        ],
-        "secondaryActivities": [],
-        "transportToNext": { "mode": "flight", "from": "Madrid (MAD)", "to": "Medellín (MDE)", "depart": "15:00", "arrive": "21:00", "durationMin": 660, "code": "Vuelo Internacional", "bookingLink": "https://www.skyscanner.com" },
-        "costs": { "lodgingBase": 0, "foodBase": 25, "transportBase": 450, "activitiesBase": 50, "lodgingReal": 0, "foodReal": 35 },
-        "totals": { "totalBase": 525, "totalReal": 535 },
-        "mapPoints": ["Gran Vía", "Aeropuerto Madrid Barajas"],
-        "notes": "Día de regreso - Últimas compras y vuelo de vuelta a Medellín. ¡Fin del viaje!"
-      }
-    ],
-    "totals": {
-      "tripBaseWithoutIntl": 1695.0,
-      "tripRealWithoutIntl": 2286.0,
-      "tripBaseWithIntl": 2595.0,
-      "tripRealWithIntl": 3186.0
+    {
+      "type": "Transporte",
+      "title": "Pases de transporte urbano",
+      "description": "Compra pases de 2-3 días en cada ciudad para ahorrar en transporte público. Barcelona, París, Roma y Madrid tienen excelentes sistemas de metro.",
+      "link": "https://www.rome2rio.com"
+    },
+    {
+      "type": "Entradas",
+      "title": "Reserva con anticipación",
+      "description": "Sagrada Familia, Louvre, Torre Eiffel, Coliseo y Rijksmuseum requieren reserva previa. Compra online para evitar colas y asegurar tu entrada.",
+      "link": "https://www.getyourguide.com"
+    },
+    {
+      "type": "Alojamiento",
+      "title": "Ubicación estratégica",
+      "description": "Elige hoteles cerca de estaciones de metro principales. Eixample en Barcelona, Ópera en París, Termini en Roma, y Sol en Madrid son zonas ideales.",
+      "link": "https://www.booking.com"
+    },
+    {
+      "type": "Presupuesto",
+      "title": "Control de gastos",
+      "description": "Lleva un registro diario de gastos. Los costos realistas incluyen propinas (10-15% en restaurantes) y gastos imprevistos. Considera un 20% extra para emergencias.",
+      "link": ""
+    },
+    {
+      "type": "Seguridad",
+      "title": "Precauciones básicas",
+      "description": "Mantén copias digitales de documentos importantes. Usa riñoneras para dinero y pasaportes. En Las Ramblas y Le Marais, cuidado con carteristas.",
+      "link": ""
+    },
+    {
+      "type": "Conexión",
+      "title": "Internet y comunicación",
+      "description": "Considera un SIM europeo o eSIM para datos ilimitados. Muchos cafés y restaurantes tienen WiFi gratuito. Descarga mapas offline de Google Maps.",
+      "link": "https://www.airalo.com"
+    },
+    {
+      "type": "Cultura",
+      "title": "Etiqueta local",
+      "description": "Aprende frases básicas en cada idioma. En Italia, el café se toma de pie en la barra. En España, la cena es tarde (21:00+). En Suiza, la puntualidad es sagrada.",
+      "link": "https://www.duolingo.com"
     }
+  ],
+  "days": [
+    {
+      "day": 0,
+      "date": "2026-05-22",
+      "city": "Medellín → Barcelona",
+      "country": "Colombia / España",
+      "cityCode": "MDE-BCN",
+      "currencyLocal": "COP/EUR",
+      "stayArea": "Vuelo nocturno",
+      "heroImageQuery": "Airplane flying over Atlantic ocean sunset",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "imageHints": [
+        "airplane flight",
+        "travel departure"
+      ],
+      "perks": [
+        "Llegar al aeropuerto 3 horas antes",
+        "Llevar snacks y entretenimiento para el vuelo"
+      ],
+      "accommodation": {
+        "name": "Vuelo nocturno - Sin hospedaje",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Noche en vuelo"
+      },
+      "mainActivities": [
+        {
+          "name": "Salida desde Medellín",
+          "start": "18:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
+          "notes": "Check-in, seguridad y embarque en Aeropuerto José María Córdova (MDE)",
+          "imageQuery": "Medellin airport departure",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg/1200px-Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg"
+        },
+        {
+          "name": "Vuelo MDE → BCN",
+          "start": "21:00",
+          "durationMin": 600,
+          "link": "",
+          "notes": "Vuelo nocturno ~10 horas. Escala posible en Madrid o conexión directa",
+          "imageQuery": "Night flight airplane",
+          "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Medellín (MDE)",
+        "to": "Barcelona (BCN)",
+        "depart": "21:00",
+        "arrive": "13:00+1",
+        "durationMin": 600,
+        "code": "Vuelo Internacional",
+        "bookingLink": "https://www.skyscanner.com"
+      },
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 20,
+        "transportBase": 450,
+        "activitiesBase": 0,
+        "lodgingReal": 0,
+        "foodReal": 30
+      },
+      "totals": {
+        "totalBase": 470,
+        "totalReal": 480
+      },
+      "mapPoints": [
+        "Aeropuerto José María Córdova"
+      ],
+      "notes": "Día de viaje - Salida desde Medellín hacia Barcelona. Vuelo nocturno transatlántico."
+    },
+    {
+      "day": 1,
+      "date": "2026-05-23",
+      "city": "Barcelona",
+      "country": "España",
+      "cityCode": "BCN",
+      "currencyLocal": "EUR",
+      "stayArea": "Eixample (L2/L4) o Born/Gòtic",
+      "heroImageQuery": "Barcelona city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Barcelona",
+        "Barcelona top attractions"
+      ],
+      "perks": [
+        "Tapas hour 19:00–21:00",
+        "Compra ticket Sagrada con horario"
+      ],
+      "accommodation": {
+        "name": "Hotel en Eixample",
+        "neighborhood": "Eixample (L2/L4)",
+        "link": "",
+        "notes": "Cerca de metro Passeig de Gràcia"
+      },
+      "mainActivities": [
+        {
+          "name": "Llegada a Barcelona",
+          "start": "13:00",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Llegada al aeropuerto El Prat, transporte al hotel y check-in",
+          "imageQuery": "Barcelona airport arrival",
+          "imageUrl": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
+        },
+        {
+          "name": "Llegada a dormir donde la tía de Diana",
+          "start": "15:30",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Llegada a casa de la tía de Diana para descanso y primera noche en Barcelona",
+          "imageQuery": "",
+          "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 15,
+        "transportBase": 0,
+        "activitiesBase": 0,
+        "lodgingReal": 0,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 15,
+        "totalReal": 32
+      },
+      "mapPoints": [
+        "Aeropuerto El Prat",
+        "Eixample"
+      ],
+      "notes": "Día de llegada - actividades suaves y primeras impresiones"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-24",
+      "city": "Barcelona",
+      "country": "España",
+      "cityCode": "BCN",
+      "currencyLocal": "EUR",
+      "stayArea": "Eixample (L2/L4) o Born/Gòtic",
+      "heroImageQuery": "Barcelona city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Barcelona",
+        "Barcelona top attractions"
+      ],
+      "perks": [
+        "Tapas hour 19:00–21:00",
+        "Compra ticket Sagrada con horario"
+      ],
+      "accommodation": {
+        "name": "Hotel en Eixample",
+        "neighborhood": "Eixample - cerca de Passeig de Gràcia",
+        "link": "",
+        "notes": "Mismo hotel que día 1"
+      },
+      "mainActivities": [
+        {
+          "name": "Sagrada Familia",
+          "start": "09:00",
+          "durationMin": 150,
+          "link": "https://sagradafamilia.org",
+          "notes": "Entrada previa - arquitectura Gaudí",
+          "imageQuery": "Sagrada Familia Barcelona",
+          "imageUrl": "https://images.adsttc.com/media/images/5cff/5ec5/284d/d16d/6a00/1111/slideshow/1.jpg?1560239805"
+        },
+        {
+          "name": "Casa Batlló",
+          "start": "12:00",
+          "durationMin": 90,
+          "link": "https://www.casabatllo.es",
+          "notes": "Obra maestra de Gaudí",
+          "imageQuery": "Casa Batlló Barcelona",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Casa_Batll%C3%B3%2C_Antoni_Gaud%C3%AD.jpg/960px-Casa_Batll%C3%B3%2C_Antoni_Gaud%C3%AD.jpg"
+        },
+        {
+          "name": "Passeig de Gràcia",
+          "start": "14:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Passeig+de+Gràcia+Barcelona",
+          "notes": "Avenida de compras y arquitectura modernista",
+          "imageQuery": "Passeig de Gràcia Barcelona",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Via_Barcelona_Casa_Mil%C3%A0.JPG"
+        },
+        {
+          "name": "Hotel W Barcelona (Playa)",
+          "start": "16:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Hotel+W+Barcelona",
+          "notes": "Playa y vista del hotel icónico",
+          "imageQuery": "Hotel W Barcelona playa",
+          "imageUrl": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/2015%2C09%2CHotel-W-1.jpg"
+        },
+        {
+          "name": "Arco de Triunfo",
+          "start": "17:00",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Arc+de+Triomf+Barcelona",
+          "notes": "Monumento emblemático para fotos",
+          "imageQuery": "Arc de Triomf Barcelona",
+          "imageUrl": "https://www.barcelo.com/guia-turismo/wp-content/uploads/ok-arc-de-triomf.jpg"
+        },
+        {
+          "name": "Las Ramblas",
+          "start": "18:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Las+Ramblas+Barcelona",
+          "notes": "Paseo icónico y ambiente",
+          "imageQuery": "Las Ramblas Barcelona",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg/960px-15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg"
+        },
+        {
+          "name": "Recinte Modernista de Sant Pau",
+          "start": "19:00",
+          "durationMin": 60,
+          "notes": "Hospital modernista de Domènech i Montaner, Patrimonio UNESCO",
+          "link": "https://www.santpaubarcelona.org",
+          "imageQuery": "Recinte Modernista Sant Pau Barcelona",
+          "imageUrl": "https://s3.eu-west-1.amazonaws.com/pro.static.portalstdo.tmb.cat/styles/galeria_slider/s3/2025-05/REF_HOSPITAL_SANTPAU_CT6A8983.jpg.webp?itok=dSE4upJp"
+        },
+        {
+          "name": "Mercado de la Boquería",
+          "start": "19:30",
+          "durationMin": 60,
+          "link": "https://www.boqueria.barcelona",
+          "notes": "Tapas y productos locales",
+          "imageQuery": "Mercado Boquería Barcelona",
+          "imageUrl": "https://www.shutterstock.com/shutterstock/photos/2292736191/display_1500/stock-photo-barcelona-september-tourists-in-famous-la-boqueria-market-in-the-las-ramblas-area-of-2292736191.jpg"
+        },
+        {
+          "name": "Jardines de La Tamarita",
+          "start": "20:30",
+          "durationMin": 60,
+          "notes": "Jardines históricos con vistas panorámicas, perfecto para relajarse",
+          "link": "https://www.google.com/maps/search/Jardines+La+Tamarita+Barcelona",
+          "imageQuery": "Jardines La Tamarita Barcelona",
+          "imageUrl": "https://guiavi.com/wp-content/uploads/2023/10/jardines-de-La-tamarita.jpg.webp"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 10,
+        "activitiesBase": 35,
+        "lodgingReal": 50,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 105,
+        "totalReal": 127
+      },
+      "mapPoints": [
+        "Sagrada Familia",
+        "Casa Batlló",
+        "Passeig de Gràcia",
+        "Hotel W Barcelona"
+      ],
+      "notes": "Día completo en Barcelona - arquitectura Gaudí y playa"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-25",
+      "city": "Costa Brava (Tossa de Mar)",
+      "country": "España",
+      "cityCode": "BCN",
+      "currencyLocal": "EUR",
+      "stayArea": "Eixample (continuar)",
+      "heroImageQuery": "Tossa de Mar city skyline landmark",
+      "heroImageUrl": "https://www.lavanguardia.com/files/image_990_484/uploads/2019/02/22/5fa52219c8e3b.jpeg",
+      "imageHints": [
+        "best photo viewpoint Tossa de Mar",
+        "Tossa de Mar top attractions"
+      ],
+      "perks": [
+        "Tapas hour 19:00–21:00",
+        "Compra ticket Sagrada con horario"
+      ],
+      "mainActivities": [
+        {
+          "name": "Bus Barcelona → Tossa de Mar",
+          "start": "09:00",
+          "durationMin": 80,
+          "link": "https://www.moventis.es",
+          "notes": "Salida desde Estació del Nord",
+          "imageQuery": "Bus Barcelona Tossa de Mar"
+        },
+        {
+          "name": "Platja Gran",
+          "start": "10:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Platja+Gran+Tossa+de+Mar",
+          "notes": "Playa principal",
+          "imageQuery": "Platja Gran Tossa de Mar",
+          "imageUrl": "https://visittossa.com/wp-content/uploads/2022/02/cales_tossa_low_027.jpg"
+        },
+        {
+          "name": "Cala Es Codolar",
+          "start": "13:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Cala+Es+Codolar+Tossa",
+          "notes": "Cala más pequeña y tranquila",
+          "imageQuery": "Cala Es Codolar Tossa de Mar",
+          "imageUrl": "https://visittossa.com/wp-content/uploads/2022/02/cales_tossa_low_036.jpg"
+        },
+        {
+          "name": "Casco amurallado (Vila Vella)",
+          "start": "15:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Vila+Vella+Tossa+de+Mar",
+          "notes": "Murallas medievales",
+          "imageQuery": "Vila Vella Tossa de Mar",
+          "imageUrl": "https://www.lavanguardia.com/files/image_990_484/uploads/2019/02/22/5fa52219c8e3b.jpeg"
+        },
+        {
+          "name": "Regreso a Barcelona",
+          "start": "17:30",
+          "durationMin": 80,
+          "link": "https://www.moventis.es",
+          "notes": "Bus de regreso",
+          "imageQuery": "Bus Tossa de Mar Barcelona"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Barcelona El Prat (BCN)",
+        "to": "Paris Orly (ORY)",
+        "depart": "06:10",
+        "arrive": "08:10",
+        "durationMin": 120,
+        "code": "BCN → ORY",
+        "notes": "Pendiente de confirmación",
+        "bookingLink": ""
+      },
+      "transportOptions": {
+        "recommended": "train",
+        "options": [
+          {
+            "type": "train",
+            "name": "TGV INOUI (Tren Alta Velocidad)",
+            "from": "Barcelona Sants",
+            "to": "Paris Gare de Lyon",
+            "duration": "6h 30min",
+            "durationMin": 390,
+            "cost": "$80-150 USD",
+            "costPerPerson": 100,
+            "frequency": "3-4 trenes diarios",
+            "pros": [
+              "Centro a centro",
+              "Sin límite equipaje",
+              "WiFi gratis",
+              "Vistas paisaje"
+            ],
+            "cons": [
+              "Más largo que vuelo"
+            ],
+            "bookingLink": "https://www.sncf-connect.com",
+            "recommended": true
+          },
+          {
+            "type": "flight",
+            "name": "Vuelo directo",
+            "from": "Barcelona El Prat (BCN)",
+            "to": "Paris CDG u Orly",
+            "duration": "2h (+ traslados ~3h total)",
+            "durationMin": 180,
+            "cost": "$50-120 USD",
+            "costPerPerson": 80,
+            "frequency": "10+ vuelos diarios",
+            "pros": [
+              "Más rápido en el aire",
+              "Precios bajos con anticipación"
+            ],
+            "cons": [
+              "Traslados aeropuerto",
+              "Límite equipaje",
+              "Check-in 2h antes"
+            ],
+            "bookingLink": "https://www.skyscanner.com",
+            "airlines": [
+              "Vueling",
+              "Ryanair",
+              "Air France",
+              "Iberia"
+            ],
+            "recommended": false
+          }
+        ]
+      },
+      "accommodation": {
+        "name": "Última noche en Barcelona",
+        "neighborhood": "Eixample - Passeig de Gràcia",
+        "link": "",
+        "costPerPerson": 35,
+        "options": [
+          {
+            "type": "hotel",
+            "name": "Hotel económico",
+            "cost": "$35/persona",
+            "neighborhood": "Eixample"
+          },
+          {
+            "type": "airbnb",
+            "name": "Apartamento compartido",
+            "cost": "$25/persona",
+            "neighborhood": "Gràcia"
+          }
+        ],
+        "notes": "Mismo alojamiento que días anteriores"
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 25,
+        "activitiesBase": 10,
+        "lodgingReal": 50,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 95,
+        "totalReal": 117
+      },
+      "mapPoints": [
+        "Tossa de Mar",
+        "Platja Gran",
+        "Cala Es Codolar",
+        "Vila Vella"
+      ],
+      "notes": "Excursión de día completo a la Costa Brava. Noche: preparar para salir temprano a París"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-26",
+      "city": "París",
+      "country": "Francia",
+      "cityCode": "PAR",
+      "currencyLocal": "EUR",
+      "stayArea": "Ópera/Grands Boulevards o Gare du Nord",
+      "heroImageQuery": "París city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint París",
+        "París top attractions"
+      ],
+      "perks": [
+        "Ver París iluminado (después de 20:30)",
+        "Reservas con hora (Louvre/Eiffel)"
+      ],
+      "accommodation": {
+        "name": "Hotel en Le Marais",
+        "neighborhood": "Le Marais / Châtelet",
+        "link": "",
+        "costPerPerson": 45,
+        "options": [
+          {
+            "type": "hotel",
+            "name": "Hotel 3 estrellas",
+            "cost": "$45/persona",
+            "neighborhood": "Le Marais"
+          },
+          {
+            "type": "hotel",
+            "name": "Hotel cerca Gare du Nord",
+            "cost": "$40/persona",
+            "neighborhood": "10ème"
+          },
+          {
+            "type": "airbnb",
+            "name": "Apartamento",
+            "cost": "$35/persona",
+            "neighborhood": "Bastille"
+          }
+        ],
+        "notes": "Zona céntrica con fácil acceso a metro"
+      },
+      "mainActivities": [
+        {
+          "name": "Llegada a París (Vuelo BCN→ORY)",
+          "start": "08:10",
+          "durationMin": 90,
+          "link": "",
+          "notes": "Llegada a Orly, traslado al hotel. Vuelo pendiente de confirmación.",
+          "imageQuery": "Paris Orly airport arrival"
+        },
+        {
+          "name": "Check-in y descanso",
+          "start": "12:00",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Instalación en hotel",
+          "imageQuery": "hotel check-in París"
+        },
+        {
+          "name": "Montmartre (Sacré-Cœur)",
+          "start": "15:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Montmartre+Paris",
+          "notes": "Sacré-Cœur y artistas",
+          "imageQuery": "Montmartre París",
+          "imageUrl": "https://www.cometoparis.com/data/layout_image/475_sacr%C3%A9%20coeur_landscape_3-2_xl.jpg?ver=1739891695"
+        },
+        {
+          "name": "Jardines de Versalles",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "https://www.chateauversailles.fr",
+          "notes": "Paseo por los jardines del palacio",
+          "imageQuery": "Jardines Versalles",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg"
+        },
+        {
+          "name": "Crucero por el Sena de noche",
+          "start": "20:30",
+          "durationMin": 90,
+          "link": "https://www.bateaux-mouches.fr",
+          "notes": "Crucero nocturno romántico",
+          "imageQuery": "Crucero Sena noche París",
+          "imageUrl": "https://www.francetourisme.fr/images/soirees_a_paris/diner_croisiere/diner-croisiere-paris-romantique.webp"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 60,
+        "activitiesBase": 0,
+        "lodgingReal": 55,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 120,
+        "totalReal": 147
+      },
+      "mapPoints": [
+        "Montmartre",
+        "Sacré-Cœur",
+        "Le Marais"
+      ],
+      "notes": "Primer día en París - Montmartre y Le Marais"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-27",
+      "city": "París",
+      "country": "Francia",
+      "cityCode": "PAR",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro (Ópera/Châtelet)",
+      "heroImageQuery": "París city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint París",
+        "París top attractions"
+      ],
+      "perks": [
+        "Ver París iluminado (después de 20:30)",
+        "Reservas con hora (Louvre/Eiffel)"
+      ],
+      "accommodation": {
+        "name": "Hotel en Le Marais",
+        "neighborhood": "Le Marais / Châtelet",
+        "link": "",
+        "notes": "Zona céntrica con fácil acceso a metro"
+      },
+      "mainActivities": [
+        {
+          "name": "The Louvre (por fuera)",
+          "start": "09:00",
+          "durationMin": 90,
+          "link": "https://www.louvre.fr",
+          "notes": "Exterior del museo más famoso",
+          "imageQuery": "Museo Louvre París",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9q-8SMMLW37hIbCCQY2tuZ_fZL6M3Xb5bdhTLQGSVzXvjNFyv6cCsHua-BfK-m8T3v0&usqp=CAU"
+        },
+        {
+          "name": "Rivoli 59",
+          "start": "11:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Rivoli+59+Paris",
+          "notes": "Galería de arte alternativa",
+          "imageQuery": "Rivoli 59 París",
+          "imageUrl": "https://media.traveler.es/photos/62cdac398dc3f100195210d3/16:9/w_2240,c_limit/2G25WXK.jpg"
+        },
+        {
+          "name": "Notre Dame",
+          "start": "12:30",
+          "durationMin": 90,
+          "link": "https://www.notredamedeparis.fr",
+          "notes": "Catedral gótica icónica",
+          "imageQuery": "Notre Dame París",
+          "imageUrl": "https://cdn-imgix.headout.com/media/images/33cbe0bcfe63ae44b3e6f8ccea48f14f-31916-paris-notre-dame-outdoor-walking-tour---entry-to-the-cathedral-01.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&ar=14%3A9&crop=faces&fit=crop"
+        },
+        {
+          "name": "Chocolat Chapon",
+          "start": "14:30",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Chocolat+Chapon+Paris",
+          "notes": "Chocolatería artesanal",
+          "imageQuery": "Chocolat Chapon París",
+          "imageUrl": "https://mostlovelythings.com/wp-content/uploads/2025/06/a-paper-cone-cup-with-chapon-mousse.jpg"
+        },
+        {
+          "name": "Champs Élysées (Arco del Triunfo)",
+          "start": "15:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Arc+de+Triomphe+Paris",
+          "notes": "Avenida más famosa y monumento",
+          "imageQuery": "Arco Triunfo París",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b0/d1/f8/the-champs-elysees-in.jpg?w=900&h=500&s=1"
+        },
+        {
+          "name": "Torre Eiffel",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "https://www.toureiffel.paris",
+          "notes": "Símbolo de París",
+          "imageQuery": "Torre Eiffel París",
+          "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/ar_1:1,c_fill,f_auto,q_auto,w_800/v1645844269/gd99ktjpmrtkwwlyn8hx.jpg"
+        },
+        {
+          "name": "Galeries Lafayette",
+          "start": "20:30",
+          "durationMin": 60,
+          "link": "https://www.galerieslafayette.com",
+          "notes": "Grandes almacenes históricos",
+          "imageQuery": "Galeries Lafayette París",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/aa/fb/74/underneath-the-glass.jpg?w=900&h=500&s=1"
+        },
+        {
+          "name": "Moulin Rouge (tentativo)",
+          "start": "22:00",
+          "durationMin": 120,
+          "link": "https://www.moulinrouge.fr",
+          "notes": "Cabaret nocturno icónico (opcional)",
+          "imageQuery": "Moulin Rouge París",
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/08/39/fc/0a.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 10,
+        "activitiesBase": 100,
+        "lodgingReal": 55,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 170,
+        "totalReal": 197
+      },
+      "mapPoints": [
+        "Disneyland Paris"
+      ],
+      "notes": "Día completo en Disneyland - experiencia mágica"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-28",
+      "city": "Disneyland París",
+      "country": "Francia",
+      "cityCode": "PAR",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro (Ópera/Châtelet)",
+      "heroImageQuery": "Disneyland París castle",
+      "heroImageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg",
+      "imageHints": [
+        "best photo viewpoint Disneyland París",
+        "Disneyland París castle"
+      ],
+      "perks": [
+        "Madrugar para aprovechar",
+        "FastPass para atracciones populares"
+      ],
+      "mainActivities": [
+        {
+          "name": "RER A hacia Disneyland",
+          "start": "08:00",
+          "durationMin": 60,
+          "link": "https://www.ratp.fr",
+          "notes": "Desde Châtelet-Les Halles - madrugar",
+          "imageQuery": "RER A Disneyland París"
+        },
+        {
+          "name": "Disneyland Park (parque completo)",
+          "start": "09:00",
+          "durationMin": 660,
+          "link": "https://www.disneylandparis.com",
+          "notes": "Parque completo - aprovechar todo el día",
+          "imageQuery": "Disneyland Park París",
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg"
+        },
+        {
+          "name": "Desfile nocturno",
+          "start": "20:00",
+          "durationMin": 45,
+          "link": "https://www.disneylandparis.com",
+          "notes": "Espectáculo de luces y música",
+          "imageQuery": "Disneyland París desfile nocturno"
+        },
+        {
+          "name": "Regreso a París",
+          "start": "21:30",
+          "durationMin": 60,
+          "link": "https://www.ratp.fr",
+          "notes": "RER A de regreso",
+          "imageQuery": "RER regreso Disneyland París"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 30,
+        "transportBase": 15,
+        "activitiesBase": 75,
+        "lodgingReal": 55,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 155,
+        "totalReal": 175
+      },
+      "mapPoints": [
+        "Disneyland París",
+        "Marne-la-Vallée"
+      ],
+      "notes": "Día completo en Disneyland París - madrugar y ver desfile nocturno"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-29",
+      "city": "París",
+      "country": "Francia",
+      "cityCode": "PAR",
+      "currencyLocal": "EUR",
+      "stayArea": "Barrio Latino / Ópera",
+      "heroImageQuery": "París city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint París",
+        "París top attractions"
+      ],
+      "perks": [
+        "Ver París iluminado (después de 20:30)",
+        "Reservas con hora (Louvre/Eiffel)"
+      ],
+      "mainActivities": [
+        {
+          "name": "Louvre",
+          "start": "09:00",
+          "durationMin": 180,
+          "link": "https://www.louvre.fr",
+          "notes": "Museo del Louvre - entrada previa",
+          "imageQuery": "Louvre París"
+        },
+        {
+          "name": "Torre Eiffel",
+          "start": "14:00",
+          "durationMin": 150,
+          "link": "https://www.toureiffel.paris",
+          "notes": "Vistas panorámicas de París",
+          "imageQuery": "Torre Eiffel París"
+        },
+        {
+          "name": "Montmartre nocturno",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Montmartre+Paris",
+          "notes": "Atardecer y ambiente nocturno",
+          "imageQuery": "Montmartre nocturno París"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "train",
+        "from": "Paris Gare du Nord",
+        "to": "Amsterdam Centraal",
+        "depart": "08:00",
+        "arrive": "11:20",
+        "durationMin": 200,
+        "code": "Eurostar",
+        "bookingLink": "https://www.eurostar.com"
+      },
+      "transportOptions": {
+        "recommended": "train",
+        "options": [
+          {
+            "type": "train",
+            "name": "Eurostar (antes Thalys)",
+            "from": "Paris Gare du Nord",
+            "to": "Amsterdam Centraal",
+            "duration": "3h 20min",
+            "durationMin": 200,
+            "cost": "$80-180 USD",
+            "costPerPerson": 120,
+            "frequency": "8+ trenes diarios",
+            "pros": [
+              "Centro a centro",
+              "Rápido y cómodo",
+              "WiFi",
+              "Sin control fronteras"
+            ],
+            "cons": [
+              "Reserva obligatoria",
+              "Precio variable"
+            ],
+            "bookingLink": "https://www.eurostar.com",
+            "recommended": true
+          },
+          {
+            "type": "flight",
+            "name": "Vuelo directo",
+            "from": "Paris CDG/Orly",
+            "to": "Amsterdam Schiphol (AMS)",
+            "duration": "1h 15min (+ traslados ~4h total)",
+            "durationMin": 75,
+            "cost": "$60-150 USD",
+            "costPerPerson": 90,
+            "frequency": "10+ vuelos diarios",
+            "pros": [
+              "Rápido en el aire"
+            ],
+            "cons": [
+              "Traslados largos",
+              "No ahorra tiempo real",
+              "Huella carbono"
+            ],
+            "bookingLink": "https://www.skyscanner.com",
+            "airlines": [
+              "KLM",
+              "Air France",
+              "Transavia"
+            ],
+            "recommended": false
+          }
+        ]
+      },
+      "accommodation": {
+        "name": "Última noche en París",
+        "neighborhood": "Le Marais / Châtelet",
+        "link": "",
+        "costPerPerson": 45,
+        "options": [
+          {
+            "type": "hotel",
+            "name": "Hotel 3 estrellas",
+            "cost": "$45/persona",
+            "neighborhood": "Le Marais"
+          },
+          {
+            "type": "hotel",
+            "name": "Hotel cerca Gare du Nord",
+            "cost": "$40/persona",
+            "neighborhood": "10ème"
+          }
+        ],
+        "notes": "Cerca de Gare du Nord para salir temprano"
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 10,
+        "activitiesBase": 35,
+        "lodgingReal": 55,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 105,
+        "totalReal": 132
+      },
+      "mapPoints": [
+        "Louvre",
+        "Torre Eiffel",
+        "Montmartre"
+      ],
+      "notes": "Último día en París - Louvre y Torre Eiffel. Noche: preparar maletas para Amsterdam"
+    },
+    {
+      "day": 8,
+      "date": "2026-05-30",
+      "city": "Ámsterdam",
+      "country": "Países Bajos",
+      "cityCode": "AMS",
+      "currencyLocal": "EUR",
+      "stayArea": "Centrum/Jordaan (tram/metro)",
+      "heroImageQuery": "Amsterdam city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Amsterdam",
+        "Amsterdam top attractions"
+      ],
+      "perks": [
+        "Compra Rijks/Anne Frank con antelación"
+      ],
+      "accommodation": {
+        "name": "Hotel en Jordaan",
+        "neighborhood": "Jordaan / Centrum",
+        "link": "",
+        "notes": "Barrio bohemio con canales, cerca de Anne Frank House"
+      },
+      "mainActivities": [
+        {
+          "name": "Traslado París → Ámsterdam",
+          "start": "08:00",
+          "durationMin": 200,
+          "link": "https://www.eurostar.com",
+          "notes": "Tren Eurostar (antes Thalys) - centro a centro ~3h20",
+          "imageQuery": "Eurostar train París Ámsterdam"
+        },
+        {
+          "name": "Check-in y descanso",
+          "start": "12:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Instalación en hotel",
+          "imageQuery": "hotel check-in Amsterdam"
+        },
+        {
+          "name": "Zaandam",
+          "start": "14:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Zaandam+Amsterdam",
+          "notes": "Pueblo holandés con arquitectura tradicional",
+          "imageQuery": "Zaandam Netherlands traditional houses",
+          "imageUrl": "pictures/zaandam.png"
+        },
+        {
+          "name": "Jordaan",
+          "start": "17:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Jordaan+Amsterdam",
+          "notes": "Barrio bohemio de Ámsterdam",
+          "imageQuery": "Jordaan Amsterdam canals",
+          "imageUrl": "pictures/Jordaan.png"
+        },
+        {
+          "name": "Barrio Rojo (de día)",
+          "start": "19:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Red+Light+District+Amsterdam",
+          "notes": "De Wallen - solo de día",
+          "imageQuery": "Red Light District Amsterdam daytime",
+          "imageUrl": "pictures/barrioRojo.png"
+        },
+        {
+          "name": "Damrak al atardecer",
+          "start": "20:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Damrak+Amsterdam",
+          "notes": "Canal principal de Ámsterdam",
+          "imageQuery": "Damrak Amsterdam sunset"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 25,
+        "transportBase": 70,
+        "activitiesBase": 0,
+        "lodgingReal": 75,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 135,
+        "totalReal": 177
+      },
+      "mapPoints": [
+        "Zaandam",
+        "Jordaan",
+        "Red Light District",
+        "Damrak"
+      ],
+      "notes": "Llegada a Ámsterdam - Zaandam, Jordaan y Barrio Rojo"
+    },
+    {
+      "day": 9,
+      "date": "2026-05-31",
+      "city": "Ámsterdam",
+      "country": "Países Bajos",
+      "cityCode": "AMS",
+      "currencyLocal": "EUR",
+      "stayArea": "Centrum / De Pijp",
+      "heroImageQuery": "Amsterdam city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Amsterdam",
+        "Amsterdam top attractions"
+      ],
+      "perks": [
+        "Compra Rijks/Anne Frank con antelación"
+      ],
+      "mainActivities": [
+        {
+          "name": "Zaanse Schans",
+          "start": "09:00",
+          "durationMin": 180,
+          "link": "https://www.zaanseschans.nl",
+          "notes": "Pueblo de molinos holandeses",
+          "imageQuery": "Zaanse Schans windmills Amsterdam",
+          "imageUrl": "pictures/zaanse schans amsterdam.png"
+        },
+        {
+          "name": "A'DAM Lookout (opcional)",
+          "start": "13:00",
+          "durationMin": 90,
+          "link": "https://www.adamlookout.com",
+          "notes": "Mirador opcional - vistas panorámicas",
+          "imageQuery": "A'DAM Lookout swing Amsterdam",
+          "imageUrl": "pictures/adam lookout.png"
+        },
+        {
+          "name": "Fábrica de Heineken",
+          "start": "15:00",
+          "durationMin": 120,
+          "link": "https://www.heineken.com/experiencia",
+          "notes": "Tour de la cervecería",
+          "imageQuery": "Heineken Experience Amsterdam",
+          "imageUrl": "pictures/heiniken.png"
+        },
+        {
+          "name": "Moco Museum",
+          "start": "17:30",
+          "durationMin": 90,
+          "link": "https://www.mocomuseum.com",
+          "notes": "Museo de arte moderno y contemporáneo",
+          "imageQuery": "Moco Museum Amsterdam",
+          "imageUrl": "pictures/moco museum.png"
+        },
+        {
+          "name": "Rijksmuseum (reserva)",
+          "start": "19:30",
+          "durationMin": 120,
+          "link": "https://www.rijksmuseum.nl",
+          "notes": "Museo nacional - reserva previa",
+          "imageQuery": "Rijksmuseum exterior Amsterdam"
+        },
+        {
+          "name": "Crucero por canales",
+          "start": "21:30",
+          "durationMin": 60,
+          "link": "https://www.canal.nl",
+          "notes": "Vista de Ámsterdam desde el agua",
+          "imageQuery": "Amsterdam canal cruise boat"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 25,
+        "transportBase": 10,
+        "activitiesBase": 35,
+        "lodgingReal": 75,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 110,
+        "totalReal": 152
+      },
+      "mapPoints": [
+        "Zaanse Schans",
+        "A'DAM Lookout",
+        "Heineken Experience",
+        "Moco Museum",
+        "Rijksmuseum"
+      ],
+      "notes": "Día completo en Ámsterdam - molinos, museos y canales"
+    },
+    {
+      "day": 10,
+      "date": "2026-06-01",
+      "city": "Ámsterdam",
+      "country": "Países Bajos",
+      "cityCode": "AMS",
+      "currencyLocal": "EUR",
+      "stayArea": "Centrum / Jordaan",
+      "heroImageQuery": "Amsterdam city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Amsterdam",
+        "Amsterdam top attractions"
+      ],
+      "perks": [
+        "A'DAM Lookout opcional si no se hizo"
+      ],
+      "mainActivities": [
+        {
+          "name": "Día libre en Ámsterdam",
+          "start": "09:00",
+          "durationMin": 480,
+          "link": "",
+          "notes": "Actividades pendientes o exploración libre",
+          "imageQuery": "Amsterdam city center"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Amsterdam Schiphol (AMS)",
+        "to": "Zürich (ZRH)",
+        "depart": "08:00",
+        "arrive": "09:40",
+        "durationMin": 100,
+        "code": "KLM/Swiss",
+        "bookingLink": "https://www.skyscanner.com"
+      },
+      "transportOptions": {
+        "recommended": "flight",
+        "options": [
+          {
+            "type": "flight",
+            "name": "Vuelo directo",
+            "from": "Amsterdam Schiphol (AMS)",
+            "to": "Zürich (ZRH)",
+            "duration": "1h 40min",
+            "durationMin": 100,
+            "cost": "$80-180 USD",
+            "costPerPerson": 120,
+            "frequency": "10+ vuelos diarios",
+            "pros": [
+              "Rápido",
+              "Conexión directa",
+              "Aeropuerto céntrico Schiphol"
+            ],
+            "cons": [
+              "Traslados aeropuerto",
+              "Huella carbono"
+            ],
+            "bookingLink": "https://www.skyscanner.com",
+            "airlines": [
+              "KLM",
+              "Swiss",
+              "Transavia",
+              "easyJet"
+            ],
+            "recommended": true
+          },
+          {
+            "type": "train",
+            "name": "Tren (ICE + conexiones)",
+            "from": "Amsterdam Centraal",
+            "to": "Zürich HB",
+            "duration": "8-10 horas",
+            "durationMin": 540,
+            "cost": "$120-200 USD",
+            "costPerPerson": 150,
+            "frequency": "Varias combinaciones diarias",
+            "pros": [
+              "Paisajes espectaculares",
+              "Centro a centro",
+              "Sin límite equipaje"
+            ],
+            "cons": [
+              "Muy largo",
+              "Requiere cambios (Colonia/Frankfurt)"
+            ],
+            "bookingLink": "https://www.bahn.de",
+            "recommended": false
+          }
+        ]
+      },
+      "accommodation": {
+        "name": "Última noche en Ámsterdam",
+        "neighborhood": "Jordaan / Centrum",
+        "link": "",
+        "costPerPerson": 50,
+        "options": [
+          {
+            "type": "hotel",
+            "name": "Hotel boutique Jordaan",
+            "cost": "$50/persona",
+            "neighborhood": "Jordaan"
+          },
+          {
+            "type": "hotel",
+            "name": "Hotel cerca Centraal",
+            "cost": "$45/persona",
+            "neighborhood": "Centrum"
+          }
+        ],
+        "notes": "Preparar para madrugar - vuelo temprano"
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 25,
+        "transportBase": 0,
+        "activitiesBase": 20,
+        "lodgingReal": 75,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 85,
+        "totalReal": 127
+      },
+      "mapPoints": [
+        "Ámsterdam"
+      ],
+      "notes": "Día libre en Ámsterdam - preparación para viaje a Suiza"
+    },
+    {
+      "day": 11,
+      "date": "2026-06-02",
+      "city": "Suiza (vía Zúrich)",
+      "country": "Suiza",
+      "cityCode": "ZRH",
+      "currencyLocal": "CHF",
+      "stayArea": "Lucerna centro / Altstadt",
+      "heroImageQuery": "Rhine Falls Switzerland",
+      "imageHints": [
+        "best photo viewpoint Rhine Falls",
+        "Rhine Falls top attractions"
+      ],
+      "perks": [
+        "Swiss Half Fare/Travel Pass evalúa",
+        "Capas y cortavientos para montaña"
+      ],
+      "mainActivities": [
+        {
+          "name": "Vuelo Ámsterdam → Zúrich (ZRH)",
+          "start": "08:00",
+          "durationMin": 100,
+          "link": "https://www.skyscanner.com",
+          "notes": "Vuelo AMS→ZRH (~1h40)",
+          "imageQuery": "Flight Amsterdam Zurich"
+        },
+        {
+          "name": "Rhine Falls (Cascadas del Rin)",
+          "start": "11:00",
+          "durationMin": 180,
+          "link": "https://www.rheinfall.ch",
+          "notes": "Pasarelas + barco al peñón (Schloss Laufen / Neuhausen)",
+          "imageQuery": "Rhine Falls Switzerland cascadas",
+          "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1666256536/post_images/Zurich/rhine-falls/Excursi%C3%B3n_en_las_cataratas_del_Rin.jpg"
+        },
+        {
+          "name": "Tren ZRH → Lucerna",
+          "start": "15:00",
+          "durationMin": 60,
+          "link": "https://www.sbb.ch",
+          "notes": "Tren ZRH Airpt→Zürich HB→Lucerna (~1h)",
+          "imageQuery": "Train Zurich Lucerne"
+        },
+        {
+          "name": "Check-in + Kapellbrücke",
+          "start": "17:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Kapellbrücke+Lucerna",
+          "notes": "Check-in hotel + visita al puente de la capilla (símbolo de Lucerna)",
+          "imageQuery": "Kapellbrücke Lucerne",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6cE-ujuN_1FdW-jz-2qA2uVIjmzNtefcSw&s"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 20,
+        "transportBase": 85,
+        "activitiesBase": 15,
+        "lodgingReal": 85,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 160,
+        "totalReal": 217
+      },
+      "mapPoints": [
+        "Rhine Falls",
+        "Zúrich",
+        "Lucerna Altstadt",
+        "Kapellbrücke"
+      ],
+      "notes": "Llegada a Suiza vía Zúrich - visita a Rhine Falls + llegada a Lucerna"
+    },
+    {
+      "day": 12,
+      "date": "2026-06-03",
+      "city": "Suiza (día 1)",
+      "country": "Suiza",
+      "cityCode": "ZRH",
+      "currencyLocal": "CHF",
+      "stayArea": "Lucerna Altstadt",
+      "heroImageQuery": "Interlaken city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Interlaken",
+        "Interlaken top attractions"
+      ],
+      "perks": [
+        "Swiss Half Fare/Travel Pass evalúa",
+        "Capas y cortavientos para montaña"
+      ],
+      "mainActivities": [
+        {
+          "name": "Luzern–Interlaken Express (Lucerna → Interlaken)",
+          "start": "09:00",
+          "durationMin": 110,
+          "link": "https://www.goldenpass.ch",
+          "notes": "Tren panorámico por los Alpes (ventanas panorámicas) - 1h50",
+          "imageQuery": "Luzern Interlaken Express panorama train Switzerland",
+          "imageUrl": "https://trenviajero.com/wp-content/uploads/2025/03/goldenpass-line-express-recorrido.jpg"
+        },
+        {
+          "name": "Barco Lago Brienz (o Thun)",
+          "start": "11:30",
+          "durationMin": 75,
+          "link": "https://www.bls.ch",
+          "notes": "Crucero por el lago alpino - 1h-1h15",
+          "imageQuery": "Lake Brienz Switzerland boat cruise",
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/5d/75/d6.jpg"
+        },
+        {
+          "name": "Regreso a Lucerna",
+          "start": "14:00",
+          "durationMin": 110,
+          "link": "https://www.sbb.ch",
+          "notes": "LIR Interlaken → Lucerna (1h50)",
+          "imageQuery": "Train Interlaken Lucerne"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 20,
+        "transportBase": 15,
+        "activitiesBase": 25,
+        "lodgingReal": 85,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 100,
+        "totalReal": 152
+      },
+      "mapPoints": [
+        "Luzern–Interlaken Express",
+        "Lago Brienz",
+        "Lago Thun",
+        "Lucerna"
+      ],
+      "notes": "Día de naturaleza alpina - trenes panorámicos y lagos"
+    },
+    {
+      "day": 13,
+      "date": "2026-06-04",
+      "city": "Suiza (día 2)",
+      "country": "Suiza",
+      "cityCode": "ZRH",
+      "currencyLocal": "CHF",
+      "stayArea": "Lucerna Altstadt",
+      "heroImageQuery": "Mount Titlis Switzerland",
+      "imageHints": [
+        "best photo viewpoint Titlis",
+        "Titlis top attractions"
+      ],
+      "perks": [
+        "Swiss Half Fare/Travel Pass evalúa",
+        "Capas y cortavientos para montaña"
+      ],
+      "mainActivities": [
+        {
+          "name": "Tren Lucerna → Engelberg",
+          "start": "08:00",
+          "durationMin": 50,
+          "link": "https://www.sbb.ch",
+          "notes": "Tren a Engelberg (45-50 min)",
+          "imageQuery": "Train Lucerne Engelberg"
+        },
+        {
+          "name": "Monte Titlis (incluye skateboard y cueva de hielo)",
+          "start": "09:00",
+          "durationMin": 360,
+          "link": "https://www.titlis.com",
+          "notes": "Titlis Xpress (góndolas 30-40 min cada tramo) + Cueva de hielo + Titlis Cliff Walk (snow/tubing según apertura). Actividades incluidas: Ice Flyer (skateboard sobre hielo) y Glacier Cave (cueva de hielo glaciar)",
+          "imageQuery": "Mount Titlis Switzerland",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/eb/73/01/titlis.jpg?w=2000&h=-1&s=1"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 20,
+        "transportBase": 20,
+        "activitiesBase": 50,
+        "lodgingReal": 85,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 130,
+        "totalReal": 187
+      },
+      "mapPoints": [
+        "Lucerna",
+        "Engelberg",
+        "Monte Titlis"
+      ],
+      "notes": "Día completo en Monte Titlis - skateboard y cueva de hielo"
+    },
+    {
+      "day": 14,
+      "date": "2026-06-05",
+      "city": "Suiza (día 3)",
+      "country": "Suiza",
+      "cityCode": "ZRH",
+      "currencyLocal": "CHF",
+      "stayArea": "Lucerna (o Interlaken si prefieren)",
+      "heroImageQuery": "Grindelwald Lauterbrunnen Switzerland",
+      "imageHints": [
+        "best photo viewpoint Grindelwald",
+        "Lauterbrunnen top attractions"
+      ],
+      "perks": [
+        "Swiss Half Fare/Travel Pass evalúa",
+        "Capas y cortavientos para montaña"
+      ],
+      "mainActivities": [
+        {
+          "name": "Tren Lucerna → Interlaken → Lauterbrunnen",
+          "start": "08:00",
+          "durationMin": 130,
+          "link": "https://www.sbb.ch",
+          "notes": "Tren a Interlaken (1h50) + tramo a Lauterbrunnen (20-45 min)",
+          "imageQuery": "Train Lucerne Interlaken Lauterbrunnen"
+        },
+        {
+          "name": "Lauterbrunnen (Valle 72 cascadas)",
+          "start": "10:30",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Lauterbrunnen+Switzerland",
+          "notes": "Valle de las 72 cascadas - opcional: Mürren/Grütschalp o Trümmelbachfälle",
+          "imageQuery": "Lauterbrunnen valley Switzerland",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmGfCrz6AAUq1bM0w-SQK8e3CH9Exhgvpzg&s"
+        },
+        {
+          "name": "Grindelwald",
+          "start": "14:00",
+          "durationMin": 240,
+          "link": "https://www.google.com/maps/search/Grindelwald+Switzerland",
+          "notes": "Pueblo alpino con vistas espectaculares",
+          "imageQuery": "Grindelwald Switzerland",
+          "imageUrl": "https://ik.imgkit.net/3vlqs5axxjf/TAW/ik-seo/uploadedImages/All_Gateways/Europe/Features/Grindelwald_Hero/What-to-Do-in-Grindelwald-Switzerland.jpg?tr=w-1008%2Ch-567%2Cfo-auto"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 20,
+        "transportBase": 15,
+        "activitiesBase": 10,
+        "lodgingReal": 85,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 85,
+        "totalReal": 152
+      },
+      "mapPoints": [
+        "Lucerna",
+        "Interlaken",
+        "Lauterbrunnen",
+        "Mürren",
+        "Trümmelbachfälle",
+        "Grindelwald"
+      ],
+      "notes": "Exploración de valles alpinos - Lauterbrunnen y Grindelwald"
+    },
+    {
+      "day": 15,
+      "date": "2026-06-06",
+      "city": "Suiza → Venecia (vía Milán)",
+      "country": "Italia",
+      "cityCode": "VCE",
+      "currencyLocal": "EUR",
+      "stayArea": "Mestre o Venecia centro",
+      "heroImageQuery": "Venice city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Venice",
+        "Venice top attractions"
+      ],
+      "perks": [
+        "Reserva trenes con anticipación",
+        "Check-in temprano en Venecia"
+      ],
+      "mainActivities": [
+        {
+          "name": "Check-out Lucerna → Tren a Arth-Goldau",
+          "start": "08:00",
+          "durationMin": 30,
+          "link": "https://www.sbb.ch",
+          "notes": "Tren regional Lucerna → Arth-Goldau",
+          "imageQuery": "Train Lucerne Arth-Goldau"
+        },
+        {
+          "name": "EuroCity Arth-Goldau → Milano Centrale",
+          "start": "08:45",
+          "durationMin": 195,
+          "link": "https://www.sbb.ch",
+          "notes": "EuroCity a Milán (3h15 aprox)",
+          "imageQuery": "EuroCity Switzerland Milan"
+        },
+        {
+          "name": "Alta Velocidad Milano → Venezia S. Lucia",
+          "start": "13:00",
+          "durationMin": 150,
+          "link": "https://www.trenitalia.com",
+          "notes": "Tren de alta velocidad a Venecia (~2h30)",
+          "imageQuery": "High speed train Milan Venice"
+        },
+        {
+          "name": "Check-in Venecia",
+          "start": "16:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Instalación en hotel en Venecia o Mestre",
+          "imageQuery": "hotel check-in Venice"
+        },
+        {
+          "name": "Tarde libre en Venecia",
+          "start": "17:00",
+          "durationMin": 180,
+          "link": "",
+          "notes": "Primera exploración de Venecia - paseo por canales",
+          "imageQuery": "Venice canals evening"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 25,
+        "transportBase": 80,
+        "activitiesBase": 0,
+        "lodgingReal": 60,
+        "foodReal": 35
+      },
+      "totals": {
+        "totalBase": 145,
+        "totalReal": 195
+      },
+      "mapPoints": [
+        "Lucerna",
+        "Milano Centrale",
+        "Venezia S. Lucia"
+      ],
+      "notes": "Traslado completo Suiza → Venecia (vía Milán) - día de viaje"
+    },
+    {
+      "day": 16,
+      "date": "2026-06-07",
+      "city": "Venecia",
+      "country": "Italia",
+      "cityCode": "VCE",
+      "currencyLocal": "EUR",
+      "stayArea": "Mestre o Venecia centro",
+      "heroImageQuery": "Venice city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Venice",
+        "Venice top attractions"
+      ],
+      "perks": [
+        "ACTV Vaporetto: pase 24h ~25€ si tomarán 3+ barcos",
+        "Góndola mejor 10:00-11:00 o 17:30-18:30"
+      ],
+      "mainActivities": [
+        {
+          "name": "San Marcos (Basílica y Plaza)",
+          "start": "09:00",
+          "durationMin": 150,
+          "link": "https://www.basilicasanmarco.it",
+          "notes": "Basílica (exterior/interior rápido) + Plaza San Marcos",
+          "imageQuery": "San Marco Venice",
+          "imageUrl": "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/52/73/e7.jpg"
+        },
+        {
+          "name": "Góndola compartida",
+          "start": "10:00",
+          "durationMin": 35,
+          "link": "https://www.google.com/maps/search/gondola+venice",
+          "notes": "Góndola compartida 25-35 min (mejor horario para evitar pico)",
+          "imageQuery": "Gondola Venice"
+        },
+        {
+          "name": "Traslado a Rialto",
+          "start": "11:30",
+          "durationMin": 30,
+          "link": "https://www.actv.it",
+          "notes": "Caminando (30 min) o vaporetto línea 1 (San Zaccaria → Rialto, ~15-20 min)",
+          "imageQuery": "Vaporetto Venice"
+        },
+        {
+          "name": "Puente de Rialto + mercadito",
+          "start": "12:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Ponte+Rialto+Venice",
+          "notes": "Fotos, vistazo a tiendas",
+          "imageQuery": "Rialto Bridge Venice",
+          "imageUrl": "https://www.venise.style/wp-content/uploads/pont-rialto-venise-nuit.jpg.webp"
+        },
+        {
+          "name": "Almuerzo",
+          "start": "13:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Cerca de Rialto o en Fondamenta della Misericordia",
+          "imageQuery": "Restaurant Venice"
+        },
+        {
+          "name": "Vaporetto a Murano",
+          "start": "14:00",
+          "durationMin": 30,
+          "link": "https://www.actv.it",
+          "notes": "Línea 4.1/4.2 o 3 desde Fondamente Nove/Rialto",
+          "imageQuery": "Vaporetto Murano Venice"
+        },
+        {
+          "name": "Murano (vidrio)",
+          "start": "14:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Murano+Venice",
+          "notes": "Demostración de soplado (30-45 min) + paseo por canales y tiendas",
+          "imageQuery": "Murano glass Venice",
+          "imageUrl": "https://www.turismoenvenecia.com/wp-content/uploads/2021/05/Murano.jpg"
+        },
+        {
+          "name": "Regreso a Venecia",
+          "start": "17:00",
+          "durationMin": 60,
+          "link": "https://www.actv.it",
+          "notes": "Vaporetto a Fondamente Nove / San Zaccaria",
+          "imageQuery": "Vaporetto return Venice"
+        },
+        {
+          "name": "Perderse por canales (Cannaregio / Dorsoduro)",
+          "start": "18:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Cannaregio+Venice",
+          "notes": "Golden hour para fotos y un spritz",
+          "imageQuery": "Venice canals Cannaregio"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "tren",
+        "from": "Venezia S. Lucia",
+        "to": "Roma Termini",
+        "depart": "08:00",
+        "arrive": "12:00",
+        "durationMin": 240,
+        "code": "Tren AV directo",
+        "bookingLink": "https://www.trenitalia.com"
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 30,
+        "transportBase": 15,
+        "activitiesBase": 40,
+        "lodgingReal": 60,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 125,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "San Marcos",
+        "Rialto",
+        "Murano",
+        "Cannaregio"
+      ],
+      "notes": "Día completo en Venecia - San Marcos, Rialto, Murano y canales"
+    },
+    {
+      "day": 17,
+      "date": "2026-06-08",
+      "city": "Venecia → Florencia → Pisa → Roma",
+      "country": "Italia",
+      "cityCode": "ROM",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro histórico / Trastevere",
+      "heroImageQuery": "Pisa Tower Leaning Tower",
+      "imageHints": [
+        "Pisa Tower Campo dei Miracoli",
+        "Leaning Tower of Pisa"
+      ],
+      "perks": [
+        "Guardar maletas en Florencia SMN (Santa Maria Novella)",
+        "Reservar trenes con anticipación"
+      ],
+      "mainActivities": [
+        {
+          "name": "AV Venecia → Florencia",
+          "start": "08:00",
+          "durationMin": 150,
+          "link": "https://www.trenitalia.com",
+          "notes": "Tren AV Venezia S. Lucia → Firenze S.M.N. (~2h30)",
+          "imageQuery": "High speed train Venice Florence"
+        },
+        {
+          "name": "Guardar maletas en Florencia SMN",
+          "start": "10:30",
+          "durationMin": 30,
+          "link": "https://www.firenzesantamarianovella.it",
+          "notes": "Depósito de equipaje en estación Santa Maria Novella",
+          "imageQuery": "luggage storage Florence station"
+        },
+        {
+          "name": "Regional Florencia → Pisa",
+          "start": "11:00",
+          "durationMin": 60,
+          "link": "https://www.trenitalia.com",
+          "notes": "Tren regional Firenze S.M.N. → Pisa Centrale (~1h)",
+          "imageQuery": "Regional train Florence Pisa"
+        },
+        {
+          "name": "Campo dei Miracoli (Torre de Pisa, Duomo, Baptisterio)",
+          "start": "12:30",
+          "durationMin": 150,
+          "link": "https://www.opapisa.it",
+          "notes": "Torre inclinada, Duomo y Baptisterio - visita completa (2-3h)",
+          "imageQuery": "Leaning Tower of Pisa Campo dei Miracoli",
+          "imageUrl": "https://cdn-3.expansion.mx/dims4/default/ce1fd7e/2147483647/resize/1280x/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F18%2F43%2F76b0252b4e7c88be82d143574647%2Ftorre-de-pisa-istock.jpg"
+        },
+        {
+          "name": "Regional Pisa → Florencia",
+          "start": "15:30",
+          "durationMin": 60,
+          "link": "https://www.trenitalia.com",
+          "notes": "Tren regional Pisa Centrale → Firenze S.M.N. (~1h)",
+          "imageQuery": "Regional train Pisa Florence"
+        },
+        {
+          "name": "Recoger maletas y AV Florencia → Roma",
+          "start": "17:00",
+          "durationMin": 120,
+          "link": "https://www.trenitalia.com",
+          "notes": "Recoger equipaje y tren AV Firenze S.M.N. → Roma Termini (~1h30)",
+          "imageQuery": "High speed train Florence Rome"
+        },
+        {
+          "name": "Check-in Roma",
+          "start": "19:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Instalación en hotel en Roma",
+          "imageQuery": "hotel check-in Rome"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 30,
+        "transportBase": 80,
+        "activitiesBase": 20,
+        "lodgingReal": 60,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 170,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Florencia SMN",
+        "Pisa Centrale",
+        "Campo dei Miracoli",
+        "Roma Termini"
+      ],
+      "notes": "Día de traslado con visita a la Torre de Pisa - Venecia → Florencia → Pisa → Roma"
+    },
+    {
+      "day": 18,
+      "date": "2026-06-09",
+      "city": "Roma",
+      "country": "Italia",
+      "cityCode": "ROM",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro histórico / Trastevere",
+      "heroImageQuery": "Rome city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Rome",
+        "Rome top attractions"
+      ],
+      "perks": [
+        "Reserva Coliseo con anticipación",
+        "Vaticano: reserva con anticipación (museos + Sixtina)",
+        "Roma Pass evalúa"
+      ],
+      "mainActivities": [
+        {
+          "name": "Trastevere",
+          "start": "09:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Trastevere+Rome",
+          "notes": "Barrio bohemio con calles empedradas y ambiente auténtico",
+          "imageQuery": "Trastevere Rome",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/85/90/fd/bancarelle.jpg?w=900&h=500&s=1"
+        },
+        {
+          "name": "Coliseo (exterior)",
+          "start": "11:30",
+          "durationMin": 90,
+          "link": "https://www.coopculture.it",
+          "notes": "Visita exterior del anfiteatro más famoso del mundo",
+          "imageQuery": "Colosseum Rome exterior",
+          "imageUrl": "https://www.losviajesdegrimes.com/wp-content/uploads/2019/06/coliseo.jpg"
+        },
+        {
+          "name": "Foro Romano (peatonal)",
+          "start": "13:30",
+          "durationMin": 90,
+          "link": "https://www.coopculture.it",
+          "notes": "Paseo peatonal por las ruinas del Foro Romano - almuerzo en la zona",
+          "imageQuery": "Roman Forum Rome",
+          "imageUrl": "https://www.monumentosderoma.es/media/itjgc3hz/roman-forum.jpg"
+        },
+        {
+          "name": "Fontana de Trevi",
+          "start": "15:30",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Fontana+di+Trevi+Rome",
+          "notes": "Fuente barroca más famosa - lanzar moneda",
+          "imageQuery": "Trevi Fountain Rome",
+          "imageUrl": "https://gemelosviajeros.net/wp-content/uploads/2021/10/La-fontana-de-trevi-de-noche-e1635409582735-edited.jpg"
+        },
+        {
+          "name": "Panteón",
+          "start": "17:00",
+          "durationMin": 60,
+          "link": "https://www.pantheonroma.com",
+          "notes": "Templo romano mejor conservado - entrada gratuita",
+          "imageQuery": "Pantheon Rome",
+          "imageUrl": "https://www.enroma.com/wp-content/uploads/2018/01/Pantheon_de_noche.jpg"
+        },
+        {
+          "name": "Piazza Navona",
+          "start": "18:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Piazza+Navona+Rome",
+          "notes": "Plaza barroca con fuentes de Bernini",
+          "imageQuery": "Piazza Navona Rome"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 30,
+        "transportBase": 10,
+        "activitiesBase": 0,
+        "lodgingReal": 60,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 80,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Trastevere",
+        "Coliseo",
+        "Foro Romano",
+        "Fontana de Trevi",
+        "Panteón",
+        "Piazza Navona"
+      ],
+      "notes": "Día completo en Roma - Trastevere, Coliseo, Foro Romano, Trevi, Panteón y Navona"
+    },
+    {
+      "day": 19,
+      "date": "2026-06-10",
+      "city": "Roma",
+      "country": "Italia",
+      "cityCode": "ROM",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro histórico",
+      "heroImageQuery": "Rome city skyline landmark",
+      "imageHints": [
+        "best photo viewpoint Rome",
+        "Rome top attractions"
+      ],
+      "perks": [
+        "Catacumbas: reserva con anticipación",
+        "Testaccio: mercado cierra temprano (13:00-14:00)"
+      ],
+      "mainActivities": [
+        {
+          "name": "Vaticano (Museos + Capilla Sixtina)",
+          "start": "09:00",
+          "durationMin": 240,
+          "link": "https://www.museivaticani.va",
+          "notes": "Museos Vaticanos y Capilla Sixtina - reserva previa obligatoria",
+          "imageQuery": "Vatican Museums Sistine Chapel",
+          "imageUrl": "https://cdn-imgix.headout.com/microbrands-content-image/image/70c7e9051c3411a0653fa26b23c7bd6c-history%20of%20Vatican%20City.jpeg"
+        },
+        {
+          "name": "Catacumbas",
+          "start": "14:00",
+          "durationMin": 120,
+          "link": "https://www.catacombe.roma.it",
+          "notes": "Catacumbas de Roma - tour guiado (San Calixto, Domitila o Priscilla)",
+          "imageQuery": "Catacombs Rome",
+          "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1689037311/post_images/rome-124/catacumbas-de-roma/293127976_c566ec4d4f_k_Cropped.jpg"
+        },
+        {
+          "name": "Testaccio (mercado)",
+          "start": "16:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Mercato+Testaccio+Rome",
+          "notes": "Mercado local auténtico - comida callejera y productos frescos (si aún está abierto)",
+          "imageQuery": "Testaccio market Rome"
+        },
+        {
+          "name": "Tarde libre / Preparación",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Tarde libre o actividades alternativas pendientes",
+          "imageQuery": "Rome city center"
+        },
+        {
+          "name": "Tren Roma → Bari",
+          "start": "20:00",
+          "durationMin": 300,
+          "link": "https://www.trenitalia.com",
+          "notes": "Tren nocturno o AV Roma Termini → Bari Centrale (~5h)",
+          "imageQuery": "Train Rome Bari"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "tren",
+        "from": "Roma Termini",
+        "to": "Bari Centrale",
+        "depart": "20:00",
+        "arrive": "01:00",
+        "durationMin": 300,
+        "code": "Tren nocturno o AV",
+        "bookingLink": "https://www.trenitalia.com"
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 25,
+        "transportBase": 50,
+        "activitiesBase": 65,
+        "lodgingReal": 60,
+        "foodReal": 35
+      },
+      "totals": {
+        "totalBase": 180,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Vaticano",
+        "Catacumbas",
+        "Testaccio",
+        "Roma",
+        "Bari"
+      ],
+      "notes": "Día buffer en Roma - Vaticano, Catacumbas, Testaccio y viaje a Puglia"
+    },
+    {
+      "day": 20,
+      "date": "2026-06-11",
+      "city": "Puglia",
+      "country": "Italia",
+      "cityCode": "BRI",
+      "currencyLocal": "EUR",
+      "stayArea": "Bari",
+      "heroImageQuery": "Polignano a Mare Puglia",
+      "imageHints": [
+        "Polignano a Mare cliffs",
+        "Lama Monachile beach"
+      ],
+      "perks": [
+        "Alquiler de coche recomendado para moverse por Puglia",
+        "Reservar alojamiento en Bari con anticipación"
+      ],
+      "mainActivities": [
+        {
+          "name": "Llegada a Bari / Check-in",
+          "start": "01:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Llegada nocturna y descanso",
+          "imageQuery": "Bari arrival hotel"
+        },
+        {
+          "name": "Polignano a Mare (miradores + Lama Monachile)",
+          "start": "09:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Polignano+a+Mare+Italy",
+          "notes": "Pueblo costero con acantilados espectaculares y playa Lama Monachile",
+          "imageQuery": "Polignano a Mare Lama Monachile",
+          "imageUrl": "https://www.turismovieste.it/index/wp-content/uploads/2023/02/polignano-amre.jpg"
+        },
+        {
+          "name": "Santa Maria di Leuca",
+          "start": "13:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Santa+Maria+di+Leuca+Italy",
+          "notes": "Punto más al sur de Puglia - faro y acantilados",
+          "imageQuery": "Santa Maria di Leuca Puglia",
+          "imageUrl": "https://www.hdsalento.com/wp-content/webp-express/webp-images/uploads/2021/02/1024px-Tramonto_Santa_Maria_di_Leuca_-_panoramio.jpg.webp"
+        },
+        {
+          "name": "Regreso a Bari (noche)",
+          "start": "17:00",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Regreso a Bari para pasar la noche",
+          "imageQuery": "Bari city center"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "vuelo",
+        "from": "Bari (BRI) o Brindisi (BDS)",
+        "to": "Madrid (MAD)",
+        "depart": "10:00",
+        "arrive": "13:00",
+        "durationMin": 180,
+        "code": "Vuelo directo o con escala",
+        "bookingLink": "https://www.skyscanner.es"
+      },
+      "costs": {
+        "lodgingBase": 30,
+        "foodBase": 25,
+        "transportBase": 40,
+        "activitiesBase": 0,
+        "lodgingReal": 50,
+        "foodReal": 35
+      },
+      "totals": {
+        "totalBase": 95,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Bari",
+        "Polignano a Mare",
+        "Santa Maria di Leuca"
+      ],
+      "notes": "Día completo en Puglia - Polignano a Mare y Santa Maria di Leuca"
+    },
+    {
+      "day": 21,
+      "date": "2026-06-12",
+      "city": "Madrid",
+      "country": "España",
+      "cityCode": "MAD",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro (Sol / Gran Vía)",
+      "heroImageQuery": "Madrid city skyline Gran Via",
+      "imageHints": [
+        "Madrid Gran Via",
+        "Puerta del Sol Madrid"
+      ],
+      "perks": [
+        "Vuelo: reservar con anticipación para mejores precios",
+        "Madrid Card evalúa para transporte y entradas"
+      ],
+      "mainActivities": [
+        {
+          "name": "Vuelo Bari/Brindisi → Madrid",
+          "start": "10:00",
+          "durationMin": 180,
+          "link": "https://www.skyscanner.es",
+          "notes": "Vuelo BRI/Bari o BDS/Brindisi → MAD (mañana/mediodía, ~3h)",
+          "imageQuery": "Flight Bari Brindisi Madrid"
+        },
+        {
+          "name": "Check-in Madrid",
+          "start": "14:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Llegada a Madrid y instalación en hotel",
+          "imageQuery": "hotel check-in Madrid"
+        },
+        {
+          "name": "Gran Vía",
+          "start": "16:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Gran+Via+Madrid",
+          "notes": "Avenida principal de Madrid - arquitectura y ambiente",
+          "imageQuery": "Gran Via Madrid",
+          "imageUrl": "https://madridando.com/wp-content/uploads/2018/07/gran-via-noche.jpeg"
+        },
+        {
+          "name": "Plaza Mayor",
+          "start": "17:30",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Plaza+Mayor+Madrid",
+          "notes": "Plaza histórica de Madrid - arquitectura barroca",
+          "imageQuery": "Plaza Mayor Madrid",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBjurgxw-MF_PiELMyB_OOHFDCpSMcgP7tQ&s"
+        },
+        {
+          "name": "Puerta del Sol",
+          "start": "18:30",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Puerta+del+Sol+Madrid",
+          "notes": "Plaza central de Madrid - kilómetro cero",
+          "imageQuery": "Puerta del Sol Madrid",
+          "imageUrl": "https://www.ifema.es/img/xl/vista-general-puerta-del-sol-madrid/vista-puerta-del-sol-madrid.jpeg"
+        },
+        {
+          "name": "La Latina (tapas)",
+          "start": "19:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/La+Latina+Madrid",
+          "notes": "Barrio de tapas tradicional - cena y ambiente madrileño",
+          "imageQuery": "La Latina Madrid tapas",
+          "imageUrl": "https://i0.wp.com/viajarcomerytapear.com/wp-content/uploads/2021/09/IMG_20200829_205439-31.jpg?resize=740%2C564&ssl=1"
+        },
+        {
+          "name": "Mercado San Miguel",
+          "start": "21:00",
+          "durationMin": 60,
+          "link": "https://www.mercadodesanmiguel.es",
+          "notes": "Mercado gastronómico histórico - tapas y productos gourmet",
+          "imageQuery": "Mercado San Miguel Madrid",
+          "imageUrl": "https://blog.guruwalk.com/wp-content/uploads/img/mercado_de_san_miguel.webp"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 35,
+        "transportBase": 100,
+        "activitiesBase": 0,
+        "lodgingReal": 60,
+        "foodReal": 50
+      },
+      "totals": {
+        "totalBase": 175,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Gran Vía",
+        "Plaza Mayor",
+        "Puerta del Sol",
+        "La Latina",
+        "Mercado San Miguel"
+      ],
+      "notes": "Llegada a Madrid - Gran Vía, Plaza Mayor, Sol, La Latina y Mercado San Miguel"
+    },
+    {
+      "day": 22,
+      "date": "2026-06-13",
+      "city": "Madrid",
+      "country": "España",
+      "cityCode": "MAD",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro (Sol / Gran Vía)",
+      "heroImageQuery": "Madrid city skyline",
+      "imageHints": [
+        "Madrid Prado Museum",
+        "Retiro Park Madrid"
+      ],
+      "perks": [
+        "Museo del Prado: reserva con anticipación",
+        "Parque del Retiro: entrada gratuita"
+      ],
+      "mainActivities": [
+        {
+          "name": "Museo del Prado",
+          "start": "10:00",
+          "durationMin": 180,
+          "link": "https://www.museodelprado.es",
+          "notes": "Museo de arte más importante de España - Goya, Velázquez, El Greco",
+          "imageQuery": "Museo del Prado Madrid",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/330px-Museo_del_Prado_2016_%2825185969599%29.jpg"
+        },
+        {
+          "name": "Parque del Retiro (barquita)",
+          "start": "13:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Parque+del+Retiro+Madrid",
+          "notes": "Parque histórico - paseo en barquita por el estanque",
+          "imageQuery": "Parque del Retiro Madrid barquita",
+          "imageUrl": "https://estaticos.esmadrid.com/cdn/farfuture/d9AYuHi3vQ0uKCi8OcaoTXg3OOZCQaqzdv6Sk2a1JPE/mtime:1524832495/sites/default/files/recursosturisticos/infoturistica/estanque_parquedeelretiro.jpg"
+        },
+        {
+          "name": "Puerta de Alcalá",
+          "start": "16:00",
+          "durationMin": 30,
+          "link": "https://www.google.com/maps/search/Puerta+de+Alcala+Madrid",
+          "notes": "Monumento neoclásico - símbolo de Madrid",
+          "imageQuery": "Puerta de Alcalá Madrid",
+          "imageUrl": "https://estaticos.esmadrid.com/cdn/farfuture/KsrOkEPSJFN4UoFn6AnGBD9LRQDKzO5nw2J6pbDcW_s/mtime:1524832498/sites/default/files/recursosturisticos/infoturistica/puerta_alcala_1396965031.778.jpg"
+        },
+        {
+          "name": "Palacio de Cibeles",
+          "start": "16:30",
+          "durationMin": 60,
+          "link": "https://www.madrid-destino.com/palacio-de-cibeles",
+          "notes": "Palacio y centro cultural - mirador con vistas panorámicas",
+          "imageQuery": "Palacio de Cibeles Madrid",
+          "imageUrl": "https://www.madrid-destino.com/sites/default/files/styles/galeria_de_imagenes_1200_x_600/public/2018-07/PalacioCibeles.jpg?itok=RPxoLuVb"
+        },
+        {
+          "name": "Palacio Real",
+          "start": "17:30",
+          "durationMin": 90,
+          "link": "https://www.patrimonionacional.es/visita/palacio-real-de-madrid",
+          "notes": "Palacio Real de Madrid - residencia oficial del rey (exterior o tour interior)",
+          "imageQuery": "Palacio Real Madrid",
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KfFPduC2pwkEZwMEBNLuZFFpnhHQEPOk3Q&s"
+        },
+        {
+          "name": "Gran Vía",
+          "start": "19:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Gran+Via+Madrid",
+          "notes": "Avenida principal de Madrid - arquitectura y ambiente nocturno",
+          "imageQuery": "Gran Via Madrid night",
+          "imageUrl": "https://madridando.com/wp-content/uploads/2018/07/gran-via-noche.jpeg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 30,
+        "transportBase": 10,
+        "activitiesBase": 30,
+        "lodgingReal": 60,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 110,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Museo del Prado",
+        "Parque del Retiro",
+        "Puerta de Alcalá",
+        "Palacio de Cibeles",
+        "Palacio Real",
+        "Gran Vía"
+      ],
+      "notes": "Día completo en Madrid - Prado, Retiro, Puerta de Alcalá, Cibeles, Palacio Real y Gran Vía"
+    },
+    {
+      "day": 23,
+      "date": "2026-06-14",
+      "city": "Madrid",
+      "country": "España",
+      "cityCode": "MAD",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro (Sol / Gran Vía)",
+      "heroImageQuery": "Santiago Bernabéu Stadium Madrid",
+      "imageHints": [
+        "Real Madrid stadium",
+        "Bernabéu tour"
+      ],
+      "perks": [
+        "Estadio Bernabéu: reserva tour con anticipación",
+        "Verificar horarios de partidos o eventos"
+      ],
+      "mainActivities": [
+        {
+          "name": "Estadio Santiago Bernabéu",
+          "start": "10:00",
+          "durationMin": 180,
+          "link": "https://www.realmadrid.com/es-ES/santiago-bernabeu",
+          "notes": "Tour del estadio del Real Madrid - museo, campo, vestuarios",
+          "imageQuery": "Estadio Santiago Bernabéu Madrid",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/c3/e0/caption.jpg?w=1200&h=-1&s=1"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 40,
+        "foodBase": 30,
+        "transportBase": 10,
+        "activitiesBase": 25,
+        "lodgingReal": 60,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 105,
+        "totalReal": 200
+      },
+      "mapPoints": [
+        "Estadio Santiago Bernabéu"
+      ],
+      "notes": "Día en Madrid - Tour del Estadio Santiago Bernabéu"
+    },
+    {
+      "day": 24,
+      "date": "2026-06-15",
+      "city": "Madrid → Medellín",
+      "country": "España / Colombia",
+      "cityCode": "MAD-MDE",
+      "currencyLocal": "EUR/COP",
+      "stayArea": "Vuelo de regreso",
+      "heroImageQuery": "Madrid Barajas airport departure",
+      "heroImageUrl": "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800",
+      "imageHints": [
+        "airport departure",
+        "airplane takeoff"
+      ],
+      "perks": [
+        "Llegar al aeropuerto 3 horas antes",
+        "Verificar límite de equipaje"
+      ],
+      "accommodation": {
+        "name": "Vuelo de regreso - Sin hospedaje",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Regreso a casa"
+      },
+      "mainActivities": [
+        {
+          "name": "Check-out del hotel",
+          "start": "08:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Preparar equipaje y dejar el hotel",
+          "imageQuery": "Hotel checkout luggage",
+          "imageUrl": ""
+        },
+        {
+          "name": "Últimas compras y souvenirs",
+          "start": "09:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Gran+Via+Madrid+shopping",
+          "notes": "Últimas compras en Gran Vía o El Corte Inglés",
+          "imageQuery": "Gran Via Madrid shopping",
+          "imageUrl": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800"
+        },
+        {
+          "name": "Traslado al aeropuerto",
+          "start": "12:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Madrid+Barajas",
+          "notes": "Metro o taxi al Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)",
+          "imageQuery": "Madrid Barajas airport",
+          "imageUrl": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800"
+        },
+        {
+          "name": "Vuelo MAD → MDE",
+          "start": "15:00",
+          "durationMin": 660,
+          "link": "",
+          "notes": "Vuelo de regreso ~11 horas. Escala posible en Bogotá o conexión",
+          "imageQuery": "Airplane flying clouds",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
+        {
+          "name": "Llegada a Medellín",
+          "start": "21:00",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Llegada al Aeropuerto José María Córdova. ¡Fin del viaje!",
+          "imageQuery": "Medellin city night arrival",
+          "imageUrl": "https://images.unsplash.com/photo-1599408169214-9e064a2eb04c?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Madrid (MAD)",
+        "to": "Medellín (MDE)",
+        "depart": "15:00",
+        "arrive": "21:00",
+        "durationMin": 660,
+        "code": "Vuelo Internacional",
+        "bookingLink": "https://www.skyscanner.com"
+      },
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 25,
+        "transportBase": 450,
+        "activitiesBase": 50,
+        "lodgingReal": 0,
+        "foodReal": 35
+      },
+      "totals": {
+        "totalBase": 525,
+        "totalReal": 535
+      },
+      "mapPoints": [
+        "Gran Vía",
+        "Aeropuerto Madrid Barajas"
+      ],
+      "notes": "Día de regreso - Últimas compras y vuelo de vuelta a Medellín. ¡Fin del viaje!"
+    }
+  ],
+  "totals": {
+    "tripBaseWithoutIntl": 1695,
+    "tripRealWithoutIntl": 2286,
+    "tripBaseWithIntl": 2595,
+    "tripRealWithIntl": 3186
   }
-  
+}
