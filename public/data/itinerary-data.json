@@ -2311,6 +2311,51 @@
     },
     {
       "day": 22,
+      "date": "2026-06-13",
+      "city": "Madrid",
+      "country": "España",
+      "cityCode": "MAD",
+      "currencyLocal": "EUR",
+      "stayArea": "Centro de Madrid",
+      "heroImageQuery": "Madrid city center",
+      "heroImageUrl": "",
+      "imageHints": [],
+      "perks": [],
+      "accommodation": {
+        "name": "Hotel en Madrid",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Último día en Madrid"
+      },
+      "mainActivities": [],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": null,
+        "from": null,
+        "to": null,
+        "depart": "",
+        "arrive": "",
+        "durationMin": 0,
+        "code": "",
+        "bookingLink": ""
+      },
+      "costs": {
+        "lodgingBase": 35,
+        "foodBase": 25,
+        "transportBase": 10,
+        "activitiesBase": 0,
+        "lodgingReal": 50,
+        "foodReal": 32
+      },
+      "totals": {
+        "totalBase": 70,
+        "totalReal": 92
+      },
+      "mapPoints": [],
+      "notes": "Día libre en Madrid - por definir"
+    },
+    {
+      "day": 23,
       "date": "2026-06-14",
       "city": "Madrid → Medellín",
       "country": "España / Colombia",
