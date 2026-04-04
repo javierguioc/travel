@@ -810,14 +810,23 @@
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": null,
-        "from": null,
-        "to": null,
-        "depart": "",
-        "arrive": "",
-        "durationMin": 0,
-        "code": "",
-        "bookingLink": ""
+        "mode": "train",
+        "from": "Paris Gare du Nord",
+        "to": "Amsterdam Centraal",
+        "depart": "06:17",
+        "arrive": "09:55",
+        "durationMin": 218,
+        "code": "Eurostar 9303",
+        "coach": "6",
+        "seats": "23, 27, 28",
+        "passengers": [
+          "Hernan Javier Guio Carrillo",
+          "Diana Marcela Chinchilla Caro",
+          "Maria Alejandra Guio Carrillo"
+        ],
+        "cost": "€165.00 total (3 adultos)",
+        "notes": "CONFIRMADO - Comprado 4 abril 2026. Tarjeta terminada 3454.",
+        "bookingLink": "https://www.eurostar.com"
       },
       "costs": {
         "lodgingBase": 35,
@@ -861,12 +870,13 @@
       },
       "mainActivities": [
         {
-          "name": "Traslado París → Ámsterdam",
-          "start": "08:00",
-          "durationMin": 200,
+          "name": "Eurostar 9303 — París → Ámsterdam",
+          "start": "06:17",
+          "durationMin": 218,
           "link": "https://www.eurostar.com",
-          "notes": "Tren Eurostar (antes Thalys) - centro a centro ~3h20",
-          "imageQuery": "Eurostar train París Ámsterdam"
+          "notes": "Sale Paris Gare du Nord 06:17 · Llega Amsterdam Centraal 09:55 · Vagón 6, asientos 23, 27, 28 · CONFIRMADO",
+          "imageQuery": "Eurostar train Paris Amsterdam",
+          "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800"
         },
         {
           "name": "Check-in y descanso",
