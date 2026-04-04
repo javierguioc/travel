@@ -2265,6 +2265,15 @@
           "notes": "Avenida principal de Madrid - arquitectura y ambiente nocturno",
           "imageQuery": "Gran Via Madrid night",
           "imageUrl": "https://madridando.com/wp-content/uploads/2018/07/gran-via-noche.jpeg"
+        },
+        {
+          "name": "Estadio Santiago Bernabéu",
+          "start": "10:00",
+          "durationMin": 180,
+          "link": "https://www.realmadrid.com/es-ES/santiago-bernabeu",
+          "notes": "Tour del estadio del Real Madrid - museo, campo, vestuarios",
+          "imageQuery": "Estadio Santiago Bernabéu Madrid",
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/c3/e0/caption.jpg?w=1200&h=-1&s=1"
         }
       ],
       "secondaryActivities": [],
@@ -2302,62 +2311,6 @@
     },
     {
       "day": 22,
-      "date": "2026-06-13",
-      "city": "Madrid",
-      "country": "España",
-      "cityCode": "MAD",
-      "currencyLocal": "EUR",
-      "stayArea": "Centro (Sol / Gran Vía)",
-      "heroImageQuery": "Santiago Bernabéu Stadium Madrid",
-      "imageHints": [
-        "Real Madrid stadium",
-        "Bernabéu tour"
-      ],
-      "perks": [
-        "Estadio Bernabéu: reserva tour con anticipación",
-        "Verificar horarios de partidos o eventos"
-      ],
-      "mainActivities": [
-        {
-          "name": "Estadio Santiago Bernabéu",
-          "start": "10:00",
-          "durationMin": 180,
-          "link": "https://www.realmadrid.com/es-ES/santiago-bernabeu",
-          "notes": "Tour del estadio del Real Madrid - museo, campo, vestuarios",
-          "imageQuery": "Estadio Santiago Bernabéu Madrid",
-          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/c3/e0/caption.jpg?w=1200&h=-1&s=1"
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": {
-        "mode": null,
-        "from": null,
-        "to": null,
-        "depart": "",
-        "arrive": "",
-        "durationMin": 0,
-        "code": "",
-        "bookingLink": ""
-      },
-      "costs": {
-        "lodgingBase": 40,
-        "foodBase": 30,
-        "transportBase": 10,
-        "activitiesBase": 25,
-        "lodgingReal": 60,
-        "foodReal": 40
-      },
-      "totals": {
-        "totalBase": 105,
-        "totalReal": 200
-      },
-      "mapPoints": [
-        "Estadio Santiago Bernabéu"
-      ],
-      "notes": "Día en Madrid - Tour del Estadio Santiago Bernabéu"
-    },
-    {
-      "day": 23,
       "date": "2026-06-14",
       "city": "Madrid → Medellín",
       "country": "España / Colombia",
@@ -2384,47 +2337,58 @@
         {
           "name": "Check-out del hotel",
           "start": "08:00",
-          "durationMin": 60,
+          "durationMin": 30,
           "link": "",
-          "notes": "Preparar equipaje y dejar el hotel",
-          "imageQuery": "Hotel checkout luggage",
-          "imageUrl": ""
+          "notes": "Último desayuno y salida del hotel",
+          "imageQuery": "hotel checkout Madrid"
         },
         {
           "name": "Últimas compras y souvenirs",
           "start": "09:00",
           "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Gran+Via+Madrid+shopping",
-          "notes": "Últimas compras en Gran Vía o El Corte Inglés",
-          "imageQuery": "Gran Via Madrid shopping",
-          "imageUrl": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800"
+          "link": "",
+          "notes": "Gran Vía y alrededores",
+          "imageQuery": "Gran Via Madrid shopping"
         },
         {
-          "name": "Traslado al aeropuerto",
+          "name": "Traslado al aeropuerto Barajas",
           "start": "12:00",
           "durationMin": 60,
           "link": "https://www.google.com/maps/search/Aeropuerto+Madrid+Barajas",
-          "notes": "Metro o taxi al Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)",
-          "imageQuery": "Madrid Barajas airport",
-          "imageUrl": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800"
+          "notes": "Metro o taxi desde el hotel",
+          "imageQuery": "Madrid Barajas airport"
         },
         {
-          "name": "Vuelo MAD → MDE",
+          "name": "Vuelo MAD → Bogotá (BOG)",
           "start": "15:00",
-          "durationMin": 660,
+          "durationMin": 180,
           "link": "",
-          "notes": "Vuelo de regreso ~11 horas. Escala posible en Bogotá o conexión",
-          "imageQuery": "Airplane flying clouds",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+          "notes": "Salida desde Madrid Barajas",
+          "imageQuery": "airplane flight Madrid"
+        },
+        {
+          "name": "Llegada a Bogotá",
+          "start": "18:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Llegada a El Dorado (BOG). Tránsito hacia conexión a Medellín",
+          "imageQuery": "Bogota El Dorado airport"
+        },
+        {
+          "name": "Vuelo BOG → Medellín (MDE)",
+          "start": "21:00",
+          "durationMin": 60,
+          "link": "",
+          "notes": "Vuelo doméstico Bogotá → Medellín",
+          "imageQuery": "Bogota Medellin flight"
         },
         {
           "name": "Llegada a Medellín",
-          "start": "21:00",
-          "durationMin": 120,
+          "start": "22:00",
+          "durationMin": 0,
           "link": "",
-          "notes": "Llegada al Aeropuerto José María Córdova. ¡Fin del viaje!",
-          "imageQuery": "Medellin city night arrival",
-          "imageUrl": "https://images.unsplash.com/photo-1599408169214-9e064a2eb04c?w=800"
+          "notes": "¡Bienvenidos de vuelta! Aeropuerto José María Córdova",
+          "imageQuery": "Medellin airport arrival"
         }
       ],
       "secondaryActivities": [],
