@@ -1058,27 +1058,102 @@
     {
       "day": 9,
       "date": "2026-05-31",
-      "city": "Ámsterdam",
-      "country": "Países Bajos",
-      "cityCode": "AMS",
+      "city": "Bruselas + Brujas (excursión)",
+      "country": "Bélgica",
+      "cityCode": "BRU-BGG",
       "currencyLocal": "EUR",
-      "stayArea": "Centrum / Jordaan",
-      "heroImageQuery": "Amsterdam city skyline landmark",
+      "stayArea": "Regreso a Ámsterdam (noche)",
+      "heroImageQuery": "Bruges canals Belgium medieval city",
       "imageHints": [
         "best photo viewpoint Amsterdam",
         "Amsterdam top attractions"
       ],
       "perks": [
-        "A'DAM Lookout opcional si no se hizo"
+        "Waffles belgas en Bruselas",
+        "Cerveza Trappist en Brujas",
+        "Volver a Ámsterdam antes de las 21:00 (vuelo temprano día siguiente)"
       ],
       "mainActivities": [
         {
-          "name": "Día libre en Ámsterdam",
-          "start": "09:00",
-          "durationMin": 480,
-          "link": "",
-          "notes": "Actividades pendientes o exploración libre",
-          "imageQuery": "Amsterdam city center"
+          "name": "Salida Ámsterdam Centraal → Bruselas",
+          "start": "06:30",
+          "durationMin": 115,
+          "link": "https://www.nsinternational.com",
+          "notes": "Tren Thalys/Eurostar. Ámsterdam Centraal → Bruxelles-Midi. Duración ~1h55. Comprar con anticipación.",
+          "imageQuery": "Amsterdam Centraal train station",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Centraal_2019.jpg/960px-Amsterdam_Centraal_2019.jpg"
+        },
+        {
+          "name": "Grand Place (Grote Markt) — Bruselas",
+          "start": "08:45",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Grand+Place+Brussels",
+          "notes": "Plaza central UNESCO, fachadas medievales y doradas. A 10 min caminando desde Bruxelles-Midi.",
+          "imageQuery": "Grand Place Brussels Belgium",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Grand_place_bruxelles.jpg/1200px-Grand_place_bruxelles.jpg"
+        },
+        {
+          "name": "Manneken Pis + waffles belgas",
+          "start": "09:50",
+          "durationMin": 40,
+          "link": "https://www.google.com/maps/search/Manneken+Pis+Brussels",
+          "notes": "Estatua icónica a 5 min de Grand Place. Aprovechar para desayunar waffle belga con chocolate.",
+          "imageQuery": "Manneken Pis Brussels waffle",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Manneken_Pis_Brussels_-_May_14%2C_2009.jpg/640px-Manneken_Pis_Brussels_-_May_14%2C_2009.jpg"
+        },
+        {
+          "name": "Tren Bruselas → Brujas (Brugge)",
+          "start": "10:40",
+          "durationMin": 60,
+          "link": "https://www.belgiantrain.be",
+          "notes": "IC tren directo Bruxelles-Midi → Brugge. Duración ~1h. Salen cada 30 min.",
+          "imageQuery": "Belgian train IC",
+          "imageUrl": ""
+        },
+        {
+          "name": "Markt de Brujas (Plaza Mayor)",
+          "start": "12:00",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Markt+Bruges",
+          "notes": "Plaza central con el campanario medieval (Belfort). Foto obligatoria.",
+          "imageQuery": "Markt Bruges Belgium belfry",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2015_Brugge_Markt_R01.jpg/1200px-2015_Brugge_Markt_R01.jpg"
+        },
+        {
+          "name": "Canales de Brujas (paseo en barca)",
+          "start": "13:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/canal+boat+Bruges",
+          "notes": "Paseo en barco por los canales medievales ~30 min. Embarque en Rozenhoedkaai. €12-14/persona.",
+          "imageQuery": "Bruges canal boat tour Belgium",
+          "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
+        },
+        {
+          "name": "Basílica de la Santa Sangre + casco histórico",
+          "start": "14:15",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Basilica+Holy+Blood+Bruges",
+          "notes": "Basílica románica, calle Breidelstraat, chocolaterías y cervecerías artesanales.",
+          "imageQuery": "Basilica Holy Blood Bruges Belgium",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg/800px-Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg"
+        },
+        {
+          "name": "Cerveza Trappist belga",
+          "start": "15:30",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/beer+bar+Bruges",
+          "notes": "Parada obligatoria en un café local. Brujas es famosa por sus cervezas artesanales Trappist.",
+          "imageQuery": "Belgian Trappist beer Bruges bar",
+          "imageUrl": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800"
+        },
+        {
+          "name": "Tren Brujas → Bruselas → Ámsterdam",
+          "start": "16:30",
+          "durationMin": 180,
+          "link": "https://www.nsinternational.com",
+          "notes": "Brugge → Bruxelles-Midi (~1h) + Bruxelles-Midi → Amsterdam Centraal (~2h). Llegar ~19:30-20:00. Preparar maletas para vuelo mañana 08:00.",
+          "imageQuery": "train Belgium Netherlands",
+          "imageUrl": ""
         }
       ],
       "secondaryActivities": [],
@@ -1148,25 +1223,10 @@
         ]
       },
       "accommodation": {
-        "name": "Última noche en Ámsterdam",
-        "neighborhood": "Jordaan / Centrum",
+        "name": "Hotel en Ámsterdam (misma noche)",
+        "neighborhood": "Ámsterdam - regreso nocturno",
         "link": "",
-        "costPerPerson": 50,
-        "options": [
-          {
-            "type": "hotel",
-            "name": "Hotel boutique Jordaan",
-            "cost": "$50/persona",
-            "neighborhood": "Jordaan"
-          },
-          {
-            "type": "hotel",
-            "name": "Hotel cerca Centraal",
-            "cost": "$45/persona",
-            "neighborhood": "Centrum"
-          }
-        ],
-        "notes": "Preparar para madrugar - vuelo temprano"
+        "notes": "Excursión de un día, se duerme en Ámsterdam"
       },
       "costs": {
         "lodgingBase": 40,
@@ -1183,7 +1243,8 @@
       "mapPoints": [
         "Ámsterdam"
       ],
-      "notes": "Día libre en Ámsterdam - preparación para viaje a Suiza"
+      "notes": "Excursión de día completo a Bélgica. Regreso obligatorio antes de las 21:00 — vuelo AMS→ZRH el día siguiente a las 08:00.",
+      "heroImageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
     },
     {
       "day": 10,
