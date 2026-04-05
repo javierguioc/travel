@@ -1093,17 +1093,17 @@
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2015_Brugge_Markt_R01.jpg/1200px-2015_Brugge_Markt_R01.jpg"
         },
         {
-          "name": "Paseo en barca por los canales",
+          "name": "Markt de los Sábados (Zaterdag Markt)",
           "start": "11:30",
-          "durationMin": 40,
-          "link": "https://www.google.com/maps/search/canal+boat+Rozenhoedkaai+Bruges",
-          "notes": "Embarque en Rozenhoedkaai — el punto más fotogénico. ~30 min. €12-14/persona.",
-          "imageQuery": "Bruges canal boat Rozenhoedkaai",
-          "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Zaterdag+Markt+Bruges",
+          "notes": "Mercado semanal al aire libre en la plaza norte de Brujas — frutas, quesos, flores, productos locales belgas. Ambiente muy local.",
+          "imageQuery": "Bruges Saturday market Zaterdag Markt Belgium",
+          "imageUrl": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800"
         },
         {
           "name": "Almuerzo — moules-frites y cerveza belga",
-          "start": "12:30",
+          "start": "12:45",
           "durationMin": 75,
           "link": "https://www.google.com/maps/search/restaurant+Bruges+moules+frites",
           "notes": "Mejillones con papas fritas en un café local. Pedir una Brugse Zot o Straffe Hendrik, cervezas locales.",
@@ -1112,7 +1112,7 @@
         },
         {
           "name": "Burg Square + Basílica de la Santa Sangre",
-          "start": "14:00",
+          "start": "14:15",
           "durationMin": 45,
           "link": "https://www.google.com/maps/search/Burg+Square+Bruges",
           "notes": "Plaza Burg con el Ayuntamiento gótico. La Basílica guarda una reliquia de la sangre de Cristo. Entrada gratuita.",
@@ -1121,7 +1121,7 @@
         },
         {
           "name": "Chocolaterías del casco histórico",
-          "start": "15:00",
+          "start": "15:15",
           "durationMin": 60,
           "link": "https://www.google.com/maps/search/chocolate+shop+Bruges",
           "notes": "Más de 50 chocolaterías artesanales. Calles Katelijnestraat y Simon Stevinplein. Llevar chocolate de regreso.",
@@ -1138,25 +1138,44 @@
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bruges_-_Minnewater_-_0580.jpg/1200px-Bruges_-_Minnewater_-_0580.jpg"
         },
         {
-          "name": "Tren Brujas → Ámsterdam",
+          "name": "Tren Brujas → Bruselas (Bruxelles-Midi)",
           "start": "17:15",
-          "durationMin": 180,
-          "link": "https://www.nsinternational.com",
-          "notes": "Brugge → Amsterdam Centraal ~3h. Llegada ~20:15. Preparar maletas para vuelo mañana 08:00 desde Schiphol.",
-          "imageQuery": "train Belgium Netherlands evening",
+          "durationMin": 60,
+          "link": "https://www.belgiantrain.be",
+          "notes": "IC directo Brugge → Bruxelles-Midi. Sale cada 30 min. Llegada ~18:15. Desde Midi hay conexión al Thalys hacia Suiza.",
+          "imageQuery": "Belgium train IC Brussels",
           "imageUrl": ""
+        },
+        {
+          "name": "Tren Bruselas → Basilea (Suiza) — OPCIÓN 2",
+          "start": "18:47",
+          "durationMin": 165,
+          "link": "https://www.sncf-connect.com",
+          "notes": "Thalys/TGV Bruxelles-Midi → Basel SBB. ~2h45. Llegada Basilea ~21:30. Desde Basilea: tren a Lucerna (~50 min) o Zúrich (~55 min). SIN volver a Ámsterdam — se ahorran el vuelo y el madrugón.",
+          "imageQuery": "Thalys TGV Brussels Basel train",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Thalys_PBKA_at_Paris_Gare_du_Nord.jpg/1200px-Thalys_PBKA_at_Paris_Gare_du_Nord.jpg"
+        },
+        {
+          "name": "Llegada a Basilea / conexión a Suiza",
+          "start": "21:30",
+          "durationMin": 60,
+          "link": "https://www.sbb.ch",
+          "notes": "Basilea → Lucerna: ~50 min (llegada ~22:20) o Basilea → Zúrich: ~55 min. Check-in hotel y descanso.",
+          "imageQuery": "Basel train station Switzerland night",
+          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": "flight",
-        "from": "Amsterdam Schiphol (AMS)",
-        "to": "Zürich (ZRH)",
-        "depart": "08:00",
-        "arrive": "09:40",
-        "durationMin": 100,
-        "code": "KLM/Swiss",
-        "bookingLink": "https://www.skyscanner.com"
+        "mode": "train",
+        "from": "Bruxelles-Midi",
+        "to": "Basel SBB (Suiza)",
+        "depart": "18:47",
+        "arrive": "21:30",
+        "durationMin": 165,
+        "code": "Thalys/TGV",
+        "notes": "Opción 2: directo Brujas → Bruselas → Suiza sin volver a Ámsterdam",
+        "bookingLink": "https://www.sncf-connect.com"
       },
       "transportOptions": {
         "recommended": "flight",
