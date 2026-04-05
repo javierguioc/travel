@@ -1058,9 +1058,9 @@
     {
       "day": 9,
       "date": "2026-05-31",
-      "city": "Bruselas + Brujas (excursión)",
+      "city": "Brujas (Brugge)",
       "country": "Bélgica",
-      "cityCode": "BRU-BGG",
+      "cityCode": "BGG",
       "currencyLocal": "EUR",
       "stayArea": "Regreso a Ámsterdam (noche)",
       "heroImageQuery": "Bruges canals Belgium medieval city",
@@ -1069,90 +1069,81 @@
         "Amsterdam top attractions"
       ],
       "perks": [
-        "Waffles belgas en Bruselas",
-        "Cerveza Trappist en Brujas",
-        "Volver a Ámsterdam antes de las 21:00 (vuelo temprano día siguiente)"
+        "Ciudad medieval más bonita de Bélgica",
+        "Chocolate artesanal",
+        "Regreso cómodo antes de las 21:00 — vuelo AMS→ZRH mañana 08:00"
       ],
       "mainActivities": [
         {
-          "name": "Salida Ámsterdam Centraal → Bruselas",
-          "start": "06:30",
-          "durationMin": 115,
+          "name": "Tren Ámsterdam → Brujas",
+          "start": "07:00",
+          "durationMin": 180,
           "link": "https://www.nsinternational.com",
-          "notes": "Tren Thalys/Eurostar. Ámsterdam Centraal → Bruxelles-Midi. Duración ~1h55. Comprar con anticipación.",
-          "imageQuery": "Amsterdam Centraal train station",
+          "notes": "Amsterdam Centraal → Brugge con conexión en Antwerp o Brussels. ~3h. Reservar con anticipación.",
+          "imageQuery": "Amsterdam Centraal train station morning",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Centraal_2019.jpg/960px-Amsterdam_Centraal_2019.jpg"
         },
         {
-          "name": "Grand Place (Grote Markt) — Bruselas",
-          "start": "08:45",
+          "name": "Markt (Plaza Mayor) + Belfort",
+          "start": "10:15",
           "durationMin": 60,
-          "link": "https://www.google.com/maps/search/Grand+Place+Brussels",
-          "notes": "Plaza central UNESCO, fachadas medievales y doradas. A 10 min caminando desde Bruxelles-Midi.",
-          "imageQuery": "Grand Place Brussels Belgium",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Grand_place_bruxelles.jpg/1200px-Grand_place_bruxelles.jpg"
-        },
-        {
-          "name": "Manneken Pis + waffles belgas",
-          "start": "09:50",
-          "durationMin": 40,
-          "link": "https://www.google.com/maps/search/Manneken+Pis+Brussels",
-          "notes": "Estatua icónica a 5 min de Grand Place. Aprovechar para desayunar waffle belga con chocolate.",
-          "imageQuery": "Manneken Pis Brussels waffle",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Manneken_Pis_Brussels_-_May_14%2C_2009.jpg/640px-Manneken_Pis_Brussels_-_May_14%2C_2009.jpg"
-        },
-        {
-          "name": "Tren Bruselas → Brujas (Brugge)",
-          "start": "10:40",
-          "durationMin": 60,
-          "link": "https://www.belgiantrain.be",
-          "notes": "IC tren directo Bruxelles-Midi → Brugge. Duración ~1h. Salen cada 30 min.",
-          "imageQuery": "Belgian train IC",
-          "imageUrl": ""
-        },
-        {
-          "name": "Markt de Brujas (Plaza Mayor)",
-          "start": "12:00",
-          "durationMin": 45,
           "link": "https://www.google.com/maps/search/Markt+Bruges",
-          "notes": "Plaza central con el campanario medieval (Belfort). Foto obligatoria.",
-          "imageQuery": "Markt Bruges Belgium belfry",
+          "notes": "El corazón de Brujas. El campanario Belfort tiene 366 escaleras y vistas panorámicas (€14). Foto icónica.",
+          "imageQuery": "Markt Bruges Belgium belfry tower",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2015_Brugge_Markt_R01.jpg/1200px-2015_Brugge_Markt_R01.jpg"
         },
         {
-          "name": "Canales de Brujas (paseo en barca)",
-          "start": "13:00",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/canal+boat+Bruges",
-          "notes": "Paseo en barco por los canales medievales ~30 min. Embarque en Rozenhoedkaai. €12-14/persona.",
-          "imageQuery": "Bruges canal boat tour Belgium",
+          "name": "Paseo en barca por los canales",
+          "start": "11:30",
+          "durationMin": 40,
+          "link": "https://www.google.com/maps/search/canal+boat+Rozenhoedkaai+Bruges",
+          "notes": "Embarque en Rozenhoedkaai — el punto más fotogénico. ~30 min. €12-14/persona.",
+          "imageQuery": "Bruges canal boat Rozenhoedkaai",
           "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
         },
         {
-          "name": "Basílica de la Santa Sangre + casco histórico",
-          "start": "14:15",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/Basilica+Holy+Blood+Bruges",
-          "notes": "Basílica románica, calle Breidelstraat, chocolaterías y cervecerías artesanales.",
-          "imageQuery": "Basilica Holy Blood Bruges Belgium",
+          "name": "Almuerzo — moules-frites y cerveza belga",
+          "start": "12:30",
+          "durationMin": 75,
+          "link": "https://www.google.com/maps/search/restaurant+Bruges+moules+frites",
+          "notes": "Mejillones con papas fritas en un café local. Pedir una Brugse Zot o Straffe Hendrik, cervezas locales.",
+          "imageQuery": "moules frites Belgian beer restaurant",
+          "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+        },
+        {
+          "name": "Burg Square + Basílica de la Santa Sangre",
+          "start": "14:00",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Burg+Square+Bruges",
+          "notes": "Plaza Burg con el Ayuntamiento gótico. La Basílica guarda una reliquia de la sangre de Cristo. Entrada gratuita.",
+          "imageQuery": "Burg Square Bruges Basilica Holy Blood",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg/800px-Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg"
         },
         {
-          "name": "Cerveza Trappist belga",
-          "start": "15:30",
-          "durationMin": 45,
-          "link": "https://www.google.com/maps/search/beer+bar+Bruges",
-          "notes": "Parada obligatoria en un café local. Brujas es famosa por sus cervezas artesanales Trappist.",
-          "imageQuery": "Belgian Trappist beer Bruges bar",
-          "imageUrl": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800"
+          "name": "Chocolaterías del casco histórico",
+          "start": "15:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/chocolate+shop+Bruges",
+          "notes": "Más de 50 chocolaterías artesanales. Calles Katelijnestraat y Simon Stevinplein. Llevar chocolate de regreso.",
+          "imageQuery": "Bruges chocolate shop artisan Belgium",
+          "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800"
         },
         {
-          "name": "Tren Brujas → Bruselas → Ámsterdam",
-          "start": "16:30",
+          "name": "Minnewater (Lago del Amor) + Begijnhof",
+          "start": "16:15",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Minnewater+Bruges",
+          "notes": "Lago romántico con cisnes. El Begijnhof adyacente es Patrimonio UNESCO — claustro medieval muy tranquilo.",
+          "imageQuery": "Minnewater Lake Bruges swans Belgium",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bruges_-_Minnewater_-_0580.jpg/1200px-Bruges_-_Minnewater_-_0580.jpg"
+        },
+        {
+          "name": "Tren Brujas → Ámsterdam",
+          "start": "17:15",
           "durationMin": 180,
           "link": "https://www.nsinternational.com",
-          "notes": "Brugge → Bruxelles-Midi (~1h) + Bruxelles-Midi → Amsterdam Centraal (~2h). Llegar ~19:30-20:00. Preparar maletas para vuelo mañana 08:00.",
-          "imageQuery": "train Belgium Netherlands",
+          "notes": "Brugge → Amsterdam Centraal ~3h. Llegada ~20:15. Preparar maletas para vuelo mañana 08:00 desde Schiphol.",
+          "imageQuery": "train Belgium Netherlands evening",
           "imageUrl": ""
         }
       ],
@@ -1243,7 +1234,7 @@
       "mapPoints": [
         "Ámsterdam"
       ],
-      "notes": "Excursión de día completo a Bélgica. Regreso obligatorio antes de las 21:00 — vuelo AMS→ZRH el día siguiente a las 08:00.",
+      "notes": "Excursión relajada a Brujas. Regreso a Ámsterdam antes de las 21:00 para descansar antes del vuelo a Suiza.",
       "heroImageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
     },
     {
