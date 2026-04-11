@@ -1084,22 +1084,13 @@
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Centraal_2019.jpg/960px-Amsterdam_Centraal_2019.jpg"
         },
         {
-          "name": "Markt (Plaza Mayor) + Belfort",
-          "start": "10:15",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/Markt+Bruges",
-          "notes": "El corazón de Brujas. El campanario Belfort tiene 366 escaleras y vistas panorámicas (€14). Foto icónica.",
-          "imageQuery": "Markt Bruges Belgium belfry tower",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2015_Brugge_Markt_R01.jpg/1200px-2015_Brugge_Markt_R01.jpg"
-        },
-        {
           "name": "Markt de los Sábados (Zaterdag Markt)",
           "start": "11:30",
           "durationMin": 60,
           "link": "https://www.google.com/maps/search/Zaterdag+Markt+Bruges",
           "notes": "Mercado semanal al aire libre en la plaza norte de Brujas — frutas, quesos, flores, productos locales belgas. Ambiente muy local.",
           "imageQuery": "Bruges Saturday market Zaterdag Markt Belgium",
-          "imageUrl": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800"
+          "imageUrl": "https://buendia-pro-app.s3.eu-west-3.amazonaws.com/s3fs-public/styles/highlight_large/public/2020-01/grote-markt-brujas-consejo-provincial.jpg.webp?VersionId=JrKDNLYjkcBDGTzH7bPfWXwRA8dnLNmk&itok=vZD6_d1c"
         },
         {
           "name": "Almuerzo — moules-frites y cerveza belga",
@@ -1118,15 +1109,6 @@
           "notes": "Plaza Burg con el Ayuntamiento gótico. La Basílica guarda una reliquia de la sangre de Cristo. Entrada gratuita.",
           "imageQuery": "Burg Square Bruges Basilica Holy Blood",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg/800px-Bruges_-_Basiliek_van_het_Heilig_Bloed_-_1.jpg"
-        },
-        {
-          "name": "Chocolaterías del casco histórico",
-          "start": "15:15",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/chocolate+shop+Bruges",
-          "notes": "Más de 50 chocolaterías artesanales. Calles Katelijnestraat y Simon Stevinplein. Llevar chocolate de regreso.",
-          "imageQuery": "Bruges chocolate shop artisan Belgium",
-          "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800"
         },
         {
           "name": "Minnewater (Lago del Amor) + Begijnhof",
@@ -1151,7 +1133,7 @@
           "start": "18:47",
           "durationMin": 165,
           "link": "https://www.sncf-connect.com",
-          "notes": "Thalys/TGV Bruxelles-Midi → Basel SBB. ~2h45. Llegada Basilea ~21:30. Desde Basilea: tren a Lucerna (~50 min) o Zúrich (~55 min). SIN volver a Ámsterdam — se ahorran el vuelo y el madrugón.",
+          "notes": "Thalys/TGV Bruxelles-Midi → Basel SBB. ~2h45. Llegada Basilea ~21:30. Desde Basilea: tren a Lucerna (~50 min) o Zúrich (~55 min). SIN regresar a Ámsterdam.",
           "imageQuery": "Thalys TGV Brussels Basel train",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Thalys_PBKA_at_Paris_Gare_du_Nord.jpg/1200px-Thalys_PBKA_at_Paris_Gare_du_Nord.jpg"
         },
@@ -1275,38 +1257,49 @@
       ],
       "mainActivities": [
         {
-          "name": "Vuelo Ámsterdam → Zúrich (ZRH)",
-          "start": "08:00",
-          "durationMin": 100,
-          "link": "https://www.skyscanner.com",
-          "notes": "Vuelo AMS→ZRH (~1h40)",
-          "imageQuery": "Flight Amsterdam Zurich"
-        },
-        {
-          "name": "Rhine Falls (Cascadas del Rin)",
-          "start": "11:00",
-          "durationMin": 180,
-          "link": "https://www.rheinfall.ch",
-          "notes": "Pasarelas + barco al peñón (Schloss Laufen / Neuhausen)",
-          "imageQuery": "Rhine Falls Switzerland cascadas",
-          "imageUrl": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_768/v1666256536/post_images/Zurich/rhine-falls/Excursi%C3%B3n_en_las_cataratas_del_Rin.jpg"
-        },
-        {
-          "name": "Tren ZRH → Lucerna",
-          "start": "15:00",
+          "name": "Desayuno en Basilea + salida",
+          "start": "08:30",
           "durationMin": 60,
-          "link": "https://www.sbb.ch",
-          "notes": "Tren ZRH Airpt→Zürich HB→Lucerna (~1h)",
-          "imageQuery": "Train Zurich Lucerne"
+          "link": "",
+          "notes": "Desayuno en hotel de Basilea. Recogen maletas y salen hacia Rhine Falls.",
+          "imageQuery": "Basel Switzerland morning breakfast",
+          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
         },
         {
-          "name": "Check-in + Kapellbrücke",
-          "start": "17:00",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Kapellbrücke+Lucerna",
-          "notes": "Check-in hotel + visita al puente de la capilla (símbolo de Lucerna)",
-          "imageQuery": "Kapellbrücke Lucerne",
-          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6cE-ujuN_1FdW-jz-2qA2uVIjmzNtefcSw&s"
+          "name": "Tren Basilea → Rhine Falls (Schaffhausen)",
+          "start": "09:30",
+          "durationMin": 50,
+          "link": "https://www.sbb.ch",
+          "notes": "Basel SBB → Neuhausen am Rheinfall ~50 min. Tren directo SBB.",
+          "imageQuery": "Basel train station SBB Switzerland",
+          "imageUrl": ""
+        },
+        {
+          "name": "Rhine Falls (Cataratas del Rin)",
+          "start": "10:30",
+          "durationMin": 150,
+          "link": "https://www.rhinefalls.com",
+          "notes": "Las cataratas más grandes de Europa. Pasarelas con vistas, barco al peñón central (~€7). Entrada gratuita al parque.",
+          "imageQuery": "Rhine Falls Rheinfall Switzerland waterfall",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Rheinfall_-_2015.jpg/1200px-Rheinfall_-_2015.jpg"
+        },
+        {
+          "name": "Tren Rhine Falls → Lucerna",
+          "start": "13:30",
+          "durationMin": 105,
+          "link": "https://www.sbb.ch",
+          "notes": "Neuhausen → Lucerna con cambio en Zürich o Winterthur. ~1h45.",
+          "imageQuery": "Swiss train SBB scenic route",
+          "imageUrl": ""
+        },
+        {
+          "name": "Check-in hotel + Kapellbrücke",
+          "start": "16:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Kapellbrücke+Lucerne",
+          "notes": "Check-in en hotel de Lucerna. Paseo al puente de la capilla — símbolo de Suiza, con pinturas del s.XVII.",
+          "imageQuery": "Kapellbrücke Lucerne Switzerland bridge",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Luzern_Kapellbrücke.jpg/1200px-Luzern_Kapellbrücke.jpg"
         }
       ],
       "secondaryActivities": [],
@@ -1343,11 +1336,11 @@
     {
       "day": 11,
       "date": "2026-06-02",
-      "city": "Suiza (día 1)",
+      "city": "Suiza — Interlaken",
       "country": "Suiza",
       "cityCode": "ZRH",
       "currencyLocal": "CHF",
-      "stayArea": "Lucerna Altstadt",
+      "stayArea": "Interlaken (noche)",
       "heroImageQuery": "Interlaken city skyline landmark",
       "imageHints": [
         "best photo viewpoint Interlaken",
@@ -1359,42 +1352,62 @@
       ],
       "mainActivities": [
         {
-          "name": "Luzern–Interlaken Express (Lucerna → Interlaken)",
-          "start": "09:00",
-          "durationMin": 110,
-          "link": "https://www.goldenpass.ch",
-          "notes": "Tren panorámico por los Alpes (ventanas panorámicas) - 1h50",
-          "imageQuery": "Luzern Interlaken Express panorama train Switzerland",
-          "imageUrl": "https://trenviajero.com/wp-content/uploads/2025/03/goldenpass-line-express-recorrido.jpg"
-        },
-        {
-          "name": "Barco Lago Brienz (o Thun)",
-          "start": "11:30",
-          "durationMin": 75,
-          "link": "https://www.bls.ch",
-          "notes": "Crucero por el lago alpino - 1h-1h15",
-          "imageQuery": "Lake Brienz Switzerland boat cruise",
-          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/5d/75/d6.jpg"
-        },
-        {
-          "name": "Regreso a Lucerna",
-          "start": "14:00",
-          "durationMin": 110,
+          "name": "Tren Luzern → Interlaken Ost",
+          "start": "09:24",
+          "durationMin": 113,
           "link": "https://www.sbb.ch",
-          "notes": "LIR Interlaken → Lucerna (1h50)",
-          "imageQuery": "Train Interlaken Lucerne"
+          "notes": "Llegada 11:17. $68.64.",
+          "imageQuery": "Luzern Interlaken train Switzerland panoramic",
+          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+        },
+        {
+          "name": "Check-in hotel Interlaken",
+          "start": "11:30",
+          "durationMin": 30,
+          "link": "",
+          "notes": "Dejar maletas. Interlaken es la base estos dias.",
+          "imageQuery": "Interlaken hotel Switzerland",
+          "imageUrl": ""
+        },
+        {
+          "name": "Lago Brienz",
+          "start": "12:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Lake+Brienz+Switzerland",
+          "notes": "Lago turquesa al este de Interlaken. Paseo por la orilla o barco.",
+          "imageQuery": "Lake Brienz Switzerland turquoise",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Brienzersee_Luftaufnahme.jpg/1200px-Brienzersee_Luftaufnahme.jpg"
+        },
+        {
+          "name": "Lago Thun",
+          "start": "15:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Lake+Thun+Switzerland",
+          "notes": "Lago al oeste con vistas a los Alpes y castillo de Thun.",
+          "imageQuery": "Lake Thun Switzerland Alps castle",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Thunersee_mit_Stockhorn.jpg/1200px-Thunersee_mit_Stockhorn.jpg"
+        },
+        {
+          "name": "Explorar Interlaken + cena",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Interlaken+Switzerland",
+          "notes": "Paseo por Hoeheweg. Cena con vista a la Jungfrau.",
+          "imageQuery": "Interlaken Switzerland evening",
+          "imageUrl": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": null,
-        "from": null,
-        "to": null,
-        "depart": "",
-        "arrive": "",
-        "durationMin": 0,
-        "code": "",
-        "bookingLink": ""
+        "mode": "train",
+        "from": "Interlaken Ost",
+        "to": "Grindelwald",
+        "depart": "08:05",
+        "arrive": "08:39",
+        "durationMin": 34,
+        "code": "BOB",
+        "notes": "$40",
+        "bookingLink": "https://www.sbb.ch"
       },
       "costs": {
         "lodgingBase": 40,
@@ -1414,16 +1427,16 @@
         "Lago Thun",
         "Lucerna"
       ],
-      "notes": "Día de naturaleza alpina - trenes panorámicos y lagos"
+      "notes": "Traslado Lucerna→Interlaken. Explorar Lagos Brienz y Thun. Base en Interlaken los proximos dias."
     },
     {
       "day": 12,
       "date": "2026-06-03",
-      "city": "Suiza (día 2)",
+      "city": "Suiza — Grindelwald + Lauterbrunnen",
       "country": "Suiza",
       "cityCode": "ZRH",
       "currencyLocal": "CHF",
-      "stayArea": "Lucerna Altstadt",
+      "stayArea": "Interlaken (noche)",
       "heroImageQuery": "Mount Titlis Switzerland",
       "imageHints": [
         "best photo viewpoint Titlis",
@@ -1435,33 +1448,62 @@
       ],
       "mainActivities": [
         {
-          "name": "Tren Lucerna → Engelberg",
-          "start": "08:00",
-          "durationMin": 50,
+          "name": "Tren Interlaken Ost → Grindelwald",
+          "start": "08:05",
+          "durationMin": 34,
           "link": "https://www.sbb.ch",
-          "notes": "Tren a Engelberg (45-50 min)",
-          "imageQuery": "Train Lucerne Engelberg"
+          "notes": "Llegada 08:39. $40. Tren BOB con vistas al Eiger.",
+          "imageQuery": "train Interlaken Grindelwald Eiger",
+          "imageUrl": ""
         },
         {
-          "name": "Monte Titlis (incluye skateboard y cueva de hielo)",
+          "name": "Grindelwald — First (opcional)",
           "start": "09:00",
-          "durationMin": 360,
-          "link": "https://www.titlis.com",
-          "notes": "Titlis Xpress (góndolas 30-40 min cada tramo) + Cueva de hielo + Titlis Cliff Walk (snow/tubing según apertura). Actividades incluidas: Ice Flyer (skateboard sobre hielo) y Glacier Cave (cueva de hielo glaciar)",
-          "imageQuery": "Mount Titlis Switzerland",
-          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/eb/73/01/titlis.jpg?w=2000&h=-1&s=1"
+          "durationMin": 180,
+          "link": "https://www.jungfrau.ch/en-gb/grindelwald-first/",
+          "notes": "Teleferico a First (2168m). Vistas al Eiger y glaciar. Cliff Walk. CHF 42.",
+          "imageQuery": "Grindelwald First Switzerland Eiger glacier",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Grindelwald_-_Kleine_Scheidegg_seen_from_First.jpg/1200px-Grindelwald_-_Kleine_Scheidegg_seen_from_First.jpg"
+        },
+        {
+          "name": "Tren Grindelwald → Lauterbrunnen",
+          "start": "12:17",
+          "durationMin": 35,
+          "link": "https://www.sbb.ch",
+          "notes": "Llegada 12:52. $37. Cambio en Zweilutschinen.",
+          "imageQuery": "train Grindelwald Lauterbrunnen Switzerland",
+          "imageUrl": ""
+        },
+        {
+          "name": "Valle de Lauterbrunnen",
+          "start": "13:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Lauterbrunnen+Valley+Switzerland",
+          "notes": "El valle de las 72 cascadas. Staubbach Fall (297m), Trummelbach Falls.",
+          "imageQuery": "Lauterbrunnen Valley waterfalls Switzerland",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lauterbrunnen_valley_from_Wengen.jpg/1200px-Lauterbrunnen_valley_from_Wengen.jpg"
+        },
+        {
+          "name": "Tren Lauterbrunnen → Interlaken Ost",
+          "start": "16:32",
+          "durationMin": 20,
+          "link": "https://www.sbb.ch",
+          "notes": "Llegada 16:52. $37. Regreso a Interlaken.",
+          "imageQuery": "Lauterbrunnen train station Switzerland",
+          "imageUrl": ""
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": null,
-        "from": null,
-        "to": null,
-        "depart": "",
-        "arrive": "",
-        "durationMin": 0,
-        "code": "",
-        "bookingLink": ""
+        "mode": "train",
+        "from": "Interlaken Ost",
+        "to": "Engelberg",
+        "depart": "08:00",
+        "arrive": "08:48",
+        "durationMin": 48,
+        "code": "SBB",
+        "notes": "$110",
+        "bookingLink": "https://www.sbb.ch"
       },
       "costs": {
         "lodgingBase": 40,
@@ -1480,16 +1522,16 @@
         "Engelberg",
         "Monte Titlis"
       ],
-      "notes": "Día completo en Monte Titlis - skateboard y cueva de hielo"
+      "notes": "Glaciares en Grindelwald y el Valle de las 72 cascadas en Lauterbrunnen. Regreso a Interlaken."
     },
     {
       "day": 13,
       "date": "2026-06-04",
-      "city": "Suiza (día 3)",
+      "city": "Suiza — Mount Titlis",
       "country": "Suiza",
       "cityCode": "ZRH",
       "currencyLocal": "CHF",
-      "stayArea": "Lucerna (o Interlaken si prefieren)",
+      "stayArea": "Interlaken (noche)",
       "heroImageQuery": "Grindelwald Lauterbrunnen Switzerland",
       "imageHints": [
         "best photo viewpoint Grindelwald",
@@ -1501,42 +1543,53 @@
       ],
       "mainActivities": [
         {
-          "name": "Tren Lucerna → Interlaken → Lauterbrunnen",
+          "name": "Tren Interlaken Ost → Engelberg",
           "start": "08:00",
-          "durationMin": 130,
+          "durationMin": 48,
           "link": "https://www.sbb.ch",
-          "notes": "Tren a Interlaken (1h50) + tramo a Lauterbrunnen (20-45 min)",
-          "imageQuery": "Train Lucerne Interlaken Lauterbrunnen"
+          "notes": "Llegada 08:48. $110 (incluye acceso a Titlis). Cambio en Lucerna.",
+          "imageQuery": "Engelberg Switzerland train",
+          "imageUrl": ""
         },
         {
-          "name": "Lauterbrunnen (Valle 72 cascadas)",
-          "start": "10:30",
-          "durationMin": 180,
-          "link": "https://www.google.com/maps/search/Lauterbrunnen+Switzerland",
-          "notes": "Valle de las 72 cascadas - opcional: Mürren/Grütschalp o Trümmelbachfälle",
-          "imageQuery": "Lauterbrunnen valley Switzerland",
-          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmGfCrz6AAUq1bM0w-SQK8e3CH9Exhgvpzg&s"
-        },
-        {
-          "name": "Grindelwald",
-          "start": "14:00",
+          "name": "Mount Titlis (3238m)",
+          "start": "09:00",
           "durationMin": 240,
-          "link": "https://www.google.com/maps/search/Grindelwald+Switzerland",
-          "notes": "Pueblo alpino con vistas espectaculares",
-          "imageQuery": "Grindelwald Switzerland",
-          "imageUrl": "https://ik.imgkit.net/3vlqs5axxjf/TAW/ik-seo/uploadedImages/All_Gateways/Europe/Features/Grindelwald_Hero/What-to-Do-in-Grindelwald-Switzerland.jpg?tr=w-1008%2Ch-567%2Cfo-auto"
+          "link": "https://www.titlis.ch",
+          "notes": "Teleferico rotatorio unico en el mundo. Cueva de hielo, Cliff Walk, nieve garantizada. Incluido.",
+          "imageQuery": "Mount Titlis Switzerland glacier snow",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Titlis_glacier_cave.jpg/1200px-Titlis_glacier_cave.jpg"
+        },
+        {
+          "name": "Almuerzo en Engelberg",
+          "start": "13:00",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/restaurant+Engelberg+Switzerland",
+          "notes": "Pueblo alpino tranquilo. Queso y raclette local.",
+          "imageQuery": "Engelberg village Switzerland Alps",
+          "imageUrl": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800"
+        },
+        {
+          "name": "Tren Engelberg → Interlaken Ost",
+          "start": "14:10",
+          "durationMin": 50,
+          "link": "https://www.sbb.ch",
+          "notes": "Llegada ~15:00. Tarde libre en Interlaken. Preparar para salida temprana manana.",
+          "imageQuery": "Engelberg train station Switzerland",
+          "imageUrl": ""
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": null,
-        "from": null,
-        "to": null,
-        "depart": "",
-        "arrive": "",
-        "durationMin": 0,
-        "code": "",
-        "bookingLink": ""
+        "mode": "train",
+        "from": "Interlaken Ost",
+        "to": "Venezia Santa Lucia",
+        "depart": "07:34",
+        "arrive": "14:15",
+        "durationMin": 401,
+        "code": "SBB + Trenitalia",
+        "notes": "$120 + incluido + $50",
+        "bookingLink": "https://www.sbb.ch"
       },
       "costs": {
         "lodgingBase": 40,
@@ -1558,16 +1611,16 @@
         "Trümmelbachfälle",
         "Grindelwald"
       ],
-      "notes": "Exploración de valles alpinos - Lauterbrunnen y Grindelwald"
+      "notes": "Mount Titlis (3238m) desde Engelberg. Regreso a Interlaken en la tarde."
     },
     {
       "day": 14,
       "date": "2026-06-05",
-      "city": "Suiza → Venecia (vía Milán)",
+      "city": "Suiza → Venecia (via Milan)",
       "country": "Italia",
       "cityCode": "VCE",
       "currencyLocal": "EUR",
-      "stayArea": "Mestre o Venecia centro",
+      "stayArea": "Venecia",
       "heroImageQuery": "Venice city skyline landmark",
       "imageHints": [
         "best photo viewpoint Venice",
@@ -1579,44 +1632,49 @@
       ],
       "mainActivities": [
         {
-          "name": "Check-out Lucerna → Tren a Arth-Goldau",
-          "start": "08:00",
-          "durationMin": 30,
+          "name": "Tren Interlaken Ost → Spiez",
+          "start": "07:34",
+          "durationMin": 20,
           "link": "https://www.sbb.ch",
-          "notes": "Tren regional Lucerna → Arth-Goldau",
-          "imageQuery": "Train Lucerne Arth-Goldau"
+          "notes": "Llegada 07:54. $120 (incluye conexion a Milan). Salida temprana.",
+          "imageQuery": "Interlaken Ost train station early morning",
+          "imageUrl": ""
         },
         {
-          "name": "EuroCity Arth-Goldau → Milano Centrale",
-          "start": "08:45",
-          "durationMin": 195,
+          "name": "Tren Spiez → Milano Centrale",
+          "start": "08:05",
+          "durationMin": 155,
           "link": "https://www.sbb.ch",
-          "notes": "EuroCity a Milán (3h15 aprox)",
-          "imageQuery": "EuroCity Switzerland Milan"
+          "notes": "Llegada 10:40. Incluido. Cruce de los Alpes por el tunel del Simplon.",
+          "imageQuery": "Swiss Alps train Simplon tunnel",
+          "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800"
         },
         {
-          "name": "Alta Velocidad Milano → Venezia S. Lucia",
-          "start": "13:00",
+          "name": "Parada en Milan + almuerzo",
+          "start": "10:45",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Milano+Centrale",
+          "notes": "Hora libre en Milano Centrale. La estacion es impresionante. Almuerzo rapido.",
+          "imageQuery": "Milano Centrale train station",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Stazione_Milano_Centrale_2019.jpg/1200px-Stazione_Milano_Centrale_2019.jpg"
+        },
+        {
+          "name": "Tren Milano Centrale → Venezia Santa Lucia",
+          "start": "11:45",
           "durationMin": 150,
           "link": "https://www.trenitalia.com",
-          "notes": "Tren de alta velocidad a Venecia (~2h30)",
-          "imageQuery": "High speed train Milan Venice"
+          "notes": "Llegada 14:15. $50. Frecciaargento directo a Venecia.",
+          "imageQuery": "Frecciarossa train Italy high speed",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/ETR_400_Frecciarossa_1000_-_Direttissima.jpg/1200px-ETR_400_Frecciarossa_1000_-_Direttissima.jpg"
         },
         {
-          "name": "Check-in Venecia",
-          "start": "16:00",
-          "durationMin": 60,
-          "link": "",
-          "notes": "Instalación en hotel en Venecia o Mestre",
-          "imageQuery": "hotel check-in Venice"
-        },
-        {
-          "name": "Tarde libre en Venecia",
-          "start": "17:00",
-          "durationMin": 180,
-          "link": "",
-          "notes": "Primera exploración de Venecia - paseo por canales",
-          "imageQuery": "Venice canals evening"
+          "name": "Llegada a Venecia + check-in",
+          "start": "14:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Venice+Santa+Lucia",
+          "notes": "Vaporetto desde Santa Lucia al hotel. Primera vista de los canales.",
+          "imageQuery": "Venice Santa Lucia canal vaporetto",
+          "imageUrl": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800"
         }
       ],
       "secondaryActivities": [],
@@ -1647,7 +1705,7 @@
         "Milano Centrale",
         "Venezia S. Lucia"
       ],
-      "notes": "Traslado completo Suiza → Venecia (vía Milán) - día de viaje"
+      "notes": "Traslado: Interlaken → Spiez → Milan → Venecia."
     },
     {
       "day": 15,
