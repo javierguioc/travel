@@ -101,7 +101,16 @@
           "notes": "Air Europa UX198: sale MDE 20:35 → llega Madrid Barajas T1 13:05 (23 May) · 9h30. Escala ~2h. Conexión UX7703 MAD→BCN: sale 15:10 → llega Barcelona T1 16:35 · 1h25.",
           "imageQuery": "Night flight airplane",
           "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800",
-          "ticketUrl": "/tickets/1-vuelos-barcelona/javier-barcelona.pdf"
+          "ticketUrls": [
+            {
+              "label": "Javier",
+              "url": "/travel/tickets/1-vuelos-barcelona/javier-barcelona.pdf"
+            },
+            {
+              "label": "Diana",
+              "url": "/travel/tickets/1-vuelos-barcelona/diana-barcelona.pdf"
+            }
+          ]
         }
       ],
       "secondaryActivities": [],
@@ -114,8 +123,17 @@
         "durationMin": 570,
         "code": "UX198 + UX7703 (Air Europa)",
         "notes": "MDE→MAD UX198 (9h30) + escala ~2h en Madrid T1→T2 + MAD→BCN UX7703 (1h25). Llega BCN T1 16:35.",
-        "ticketUrl": "/tickets/1-vuelos-barcelona/javier-barcelona.pdf",
-        "bookingLink": ""
+        "bookingLink": "",
+        "ticketUrls": [
+          {
+            "label": "Javier",
+            "url": "/travel/tickets/1-vuelos-barcelona/javier-barcelona.pdf"
+          },
+          {
+            "label": "Diana",
+            "url": "/travel/tickets/1-vuelos-barcelona/diana-barcelona.pdf"
+          }
+        ]
       },
       "costs": {
         "lodgingBase": 0,
@@ -416,8 +434,13 @@
         "durationMin": 120,
         "code": "TO4801 (Transavia)",
         "notes": "⚠️ PENDIENTE DE CONFIRMACIÓN por parte de la aerolínea. Transavia TO4801. Ref Booking.com: 40-918711924.",
-        "ticketUrl": "/tickets/2-vuelo-paris/barcelona-paris.png",
-        "bookingLink": ""
+        "bookingLink": "",
+        "ticketUrls": [
+          {
+            "label": "Booking (pendiente)",
+            "url": "/travel/tickets/2-vuelo-paris/barcelona-paris.png"
+          }
+        ]
       },
       "transportOptions": {
         "recommended": "train",
@@ -784,7 +807,13 @@
           "durationMin": 60,
           "link": "https://www.ratp.fr",
           "notes": "RER A Gare du Nord → Marne-la-Vallée Chessy ~40min. Salir antes de las 08:50 para llegar a apertura 09:30.",
-          "imageQuery": "RER A Disneyland París"
+          "imageQuery": "RER A Disneyland París",
+          "ticketUrls": [
+            {
+              "label": "Entradas (3 personas)",
+              "url": "/travel/tickets/3-disney/entradas-disney.pdf"
+            }
+          ]
         },
         {
           "name": "Disneyland Park + Walt Disney Studios (2 Parques)",
@@ -793,8 +822,7 @@
           "link": "https://www.disneylandparis.com",
           "notes": "Apertura 09:30 · Cierre 21:00 · 2 Parks Ticket · 3 adultos. Booking ID: 30851354 (Headout). CONFIRMADO.",
           "imageQuery": "Disneyland Park París",
-          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg",
-          "ticketUrl": "/tickets/3-disney/entradas-disney.pdf"
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg"
         },
         {
           "name": "Desfile nocturno",
@@ -882,7 +910,20 @@
           "notes": "Sale Paris Gare du Nord 06:17 · Llega Amsterdam Centraal 09:55 · Vagón 6 · Asientos Javier 23, Diana 27, Aleja 28 · CONFIRMADO (PNR C6VTTF).",
           "imageQuery": "Eurostar train Paris Amsterdam",
           "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800",
-          "ticketUrl": "/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
+          "ticketUrls": [
+            {
+              "label": "Javier",
+              "url": "/travel/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
+            },
+            {
+              "label": "Diana",
+              "url": "/travel/tickets/4-amsterdam-eurostar/diana-eurostar.pdf"
+            },
+            {
+              "label": "Aleja",
+              "url": "/travel/tickets/4-amsterdam-eurostar/aleja-eurostar.pdf"
+            }
+          ]
         },
         {
           "name": "Check-in y descanso",
@@ -938,7 +979,20 @@
         "durationMin": 0,
         "code": "",
         "bookingLink": "",
-        "ticketUrl": "/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
+        "ticketUrls": [
+          {
+            "label": "Javier",
+            "url": "/travel/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
+          },
+          {
+            "label": "Diana",
+            "url": "/travel/tickets/4-amsterdam-eurostar/diana-eurostar.pdf"
+          },
+          {
+            "label": "Aleja",
+            "url": "/travel/tickets/4-amsterdam-eurostar/aleja-eurostar.pdf"
+          }
+        ]
       },
       "costs": {
         "lodgingBase": 40,
@@ -1146,8 +1200,13 @@
         "durationMin": 525,
         "code": "BlaBlaCar Bus 4740",
         "notes": "BlaBlaCar Bus 4740 (dir. Milan). Sale Bruselas Midi 20:40 el 1 Jun · llega Zürich 05:25 el 2 Jun · 8h45. Asientos: Diana 5A, Javier 5B, Aleja 5D. Booking 9C9N5B.",
-        "ticketUrl": "/tickets/5-bus-suiza/bus-brussels-zurich.pdf",
-        "bookingLink": ""
+        "bookingLink": "",
+        "ticketUrls": [
+          {
+            "label": "Diana · Javier · Aleja",
+            "url": "/travel/tickets/5-bus-suiza/bus-brussels-zurich.pdf"
+          }
+        ]
       },
       "transportOptions": {
         "recommended": "flight",
@@ -1264,7 +1323,12 @@
           "notes": "Sale Brussels Midi (87 Rue de France/Frankrijkstraat — strip de parking). Dirección Milan-Lampugnano. Llega Zürich Ausstellungsstrasse 15 a las 05:25 (02 Jun) · 8h45. Diana 5A · Javier 5B · Aleja 5D. Booking 9C9N5B.",
           "imageQuery": "BlaBlaCar bus overnight Europe",
           "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
-          "ticketUrl": "/tickets/5-bus-suiza/bus-brussels-zurich.pdf"
+          "ticketUrls": [
+            {
+              "label": "Diana · Javier · Aleja",
+              "url": "/travel/tickets/5-bus-suiza/bus-brussels-zurich.pdf"
+            }
+          ]
         }
       ],
       "secondaryActivities": [],
@@ -2530,7 +2594,16 @@
           "link": "",
           "notes": "Air Europa UX193. Sale Madrid Barajas T1 15:15 → llega Bogotá El Dorado T1 18:15 · 10h. Ref UX/7PYA8Y.",
           "imageQuery": "airplane flight Madrid",
-          "ticketUrl": "/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf"
+          "ticketUrls": [
+            {
+              "label": "Javier",
+              "url": "/travel/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf"
+            },
+            {
+              "label": "Diana",
+              "url": "/travel/tickets/6-vuelos-regreso/diana-madrid-bogota.pdf"
+            }
+          ]
         },
         {
           "name": "Llegada a Bogotá",
@@ -2547,7 +2620,16 @@
           "link": "",
           "notes": "Avianca AV9242. Sale Bogotá El Dorado T1 21:25 → llega Medellín José María Córdova 22:25 · 1h. Ref CBM9R3.",
           "imageQuery": "Bogota Medellin flight",
-          "ticketUrl": "/tickets/6-vuelos-regreso/javier-bogota-medellin.pdf"
+          "ticketUrls": [
+            {
+              "label": "Javier",
+              "url": "/travel/tickets/6-vuelos-regreso/javier-bogota-medellin.pdf"
+            },
+            {
+              "label": "Diana",
+              "url": "/travel/tickets/6-vuelos-regreso/diana-bogota-medellin.pdf"
+            }
+          ]
         },
         {
           "name": "Llegada a Medellín",
@@ -2568,8 +2650,25 @@
         "durationMin": 670,
         "code": "UX193 (MAD→BOG) + AV9242 (BOG→MDE)",
         "notes": "MAD→BOG UX193 15:15-18:15 (10h) + BOG→MDE AV9242 21:25-22:25 (1h). Escala BOG.",
-        "ticketUrl": "/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf",
-        "bookingLink": ""
+        "bookingLink": "",
+        "ticketUrls": [
+          {
+            "label": "Javier MAD→BOG",
+            "url": "/travel/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf"
+          },
+          {
+            "label": "Diana MAD→BOG",
+            "url": "/travel/tickets/6-vuelos-regreso/diana-madrid-bogota.pdf"
+          },
+          {
+            "label": "Javier BOG→MDE",
+            "url": "/travel/tickets/6-vuelos-regreso/javier-bogota-medellin.pdf"
+          },
+          {
+            "label": "Diana BOG→MDE",
+            "url": "/travel/tickets/6-vuelos-regreso/diana-bogota-medellin.pdf"
+          }
+        ]
       },
       "costs": {
         "lodgingBase": 0,
