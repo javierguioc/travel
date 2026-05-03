@@ -128,6 +128,16 @@ export function ActivityCard({ activity, cityName, dayNum, activityIndex }) {
                 🔗 Ver detalles →
               </a>
             )}
+            {activity.ticketUrl && (
+              <a
+                href={activity.ticketUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-700 hover:text-green-800 text-sm font-semibold mt-2 ml-3 inline-flex items-center gap-1 hover:gap-2 transition-all"
+              >
+                📄 Ver tiquete →
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -242,6 +252,16 @@ export function ActivityCard({ activity, cityName, dayNum, activityIndex }) {
                     className={`${styles.accent} text-sm font-medium mt-3 inline-flex items-center gap-1 hover:gap-2 transition-all`}
                   >
                     🔗 Ver más información →
+                  </a>
+                )}
+                {activity.ticketUrl && (
+                  <a
+                    href={activity.ticketUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 hover:text-green-800 text-sm font-semibold mt-3 ml-3 inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    📄 Ver tiquete →
                   </a>
                 )}
               </>

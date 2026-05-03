@@ -90,6 +90,17 @@ export function TransportCard({ transport, transportOptions }) {
             🔗 Ver reserva →
           </a>
         )}
+
+        {transport.ticketUrl && (
+          <a
+            href={transport.ticketUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-green-300 text-green-700 font-semibold shadow-sm hover:shadow-md hover:bg-green-50 transition-all duration-200 hover:scale-105"
+          >
+            📄 Ver tiquete →
+          </a>
+        )}
       </div>
 
       {/* Transport Options Section */}

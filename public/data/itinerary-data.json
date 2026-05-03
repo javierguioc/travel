@@ -89,30 +89,33 @@
           "start": "18:00",
           "durationMin": 180,
           "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
-          "notes": "Check-in, seguridad y embarque en Aeropuerto José María Córdova (MDE)",
+          "notes": "Check-in, seguridad y embarque en Aeropuerto José María Córdova (MDE). Vuelo UX198 sale 20:35. Llegar 3h antes.",
           "imageQuery": "Medellin airport departure",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg/1200px-Aeropuerto_Internacional_Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova-Rionegro.jpg"
         },
         {
-          "name": "Vuelo MDE → BCN",
-          "start": "21:00",
-          "durationMin": 600,
+          "name": "Vuelo Air Europa UX198 — MDE → MAD → BCN",
+          "start": "20:35",
+          "durationMin": 570,
           "link": "",
-          "notes": "Vuelo nocturno ~10 horas. Escala posible en Madrid o conexión directa",
+          "notes": "Air Europa UX198: sale MDE 20:35 → llega Madrid Barajas T1 13:05 (23 May) · 9h30. Escala ~2h. Conexión UX7703 MAD→BCN: sale 15:10 → llega Barcelona T1 16:35 · 1h25.",
           "imageQuery": "Night flight airplane",
-          "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800"
+          "imageUrl": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800",
+          "ticketUrl": "/tickets/1-vuelos-barcelona/javier-barcelona.pdf"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
         "mode": "flight",
-        "from": "Medellín (MDE)",
-        "to": "Barcelona (BCN)",
-        "depart": "21:00",
-        "arrive": "13:00+1",
-        "durationMin": 600,
-        "code": "Vuelo Internacional",
-        "bookingLink": "https://www.skyscanner.com"
+        "from": "Medellín José María Córdova (MDE)",
+        "to": "Barcelona El Prat (BCN)",
+        "depart": "20:35",
+        "arrive": "16:35+1",
+        "durationMin": 570,
+        "code": "UX198 + UX7703 (Air Europa)",
+        "notes": "MDE→MAD UX198 (9h30) + escala ~2h en Madrid T1→T2 + MAD→BCN UX7703 (1h25). Llega BCN T1 16:35.",
+        "ticketUrl": "/tickets/1-vuelos-barcelona/javier-barcelona.pdf",
+        "bookingLink": ""
       },
       "costs": {
         "lodgingBase": 0,
@@ -157,10 +160,10 @@
       "mainActivities": [
         {
           "name": "Llegada a Barcelona",
-          "start": "13:00",
+          "start": "16:35",
           "durationMin": 120,
           "link": "",
-          "notes": "Llegada al aeropuerto El Prat, transporte al hotel y check-in",
+          "notes": "Llegada El Prat T1 16:35 en vuelo UX7703 desde Madrid. Transporte al alojamiento.",
           "imageQuery": "Barcelona airport arrival",
           "imageUrl": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
         },
@@ -411,8 +414,9 @@
         "depart": "06:10",
         "arrive": "08:10",
         "durationMin": 120,
-        "code": "BCN → ORY",
-        "notes": "Pendiente de confirmación",
+        "code": "TO4801 (Transavia)",
+        "notes": "⚠️ PENDIENTE DE CONFIRMACIÓN por parte de la aerolínea. Transavia TO4801. Ref Booking.com: 40-918711924.",
+        "ticketUrl": "/tickets/2-vuelo-paris/barcelona-paris.png",
         "bookingLink": ""
       },
       "transportOptions": {
@@ -779,17 +783,18 @@
           "start": "08:00",
           "durationMin": 60,
           "link": "https://www.ratp.fr",
-          "notes": "Desde Châtelet-Les Halles - madrugar",
+          "notes": "RER A Gare du Nord → Marne-la-Vallée Chessy ~40min. Salir antes de las 08:50 para llegar a apertura 09:30.",
           "imageQuery": "RER A Disneyland París"
         },
         {
-          "name": "Disneyland Park (parque completo)",
-          "start": "09:00",
-          "durationMin": 660,
+          "name": "Disneyland Park + Walt Disney Studios (2 Parques)",
+          "start": "09:30",
+          "durationMin": 690,
           "link": "https://www.disneylandparis.com",
-          "notes": "Parque completo - aprovechar todo el día",
+          "notes": "Apertura 09:30 · Cierre 21:00 · 2 Parks Ticket · 3 adultos. Booking ID: 30851354 (Headout). CONFIRMADO.",
           "imageQuery": "Disneyland Park París",
-          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg"
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/75/4e/62.jpg",
+          "ticketUrl": "/tickets/3-disney/entradas-disney.pdf"
         },
         {
           "name": "Desfile nocturno",
@@ -874,9 +879,10 @@
           "start": "06:17",
           "durationMin": 218,
           "link": "https://www.eurostar.com",
-          "notes": "Sale Paris Gare du Nord 06:17 · Llega Amsterdam Centraal 09:55 · Vagón 6, asientos 23, 27, 28 · CONFIRMADO",
+          "notes": "Sale Paris Gare du Nord 06:17 · Llega Amsterdam Centraal 09:55 · Vagón 6 · Asientos Javier 23, Diana 27, Aleja 28 · CONFIRMADO (PNR C6VTTF).",
           "imageQuery": "Eurostar train Paris Amsterdam",
-          "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800"
+          "imageUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800",
+          "ticketUrl": "/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
         },
         {
           "name": "Check-in y descanso",
@@ -931,7 +937,8 @@
         "arrive": "",
         "durationMin": 0,
         "code": "",
-        "bookingLink": ""
+        "bookingLink": "",
+        "ticketUrl": "/tickets/4-amsterdam-eurostar/javier-eurostar.pdf"
       },
       "costs": {
         "lodgingBase": 40,
@@ -1062,7 +1069,7 @@
       "country": "Bélgica",
       "cityCode": "BGG",
       "currencyLocal": "EUR",
-      "stayArea": "Regreso a Ámsterdam (noche)",
+      "stayArea": "Bruselas (noche antes del bus a Suiza)",
       "heroImageQuery": "Bruges canals Belgium medieval city",
       "imageHints": [
         "best photo viewpoint Amsterdam",
@@ -1124,40 +1131,23 @@
           "start": "17:15",
           "durationMin": 60,
           "link": "https://www.belgiantrain.be",
-          "notes": "IC directo Brugge → Bruxelles-Midi. Sale cada 30 min. Llegada ~18:15. Desde Midi hay conexión al Thalys hacia Suiza.",
+          "notes": "IC directo Brugge → Bruxelles-Midi. Sale cada 30 min. Noche en Bruselas. Mañana siguiente: BlaBlaCar bus a Zúrich sale 20:40 desde Bruxelles-Midi.",
           "imageQuery": "Belgium train IC Brussels",
           "imageUrl": ""
-        },
-        {
-          "name": "Tren Bruselas → Basilea (Suiza) — OPCIÓN 2",
-          "start": "18:47",
-          "durationMin": 165,
-          "link": "https://www.sncf-connect.com",
-          "notes": "Thalys/TGV Bruxelles-Midi → Basel SBB. ~2h45. Llegada Basilea ~21:30. Desde Basilea: tren a Lucerna (~50 min) o Zúrich (~55 min). SIN regresar a Ámsterdam.",
-          "imageQuery": "Thalys TGV Brussels Basel train",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Thalys_PBKA_at_Paris_Gare_du_Nord.jpg/1200px-Thalys_PBKA_at_Paris_Gare_du_Nord.jpg"
-        },
-        {
-          "name": "Llegada a Basilea / conexión a Suiza",
-          "start": "21:30",
-          "durationMin": 60,
-          "link": "https://www.sbb.ch",
-          "notes": "Basilea → Lucerna: ~50 min (llegada ~22:20) o Basilea → Zúrich: ~55 min. Check-in hotel y descanso.",
-          "imageQuery": "Basel train station Switzerland night",
-          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
-        "mode": "train",
-        "from": "Bruxelles-Midi",
-        "to": "Basel SBB (Suiza)",
-        "depart": "18:47",
-        "arrive": "21:30",
-        "durationMin": 165,
-        "code": "Thalys/TGV",
-        "notes": "Opción 2: directo Brujas → Bruselas → Suiza sin volver a Ámsterdam",
-        "bookingLink": "https://www.sncf-connect.com"
+        "mode": "bus",
+        "from": "Bruxelles-Midi (87 Rue de France)",
+        "to": "Zürich (Ausstellungsstrasse 15)",
+        "depart": "20:40 (01 Jun)",
+        "arrive": "05:25 (02 Jun)",
+        "durationMin": 525,
+        "code": "BlaBlaCar Bus 4740",
+        "notes": "BlaBlaCar Bus 4740 (dir. Milan). Sale Bruselas Midi 20:40 el 1 Jun · llega Zürich 05:25 el 2 Jun · 8h45. Asientos: Diana 5A, Javier 5B, Aleja 5D. Booking 9C9N5B.",
+        "ticketUrl": "/tickets/5-bus-suiza/bus-brussels-zurich.pdf",
+        "bookingLink": ""
       },
       "transportOptions": {
         "recommended": "flight",
@@ -1215,10 +1205,10 @@
         ]
       },
       "accommodation": {
-        "name": "Hotel en Ámsterdam (misma noche)",
-        "neighborhood": "Ámsterdam - regreso nocturno",
+        "name": "Hostal / Hotel en Bruselas",
+        "neighborhood": "Bruselas — cerca Bruxelles-Midi",
         "link": "",
-        "notes": "Excursión de un día, se duerme en Ámsterdam"
+        "notes": "Noche en Bruselas. Sale BlaBlaCar a Zürich al día siguiente 20:40."
       },
       "costs": {
         "lodgingBase": 40,
@@ -1235,71 +1225,46 @@
       "mapPoints": [
         "Ámsterdam"
       ],
-      "notes": "Excursión relajada a Brujas. Regreso a Ámsterdam antes de las 21:00 para descansar antes del vuelo a Suiza.",
+      "notes": "Excursión a Brujas desde Ámsterdam. Regreso a Bruselas. Noche en Bruselas. Mañana libre + BlaBlaCar bus nocturno a Zúrich (sale 20:40, llega 05:25 del 2 Jun).",
       "heroImageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
     },
     {
       "day": 10,
       "date": "2026-06-01",
-      "city": "Suiza (vía Zúrich)",
-      "country": "Suiza",
-      "cityCode": "ZRH",
+      "city": "Bruselas → Zúrich (Bus Nocturno)",
+      "country": "Bélgica / Suiza",
+      "cityCode": "BRU-ZRH",
       "currencyLocal": "CHF",
-      "stayArea": "Lucerna centro / Altstadt",
-      "heroImageQuery": "Rhine Falls Switzerland",
+      "stayArea": "Bus nocturno BlaBlaCar (llega Zürich 02 Jun 05:25)",
+      "heroImageQuery": "Brussels Belgium Grand Place night",
       "imageHints": [
-        "best photo viewpoint Rhine Falls",
-        "Rhine Falls top attractions"
+        "Brussels Grand Place",
+        "Belgium capital"
       ],
       "perks": [
-        "Swiss Half Fare/Travel Pass evalúa",
-        "Capas y cortavientos para montaña"
+        "Guardar maletas en consigna cerca de Bruxelles-Midi",
+        "Llegar a Bruxelles-Midi 15 min antes del bus (20:25)",
+        "Llevar almohada de viaje para el bus nocturno"
       ],
       "mainActivities": [
         {
-          "name": "Desayuno en Basilea + salida",
-          "start": "08:30",
-          "durationMin": 60,
-          "link": "",
-          "notes": "Desayuno en hotel de Basilea. Recogen maletas y salen hacia Rhine Falls.",
-          "imageQuery": "Basel Switzerland morning breakfast",
-          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+          "name": "Mañana libre en Bruselas",
+          "start": "09:00",
+          "durationMin": 240,
+          "link": "https://www.google.com/maps/search/Grand+Place+Bruxelles",
+          "notes": "Grand Place, Manneken Pis y barrio Art Nouveau. Almuerzo local. Aprovechar el día antes del bus nocturno.",
+          "imageQuery": "Brussels Grand Place Belgium",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Grande_place_de_Bruxelles.jpg/1200px-Grande_place_de_Bruxelles.jpg"
         },
         {
-          "name": "Tren Basilea → Rhine Falls (Schaffhausen)",
-          "start": "09:30",
-          "durationMin": 50,
-          "link": "https://www.sbb.ch",
-          "notes": "Basel SBB → Neuhausen am Rheinfall ~50 min. Tren directo SBB.",
-          "imageQuery": "Basel train station SBB Switzerland",
-          "imageUrl": ""
-        },
-        {
-          "name": "Rhine Falls (Cataratas del Rin)",
-          "start": "10:30",
-          "durationMin": 150,
-          "link": "https://www.rhinefalls.com",
-          "notes": "Las cataratas más grandes de Europa. Pasarelas con vistas, barco al peñón central (~€7). Entrada gratuita al parque.",
-          "imageQuery": "Rhine Falls Rheinfall Switzerland waterfall",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Rheinfall_-_2015.jpg/1200px-Rheinfall_-_2015.jpg"
-        },
-        {
-          "name": "Tren Rhine Falls → Lucerna",
-          "start": "13:30",
-          "durationMin": 105,
-          "link": "https://www.sbb.ch",
-          "notes": "Neuhausen → Lucerna con cambio en Zürich o Winterthur. ~1h45.",
-          "imageQuery": "Swiss train SBB scenic route",
-          "imageUrl": ""
-        },
-        {
-          "name": "Check-in hotel + Kapellbrücke",
-          "start": "16:00",
-          "durationMin": 90,
-          "link": "https://www.google.com/maps/search/Kapellbrücke+Lucerne",
-          "notes": "Check-in en hotel de Lucerna. Paseo al puente de la capilla — símbolo de Suiza, con pinturas del s.XVII.",
-          "imageQuery": "Kapellbrücke Lucerne Switzerland bridge",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Luzern_Kapellbrücke.jpg/1200px-Luzern_Kapellbrücke.jpg"
+          "name": "BlaBlaCar Bus 4740 — Bruselas → Zúrich",
+          "start": "20:40",
+          "durationMin": 525,
+          "link": "https://www.blablacar.com",
+          "notes": "Sale Brussels Midi (87 Rue de France/Frankrijkstraat — strip de parking). Dirección Milan-Lampugnano. Llega Zürich Ausstellungsstrasse 15 a las 05:25 (02 Jun) · 8h45. Diana 5A · Javier 5B · Aleja 5D. Booking 9C9N5B.",
+          "imageQuery": "BlaBlaCar bus overnight Europe",
+          "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+          "ticketUrl": "/tickets/5-bus-suiza/bus-brussels-zurich.pdf"
         }
       ],
       "secondaryActivities": [],
@@ -1331,7 +1296,14 @@
         "Lucerna Altstadt",
         "Kapellbrücke"
       ],
-      "notes": "Llegada a Suiza vía Zúrich - visita a Rhine Falls + llegada a Lucerna"
+      "notes": "Día libre en Bruselas (Grand Place, Manneken Pis). Bus BlaBlaCar nocturno sale 20:40 → llega Zürich 05:25 del 2 Jun.",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Grande_place_de_Bruxelles.jpg/1200px-Grande_place_de_Bruxelles.jpg",
+      "accommodation": {
+        "name": "Bus nocturno BlaBlaCar — Sin hospedaje",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Noche en bus Bruselas → Zúrich"
+      }
     },
     {
       "day": 11,
@@ -1352,13 +1324,22 @@
       ],
       "mainActivities": [
         {
+          "name": "Llegada a Zúrich desde bus BlaBlaCar",
+          "start": "05:25",
+          "durationMin": 120,
+          "link": "",
+          "notes": "Llegada Zürich (Ausstellungsstrasse) 05:25. Tren ZRH HB → Luzern ~50 min. Desayuno en Luzern antes del tren a Interlaken (09:24).",
+          "imageQuery": "Zurich train station morning Switzerland",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Zurich_main_station_2010.jpg/1200px-Zurich_main_station_2010.jpg"
+        },
+        {
           "name": "Tren Luzern → Interlaken Ost",
           "start": "09:24",
           "durationMin": 113,
           "link": "https://www.sbb.ch",
           "notes": "Llegada 11:17. $68.64.",
           "imageQuery": "Luzern Interlaken train Switzerland panoramic",
-          "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+          "imageUrl": "https://trenviajero.com/wp-content/uploads/2025/03/goldenpass-line-express-recorrido.jpg"
         },
         {
           "name": "Check-in hotel Interlaken",
@@ -1376,7 +1357,7 @@
           "link": "https://www.google.com/maps/search/Lake+Brienz+Switzerland",
           "notes": "Lago turquesa al este de Interlaken. Paseo por la orilla o barco.",
           "imageQuery": "Lake Brienz Switzerland turquoise",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Brienzersee_Luftaufnahme.jpg/1200px-Brienzersee_Luftaufnahme.jpg"
+          "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/5d/75/d6.jpg"
         },
         {
           "name": "Lago Thun",
@@ -1454,7 +1435,7 @@
           "link": "https://www.sbb.ch",
           "notes": "Llegada 08:39. $40. Tren BOB con vistas al Eiger.",
           "imageQuery": "train Interlaken Grindelwald Eiger",
-          "imageUrl": ""
+          "imageUrl": "https://ik.imgkit.net/3vlqs5axxjf/TAW/ik-seo/uploadedImages/All_Gateways/Europe/Features/Grindelwald_Hero/What-to-Do-in-Grindelwald-Switzerland.jpg?tr=w-1008%2Ch-567%2Cfo-auto"
         },
         {
           "name": "Grindelwald — First (opcional)",
@@ -1472,7 +1453,7 @@
           "link": "https://www.sbb.ch",
           "notes": "Llegada 12:52. $37. Cambio en Zweilutschinen.",
           "imageQuery": "train Grindelwald Lauterbrunnen Switzerland",
-          "imageUrl": ""
+          "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmGfCrz6AAUq1bM0w-SQK8e3CH9Exhgvpzg&s"
         },
         {
           "name": "Valle de Lauterbrunnen",
@@ -1558,7 +1539,7 @@
           "link": "https://www.titlis.ch",
           "notes": "Teleferico rotatorio unico en el mundo. Cueva de hielo, Cliff Walk, nieve garantizada. Incluido.",
           "imageQuery": "Mount Titlis Switzerland glacier snow",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Titlis_glacier_cave.jpg/1200px-Titlis_glacier_cave.jpg"
+          "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/eb/73/01/titlis.jpg?w=2000&h=-1&s=1"
         },
         {
           "name": "Almuerzo en Engelberg",
@@ -2539,52 +2520,56 @@
           "start": "12:00",
           "durationMin": 60,
           "link": "https://www.google.com/maps/search/Aeropuerto+Madrid+Barajas",
-          "notes": "Metro o taxi desde el hotel",
+          "notes": "Metro L8 o taxi desde hotel al aeropuerto Barajas T1. Vuelo a las 15:15 → llegar 12:15 mínimo.",
           "imageQuery": "Madrid Barajas airport"
         },
         {
-          "name": "Vuelo MAD → Bogotá (BOG)",
-          "start": "15:00",
-          "durationMin": 180,
+          "name": "Vuelo Air Europa UX193 — MAD → BOG",
+          "start": "15:15",
+          "durationMin": 600,
           "link": "",
-          "notes": "Salida desde Madrid Barajas",
-          "imageQuery": "airplane flight Madrid"
+          "notes": "Air Europa UX193. Sale Madrid Barajas T1 15:15 → llega Bogotá El Dorado T1 18:15 · 10h. Ref UX/7PYA8Y.",
+          "imageQuery": "airplane flight Madrid",
+          "ticketUrl": "/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf"
         },
         {
           "name": "Llegada a Bogotá",
-          "start": "18:00",
+          "start": "18:15",
           "durationMin": 60,
           "link": "",
-          "notes": "Llegada a El Dorado (BOG). Tránsito hacia conexión a Medellín",
+          "notes": "Llegada El Dorado T1 18:15. Tránsito al terminal doméstico.",
           "imageQuery": "Bogota El Dorado airport"
         },
         {
-          "name": "Vuelo BOG → Medellín (MDE)",
-          "start": "21:00",
+          "name": "Vuelo Avianca AV9242 — BOG → MDE",
+          "start": "21:25",
           "durationMin": 60,
           "link": "",
-          "notes": "Vuelo doméstico Bogotá → Medellín",
-          "imageQuery": "Bogota Medellin flight"
+          "notes": "Avianca AV9242. Sale Bogotá El Dorado T1 21:25 → llega Medellín José María Córdova 22:25 · 1h. Ref CBM9R3.",
+          "imageQuery": "Bogota Medellin flight",
+          "ticketUrl": "/tickets/6-vuelos-regreso/javier-bogota-medellin.pdf"
         },
         {
           "name": "Llegada a Medellín",
-          "start": "22:00",
+          "start": "22:25",
           "durationMin": 0,
           "link": "",
-          "notes": "¡Bienvenidos de vuelta! Aeropuerto José María Córdova",
+          "notes": "¡Bienvenidos de vuelta! Aeropuerto José María Córdova, Rionegro.",
           "imageQuery": "Medellin airport arrival"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
         "mode": "flight",
-        "from": "Madrid (MAD)",
-        "to": "Medellín (MDE)",
-        "depart": "15:00",
-        "arrive": "21:00",
-        "durationMin": 660,
-        "code": "Vuelo Internacional",
-        "bookingLink": "https://www.skyscanner.com"
+        "from": "Madrid Barajas T1 (MAD)",
+        "to": "Medellín José María Córdova (MDE)",
+        "depart": "15:15",
+        "arrive": "22:25",
+        "durationMin": 670,
+        "code": "UX193 (MAD→BOG) + AV9242 (BOG→MDE)",
+        "notes": "MAD→BOG UX193 15:15-18:15 (10h) + BOG→MDE AV9242 21:25-22:25 (1h). Escala BOG.",
+        "ticketUrl": "/tickets/6-vuelos-regreso/javier-madrid-bogota.pdf",
+        "bookingLink": ""
       },
       "costs": {
         "lodgingBase": 0,
