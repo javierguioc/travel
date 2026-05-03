@@ -49,7 +49,10 @@ export function DayCardCompact({ day }) {
   const imageUrl = day.heroImageUrl || firstActivityWithImage?.imageUrl;
   const hasImage = imageUrl && !imageError;
 
+  const isDiscarded = !!day.discarded;
+
   const handleClick = () => {
+    if (isDiscarded) return;
     setCurrentDay(day.day);
     setCurrentView('day');
   };
@@ -69,7 +72,11 @@ export function DayCardCompact({ day }) {
 
   return (
     <div
-      className="group bg-white rounded-xl shadow-card overflow-hidden hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 cursor-pointer border border-light-border"
+      className={`group rounded-xl shadow-card overflow-hidden transition-all duration-300 border ${
+        isDiscarded
+          ? 'bg-gray-100 border-gray-300 opacity-60 cursor-default grayscale'
+          : 'bg-white hover:shadow-elevated hover:-translate-y-1 cursor-pointer border-light-border'
+      }`}
       onClick={handleClick}
     >
       {/* Header con imagen pequeña */}
@@ -97,9 +104,15 @@ export function DayCardCompact({ day }) {
             <span className="bg-white/95 text-slate-800 px-2 py-1 rounded-md text-xs font-bold shadow">
               Día {day.day}
             </span>
-            <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
-              {formatCost(dayTotal)}
-            </span>
+            {isDiscarded ? (
+              <span className="bg-gray-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
+                Descartado
+              </span>
+            ) : (
+              <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
+                {formatCost(dayTotal)}
+              </span>
+            )}
           </div>
           <div>
             <h3 className="text-lg font-bold text-white drop-shadow-lg leading-tight">
@@ -147,12 +160,17 @@ export function DayCardCompact({ day }) {
           })}
         </div>
 
-        {/* Footer con resumen */}
+        {/* Footer con temperatura */}
         <div className="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs text-slate-500">
             <span>📍 {day.mainActivities?.length || 0} actividades</span>
             {transportCount > 0 && <span>• 🚌 {transportCount}</span>}
           </div>
+          {day.weather && (
+            <span className="text-xs font-semibold text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full">
+              🌡 {day.weather.tempHighC}° / {day.weather.tempLowC}°C
+            </span>
+          )}
         </div>
       </div>
     </div>

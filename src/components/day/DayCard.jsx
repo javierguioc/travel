@@ -7,6 +7,60 @@ import CostBreakdown from '../costs/CostBreakdown';
 import useCalendar from '../../hooks/useCalendar';
 import { getCountryFlag } from '../../utils/icons';
 
+// Bloque de clima expandible
+function WeatherBlock({ weather }) {
+  const [open, setOpen] = useState(false);
+
+  const rainColor =
+    weather.rainChance?.toLowerCase().includes('muy baja') ? 'text-green-600 bg-green-50' :
+    weather.rainChance?.toLowerCase().includes('baja') ? 'text-emerald-600 bg-emerald-50' :
+    weather.rainChance?.toLowerCase().includes('moderada') ? 'text-amber-600 bg-amber-50' :
+    'text-red-600 bg-red-50';
+
+  const tempEmoji = weather.tempHighC >= 25 ? '☀️' : weather.tempHighC >= 18 ? '⛅' : '🌥️';
+
+  return (
+    <div className="mb-6 bg-gradient-to-r from-sky-50 to-blue-50 border-l-4 border-sky-400 rounded-r-xl shadow-sm overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left p-4 flex items-center gap-3 hover:bg-sky-100/50 transition-colors"
+      >
+        <div className="bg-gradient-to-br from-sky-400 to-blue-500 w-10 h-10 rounded-xl flex items-center justify-center shadow-sm flex-shrink-0">
+          <span className="text-xl">{tempEmoji}</span>
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-bold text-sky-800 text-lg">
+              {weather.tempHighC}°C / {weather.tempLowC}°C
+            </span>
+            <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${rainColor}`}>
+              🌧 {weather.rainChance}
+            </span>
+          </div>
+          <p className="text-sky-700 text-sm truncate">{weather.conditions}</p>
+        </div>
+        <span className="text-sky-400 text-sm flex-shrink-0">{open ? '▲' : '▼ Ropa'}</span>
+      </button>
+
+      {open && (
+        <div className="px-4 pb-4 pt-1 border-t border-sky-200/60">
+          <p className="text-sky-800 font-semibold text-sm mb-2 flex items-center gap-2">
+            👕 Recomendaciones de ropa
+          </p>
+          <ul className="space-y-1.5">
+            {weather.clothingTips.map((tip, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm text-sky-900/80">
+                <span className="text-sky-400 mt-0.5 flex-shrink-0">•</span>
+                {tip}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // Colores por país para dar variedad visual
 const countryGradients = {
   'España': 'from-red-500 to-yellow-500',
@@ -77,6 +131,9 @@ export function DayCard({ day }) {
       </div>
 
       <div className="p-4 sm:p-6">
+        {/* Weather */}
+        {day.weather && <WeatherBlock weather={day.weather} />}
+
         {/* Perks */}
         {day.perks && day.perks.length > 0 && (
           <div className="mb-6 bg-gradient-to-r from-amber-50 to-yellow-50 border-l-4 border-amber-400 p-4 rounded-r-xl shadow-sm">

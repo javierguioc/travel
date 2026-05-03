@@ -150,7 +150,18 @@
       "mapPoints": [
         "Aeropuerto José María Córdova"
       ],
-      "notes": "Día de viaje - Salida desde Medellín hacia Barcelona. Vuelo nocturno transatlántico."
+      "notes": "Día de viaje - Salida desde Medellín hacia Barcelona. Vuelo nocturno transatlántico.",
+      "weather": {
+        "tempHighC": 24,
+        "tempLowC": 14,
+        "conditions": "Cálido en Medellín. Noche en vuelo — temperatura de cabina.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Ropa cómoda para volar (sudadera o buzo liviano)",
+          "Medias y cuello en la maleta de mano por frío en cabina",
+          "Lleva chaqueta en el maletín de mano"
+        ]
+      }
     },
     {
       "day": 1,
@@ -222,7 +233,19 @@
         "Aeropuerto El Prat",
         "Eixample"
       ],
-      "notes": "Día de llegada - actividades suaves y primeras impresiones"
+      "notes": "Día de llegada - actividades suaves y primeras impresiones",
+      "weather": {
+        "tempHighC": 21,
+        "tempLowC": 12,
+        "conditions": "Soleado con alguna nube. Noches frescas.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Camiseta o camisa manga corta durante el día",
+          "Chaqueta ligera o cardigan para la tarde/noche",
+          "Tenis o zapatos cómodos para caminar",
+          "Gafas de sol"
+        ]
+      }
     },
     {
       "day": 2,
@@ -359,7 +382,19 @@
         "Passeig de Gràcia",
         "Hotel W Barcelona"
       ],
-      "notes": "Día completo en Barcelona - arquitectura Gaudí y playa"
+      "notes": "Día completo en Barcelona - arquitectura Gaudí y playa",
+      "weather": {
+        "tempHighC": 21,
+        "tempLowC": 12,
+        "conditions": "Soleado, ideal para playa y turismo.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Camiseta o blusa manga corta",
+          "Pantalón ligero o shorts para el día",
+          "Chaqueta delgada para la noche",
+          "Gafas de sol y protector solar"
+        ]
+      }
     },
     {
       "day": 3,
@@ -536,7 +571,19 @@
         "Cala Es Codolar",
         "Vila Vella"
       ],
-      "notes": "Excursión de día completo a la Costa Brava. Noche: preparar para salir temprano a París"
+      "notes": "Excursión de día completo a la Costa Brava. Noche: preparar para salir temprano a París",
+      "weather": {
+        "tempHighC": 20,
+        "tempLowC": 10,
+        "conditions": "Mayormente soleado, posibles chubascos cortos.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Camiseta y pantalón ligero o vestido",
+          "Chaqueta impermeable liviana en la mochila",
+          "Zapatos cómodos para caminar en adoquines",
+          "Traje de baño — mar 16°C, fresco pero apto"
+        ]
+      }
     },
     {
       "day": 4,
@@ -655,7 +702,20 @@
         "Sacré-Cœur",
         "Le Marais"
       ],
-      "notes": "Primer día en París - Montmartre y Le Marais"
+      "notes": "Primer día en París - Montmartre y Le Marais",
+      "weather": {
+        "tempHighC": 20,
+        "tempLowC": 12,
+        "conditions": "Parcialmente nublado, posible lluvia. Típico París de primavera.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Pantalón y camisa manga larga o blusa",
+          "Cardigan o suéter delgado",
+          "Chaqueta impermeable — casi obligatoria en París",
+          "Zapatos cómodos impermeables",
+          "Bufanda ligera para las noches"
+        ]
+      }
     },
     {
       "day": 5,
@@ -780,7 +840,18 @@
       "mapPoints": [
         "Disneyland Paris"
       ],
-      "notes": "Día completo en Disneyland - experiencia mágica"
+      "notes": "Día completo en Disneyland - experiencia mágica",
+      "weather": {
+        "tempHighC": 20,
+        "tempLowC": 12,
+        "conditions": "Variable: sol y nubes, posibles chubascos cortos.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Misma ropa que el día anterior (capas)",
+          "Paraguas compacto o impermeable en la mochila",
+          "Zapatos sin tacón para calles adoquinadas"
+        ]
+      }
     },
     {
       "day": 6,
@@ -877,7 +948,19 @@
         "Disneyland París",
         "Marne-la-Vallée"
       ],
-      "notes": "Día completo en Disneyland París - madrugar y ver desfile nocturno"
+      "notes": "Día completo en Disneyland París - madrugar y ver desfile nocturno",
+      "weather": {
+        "tempHighC": 20,
+        "tempLowC": 12,
+        "conditions": "Primavera parisina — fresco por la mañana, agradable de día.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Capas: camiseta + suéter + chaqueta impermeable",
+          "Llegar a apertura 09:30 — mañana fresca, llevar sudadera",
+          "Zapatos muy cómodos — se camina mucho en Disneyland",
+          "Mochila pequeña con impermeable y snacks"
+        ]
+      }
     },
     {
       "day": 7,
@@ -1012,7 +1095,20 @@
         "Red Light District",
         "Damrak"
       ],
-      "notes": "Llegada a Ámsterdam - Zaandam, Jordaan y Barrio Rojo"
+      "notes": "Llegada a Ámsterdam - Zaandam, Jordaan y Barrio Rojo",
+      "weather": {
+        "tempHighC": 18,
+        "tempLowC": 11,
+        "conditions": "Fresco y variable. Alta probabilidad de lluvia.",
+        "rainChance": "Alta",
+        "clothingTips": [
+          "Camiseta + suéter o fleece",
+          "Chaqueta impermeable — esencial en Ámsterdam",
+          "Pantalón largo (no shorts)",
+          "Zapatos impermeables o con suela antideslizante para adoquines mojados",
+          "Bufanda liviana"
+        ]
+      }
     },
     {
       "day": 8,
@@ -1114,7 +1210,18 @@
         "Moco Museum",
         "Rijksmuseum"
       ],
-      "notes": "Día completo en Ámsterdam - molinos, museos y canales"
+      "notes": "Día completo en Ámsterdam - molinos, museos y canales",
+      "weather": {
+        "tempHighC": 18,
+        "tempLowC": 11,
+        "conditions": "Fresco, nublado con posibles chubascos.",
+        "rainChance": "Alta",
+        "clothingTips": [
+          "Capas: camiseta + suéter + impermeable",
+          "Siempre llevar paraguas o chubasquero",
+          "Pantalón largo y zapatos cerrados"
+        ]
+      }
     },
     {
       "day": 9,
@@ -1285,7 +1392,19 @@
         "Ámsterdam"
       ],
       "notes": "Excursión a Brujas desde Ámsterdam. Regreso a Bruselas. Noche en Bruselas. Mañana libre + BlaBlaCar bus nocturno a Zúrich (sale 20:40, llega 05:25 del 2 Jun).",
-      "heroImageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800"
+      "heroImageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800",
+      "weather": {
+        "tempHighC": 19,
+        "tempLowC": 12,
+        "conditions": "Similar a Ámsterdam: fresco, parcialmente nublado.",
+        "rainChance": "Moderada–Alta",
+        "clothingTips": [
+          "Capas: camiseta + cardigan/suéter + chaqueta impermeable",
+          "Zapatos cómodos impermeables para adoquines medievales",
+          "Bufanda o pañoleta",
+          "Noche en Bruselas — llevar abrigo ligero"
+        ]
+      }
     },
     {
       "day": 10,
@@ -1367,6 +1486,17 @@
         "neighborhood": "N/A",
         "link": "",
         "notes": "Noche en bus Bruselas → Zúrich"
+      },
+      "weather": {
+        "tempHighC": 19,
+        "tempLowC": 12,
+        "conditions": "Fresco, cielos variables. Tarde/noche en bus — temperatura cambia.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Ropa cómoda para día de tránsito",
+          "Para el bus nocturno: llevar buzo/sudadera, medias y almohada de viaje",
+          "Chaqueta de abrigo en el equipaje de mano (el bus puede ser frío)"
+        ]
       }
     },
     {
@@ -1472,7 +1602,19 @@
         "Lago Thun",
         "Lucerna"
       ],
-      "notes": "Traslado Lucerna→Interlaken. Explorar Lagos Brienz y Thun. Base en Interlaken los proximos dias."
+      "notes": "Traslado Lucerna→Interlaken. Explorar Lagos Brienz y Thun. Base en Interlaken los proximos dias.",
+      "weather": {
+        "tempHighC": 21,
+        "tempLowC": 12,
+        "conditions": "Llegada 05:25 desde bus. Valle soleado con posibles lluvias.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Cambiarse en Zúrich/Luzern al llegar: ropa fresca de día",
+          "Siempre llevar chaqueta impermeable en Suiza",
+          "Zapatos cómodos para caminar",
+          "Suéter o fleece para la mañana fría (amanecer ~12°C)"
+        ]
+      }
     },
     {
       "day": 12,
@@ -1567,7 +1709,21 @@
         "Engelberg",
         "Monte Titlis"
       ],
-      "notes": "Glaciares en Grindelwald y el Valle de las 72 cascadas en Lauterbrunnen. Regreso a Interlaken."
+      "notes": "Glaciares en Grindelwald y el Valle de las 72 cascadas en Lauterbrunnen. Regreso a Interlaken.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 7,
+        "conditions": "Frío en los Alpes. Alta probabilidad de lluvia — junio es el mes más lluvioso.",
+        "rainChance": "Alta (>60%)",
+        "clothingTips": [
+          "🧥 Chaqueta impermeable y a prueba de viento — OBLIGATORIA",
+          "Base térmica o camiseta interior + suéter o fleece",
+          "Pantalón largo resistente al agua",
+          "Botas de senderismo o zapatos resistentes al agua",
+          "Gorro y guantes livianos (mañanas ~7°C)",
+          "Bufanda"
+        ]
+      }
     },
     {
       "day": 13,
@@ -1656,7 +1812,23 @@
         "Trümmelbachfälle",
         "Grindelwald"
       ],
-      "notes": "Mount Titlis (3238m) desde Engelberg. Regreso a Interlaken en la tarde."
+      "notes": "Mount Titlis (3238m) desde Engelberg. Regreso a Interlaken en la tarde.",
+      "weather": {
+        "tempHighC": 18,
+        "tempLowC": 9,
+        "conditions": "Engelberg ~18°C. ¡Cima Titlis ~3020m: entre -2°C y 5°C con nieve permanente!",
+        "rainChance": "Alta en valle / Nieve posible en cima",
+        "clothingTips": [
+          "🏔️ TITLIS CIMA (3020m): chaqueta de invierno gruesa (plumón o sintética)",
+          "Ropa térmica/base layer en capas dobles para la cima",
+          "Guantes de invierno o manoplas",
+          "Gorro de lana o beanie",
+          "Bufanda o cuello de abrigo",
+          "Gafas de sol con protección UV (reflejo de nieve)",
+          "Pantalón largo resistente al agua",
+          "Para el pueblo Engelberg: suéter + impermeable"
+        ]
+      }
     },
     {
       "day": 14,
@@ -1750,7 +1922,20 @@
         "Milano Centrale",
         "Venezia S. Lucia"
       ],
-      "notes": "Traslado: Interlaken → Spiez → Milan → Venecia."
+      "notes": "Traslado: Interlaken → Spiez → Milan → Venecia.",
+      "weather": {
+        "tempHighC": 26,
+        "tempLowC": 17,
+        "conditions": "Tránsito por Italia — llegan a Venecia. Cálido y húmedo.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "☀️ Ya hace calor — ropa liviana de verano",
+          "Camiseta manga corta o blusa",
+          "Pantalón liviano o falda/vestido",
+          "Zapatos cómodos (calles adoquinadas irregulares en Venecia)",
+          "Gafas de sol y protector solar"
+        ]
+      }
     },
     {
       "day": 15,
@@ -1875,7 +2060,19 @@
         "Murano",
         "Cannaregio"
       ],
-      "notes": "Día completo en Venecia - San Marcos, Rialto, Murano y canales"
+      "notes": "Día completo en Venecia - San Marcos, Rialto, Murano y canales",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 19,
+        "conditions": "Cálido y húmedo. Soleado con posibles tormentas vespertinas.",
+        "rainChance": "Baja–Moderada",
+        "clothingTips": [
+          "Ropa liviana de verano: camiseta, shorts o falda",
+          "Zapatos muy cómodos para calles de piedra",
+          "Protector solar y gafas de sol esenciales",
+          "Cardigan liviano para restaurantes con aire acondicionado"
+        ]
+      }
     },
     {
       "day": 16,
@@ -1982,7 +2179,18 @@
         "Campo dei Miracoli",
         "Roma Termini"
       ],
-      "notes": "Día de traslado con visita a la Torre de Pisa - Venecia → Florencia → Pisa → Roma"
+      "notes": "Día de traslado con visita a la Torre de Pisa - Venecia → Florencia → Pisa → Roma",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 19,
+        "conditions": "Soleado y húmedo. Mismo patrón que día anterior.",
+        "rainChance": "Baja–Moderada",
+        "clothingTips": [
+          "Ropa de verano liviana",
+          "Sombrero o gorra para el sol",
+          "Agua y protector solar en la mochila"
+        ]
+      }
     },
     {
       "day": 17,
@@ -2088,7 +2296,21 @@
         "Panteón",
         "Piazza Navona"
       ],
-      "notes": "Día completo en Roma - Trastevere, Coliseo, Foro Romano, Trevi, Panteón y Navona"
+      "notes": "Día completo en Roma - Trastevere, Coliseo, Foro Romano, Trevi, Panteón y Navona",
+      "weather": {
+        "tempHighC": 25,
+        "tempLowC": 14,
+        "conditions": "Soleado y seco. Roma en junio = verano europeo.",
+        "rainChance": "Muy Baja (2–3 días/mes)",
+        "clothingTips": [
+          "Camiseta o blusa manga corta",
+          "Pantalón liviano o vestido/falda",
+          "Para entrar a iglesias/museos: cubrir hombros y rodillas",
+          "Zapatos cerrados cómodos (turismo activo)",
+          "Protector solar SPF 30+ y gafas de sol",
+          "Cardigan liviano para museos con A/C"
+        ]
+      }
     },
     {
       "day": 18,
@@ -2181,7 +2403,18 @@
         "Roma",
         "Bari"
       ],
-      "notes": "Día buffer en Roma - Vaticano, Catacumbas, Testaccio y viaje a Puglia"
+      "notes": "Día buffer en Roma - Vaticano, Catacumbas, Testaccio y viaje a Puglia",
+      "weather": {
+        "tempHighC": 25,
+        "tempLowC": 14,
+        "conditions": "Soleado, caluroso y seco.",
+        "rainChance": "Muy Baja",
+        "clothingTips": [
+          "Misma ropa liviana de verano",
+          "Hidratación constante — calor seco de Roma",
+          "Sombrero o gorra para museos al aire libre (Coliseo)"
+        ]
+      }
     },
     {
       "day": 19,
@@ -2264,7 +2497,20 @@
         "Polignano a Mare",
         "Santa Maria di Leuca"
       ],
-      "notes": "Día completo en Puglia - Polignano a Mare y Santa Maria di Leuca"
+      "notes": "Día completo en Puglia - Polignano a Mare y Santa Maria di Leuca",
+      "weather": {
+        "tempHighC": 26,
+        "tempLowC": 16,
+        "conditions": "Cálido y soleado. Sur de Italia en verano.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Ropa ligera de verano: shorts, camisetas",
+          "Traje de baño — mar Adriático ~23°C, ideal para nadar",
+          "Sandalias y zapatos ligeros",
+          "Protector solar alto (UV intenso en el sur)",
+          "Sombrero de ala ancha"
+        ]
+      }
     },
     {
       "day": 20,
@@ -2376,7 +2622,20 @@
         "La Latina",
         "Mercado San Miguel"
       ],
-      "notes": "Llegada a Madrid - Gran Vía, Plaza Mayor, Sol, La Latina y Mercado San Miguel"
+      "notes": "Llegada a Madrid - Gran Vía, Plaza Mayor, Sol, La Latina y Mercado San Miguel",
+      "weather": {
+        "tempHighC": 29,
+        "tempLowC": 13,
+        "conditions": "Caluroso y seco. Madrid en junio = verano pleno.",
+        "rainChance": "Muy Baja (6%)",
+        "clothingTips": [
+          "☀️ Ropa de verano: camiseta, pantalón liviano o shorts",
+          "Sombrero o gorra — UV muy alto (índice 9)",
+          "Gafas de sol y protector solar SPF 50",
+          "Cardigan o chaqueta para el Metro y restaurantes con A/C",
+          "Zapatos cómodos para mucho turismo a pie"
+        ]
+      }
     },
     {
       "day": 21,
@@ -2491,7 +2750,18 @@
         "Palacio Real",
         "Gran Vía"
       ],
-      "notes": "Día completo en Madrid - Prado, Retiro, Puerta de Alcalá, Cibeles, Palacio Real y Gran Vía"
+      "notes": "Día completo en Madrid - Prado, Retiro, Puerta de Alcalá, Cibeles, Palacio Real y Gran Vía",
+      "weather": {
+        "tempHighC": 29,
+        "tempLowC": 13,
+        "conditions": "Soleado y caluroso. Noches más frescas (~13°C).",
+        "rainChance": "Muy Baja",
+        "clothingTips": [
+          "Ropa de verano ligera para el día",
+          "Chaqueta o sudadera para la noche (baja a 13°C)",
+          "Calzado muy cómodo — Prado, Retiro, Palacio Real = mucho caminar"
+        ]
+      }
     },
     {
       "day": 22,
@@ -2536,7 +2806,17 @@
         "totalReal": 92
       },
       "mapPoints": [],
-      "notes": "Día libre en Madrid - por definir"
+      "notes": "Día libre en Madrid - por definir",
+      "weather": {
+        "tempHighC": 29,
+        "tempLowC": 13,
+        "conditions": "Último día en Madrid. Caluroso y soleado.",
+        "rainChance": "Muy Baja",
+        "clothingTips": [
+          "Ropa cómoda de verano para últimas compras",
+          "Último día: aprovechar el sol madrileño"
+        ]
+      }
     },
     {
       "day": 23,
@@ -2686,7 +2966,18 @@
         "Gran Vía",
         "Aeropuerto Madrid Barajas"
       ],
-      "notes": "Día de regreso - Últimas compras y vuelo de vuelta a Medellín. ¡Fin del viaje!"
+      "notes": "Día de regreso - Últimas compras y vuelo de vuelta a Medellín. ¡Fin del viaje!",
+      "weather": {
+        "tempHighC": 29,
+        "tempLowC": 13,
+        "conditions": "Mañana calurosa en Madrid. Vuelo de regreso a Colombia.",
+        "rainChance": "Muy Baja",
+        "clothingTips": [
+          "Ropa cómoda para volar",
+          "Suéter o buzo en la maleta de mano (frío en cabina)",
+          "¡Bienvenidos de vuelta a Medellín!"
+        ]
+      }
     }
   ],
   "totals": {
