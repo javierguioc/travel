@@ -2461,24 +2461,31 @@
           "imageUrl": "https://www.hdsalento.com/wp-content/webp-express/webp-images/uploads/2021/02/1024px-Tramonto_Santa_Maria_di_Leuca_-_panoramio.jpg.webp"
         },
         {
-          "name": "Regreso a Bari (noche)",
-          "start": "17:00",
-          "durationMin": 120,
+          "name": "Regreso a Bari y traslado al aeropuerto BRI",
+          "start": "14:30",
+          "durationMin": 90,
           "link": "",
-          "notes": "Regreso a Bari para pasar la noche",
-          "imageQuery": "Bari city center"
+          "notes": "Regresar a Bari. Estar en aeropuerto Bari (BRI) antes de las 15:30 para vuelo FR4049 a las 17:05",
+          "imageQuery": "Bari airport BRI"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
         "mode": "vuelo",
-        "from": "Bari (BRI) o Brindisi (BDS)",
-        "to": "Madrid (MAD)",
-        "depart": "10:00",
-        "arrive": "13:00",
-        "durationMin": 180,
-        "code": "Vuelo directo o con escala",
-        "bookingLink": "https://www.skyscanner.es"
+        "from": "Bari (BRI)",
+        "to": "Madrid (MAD) vía Alicante",
+        "depart": "17:05",
+        "arrive": "22:45",
+        "durationMin": 340,
+        "code": "FR4049 + IB1016 (Kiwi #787432294)",
+        "bookingLink": "https://www.ryanair.com/es/es/trip/manage/dcc93dbb-676f-443c-a0db-f8183e58ed6c",
+        "notes": "FR4049 Ryanair BRI→ALC 17:05-19:45 | Escala 1h45m Alicante (auto-transfer Kiwi) | IB1016 ALC→MAD 21:30-22:45 | PNR: N62UQN",
+        "ticketUrls": [
+          {
+            "label": "Ver ticket Ryanair FR4049",
+            "url": "https://www.ryanair.com/es/es/trip/manage/dcc93dbb-676f-443c-a0db-f8183e58ed6c"
+          }
+        ]
       },
       "costs": {
         "lodgingBase": 30,
@@ -2531,20 +2538,26 @@
       ],
       "mainActivities": [
         {
-          "name": "Vuelo Bari/Brindisi → Madrid",
-          "start": "10:00",
-          "durationMin": 180,
-          "link": "https://www.skyscanner.es",
-          "notes": "Vuelo BRI/Bari o BDS/Brindisi → MAD (mañana/mediodía, ~3h)",
-          "imageQuery": "Flight Bari Brindisi Madrid"
+          "name": "Vuelo Bari → Madrid vía Alicante",
+          "start": "17:05",
+          "durationMin": 340,
+          "link": "https://www.ryanair.com/es/es/trip/manage/dcc93dbb-676f-443c-a0db-f8183e58ed6c",
+          "notes": "FR4049 Ryanair BRI→ALC 17:05-19:45 | Escala 1h45m en Alicante (auto-transfer Kiwi, Connection Protection incluido) | IB1016 Air Nostrum ALC→MAD 21:30-22:45 | Booking Kiwi #787432294 · PNR N62UQN",
+          "imageQuery": "Ryanair flight Bari Madrid",
+          "ticketUrls": [
+            {
+              "label": "Ver ticket Ryanair FR4049",
+              "url": "https://www.ryanair.com/es/es/trip/manage/dcc93dbb-676f-443c-a0db-f8183e58ed6c"
+            }
+          ]
         },
         {
           "name": "Check-in Madrid",
-          "start": "14:00",
-          "durationMin": 60,
+          "start": "23:15",
+          "durationMin": 45,
           "link": "",
-          "notes": "Llegada a Madrid y instalación en hotel",
-          "imageQuery": "hotel check-in Madrid"
+          "notes": "Llegada a Madrid ~22:45. Traslado al hotel y check-in nocturno",
+          "imageQuery": "hotel check-in Madrid night"
         },
         {
           "name": "Gran Vía",
