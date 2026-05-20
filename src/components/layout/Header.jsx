@@ -1,10 +1,42 @@
 // Componente Header principal
+import { useRef, useState } from 'react';
 import { useItineraryStore } from '../../store/store';
 import { Toggle } from '../ui';
+
+const REQUIRED_CLICKS = 4;
+const CLICK_WINDOW_MS = 2500;
 
 export function Header() {
   const editMode = useItineraryStore((state) => state.editMode);
   const toggleEditMode = useItineraryStore((state) => state.toggleEditMode);
+  const setJavierUnlocked = useItineraryStore((s) => s.setJavierUnlocked);
+  const loadJavierData = useItineraryStore((s) => s.loadJavierData);
+  const setCurrentView = useItineraryStore((s) => s.setCurrentView);
+
+  const clickCountRef = useRef(0);
+  const timerRef = useRef(null);
+  const [glowing, setGlowing] = useState(false);
+
+  const handleSecretClick = () => {
+    clickCountRef.current += 1;
+    clearTimeout(timerRef.current);
+
+    if (clickCountRef.current >= REQUIRED_CLICKS) {
+      clickCountRef.current = 0;
+      setGlowing(true);
+      loadJavierData();
+      setJavierUnlocked(true);
+      setTimeout(() => {
+        setGlowing(false);
+        setCurrentView('javier');
+      }, 400);
+      return;
+    }
+
+    timerRef.current = setTimeout(() => {
+      clickCountRef.current = 0;
+    }, CLICK_WINDOW_MS);
+  };
 
   return (
     <header className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 rounded-2xl p-responsive shadow-elevated mb-6 animate-fade-in overflow-hidden">
@@ -42,6 +74,15 @@ export function Header() {
           </div>
         </div>
       </div>
+
+      {/* Secret entry — subtle dot in corner, click 4x to unlock */}
+      <button
+        onClick={handleSecretClick}
+        aria-hidden="true"
+        className={`absolute bottom-3 right-4 w-3 h-3 rounded-full transition-all duration-300 ${
+          glowing ? 'bg-white/60 shadow-[0_0_8px_3px_rgba(255,255,255,0.4)]' : 'bg-white/10 hover:bg-white/20'
+        }`}
+      />
     </header>
   );
 }

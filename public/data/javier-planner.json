@@ -1,0 +1,765 @@
+{
+  "meta": {
+    "traveler": "Javier",
+    "totalDays": 24,
+    "totalInstagramPosts": 8,
+    "itineraryRef": "/data/itinerary-data.json",
+    "description": "Travel Visual Planner — outfits, Instagram groups, photo ideas, captions & music per group"
+  },
+
+  "inventory": {
+    "airplaneOutfit": [
+      "Camiseta morada",
+      "Chaqueta azul",
+      "Pantalón navy (azul claro)",
+      "Tenis negros",
+      "1 boxer",
+      "1 par de medias"
+    ],
+    "pantalonesLargos": [
+      "Pantalón crema/beige",
+      "Pantalón navy (puesto en avión)"
+    ],
+    "pantalonetas": [
+      "Negra",
+      "Crema",
+      "Verde",
+      "Extra playa/dormir/piscina"
+    ],
+    "camisetasTop": [
+      "Gris oscuro ⭐",
+      "Verde claro ⭐",
+      "Verde oscuro ⭐",
+      "Negra ⭐"
+    ],
+    "camisetasSecundarias": [
+      "Blanca",
+      "Gris clara",
+      "Camisa lino beige",
+      "Amarilla Mickey",
+      "Roja Flash"
+    ],
+    "ropaFrio": [
+      "Chaqueta azul",
+      "Primera capa superior térmica",
+      "Primera capa inferior térmica",
+      "Gorro frío",
+      "Gorra normal",
+      "Impermeable/gorro lluvia"
+    ],
+    "calzado": [
+      "Tenis negros",
+      "Tenis grises"
+    ],
+    "interior": [
+      "6 boxers (1 puesto + 5 empacados)",
+      "5 pares de medias (1 puestas + 4 empacadas)"
+    ],
+    "noLlevar": [
+      "Tenis azules"
+    ]
+  },
+
+  "instagramGroups": [
+    {
+      "id": "stories-inicio",
+      "name": "Stories — Salida",
+      "emoji": "✈️",
+      "days": [0],
+      "theme": "El inicio del viaje. Aeropuerto, avión, expectativa.",
+      "aesthetic": "POV travel, cinematic, behind the scenes",
+      "tier": "stories",
+      "captions": [
+        "no es suerte. es ejecución ✈️",
+        "ganado, no regalado",
+        "la disciplina trajo esto 🎯",
+        "24 días. merecidos.",
+        "el trabajo paga bien 🌍"
+      ],
+      "music": [
+        "Travis Scott — MY EYES",
+        "Drake — Trophies",
+        "Kanye West — Homecoming",
+        "The Weeknd — Moth To A Flame",
+        "J. Cole — ATM",
+        "Burna Boy — Way Too Big",
+        "Tyler the Creator — CORSO"
+      ]
+    },
+    {
+      "id": "grupo1",
+      "name": "Grupo 1 — Barcelona & Costa",
+      "emoji": "🇪🇸",
+      "days": [1, 2, 3],
+      "theme": "Mediterranean mode. Playa, arquitectura, verano europeo.",
+      "aesthetic": "Warm tones, golden hour, coastal vibes",
+      "tier": "post",
+      "captions": [
+        "el mediterráneo no pide permiso 🌊",
+        "compound interest en experiencias 📈",
+        "comer bien no es lujo 🍷",
+        "Gaudí construyó para el largo plazo",
+        "sal, sol, mente despejada ☀️",
+        "cada ciudad, un mercado distinto",
+        "invertí bien este día 🇪🇸"
+      ],
+      "music": [
+        "Tyler the Creator — See You Again",
+        "Burna Boy — Last Last",
+        "Brent Faiyaz — Clouded",
+        "Feid — Luna",
+        "Kaytranada — 10%",
+        "Bad Bunny — Tití Me Preguntó",
+        "Rauw Alejandro — Agua",
+        "Rex Orange County — Loving Is Easy",
+        "SZA — Good Days",
+        "J. Cole — No Role Modelz"
+      ]
+    },
+    {
+      "id": "grupo2",
+      "name": "Grupo 2 — París",
+      "emoji": "🗼",
+      "days": [4, 5],
+      "theme": "La ciudad más cinematic del viaje. Elegancia, quiet luxury.",
+      "aesthetic": "Muted tones, golden light, architectural shots",
+      "tier": "post",
+      "captions": [
+        "el mejor ROI no es en dinero 🗼",
+        "París. valió cada euro.",
+        "el lujo real es el tiempo ⏳",
+        "la disciplina te trajo hasta acá",
+        "activo que no aparece en ninguna cartera 📊",
+        "ciudades que expanden el marco de referencia",
+        "vine a entender, no a turistear 🎬"
+      ],
+      "music": [
+        "Frank Ocean — Nights",
+        "The Weeknd — Wicked Games",
+        "Kanye West — Runaway",
+        "James Blake — Retrograde",
+        "PARTYNEXTDOOR — Come and See Me",
+        "6LACK — Prblms",
+        "Childish Gambino — Redbone",
+        "SZA — Kill Bill",
+        "Drake — From Time",
+        "Sade — No Ordinary Love"
+      ]
+    },
+    {
+      "id": "grupo3",
+      "name": "Grupo 3 — Disneyland",
+      "emoji": "✨",
+      "days": [6],
+      "theme": "Inner child unlocked. Fun, espontáneo, colorido.",
+      "aesthetic": "Bright, playful, candid",
+      "tier": "post",
+      "captions": [
+        "nadie tiene que saber ✨",
+        "work hard, play harder",
+        "balance: esto también es el sistema",
+        "27. sé cuándo soltar el control",
+        "no todo se optimiza 🎢"
+      ],
+      "music": [
+        "Tyler the Creator — EARFQUAKE",
+        "Kid Cudi — Pursuit of Happiness",
+        "The Weeknd — Blinding Lights",
+        "Kanye West — Good Life",
+        "Post Malone — Sunflower",
+        "Travis Scott — Antidote",
+        "Drake — Forever",
+        "Childish Gambino — Camp"
+      ]
+    },
+    {
+      "id": "grupo4",
+      "name": "Grupo 4 — Amsterdam & Norte",
+      "emoji": "🌧️",
+      "days": [7, 8, 9],
+      "theme": "Urban cinematic. Lluvia, canales, frío europeo.",
+      "aesthetic": "Cool tones, rainy aesthetic, moody streets",
+      "tier": "post",
+      "captions": [
+        "llueve. seguimos 🌧️",
+        "Ámsterdam opera diferente",
+        "el caos tiene su propia lógica 📐",
+        "no hay clima malo, hay mentalidad mala",
+        "ciudad construida sobre grandes ideas 🚲",
+        "este canal enseña más que libros",
+        "el frío europeo te despierta ❄️"
+      ],
+      "music": [
+        "Drake — Marvins Room",
+        "The Weeknd — Often",
+        "PARTYNEXTDOOR — Right Now",
+        "Bryson Tiller — Exchange",
+        "The 1975 — Somebody Else",
+        "Cigarettes After Sex — Nothing's Gonna Hurt You Baby",
+        "Frank Ocean — Ivy",
+        "NAV — Some Way",
+        "Travis Scott — goosebumps",
+        "Aphex Twin — Avril 14th"
+      ]
+    },
+    {
+      "id": "stories-transito1",
+      "name": "Stories — Tránsito Norte → Suiza",
+      "emoji": "🚆",
+      "days": [10],
+      "theme": "Moving again. Estaciones, trenes, ventana.",
+      "aesthetic": "POV travel, transit mood",
+      "tier": "stories",
+      "captions": [
+        "en tránsito. siempre en movimiento 🚆",
+        "la mente procesa entre destinos",
+        "moverse es una habilidad 🗺️"
+      ],
+      "music": [
+        "Fred again.. — Danielle",
+        "M83 — Wait",
+        "ODESZA — Kusanagi",
+        "Bon Iver — Holocene",
+        "Brian Eno — An Ending (Ascent)"
+      ]
+    },
+    {
+      "id": "grupo5",
+      "name": "Grupo 5 — Suiza",
+      "emoji": "🏔️",
+      "days": [11, 12, 13],
+      "theme": "Peak human experience. Naturaleza extrema, cinematográfico.",
+      "aesthetic": "Wide shots, cold air, dramatic landscapes",
+      "tier": "post",
+      "captions": [
+        "4.200m. el portafolio puede esperar 🏔️",
+        "sin ticker. sin precio. sin igual 📊",
+        "el gym te trajo hasta acá 💪",
+        "sin señal. sin ruido. sin igual",
+        "la altitud da el mejor estado mental",
+        "Suiza entiende el largo plazo 🇨🇭",
+        "naturaleza: cero volatilidad, máximo impacto"
+      ],
+      "music": [
+        "Hans Zimmer — Time",
+        "M83 — Midnight City",
+        "Bon Iver — Skinny Love",
+        "Sigur Rós — Hoppípolla",
+        "ODESZA — A Moment Apart",
+        "Explosions in the Sky — Your Hand in Mine",
+        "Radiohead — Exit Music (For a Film)",
+        "Tame Impala — Let It Happen",
+        "Mogwai — Auto Rock",
+        "Nils Frahm — Says"
+      ]
+    },
+    {
+      "id": "stories-transito2",
+      "name": "Stories — Tránsito Suiza → Italia",
+      "emoji": "🚆",
+      "days": [14],
+      "theme": "Cinema starts now. Italian mode activado.",
+      "aesthetic": "POV tren, espresso, ventana",
+      "tier": "stories",
+      "captions": [
+        "de nieve a canales. eso es diversificar 🚆",
+        "Italia tiene otra velocidad ☕",
+        "primer espresso. los estándares cambiaron 🇮🇹"
+      ],
+      "music": [
+        "Dean Martin — That's Amore",
+        "Fred again.. — Bleu",
+        "Drake — Poetic Justice"
+      ]
+    },
+    {
+      "id": "grupo6",
+      "name": "Grupo 6 — Italia",
+      "emoji": "🇮🇹",
+      "days": [15, 16, 17],
+      "theme": "Dolce far niente. Mediterranean luxury, historia, golden hour.",
+      "aesthetic": "Warm golden tones, cobblestone streets, ancient architecture",
+      "tier": "post",
+      "captions": [
+        "2000 años. todavía gana 🏛️",
+        "Roma no se hizo en un día 📐",
+        "el espresso no se negocia. los principios tampoco ☕",
+        "vivir bien también se entrena 💪",
+        "calidad no negociable 🇮🇹",
+        "lo que se construye bien, dura",
+        "la historia: el mejor MBA 📚"
+      ],
+      "music": [
+        "The Weeknd — Save Your Tears",
+        "Drake — Controlla",
+        "Frank Ocean — Godspeed",
+        "d4vd — Here With Me",
+        "Brent Faiyaz — Gravity",
+        "Giveon — Heartbreak Anniversary",
+        "Rex Orange County — Pluto Projector",
+        "Dean Martin — Volare",
+        "Sade — By Your Side",
+        "James Blake — Limit to Your Love"
+      ]
+    },
+    {
+      "id": "stories-vaticano",
+      "name": "Stories — Vaticano",
+      "emoji": "🕊️",
+      "days": [18],
+      "theme": "Quiet day. Arte, historia, energía diferente.",
+      "aesthetic": "Art, calm, light stories",
+      "tier": "stories",
+      "captions": [
+        "hay lugares que no se analizan 🕊️",
+        "silencio con otro peso",
+        "siglos concentrados. eso es compounding ⛪"
+      ],
+      "music": [
+        "Hans Zimmer — Interstellar Suite",
+        "Cigarettes After Sex — Apocalypse",
+        "ODESZA — A Moment Apart"
+      ]
+    },
+    {
+      "id": "grupo7",
+      "name": "Grupo 7 — Polignano a Mare",
+      "emoji": "🌊",
+      "days": [19],
+      "theme": "Hidden gem del sur de Italia. Cliff shots, agua azul.",
+      "aesthetic": "Deep blue, cliffs, Mediterranean paradise",
+      "tier": "post",
+      "captions": [
+        "fuera del índice, las mejores oportunidades 📍",
+        "el agua más azul que he visto 🌊",
+        "no está en el radar. por eso vale más",
+        "encontrado por convicción, no por suerte 🎯",
+        "hidden gem. literal 🧿"
+      ],
+      "music": [
+        "Burna Boy — Kilometre",
+        "Feid — Classy 101",
+        "Rauw Alejandro — Todo de Ti",
+        "Tyler the Creator — WUSYANAME",
+        "Blood Orange — Chamakay",
+        "Kaytranada — Dysfunctional",
+        "Bad Bunny — El Apagón",
+        "SZA — Good Days",
+        "Omar Apollo — Evergreen",
+        "Brent Faiyaz — Trust"
+      ]
+    },
+    {
+      "id": "grupo8",
+      "name": "Grupo 8 — Madrid Final",
+      "emoji": "🇪🇸",
+      "days": [20, 21],
+      "theme": "Cierre del viaje. Lifestyle, ciudad, relaxed luxury.",
+      "aesthetic": "Urban European, warm night shots",
+      "tier": "post",
+      "captions": [
+        "24 días. cero deuda. todo ganado 💸",
+        "el capital que no se mide en dinero 📊",
+        "el mejor portafolio que he armado 🗺️",
+        "Madrid de noche. merecido 🌃",
+        "la mente vuelve más grande 🧠",
+        "fin del viaje. inicio de lo que sigue",
+        "lo que se construye bien, siempre vale 🇪🇸"
+      ],
+      "music": [
+        "Frank Ocean — Pink + White",
+        "Drake — Look What You've Done",
+        "The Weeknd — After Hours",
+        "Bon Iver — Holocene",
+        "M83 — Outro",
+        "James Blake — The Wilhelm Scream",
+        "Kendrick Lamar — God",
+        "Feid — Luna",
+        "Travis Scott — ESCAPE PLAN",
+        "Sade — Kiss of Life"
+      ]
+    },
+    {
+      "id": "stories-cierre",
+      "name": "Stories — Últimos días y regreso",
+      "emoji": "🏠",
+      "days": [22, 23],
+      "theme": "Últimos días. Regreso. Cinematic ending.",
+      "aesthetic": "Nostalgic, candid, airport vibes",
+      "tier": "stories",
+      "captions": [
+        "mismo outfit. distinta persona ✈️",
+        "el que sale y el que vuelve: no son el mismo",
+        "24 días de inputs. el output viene 📈",
+        "Europa fue un buen trade 🌍"
+      ],
+      "music": [
+        "M83 — Outro",
+        "Frank Ocean — White Ferrari",
+        "Bon Iver — Re: Stacks",
+        "James Blake — Retrograde",
+        "Brian Eno — An Ending (Ascent)"
+      ]
+    }
+  ],
+
+  "days": [
+    {
+      "day": 0,
+      "destination": "Medellín ✈️",
+      "instagramGroup": "stories-inicio",
+      "outfit": {
+        "top": "Camiseta morada",
+        "bottom": "Pantalón navy",
+        "layer": "Chaqueta azul",
+        "shoes": "Tenis negros",
+        "accessories": "Gorra normal",
+        "tier": "stories"
+      },
+      "photoTypes": ["Ventana avión POV", "Aeropuerto — reloj, maleta", "Boarding gate", "Primera vista desde el avión"]
+    },
+    {
+      "day": 1,
+      "destination": "Barcelona 🇪🇸",
+      "instagramGroup": "grupo1",
+      "outfit": {
+        "top": "Camiseta blanca",
+        "bottom": "Pantaloneta verde",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "secundaria"
+      },
+      "photoTypes": ["Café europeo primera mañana", "Callecitas arrival shot", "Copa de vino", "Candid walking", "Primera impresión de la ciudad"]
+    },
+    {
+      "day": 2,
+      "destination": "Barcelona 🇪🇸",
+      "instagramGroup": "grupo1",
+      "outfit": {
+        "top": "Camiseta verde claro ⭐",
+        "bottom": "Pantaloneta crema",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "top"
+      },
+      "photoTypes": ["Sagrada Familia hero shot", "Casa Batlló detalle arquitectónico", "Walking shot calle ancha", "Perspectiva urbana hacia arriba"]
+    },
+    {
+      "day": 3,
+      "destination": "Tossa de Mar 🇪🇸",
+      "instagramGroup": "grupo1",
+      "outfit": {
+        "top": "Camiseta verde claro ⭐",
+        "bottom": "Pantaloneta crema",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "top",
+        "note": "Mismo outfit día 2 — el entorno de playa lo hace ver diferente"
+      },
+      "photoTypes": ["Playa + roca landscape", "Agua mediterránea azul", "Cliff desde arriba", "Pareja shot atardecer", "Pueblo costero desde el mar"]
+    },
+    {
+      "day": 4,
+      "destination": "París 🗼",
+      "instagramGroup": "grupo2",
+      "outfit": {
+        "top": "Camisa lino beige",
+        "bottom": "Pantalón beige",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Outfit más elegante del viaje — reservado para París"
+      },
+      "photoTypes": ["Eiffel hero shot desde lejos", "Montmartre calles empedradas", "Golden hour café terraza", "Boulevard ancho — walking shot", "Portrait con la ciudad de fondo"]
+    },
+    {
+      "day": 5,
+      "destination": "París 🗼",
+      "instagramGroup": "grupo2",
+      "outfit": {
+        "top": "Camiseta negra ⭐",
+        "bottom": "Pantalón navy",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "All-dark para estética de Louvre — contraste blanco/negro"
+      },
+      "photoTypes": ["Louvre pirámide reflejo", "Notre Dame perspectiva simétrica", "Rue de Rivoli — galería", "Callejón parisino blanco y negro", "Cinematic solo portrait"]
+    },
+    {
+      "day": 6,
+      "destination": "Disneyland París ✨",
+      "instagramGroup": "grupo3",
+      "outfit": {
+        "top": "Amarilla Mickey",
+        "bottom": "Pantaloneta negra",
+        "shoes": "Tenis grises",
+        "layer": null,
+        "accessories": "Gorra normal",
+        "tier": "secundaria",
+        "outfitChange": {
+          "description": "Cambio para fotos noche/fireworks",
+          "top": "Camiseta gris oscuro ⭐",
+          "when": "Tarde — para las fotos de noche y fuegos artificiales"
+        }
+      },
+      "photoTypes": ["Castillo hero shot al amanecer", "Fuegos artificiales larga exposición", "Rides — candid reacción", "Detalle del parque — luces", "Shot divertido espontáneo"]
+    },
+    {
+      "day": 7,
+      "destination": "Ámsterdam 🌧️",
+      "instagramGroup": "grupo4",
+      "outfit": {
+        "top": "Camiseta gris oscuro ⭐",
+        "bottom": "Pantaloneta negra",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Urban dark — contraste con los canales"
+      },
+      "photoTypes": ["Canal ancho con puente", "Bici apoyada — lifestyle shot", "Lluvia reflejo en calle adoquín", "Café interior desde afuera", "Street shot cinematic"]
+    },
+    {
+      "day": 8,
+      "destination": "Ámsterdam 🌧️",
+      "instagramGroup": "grupo4",
+      "outfit": {
+        "top": "Camiseta blanca",
+        "bottom": "Pantalón navy",
+        "layer": "Chaqueta azul",
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "secundaria",
+        "note": "Chaqueta para el frío — combo limpio para shots nocturnos"
+      },
+      "photoTypes": ["Skyline desde A'DAM lookout", "Noche en el canal — reflexión", "Heineken Experience candid", "Shot desde el puente mirando el agua"]
+    },
+    {
+      "day": 9,
+      "destination": "Brujas 🏰",
+      "instagramGroup": "grupo4",
+      "outfit": {
+        "top": "Camiseta roja Flash",
+        "bottom": "Pantaloneta negra",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "secundaria",
+        "note": "Pop de color en medieval — contraste rojo vs. gris del pueblo"
+      },
+      "photoTypes": ["Canal Brujas medieval", "Arquitectura gótica detalle", "Lluvia aesthetic — paraguas o mojado", "Comida belga flat lay", "Postal del pueblo desde el puente"]
+    },
+    {
+      "day": 10,
+      "destination": "Bruselas → Zúrich 🚆",
+      "instagramGroup": "stories-transito1",
+      "outfit": {
+        "top": "Camiseta gris clara",
+        "bottom": "Pantalón navy",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "secundaria"
+      },
+      "photoTypes": ["Ventana del tren — paisaje cambiando", "Estación europea vacía", "Café en vaso de plástico — tren", "Paisaje suizo primero aparece"]
+    },
+    {
+      "day": 11,
+      "destination": "Rhine Falls 🏔️",
+      "instagramGroup": "grupo5",
+      "outfit": {
+        "top": "Camiseta verde oscuro ⭐",
+        "bottom": "Pantalón beige",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Verde oscuro en naturaleza — cinematic nature outfit"
+      },
+      "photoTypes": ["Cataratas wide shot completo", "Potencia del agua close up", "Persona pequeña vs. cascada enorme", "Roca en medio del río", "Niebla de agua — atmosférico"]
+    },
+    {
+      "day": 12,
+      "destination": "Mount Titlis 🏔️",
+      "instagramGroup": "grupo5",
+      "outfit": {
+        "top": "Camiseta gris oscuro ⭐",
+        "bottom": "Pantalón navy",
+        "layer": "Chaqueta azul",
+        "shoes": "Tenis negros",
+        "accessories": "Gorro frío",
+        "tier": "top",
+        "note": "Capas para -5°C en la cima — gorro + chaqueta imprescindibles"
+      },
+      "photoTypes": ["Snow shot gran angular con cielo", "Cable car POV desde adentro", "Portrait en la cima — nieve de fondo", "Above the clouds — looking down", "Huella en la nieve"]
+    },
+    {
+      "day": 13,
+      "destination": "Lauterbrunnen 🏔️",
+      "instagramGroup": "grupo5",
+      "outfit": {
+        "top": "Camiseta verde claro ⭐",
+        "bottom": "Pantalón beige",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Colores naturales para el valle — combina con cascadas y verde suizo"
+      },
+      "photoTypes": ["Cascadas verticales desde abajo", "Tren suizo en el valle", "Valle panorámico — landscape king", "Candid caminando por el pueblo", "Cielo azul entre montañas"]
+    },
+    {
+      "day": 14,
+      "destination": "Suiza → Venecia 🚆",
+      "instagramGroup": "stories-transito2",
+      "outfit": {
+        "top": "Camiseta blanca",
+        "bottom": "Pantaloneta negra",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "secundaria"
+      },
+      "photoTypes": ["Ventana del tren — Alpes nevados", "Primer espresso italiano", "Canal veneciano — primera vista", "Llegada a la estación Santa Lucía"]
+    },
+    {
+      "day": 15,
+      "destination": "Venecia 🇮🇹",
+      "instagramGroup": "grupo6",
+      "outfit": {
+        "top": "Camisa lino beige",
+        "bottom": "Pantaloneta crema",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "top",
+        "note": "Neutrales totales — elegancia mediterránea sin esfuerzo"
+      },
+      "photoTypes": ["Góndola — portrait desde el agua", "Calle italiana angosta", "Espresso en barra — lifestyle", "Pareja en el canal", "Puente Rialto al amanecer"]
+    },
+    {
+      "day": 16,
+      "destination": "Pisa + Roma 🇮🇹",
+      "instagramGroup": "grupo6",
+      "outfit": {
+        "top": "Camiseta negra ⭐",
+        "bottom": "Pantalón navy",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top"
+      },
+      "photoTypes": ["Torre Pisa — foto clásica creativa", "Tren italiano ventana", "Roma llegando de noche", "Coliseo primera vista nocturna"]
+    },
+    {
+      "day": 17,
+      "destination": "Roma 🇮🇹",
+      "instagramGroup": "grupo6",
+      "outfit": {
+        "top": "Camiseta gris oscuro ⭐",
+        "bottom": "Pantalón beige",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Grises + beige para golden hour en Roma"
+      },
+      "photoTypes": ["Coliseo golden hour", "Trastevere calles empedradas", "Portrait con luz dorada", "Terraza romana al atardecer", "Fuente di Trevi desde arriba"]
+    },
+    {
+      "day": 18,
+      "destination": "Vaticano 🕊️",
+      "instagramGroup": "stories-vaticano",
+      "outfit": {
+        "top": "Camiseta blanca",
+        "bottom": "Pantalón navy",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "secundaria"
+      },
+      "photoTypes": ["Cúpula San Pedro desde abajo", "Plaza del Vaticano wide", "Calles romanas tranquilas", "Detalle de arte o mosaico"]
+    },
+    {
+      "day": 19,
+      "destination": "Polignano a Mare 🌊",
+      "instagramGroup": "grupo7",
+      "outfit": {
+        "top": "Camiseta verde claro ⭐",
+        "bottom": "Pantaloneta crema",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "top",
+        "note": "Colores claros contra el azul intenso del Adriático"
+      },
+      "photoTypes": ["Cliff shot desde lo alto al mar", "Agua azul Adriático — saturación natural", "Cueva del mar desde adentro", "Pueblo blanco sobre el acantilado", "Sunset sobre el Adriático"]
+    },
+    {
+      "day": 20,
+      "destination": "Madrid 🇪🇸",
+      "instagramGroup": "grupo8",
+      "outfit": {
+        "top": "Camisa lino beige",
+        "bottom": "Pantalón beige",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "Outfit elegante para Gran Vía noche y rooftop de cierre"
+      },
+      "photoTypes": ["Gran Vía de noche — larga exposición", "Rooftop Madrid skyline", "Outfit clean lifestyle shot", "Calle iluminada — walking shot"]
+    },
+    {
+      "day": 21,
+      "destination": "Madrid 🇪🇸",
+      "instagramGroup": "grupo8",
+      "outfit": {
+        "top": "Camiseta negra ⭐",
+        "bottom": "Pantaloneta negra",
+        "layer": null,
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "top",
+        "note": "All-black relaxed para Retiro — elevado pero cómodo"
+      },
+      "photoTypes": ["Parque El Retiro lago reflexión", "Café lifestyle último día", "Candid caminando solo", "Atardecer desde el parque"]
+    },
+    {
+      "day": 22,
+      "destination": "Madrid libre 🇪🇸",
+      "instagramGroup": "stories-cierre",
+      "outfit": {
+        "top": "Camiseta gris clara",
+        "bottom": "Pantaloneta verde",
+        "layer": null,
+        "shoes": "Tenis grises",
+        "accessories": null,
+        "tier": "stories",
+        "note": "Día libre — espontáneo, sin presión de outfit"
+      },
+      "photoTypes": ["Mercado o tienda local", "Último café europeo", "Espontáneas en la calle", "Compras o souvenirs candid"]
+    },
+    {
+      "day": 23,
+      "destination": "Regreso ✈️",
+      "instagramGroup": "stories-cierre",
+      "outfit": {
+        "top": "Camiseta morada",
+        "bottom": "Pantalón navy",
+        "layer": "Chaqueta azul",
+        "shoes": "Tenis negros",
+        "accessories": null,
+        "tier": "stories",
+        "note": "Mismo outfit día 0 — cierre narrativo perfecto"
+      },
+      "photoTypes": ["Aeropuerto — closing shot", "Ventana avión de regreso", "Última vista de Madrid desde el aire", "Cinematic ending — solo en la terminal"]
+    }
+  ]
+}

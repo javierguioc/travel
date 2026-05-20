@@ -169,16 +169,23 @@ export function SummaryView() {
         <div className="flex items-center gap-2 mb-3">
           <span className="text-lg">🗺️</span>
           <h3 className="text-sm font-bold text-light-text">Recorrido</h3>
+          <span className="ml-auto text-xs text-light-textMuted bg-light-bgTertiary px-2 py-0.5 rounded-full">
+            {citiesTimeline.length} destinos · {stats.totalDays} días
+          </span>
         </div>
         <div className="flex flex-wrap gap-2">
           {citiesTimeline.map((item, index) => {
             const days = item.endDay - item.startDay + 1;
+            const dayLabel = item.startDay === item.endDay
+              ? `Día ${item.startDay}`
+              : `Días ${item.startDay}–${item.endDay}`;
             return (
               <span
                 key={index}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-light-bgTertiary rounded-full text-sm hover:bg-light-border transition-colors"
+                title={dayLabel}
               >
-                <span className="w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">{index + 1}</span>
+                <span className="text-blue-500 font-bold text-xs">{dayLabel}</span>
                 <span className="font-medium text-light-text">{item.city}</span>
                 <span className="text-light-textMuted text-xs">({days}d)</span>
               </span>

@@ -1,7 +1,7 @@
 // Zustand store - Estado global de la aplicación
 import { create } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
-import { DEFAULT_START_DATE, DEFAULT_EXCHANGE_RATE, DEFAULT_SHOW_COP_CONVERSION, DEFAULT_USE_REALISTIC_COSTS, DATA_FILE_PATH } from '../constants/defaults';
+import { DEFAULT_START_DATE, DEFAULT_EXCHANGE_RATE, DEFAULT_SHOW_COP_CONVERSION, DEFAULT_USE_REALISTIC_COSTS, DATA_FILE_PATH, JAVIER_PLANNER_PATH } from '../constants/defaults';
 
 export const useItineraryStore = create(
   devtools(
@@ -29,6 +29,10 @@ export const useItineraryStore = create(
 
         // Edit mode
         editMode: false,
+
+        // Javier Planner
+        javierUnlocked: false,
+        javierData: null,
 
         // Actions - Data loading
         loadItinerary: async () => {
@@ -66,6 +70,18 @@ export const useItineraryStore = create(
 
         // Actions - Edit mode
         toggleEditMode: () => set((state) => ({ editMode: !state.editMode })),
+
+        // Actions - Javier Planner
+        setJavierUnlocked: (unlocked) => set({ javierUnlocked: unlocked }),
+        loadJavierData: async () => {
+          try {
+            const response = await fetch(JAVIER_PLANNER_PATH);
+            const data = await response.json();
+            set({ javierData: data });
+          } catch (_) {
+            // silent — private module
+          }
+        },
 
         updateActivity: (dayNum, activityIndex, field, value) => {
           const state = get();

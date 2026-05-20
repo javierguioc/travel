@@ -6,6 +6,7 @@ export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;
 
 export const DATA_FILE_PATH = `${import.meta.env.BASE_URL}data/itinerary-data.json`;
+export const JAVIER_PLANNER_PATH = `${import.meta.env.BASE_URL}data/javier-planner.json`;
 
 export const VIEWS = {
   SUMMARY: 'summary',

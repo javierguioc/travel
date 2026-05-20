@@ -8,6 +8,7 @@ import Controls from './components/controls/Controls';
 import SummaryView from './views/SummaryView';
 import AllDaysView from './views/AllDaysView';
 import DayView from './views/DayView';
+import JavierPlannerView from './views/JavierPlannerView';
 import { Spinner } from './components/ui';
 import useKeyboardNav from './hooks/useKeyboardNav';
 
@@ -52,6 +53,10 @@ function App() {
         </div>
       </div>
     );
+  }
+
+  if (currentView === 'javier') {
+    return <JavierPlannerView />;
   }
 
   return (

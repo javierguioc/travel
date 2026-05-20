@@ -26,10 +26,13 @@ export function AllDaysView() {
     return uniqueCities;
   }, [itineraryData]);
 
+  const activeDays = useMemo(() => filteredDays.filter(d => !d.discarded), [filteredDays]);
+  const discardedDays = useMemo(() => itineraryData?.days?.filter(d => d.discarded) || [], [itineraryData]);
+
   const displayDays = useMemo(() => {
-    if (!selectedCity) return filteredDays;
-    return filteredDays.filter((day) => day.city === selectedCity);
-  }, [filteredDays, selectedCity]);
+    if (!selectedCity) return activeDays;
+    return activeDays.filter((day) => day.city === selectedCity);
+  }, [activeDays, selectedCity]);
 
   if (!itineraryData) {
     return (
@@ -120,6 +123,24 @@ export function AllDaysView() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {displayDays.map((day) => (
               <DayCardCompact key={day.day} day={day} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Días descartados */}
+      {discardedDays.length > 0 && (
+        <div className="mt-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-px flex-1 bg-gray-300" />
+            <span className="text-gray-400 text-sm font-semibold uppercase tracking-wider">
+              Días descartados
+            </span>
+            <div className="h-px flex-1 bg-gray-300" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {discardedDays.map((day) => (
+              <DayCardCompact key={'disc-' + day.day} day={day} />
             ))}
           </div>
         </div>
