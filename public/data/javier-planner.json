@@ -11,33 +11,31 @@
     "airplaneOutfit": [
       "Camiseta morada",
       "Chaqueta azul",
-      "Pantalón navy (azul claro)",
-      "Tenis negros",
-      "1 boxer",
-      "1 par de medias"
+      "Pantalón navy",
+      "Tenis negros"
     ],
     "pantalonesLargos": [
-      "Pantalón crema/beige",
-      "Pantalón navy (puesto en avión)"
+      "Pantalón beige",
+      "Pantalón navy"
     ],
     "pantalonetas": [
-      "Negra",
-      "Crema",
-      "Verde",
-      "Extra playa/dormir/piscina"
+      "Pantaloneta negra",
+      "Pantaloneta crema",
+      "Pantaloneta verde",
+      "Pantaloneta playa/dormir"
     ],
     "camisetasTop": [
-      "Gris oscuro ⭐",
-      "Verde claro ⭐",
-      "Verde oscuro ⭐",
-      "Negra ⭐"
+      "Camiseta gris oscuro ⭐",
+      "Camiseta verde claro ⭐",
+      "Camiseta verde oscuro ⭐",
+      "Camiseta negra ⭐",
+      "Camisa lino beige ⭐"
     ],
     "camisetasSecundarias": [
-      "Blanca",
-      "Gris clara",
-      "Camisa lino beige",
+      "Camiseta blanca",
+      "Camiseta gris clara",
       "Amarilla Mickey",
-      "Roja Flash"
+      "Camiseta roja Flash"
     ],
     "ropaFrio": [
       "Chaqueta azul",
@@ -52,13 +50,79 @@
       "Tenis grises"
     ],
     "interior": [
-      "6 boxers (1 puesto + 5 empacados)",
-      "5 pares de medias (1 puestas + 4 empacadas)"
+      "6 boxers",
+      "5 pares de medias"
     ],
     "noLlevar": [
       "Tenis azules"
-    ]
+    ],
+    "colors": {
+      "Camiseta morada":             "92, 74, 170",
+      "Chaqueta azul":               "35, 48, 78",
+      "Pantalón navy":               "52, 67, 94",
+      "Tenis negros":                "20, 20, 20",
+      "Pantalón beige":              "196, 180, 150",
+      "Pantaloneta negra":           "25, 25, 25",
+      "Pantaloneta crema":           "210, 195, 165",
+      "Pantaloneta verde":           "106, 124, 82",
+      "Camiseta gris oscuro ⭐":     "68, 68, 72",
+      "Camiseta verde claro ⭐":     "167, 184, 145",
+      "Camiseta verde oscuro ⭐":    "37, 68, 58",
+      "Camiseta negra ⭐":           "18, 18, 18",
+      "Camisa lino beige ⭐":        "222, 214, 194",
+      "Camiseta blanca":             "240, 240, 235",
+      "Camiseta gris clara":         "170, 170, 170",
+      "Amarilla Mickey":             "228, 210, 122",
+      "Camiseta roja Flash":         "142, 42, 52",
+      "Primera capa superior térmica": "20, 20, 20",
+      "Primera capa inferior térmica": "20, 20, 20",
+      "Gorro frío":                  "40, 40, 40",
+      "Tenis grises":                "120, 120, 120",
+      "Tenis azules":                "40, 70, 120"
+    }
   },
+
+  "flights": [
+    {
+      "day": 0,
+      "airline": "Air Europa",
+      "code": "UX198 + UX7703",
+      "from": "Medellín (MDE)",
+      "to": "Barcelona (BCN)",
+      "date": "2026-05-22",
+      "departureTime": "20:35",
+      "checkInOpens": "2026-05-20",
+      "checkInOpensTime": "20:35",
+      "checkInNote": "Abre 48h antes. Cierra 45 min antes del vuelo.",
+      "ticketUrl": "https://drive.google.com/file/d/18oKtuc14dJMRW0DMfh-61E9pQ-Au5Rx5/view?usp=drivesdk"
+    },
+    {
+      "day": 19,
+      "airline": "Ryanair",
+      "code": "FR4049",
+      "from": "Bari (BRI)",
+      "to": "Alicante (ALC)",
+      "date": "2026-06-10",
+      "departureTime": "17:05",
+      "checkInOpens": "2026-06-09",
+      "checkInOpensTime": "17:05",
+      "checkInNote": "Abre 24h antes. Cierra 2h antes. Solo equipaje de mano incluido.",
+      "ticketUrl": "https://www.ryanair.com/es/es/trip/manage/dcc93dbb-676f-443c-a0db-f8183e58ed6c"
+    },
+    {
+      "day": 19,
+      "airline": "Iberia / Air Nostrum",
+      "code": "IB1016",
+      "from": "Alicante (ALC)",
+      "to": "Madrid (MAD)",
+      "date": "2026-06-10",
+      "departureTime": "21:30",
+      "checkInOpens": "2026-06-08",
+      "checkInOpensTime": "21:30",
+      "checkInNote": "Abre 48h antes. Kiwi auto-transfer incluido (Connection Protection).",
+      "ticketUrl": "https://drive.google.com/file/d/1MA3KdbJ6F_2nPx6VB-70eX-pNADDGCrc/view?usp=drivesdk"
+    }
+  ],
 
   "instagramGroups": [
     {

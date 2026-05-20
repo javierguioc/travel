@@ -1,5 +1,7 @@
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { useItineraryStore } from '../store/store';
+import { format, differenceInHours, differenceInDays, isPast, parseISO } from 'date-fns';
+import { es } from 'date-fns/locale';
 
 const TIER_STYLES = {
   top: 'bg-amber-400/20 text-amber-300 border border-amber-400/30',
@@ -29,9 +31,28 @@ const GROUP_COLORS = {
   'stories-cierre': 'from-zinc-600 to-zinc-700',
 };
 
-function OutfitSection({ outfit }) {
+function ColorSwatch({ item, colors }) {
+  const rgb = colors?.[item];
+  if (!rgb) return null;
+  return (
+    <span
+      className="shrink-0 w-3 h-3 rounded-sm border border-white/15 shadow-sm"
+      style={{ backgroundColor: `rgb(${rgb})` }}
+    />
+  );
+}
+
+function OutfitSection({ outfit, colors }) {
   if (!outfit) return null;
   const tier = outfit.tier || 'secundaria';
+
+  const Row = ({ emoji, item }) => item ? (
+    <div className="flex items-center gap-2 text-sm">
+      <span className="text-zinc-500 shrink-0">{emoji}</span>
+      <ColorSwatch item={item} colors={colors} />
+      <span className="text-white">{item}</span>
+    </div>
+  ) : null;
 
   return (
     <div>
@@ -41,41 +62,17 @@ function OutfitSection({ outfit }) {
         </span>
       </div>
       <div className="bg-zinc-800/60 rounded-xl p-3 space-y-1.5">
-        {outfit.top && (
-          <div className="flex items-center gap-2 text-sm">
-            <span className="text-zinc-500 shrink-0">👕</span>
-            <span className="text-white">{outfit.top}</span>
-          </div>
-        )}
-        {outfit.bottom && (
-          <div className="flex items-center gap-2 text-sm">
-            <span className="text-zinc-500 shrink-0">👖</span>
-            <span className="text-white">{outfit.bottom}</span>
-          </div>
-        )}
-        {outfit.layer && (
-          <div className="flex items-center gap-2 text-sm">
-            <span className="text-zinc-500 shrink-0">🧥</span>
-            <span className="text-white">{outfit.layer}</span>
-          </div>
-        )}
-        {outfit.shoes && (
-          <div className="flex items-center gap-2 text-sm">
-            <span className="text-zinc-500 shrink-0">👟</span>
-            <span className="text-white">{outfit.shoes}</span>
-          </div>
-        )}
-        {outfit.accessories && (
-          <div className="flex items-center gap-2 text-sm">
-            <span className="text-zinc-500 shrink-0">🎩</span>
-            <span className="text-white">{outfit.accessories}</span>
-          </div>
-        )}
+        <Row emoji="👕" item={outfit.top} />
+        <Row emoji="👖" item={outfit.bottom} />
+        <Row emoji="🧥" item={outfit.layer} />
+        <Row emoji="👟" item={outfit.shoes} />
+        <Row emoji="🎩" item={outfit.accessories} />
         {outfit.outfitChange && (
           <div className="mt-2 pt-2 border-t border-zinc-700">
             <p className="text-xs text-indigo-300 font-semibold mb-1">+ Cambio de tarde/noche</p>
             <div className="flex items-center gap-2 text-sm">
               <span className="text-zinc-500 shrink-0">👕</span>
+              <ColorSwatch item={outfit.outfitChange.top} colors={colors} />
               <span className="text-zinc-300">{outfit.outfitChange.top}</span>
             </div>
             <p className="text-xs text-zinc-500 mt-1 ml-6">{outfit.outfitChange.when}</p>
@@ -89,12 +86,16 @@ function OutfitSection({ outfit }) {
   );
 }
 
-function DayCard({ dayData, group, onSelectGroup, isGroupActive }) {
+function DayCard({ dayData, group, onSelectGroup, isGroupActive, colors, isToday }) {
   const [tab, setTab] = useState('outfit');
   const gradientClass = GROUP_COLORS[dayData.instagramGroup] || 'from-zinc-600 to-zinc-700';
 
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+    <div className={`bg-zinc-900 rounded-2xl overflow-hidden shadow-xl flex flex-col transition-all ${
+      isToday
+        ? 'ring-2 ring-white shadow-[0_0_20px_2px_rgba(255,255,255,0.12)]'
+        : 'border border-zinc-800'
+    }`}>
       {/* Header — click para abrir grupo */}
       <button
         onClick={() => onSelectGroup(dayData.instagramGroup)}
@@ -104,6 +105,11 @@ function DayCard({ dayData, group, onSelectGroup, isGroupActive }) {
           <span className="bg-black/30 text-white font-bold text-xs px-2 py-0.5 rounded-full shrink-0">
             Día {dayData.day}
           </span>
+          {isToday && (
+            <span className="bg-white text-black font-bold text-xs px-2 py-0.5 rounded-full shrink-0 animate-pulse">
+              HOY
+            </span>
+          )}
           <h3 className="text-white font-bold text-sm leading-tight truncate flex-1">{dayData.destination}</h3>
           {group && (
             <span className={`text-white/70 text-xs shrink-0 transition-all ${isGroupActive ? 'opacity-100' : 'opacity-50'}`}>
@@ -140,7 +146,7 @@ function DayCard({ dayData, group, onSelectGroup, isGroupActive }) {
 
       {/* Tab Content */}
       <div className="p-4 flex-1">
-        {tab === 'outfit' && <OutfitSection outfit={dayData.outfit} />}
+        {tab === 'outfit' && <OutfitSection outfit={dayData.outfit} colors={colors} />}
 
         {tab === 'photos' && (
           <div className="flex flex-wrap gap-2">
@@ -154,6 +160,82 @@ function DayCard({ dayData, group, onSelectGroup, isGroupActive }) {
             ))}
           </div>
         )}
+      </div>
+    </div>
+  );
+}
+
+function FlightCheckInCard({ flight, now }) {
+  const checkInDateTime = parseISO(`${flight.checkInOpens}T${flight.checkInOpensTime}:00`);
+  const flightDateTime  = parseISO(`${flight.date}T${flight.departureTime}:00`);
+  const flightDate      = parseISO(flight.date);
+
+  const flightPast      = isPast(flightDateTime);
+  const checkInOpen     = isPast(checkInDateTime);
+  const hoursToFlight   = differenceInHours(flightDateTime, now);
+  const hoursToCheckIn  = differenceInHours(checkInDateTime, now);
+  const daysToCheckIn   = differenceInDays(checkInDateTime, now);
+
+  let status, statusLabel, cardBorder, badgeCls;
+  if (flightPast) {
+    status = 'past';
+    statusLabel = 'Vuelo completado';
+    cardBorder = 'border-zinc-700';
+    badgeCls = 'bg-zinc-700 text-zinc-400';
+  } else if (checkInOpen && hoursToFlight <= 2) {
+    status = 'urgent';
+    statusLabel = '⚠️ ¡Última hora de check-in!';
+    cardBorder = 'border-red-500 shadow-red-500/20 shadow-lg';
+    badgeCls = 'bg-red-500 text-white animate-pulse';
+  } else if (checkInOpen) {
+    status = 'open';
+    statusLabel = '✅ Check-in ABIERTO';
+    cardBorder = 'border-emerald-500 shadow-emerald-500/20 shadow-lg';
+    badgeCls = 'bg-emerald-500 text-white';
+  } else if (hoursToCheckIn <= 24) {
+    status = 'soon';
+    statusLabel = `🔔 Check-in abre en ${hoursToCheckIn}h`;
+    cardBorder = 'border-amber-400 shadow-amber-400/10 shadow-md';
+    badgeCls = 'bg-amber-400 text-black';
+  } else {
+    status = 'upcoming';
+    statusLabel = `Check-in en ${daysToCheckIn}d ${hoursToCheckIn % 24}h`;
+    cardBorder = 'border-zinc-700';
+    badgeCls = 'bg-zinc-700 text-zinc-300';
+  }
+
+  return (
+    <div className={`bg-zinc-900 border ${cardBorder} rounded-2xl p-4 transition-all`}>
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
+            <span className="text-white font-bold text-sm">{flight.code}</span>
+            <span className="text-zinc-500 text-xs">{flight.airline}</span>
+            <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${badgeCls}`}>
+              {statusLabel}
+            </span>
+          </div>
+          <p className="text-zinc-300 text-sm">
+            ✈️ {flight.from} → {flight.to}
+          </p>
+          <p className="text-zinc-400 text-xs mt-1">
+            Vuelo: {format(flightDate, "d MMM yyyy", { locale: es })} a las {flight.departureTime}
+          </p>
+          {!flightPast && (
+            <p className="text-zinc-500 text-xs mt-1">
+              Check-in abre: {format(checkInDateTime, "d MMM yyyy", { locale: es })} a las {flight.checkInOpensTime}
+            </p>
+          )}
+          <p className="text-zinc-600 text-xs mt-1 italic">{flight.checkInNote}</p>
+        </div>
+        <a
+          href={flight.ticketUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="shrink-0 text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 px-3 py-1.5 rounded-lg border border-zinc-700 transition-colors"
+        >
+          🎫 Ticket
+        </a>
       </div>
     </div>
   );
@@ -263,18 +345,59 @@ function GroupChip({ group, isActive, onClick }) {
 }
 
 export function JavierPlannerView() {
-  const javierData = useItineraryStore((s) => s.javierData);
+  const javierData     = useItineraryStore((s) => s.javierData);
+  const tripStartDate  = useItineraryStore((s) => s.tripStartDate);
   const setCurrentView = useItineraryStore((s) => s.setCurrentView);
   const setJavierUnlocked = useItineraryStore((s) => s.setJavierUnlocked);
   const [activeGroup, setActiveGroup] = useState(null);
   const [showInventory, setShowInventory] = useState(false);
+  const [now, setNow] = useState(new Date());
   const groupPanelRef = useRef(null);
   const groupScrollRef = useRef(null);
+
+  // Refresh clock every minute so status badges stay live
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(id);
+  }, []);
+
+  const todayDayIndex = useMemo(() => {
+    if (!tripStartDate) return -1;
+    const start = new Date(tripStartDate);
+    start.setHours(0, 0, 0, 0);
+    const today = new Date(now);
+    today.setHours(0, 0, 0, 0);
+    return Math.floor((today - start) / 86_400_000);
+  }, [tripStartDate, now]);
 
   const groupMap = useMemo(() => {
     if (!javierData?.instagramGroups) return {};
     return Object.fromEntries(javierData.instagramGroups.map((g) => [g.id, g]));
   }, [javierData]);
+
+  // Count how many days each clothing item is actually worn
+  const usageStats = useMemo(() => {
+    if (!javierData?.days) return {};
+    const counts = {};
+    const reg = (item) => {
+      if (!item) return;
+      const key = item.replace(' ⭐', '').trim().toLowerCase();
+      counts[key] = (counts[key] || 0) + 1;
+    };
+    javierData.days.forEach(({ outfit }) => {
+      if (!outfit) return;
+      reg(outfit.top);
+      reg(outfit.bottom);
+      reg(outfit.layer);
+      reg(outfit.shoes);
+      reg(outfit.accessories);
+      if (outfit.outfitChange?.top) reg(outfit.outfitChange.top);
+    });
+    return counts;
+  }, [javierData]);
+
+  const getUsage = (item) =>
+    usageStats[item.replace(' ⭐', '').trim().toLowerCase()] || 0;
 
   const filteredDays = useMemo(() => {
     if (!javierData?.days) return [];
@@ -347,27 +470,59 @@ export function JavierPlannerView() {
         {/* Inventario (colapsable) */}
         {showInventory && (
           <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-5">
-            <h2 className="text-white font-bold text-base mb-4">👕 Inventario de ropa</h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-white font-bold text-base">👕 Inventario de ropa</h2>
+              <div className="flex items-center gap-3 text-xs">
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-zinc-600 inline-block"/>0 días</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-blue-500 inline-block"/>1–2</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-500 inline-block"/>3–4</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400 inline-block"/>5+</span>
+              </div>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {[
-                ['Ropa avión', javierData.inventory?.airplaneOutfit],
-                ['Pantalones largos', javierData.inventory?.pantalonesLargos],
-                ['Pantalonetas', javierData.inventory?.pantalonetas],
                 ['Camisetas TOP ⭐', javierData.inventory?.camisetasTop],
                 ['Camisetas secundarias', javierData.inventory?.camisetasSecundarias],
-                ['Ropa frío', javierData.inventory?.ropaFrio],
+                ['Pantalones largos', javierData.inventory?.pantalonesLargos],
+                ['Pantalonetas', javierData.inventory?.pantalonetas],
                 ['Calzado', javierData.inventory?.calzado],
+                ['Ropa frío / capas', javierData.inventory?.ropaFrio],
+                ['Ropa avión', javierData.inventory?.airplaneOutfit],
                 ['Interior', javierData.inventory?.interior],
               ].map(([label, items]) => (
                 <div key={label} className="bg-zinc-800/50 rounded-xl p-3">
                   <p className="text-zinc-400 text-xs font-bold uppercase tracking-wide mb-2">{label}</p>
-                  <ul className="space-y-1">
-                    {items?.map((item, i) => (
-                      <li key={i} className="text-zinc-300 text-xs flex items-start gap-1.5">
-                        <span className="text-zinc-600 mt-0.5 shrink-0">·</span>
-                        {item}
-                      </li>
-                    ))}
+                  <ul className="space-y-1.5">
+                    {items?.map((item, i) => {
+                      const uses = getUsage(item);
+                      const rgb = javierData.inventory?.colors?.[item];
+                      return (
+                        <li key={i} className="flex items-center justify-between gap-2">
+                          <div className="flex items-center gap-2 min-w-0">
+                            {rgb ? (
+                              <span
+                                className="shrink-0 w-3.5 h-3.5 rounded-sm border border-white/15 shadow-sm"
+                                style={{ backgroundColor: `rgb(${rgb})` }}
+                              />
+                            ) : (
+                              <span className="shrink-0 w-3.5 h-3.5 rounded-sm border border-dashed border-zinc-600" />
+                            )}
+                            <span className="text-zinc-300 text-xs leading-snug truncate">{item}</span>
+                          </div>
+                          <span className={`shrink-0 text-xs font-bold px-1.5 py-0.5 rounded-full ${
+                            uses === 0
+                              ? 'text-zinc-600 bg-zinc-800'
+                              : uses <= 2
+                                ? 'text-blue-300 bg-blue-500/20'
+                                : uses <= 4
+                                  ? 'text-emerald-300 bg-emerald-500/20'
+                                  : 'text-amber-300 bg-amber-400/20'
+                          }`}>
+                            {uses}d
+                          </span>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -380,6 +535,20 @@ export function JavierPlannerView() {
                 ))}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Vuelos & Check-in */}
+        {javierData.flights?.length > 0 && (
+          <div>
+            <p className="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-3">
+              ✈️ Vuelos — recordatorio check-in
+            </p>
+            <div className="space-y-3">
+              {javierData.flights.map((flight, i) => (
+                <FlightCheckInCard key={i} flight={flight} now={now} />
+              ))}
+            </div>
           </div>
         )}
 
@@ -432,6 +601,8 @@ export function JavierPlannerView() {
                 group={groupMap[day.instagramGroup]}
                 onSelectGroup={handleDayCardGroupClick}
                 isGroupActive={activeGroup === day.instagramGroup}
+                colors={javierData.inventory?.colors}
+                isToday={day.day === todayDayIndex}
               />
             ))}
           </div>
