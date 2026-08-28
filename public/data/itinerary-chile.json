@@ -1,0 +1,639 @@
+{
+  "version": "1.0-chile-patagonia-torres-del-paine",
+  "meta": {
+    "currency": "USD",
+    "intl_flight_estimate": 260,
+    "group_sizes": [
+      2
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "Viento",
+      "title": "El viento patagónico es extremo",
+      "description": "En verano son comunes ráfagas de 80-120 km/h, sobre todo en miradores abiertos y pasos de montaña. Lleva un cortavientos impermeable siempre y sujeta bien gorros, capuchas y trípodes. En puentes colgantes y bordes de laguna, precaución.",
+      "link": ""
+    },
+    {
+      "type": "Clima",
+      "title": "Las 4 estaciones en un mismo día",
+      "description": "Puede haber sol, lluvia, granizo y viento la misma tarde. Vístete SIEMPRE por capas: base térmica + polar + chaqueta impermeable/cortavientos. No confíes en el pronóstico: cambia cada hora.",
+      "link": "https://www.meteochile.gob.cl/"
+    },
+    {
+      "type": "Reservas",
+      "title": "Reserva con mucha anticipación (enero es peak)",
+      "description": "La navegación al Glaciar Grey, el catamarán a Balmaceda/Serrano, los buses al parque y el hospedaje en Puerto Natales se agotan semanas antes en temporada alta. Reserva todo con tiempo.",
+      "link": "https://www.getyourguide.com"
+    },
+    {
+      "type": "Entradas",
+      "title": "Entrada al Parque Torres del Paine (CONAF)",
+      "description": "Torres del Paine cobra entrada (extranjeros ~USD 35 por persona en temporada alta). Cómprala online en el sitio de CONAF con anticipación y guarda el ticket/QR: te lo piden en las porterías (Laguna Amarga, Serrano).",
+      "link": "https://www.pasesparques.cl/"
+    },
+    {
+      "type": "Luz",
+      "title": "Hasta 17 horas de luz en enero",
+      "description": "Amanece cerca de las 05:30 y atardece pasadas las 22:00. Aprovecha para caminatas largas sin apuro y para la mejor luz de fotos al final del día.",
+      "link": ""
+    },
+    {
+      "type": "Trekking",
+      "title": "Calzado, bastones y agua para la Base Torres",
+      "description": "La caminata a la Base de las Torres es exigente (~19-22 km, 7-9 h, subida final de morrena). Usa botas de trekking, bastones y lleva comida y ~2 L de agua (se puede rellenar en los arroyos del parque). Sal temprano.",
+      "link": ""
+    },
+    {
+      "type": "Conexión",
+      "title": "Señal limitada y efectivo",
+      "description": "Dentro del parque casi no hay señal. Descarga mapas offline (Maps.me/Google) y lleva algo de efectivo en pesos (CLP) para entradas comunitarias, cafés y propinas.",
+      "link": ""
+    },
+    {
+      "type": "Fauna",
+      "title": "Observa la fauna a distancia",
+      "description": "Verás guanacos, ñandúes, zorros y cóndores. No los alimentes ni te acerques. Hay pumas en el parque (verlos es raro y suele ser con guía); respeta las señalizaciones.",
+      "link": ""
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-01-08",
+      "city": "Santiago → Puerto Natales",
+      "country": "Chile",
+      "cityCode": "SCL-PUQ-PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales (costanera / centro)",
+      "heroImageQuery": "Puerto Natales waterfront Ultima Esperanza sound",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg",
+      "imageHints": [
+        "Puerto Natales waterfront",
+        "Patagonia fjord town"
+      ],
+      "perks": [
+        "Día largo de traslado: vuelo ~3h20 + 3h de bus/van hasta Puerto Natales",
+        "Compra provisiones, agua y snacks en Natales para los días de parque",
+        "Prepárate para el viento: cortavientos a mano apenas llegues"
+      ],
+      "accommodation": {
+        "name": "Hostal / hotel en el centro de Puerto Natales",
+        "neighborhood": "Cerca de la costanera y la calle Baquedano",
+        "link": "https://www.booking.com/city/cl/puerto-natales.html",
+        "notes": "Puerto Natales es la base de todas las excursiones al parque; elige algo caminable al centro."
+      },
+      "mainActivities": [
+        {
+          "name": "Vuelo Santiago (SCL) → Punta Arenas (PUQ)",
+          "start": "08:00",
+          "durationMin": 200,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Presidente+Carlos+Ibanez+Punta+Arenas",
+          "notes": "Vuelo doméstico de ~3h20 al extremo sur (LATAM/JetSmart/SKY). Reserva temprano para aprovechar el día. Llegas al aeropuerto de Punta Arenas (PUQ).",
+          "imageQuery": "airplane wing Patagonia",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
+        {
+          "name": "Traslado Punta Arenas → Puerto Natales",
+          "start": "12:30",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/dir/Punta+Arenas/Puerto+Natales",
+          "notes": "~250 km / 3h por la Ruta 9 a través de la estepa patagónica. Bus regular (Bus-Sur/Fernández) o transfer. Verás los primeros guanacos y ñandúes.",
+          "imageQuery": "Patagonian steppe road",
+          "imageUrl": ""
+        },
+        {
+          "name": "Costanera y Seno Última Esperanza",
+          "start": "17:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Costanera+Puerto+Natales",
+          "notes": "Camina la costanera: el Muelle Histórico, el monumento 'Manos del Viento' y las vistas al fiordo con montañas nevadas. Cena de cordero patagónico o merluza austral.",
+          "imageQuery": "Puerto Natales waterfront sunset",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 300,
+        "activitiesBase": 0,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 445,
+        "totalReal": 465
+      },
+      "mapPoints": [
+        "Aeropuerto Punta Arenas",
+        "Puerto Natales",
+        "Costanera Puerto Natales"
+      ],
+      "notes": "Día de viaje: Santiago → Punta Arenas → Puerto Natales. Tarde tranquila en la costanera del fiordo.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 7,
+        "conditions": "Variable: sol y nubes con viento fuerte. Frío al atardecer junto al fiordo.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Capas: base térmica + polar + cortavientos impermeable",
+          "Gorro y guantes livianos para el viento del fiordo",
+          "Zapatillas cómodas para caminar la costanera"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-01-09",
+      "city": "Torres del Paine — día escénico",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Cuernos del Paine Lago Pehoe turquoise",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+      "imageHints": [
+        "Cuernos del Paine from Lake Pehoe",
+        "guanacos Torres del Paine"
+      ],
+      "perks": [
+        "Compra la entrada del parque online (CONAF) antes de salir y ten el QR a mano",
+        "Día de muchos miradores en auto/bus: cámara y batería cargada",
+        "Lleva almuerzo de picnic: los servicios dentro del parque son escasos y caros"
+      ],
+      "accommodation": {
+        "name": "Misma base en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Regresas a dormir a Natales; el circuito escénico es ida y vuelta en el día."
+      },
+      "mainActivities": [
+        {
+          "name": "Ingreso al parque y avistamiento de fauna",
+          "start": "07:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Porteria+Laguna+Amarga+Torres+del+Paine",
+          "notes": "Entrada por Laguna Amarga. La estepa de la mañana es ideal para ver guanacos, ñandúes y cóndores, con las Torres de fondo.",
+          "imageQuery": "guanaco Patagonia Torres del Paine",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Guanaco_Patagonico.jpg/1280px-Guanaco_Patagonico.jpg"
+        },
+        {
+          "name": "Salto Grande y Mirador Cuernos",
+          "start": "11:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Salto+Grande+Torres+del+Paine",
+          "notes": "Corta caminata al Salto Grande (entre lagos Nordenskjöld y Pehoé) y sigue al Mirador Cuernos: los picos de granito y basalto reflejados en el lago turquesa.",
+          "imageQuery": "Cuernos del Paine mirador",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg"
+        },
+        {
+          "name": "Lago Pehoé y Lago Grey (mirador)",
+          "start": "14:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Lago+Pehoe+Torres+del+Paine",
+          "notes": "El icónico Lago Pehoé de un turquesa irreal, y caminata por la playa de guijarros del Lago Grey para ver los primeros témpanos desprendidos del glaciar.",
+          "imageQuery": "Lago Pehoe turquoise Torres del Paine",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 0,
+        "activitiesBase": 160,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 305,
+        "totalReal": 325
+      },
+      "mapPoints": [
+        "Porteria Laguna Amarga",
+        "Salto Grande Torres del Paine",
+        "Lago Pehoe",
+        "Lago Grey"
+      ],
+      "notes": "Circuito escénico del parque en el día: fauna, Salto Grande, Cuernos, Lago Pehoé y Lago Grey.",
+      "weather": {
+        "tempHighC": 17,
+        "tempLowC": 6,
+        "conditions": "Cielo cambiante con viento fuerte en los miradores. Posibles chubascos breves.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Cortavientos impermeable imprescindible en los miradores",
+          "Bloqueador y lentes: el sol patagónico quema pese al frío",
+          "Zapatillas de trekking para las caminatas cortas"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-01-10",
+      "city": "Trekking a la Base de las Torres",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Base Torres del Paine granite towers lagoon",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+      "imageHints": [
+        "Base de las Torres hike",
+        "Torres del Paine sunrise"
+      ],
+      "perks": [
+        "La caminata estrella y más exigente: sal temprano (bus ~07:00) para tener margen",
+        "Botas, bastones, capas y ~2 L de agua; la subida final de morrena es dura",
+        "Si prefieres algo más suave, alternativa: Mirador Cóndor + Lago Grey"
+      ],
+      "accommodation": {
+        "name": "Misma base en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Noche de descanso tras el trekking; cena reponedora en el pueblo."
+      },
+      "mainActivities": [
+        {
+          "name": "Caminata a la Base de las Torres",
+          "start": "08:00",
+          "durationMin": 540,
+          "link": "https://www.google.com/maps/search/Mirador+Base+Las+Torres",
+          "notes": "El trekking icónico: ~19-22 km ida y vuelta, 7-9 h. Sube por el valle Ascencio, cruza bosque y termina en una empinada morrena hasta la laguna al pie de las tres torres de granito. Exigente pero inolvidable.",
+          "imageQuery": "Base Las Torres granite towers lagoon",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg"
+        },
+        {
+          "name": "Regreso y traslado a Puerto Natales",
+          "start": "17:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/dir/Torres+del+Paine/Puerto+Natales",
+          "notes": "Descenso al Hotel Las Torres y bus de regreso a Natales (~2h). Estira las piernas y celebra con una cerveza artesanal patagónica.",
+          "imageQuery": "Patagonia road sunset",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 60,
+        "activitiesBase": 70,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 275,
+        "totalReal": 295
+      },
+      "mapPoints": [
+        "Hotel Las Torres",
+        "Mirador Base Las Torres",
+        "Puerto Natales"
+      ],
+      "notes": "Día de trekking a la Base de las Torres (exigente) y regreso a Puerto Natales.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 5,
+        "conditions": "Frío en la mañana y en la morrena final; viento fuerte arriba. El clima puede cerrar las torres con nubes.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Capas para sudar subiendo y abrigarte en la cima ventosa",
+          "Botas de trekking y bastones; guantes y gorro en la mochila",
+          "Lleva comida energética y 2 L de agua"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-01-11",
+      "city": "Glaciar Grey",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Glaciar Grey ice icebergs Torres del Paine",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Glaciar_Grey%2C_Torres_del_Paine.jpg/1280px-Glaciar_Grey%2C_Torres_del_Paine.jpg",
+      "imageHints": [
+        "Grey Glacier navigation",
+        "blue icebergs Lago Grey"
+      ],
+      "perks": [
+        "Día más relajado tras la Base Torres: navegación con paisaje de hielo",
+        "Reserva la navegación con anticipación; sale de Guardería Grey",
+        "Lleva abrigo extra: en el frente del glaciar el viento es helado"
+      ],
+      "accommodation": {
+        "name": "Misma base en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": ""
+      },
+      "mainActivities": [
+        {
+          "name": "Navegación por el Lago Grey al glaciar",
+          "start": "09:30",
+          "durationMin": 210,
+          "link": "https://www.google.com/maps/search/Glaciar+Grey+Torres+del+Paine",
+          "notes": "Catamarán entre témpanos azules hasta el frente del Glaciar Grey (parte del Campo de Hielo Sur). Paredes de hielo de ~30 m. Suelen ofrecer un whisky con hielo glaciar a bordo.",
+          "imageQuery": "Grey Glacier boat icebergs",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Glaciar_Grey%2C_Torres_del_Paine.jpg/1280px-Glaciar_Grey%2C_Torres_del_Paine.jpg"
+        },
+        {
+          "name": "Caminata Mirador Grey y playa de témpanos",
+          "start": "13:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Mirador+Grey+sendero",
+          "notes": "Corta caminata por bosque magallánico y la pasarela hasta la playa del Lago Grey, donde encallan los témpanos desprendidos. Vistas amplias del glaciar.",
+          "imageQuery": "Lago Grey icebergs beach",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 0,
+        "activitiesBase": 240,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 385,
+        "totalReal": 405
+      },
+      "mapPoints": [
+        "Guarderia Grey",
+        "Glaciar Grey",
+        "Mirador Grey"
+      ],
+      "notes": "Navegación al Glaciar Grey entre témpanos + caminata al mirador. Día de hielo y bosque.",
+      "weather": {
+        "tempHighC": 15,
+        "tempLowC": 6,
+        "conditions": "Viento catabático frío desde el glaciar. Cielo variable sobre el lago.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Abrigo grueso y cortavientos para el frente del glaciar",
+          "Gorro y guantes: hace bastante frío en cubierta",
+          "Impermeable por si hay lluvia o rocío del lago"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-01-12",
+      "city": "Glaciares Balmaceda y Serrano (fiordo)",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Balmaceda Serrano glacier fjord Ultima Esperanza",
+      "heroImageUrl": "",
+      "imageHints": [
+        "Serrano glacier fjord boat",
+        "Ultima Esperanza sound waterfalls"
+      ],
+      "perks": [
+        "Navegación de día completo por el fiordo directo desde Puerto Natales (sin madrugar tanto)",
+        "Verás cascadas, lobos marinos y colonias de cormoranes en el camino",
+        "Contraste verde y de agua tras los días de montaña y estepa"
+      ],
+      "accommodation": {
+        "name": "Misma base en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Última noche completa en Natales."
+      },
+      "mainActivities": [
+        {
+          "name": "Navegación por el Seno Última Esperanza",
+          "start": "08:00",
+          "durationMin": 240,
+          "link": "https://www.google.com/maps/search/Parque+Nacional+Bernardo+O+Higgins+Puerto+Natales",
+          "notes": "Catamarán por el fiordo hacia el Parque Bernardo O'Higgins: cascadas colgantes, glaciar Balmaceda descolgándose al mar, lobos marinos y cormoranes en las rocas.",
+          "imageQuery": "Balmaceda glacier fjord Patagonia",
+          "imageUrl": ""
+        },
+        {
+          "name": "Caminata al Glaciar Serrano",
+          "start": "12:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Glaciar+Serrano",
+          "notes": "Desembarco en Puerto Toro y caminata por bosque hasta la laguna con témpanos al pie del Glaciar Serrano. Almuerzo típico de cordero al palo en una estancia (opcional).",
+          "imageQuery": "Serrano glacier lagoon icebergs",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 0,
+        "activitiesBase": 260,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 405,
+        "totalReal": 425
+      },
+      "mapPoints": [
+        "Puerto Natales",
+        "Glaciar Balmaceda",
+        "Glaciar Serrano"
+      ],
+      "notes": "Navegación de día completo por el fiordo Última Esperanza a los glaciares Balmaceda y Serrano.",
+      "weather": {
+        "tempHighC": 15,
+        "tempLowC": 7,
+        "conditions": "Fiordo con viento y posible llovizna; el clima marino cambia rápido.",
+        "rainChance": "Alta",
+        "clothingTips": [
+          "Impermeable y cortavientos: en el fiordo casi siempre llovizna o rocía",
+          "Capas cálidas para la cubierta del catamarán",
+          "Calzado que aguante barro en la caminata al Serrano"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-01-13",
+      "city": "Cueva del Milodón & Puerto Natales",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Cueva del Milodon Puerto Natales cave",
+      "heroImageUrl": "",
+      "imageHints": [
+        "Cueva del Milodon giant cave",
+        "Mirador Cerro Dorotea view"
+      ],
+      "perks": [
+        "Día buffer: si el clima canceló un tour antes, reprográmalo hoy",
+        "Actividades cerca de Natales, ideal para bajar el ritmo antes del regreso",
+        "Buen día para artesanía, lana patagónica y cerveza/chocolate local"
+      ],
+      "accommodation": {
+        "name": "Última noche en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Confirma el horario del traslado a Punta Arenas para mañana según tu vuelo."
+      },
+      "mainActivities": [
+        {
+          "name": "Monumento Natural Cueva del Milodón",
+          "start": "09:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Cueva+del+Milodon",
+          "notes": "Enorme cueva de 200 m donde se hallaron restos del milodón (perezoso gigante prehistórico). Hay una réplica a tamaño real y senderos cortos. A 25 km de Natales.",
+          "imageQuery": "Cueva del Milodon cave",
+          "imageUrl": ""
+        },
+        {
+          "name": "Mirador Cerro Dorotea",
+          "start": "13:00",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Mirador+Cerro+Dorotea",
+          "notes": "Caminata guiada (en estancia privada) hasta la cima con vista panorámica del fiordo Última Esperanza y todo Puerto Natales. Suelen cerrar con once patagónica (cordero/torta).",
+          "imageQuery": "Cerro Dorotea viewpoint Puerto Natales",
+          "imageUrl": ""
+        },
+        {
+          "name": "Tarde libre en Puerto Natales",
+          "start": "16:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Puerto+Natales+centro",
+          "notes": "Recorre las tiendas de artesanía y lana, prueba cervezas locales, o descansa. Último atardecer sobre el fiordo (¡pasadas las 22:00!).",
+          "imageQuery": "Puerto Natales town crafts",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 30,
+        "activitiesBase": 30,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 205,
+        "totalReal": 225
+      },
+      "mapPoints": [
+        "Cueva del Milodon",
+        "Mirador Cerro Dorotea",
+        "Puerto Natales"
+      ],
+      "notes": "Día suave/buffer: Cueva del Milodón, mirador Cerro Dorotea y tarde libre en el pueblo.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 6,
+        "conditions": "Variable con viento, como todo el viaje. Buen día para actividades cortas.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Capas y cortavientos para el mirador",
+          "Calzado cómodo para la subida al Cerro Dorotea",
+          "Un abrigo para el largo atardecer junto al fiordo"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-01-14",
+      "city": "Puerto Natales → Santiago",
+      "country": "Chile",
+      "cityCode": "PNT-PUQ-SCL",
+      "currencyLocal": "CLP",
+      "stayArea": "Vuelo de regreso",
+      "heroImageQuery": "airplane Patagonia departure Punta Arenas",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "imageHints": [
+        "Punta Arenas airport",
+        "Patagonia from airplane window"
+      ],
+      "perks": [
+        "Calcula el traslado a Punta Arenas con holgura: 3h de viaje + 2h antes del vuelo",
+        "Si tu vuelo es de tarde, hay tiempo para el mercado o los pingüinos cerca de Punta Arenas",
+        "Confirma el estado del vuelo la noche anterior (el viento a veces retrasa)"
+      ],
+      "accommodation": {
+        "name": "Sin hospedaje — día de regreso",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Noche en Santiago o conexión internacional según tu ruta."
+      },
+      "mainActivities": [
+        {
+          "name": "Traslado Puerto Natales → Punta Arenas (PUQ)",
+          "start": "08:30",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/dir/Puerto+Natales/Aeropuerto+Punta+Arenas",
+          "notes": "~250 km / 3h de vuelta por la estepa hasta el aeropuerto de Punta Arenas. Reserva el bus/transfer acorde a tu vuelo.",
+          "imageQuery": "Patagonian steppe road Punta Arenas",
+          "imageUrl": ""
+        },
+        {
+          "name": "Vuelo Punta Arenas (PUQ) → Santiago (SCL)",
+          "start": "13:30",
+          "durationMin": 200,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
+          "notes": "Vuelo doméstico de ~3h20 de regreso a Santiago. Desde SCL conectas a tu vuelo internacional o pasas la noche en la ciudad.",
+          "imageQuery": "airplane over Patagonia",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Punta Arenas (PUQ)",
+        "to": "Santiago (SCL)",
+        "depart": "13:30",
+        "arrive": "16:50",
+        "durationMin": 200,
+        "code": "Vuelo doméstico (LATAM/JetSmart/SKY)",
+        "notes": "Cierre del viaje a la Patagonia. Reserva con margen para tu conexión internacional desde Santiago.",
+        "bookingLink": "https://www.google.com/travel/flights"
+      },
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 30,
+        "transportBase": 300,
+        "activitiesBase": 0,
+        "lodgingReal": 0,
+        "foodReal": 35
+      },
+      "totals": {
+        "totalBase": 330,
+        "totalReal": 335
+      },
+      "mapPoints": [
+        "Puerto Natales",
+        "Aeropuerto Punta Arenas",
+        "Aeropuerto Arturo Merino Benitez Santiago"
+      ],
+      "notes": "Día de regreso: traslado a Punta Arenas y vuelo a Santiago.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 7,
+        "conditions": "Estepa ventosa para la despedida. Santiago más cálido y seco al llegar.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Ropa cómoda por capas para el traslado y el vuelo",
+          "Ten el cortavientos a mano hasta subir al avión",
+          "Guarda una capa liviana: Santiago puede estar caluroso"
+        ]
+      }
+    }
+  ]
+}

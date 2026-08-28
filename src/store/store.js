@@ -1,7 +1,7 @@
 // Zustand store - Estado global de la aplicación
 import { create } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
-import { DEFAULT_START_DATE, DEFAULT_EXCHANGE_RATE, DEFAULT_SHOW_COP_CONVERSION, DEFAULT_USE_REALISTIC_COSTS, DATA_FILE_PATH, JAVIER_PLANNER_PATH } from '../constants/defaults';
+import { DEFAULT_START_DATE, DEFAULT_EXCHANGE_RATE, DEFAULT_SHOW_COP_CONVERSION, DEFAULT_USE_REALISTIC_COSTS, DATA_FILE_PATH, JAVIER_PLANNER_PATH, TRIPS, DEFAULT_TRIP } from '../constants/defaults';
 
 export const useItineraryStore = create(
   devtools(
@@ -11,6 +11,9 @@ export const useItineraryStore = create(
         itineraryData: null,
         isLoading: false,
         error: null,
+
+        // Trip selection
+        currentTrip: DEFAULT_TRIP, // 'chile' | 'europa'
 
         // View state
         currentView: 'summary', // 'summary' | 'all' | 'day'
@@ -24,6 +27,7 @@ export const useItineraryStore = create(
 
         // Settings
         tripStartDate: new Date(DEFAULT_START_DATE),
+        dayIndexOffset: 0, // número de día del primer día del viaje (Europa=0, Chile=1)
         exchangeRate: DEFAULT_EXCHANGE_RATE,
         showCOPConversion: DEFAULT_SHOW_COP_CONVERSION,
 
@@ -38,19 +42,37 @@ export const useItineraryStore = create(
         loadItinerary: async () => {
           set({ isLoading: true, error: null });
           try {
-            const response = await fetch(DATA_FILE_PATH);
+            const trip = TRIPS[get().currentTrip] || TRIPS[DEFAULT_TRIP];
+            const response = await fetch(trip?.dataPath || DATA_FILE_PATH);
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            // Usar la fecha del primer día del JSON como fecha de inicio
-            const startDate = data.days?.[0]?.date
-              ? new Date(data.days[0].date + 'T12:00:00')
+            const days = data.days || [];
+            const first = days[0];
+            // Fecha real del primer día + offset de su número de día, para que
+            // las fechas cuadren sin importar si los días empiezan en 0 (Europa)
+            // o en 1 (Chile). useCalendar resta el offset.
+            const startDate = first?.date
+              ? new Date(first.date + 'T12:00:00')
               : new Date(DEFAULT_START_DATE);
-            set({ itineraryData: data, isLoading: false, tripStartDate: startDate });
+            const dayIndexOffset = first?.day || 0;
+            // Mantener el día actual si existe en este viaje; si no, ir al primero.
+            const current = get().currentDay;
+            const currentDay = days.some((d) => d.day === current)
+              ? current
+              : first?.day ?? 1;
+            set({ itineraryData: data, isLoading: false, tripStartDate: startDate, dayIndexOffset, currentDay });
           } catch (error) {
             set({ error: error.message, isLoading: false });
           }
+        },
+
+        // Cambiar de viaje: fija el viaje, vuelve al resumen y recarga su JSON.
+        setTrip: (tripId) => {
+          if (!TRIPS[tripId] || tripId === get().currentTrip) return;
+          set({ currentTrip: tripId, currentView: 'summary', searchTerm: '' });
+          get().loadItinerary();
         },
 
         // Actions - Views
@@ -185,9 +207,11 @@ export const useItineraryStore = create(
       {
         name: 'itinerary-storage',
         partialize: (state) => ({
+          currentTrip: state.currentTrip,
           itineraryData: state.itineraryData,
           currentDay: state.currentDay,
           tripStartDate: state.tripStartDate,
+          dayIndexOffset: state.dayIndexOffset,
           exchangeRate: state.exchangeRate,
           showCOPConversion: state.showCOPConversion,
           useRealisticCosts: state.useRealisticCosts,

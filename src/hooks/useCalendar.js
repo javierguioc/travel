@@ -5,12 +5,13 @@ import { es } from 'date-fns/locale';
 
 export function useCalendar() {
   const tripStartDate = useItineraryStore((state) => state.tripStartDate);
+  const dayIndexOffset = useItineraryStore((state) => state.dayIndexOffset);
 
   const calculateDayDate = useCallback(
     (dayNumber) => {
-      return addDays(new Date(tripStartDate), dayNumber);
+      return addDays(new Date(tripStartDate), dayNumber - (dayIndexOffset || 0));
     },
-    [tripStartDate]
+    [tripStartDate, dayIndexOffset]
   );
 
   const getFormattedDate = useCallback(

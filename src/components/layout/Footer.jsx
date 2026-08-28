@@ -2,9 +2,12 @@
 import { useItineraryStore } from '../../store/store';
 import { Button } from '../ui';
 import { exportJSON, exportCSV, printPDF, importJSON } from '../../utils/export';
+import { TRIPS, DEFAULT_TRIP } from '../../constants/defaults';
 
 export function Footer() {
   const itineraryData = useItineraryStore((state) => state.itineraryData);
+  const currentTrip = useItineraryStore((state) => state.currentTrip);
+  const trip = TRIPS[currentTrip] || TRIPS[DEFAULT_TRIP];
   const exchangeRate = useItineraryStore((state) => state.exchangeRate);
   const showCOPConversion = useItineraryStore((state) => state.showCOPConversion);
   const importData = useItineraryStore((state) => state.importData);
@@ -88,7 +91,7 @@ export function Footer() {
             Los cambios se guardan automáticamente en el navegador
           </p>
           <p className="text-light-textSecondary text-xs mt-2 flex items-center justify-center gap-1">
-            <span className="text-lg">🌍</span> Viaje de 23 días por Europa • Septiembre 2026
+            <span className="text-lg">🌍</span> {trip.emoji} {trip.title} • {trip.daysLabel} • {trip.dateLabel}
           </p>
         </div>
       </div>
