@@ -18,6 +18,17 @@ export const TRIPS = {
     gradient: 'from-teal-600 via-cyan-700 to-blue-800',
     dataPath: `${import.meta.env.BASE_URL}data/itinerary-chile.json`,
   },
+  atacama: {
+    id: 'atacama',
+    label: 'Chile · Atacama',
+    emoji: '🏜️',
+    title: 'Itinerario Chile — Norte (Atacama)',
+    route: 'Santiago → San Pedro de Atacama → Salar & Altiplano → Tatio → Lagunas de sal → Santiago',
+    dateLabel: 'Enero 2026',
+    daysLabel: '7 días',
+    gradient: 'from-orange-500 via-amber-600 to-red-600',
+    dataPath: `${import.meta.env.BASE_URL}data/itinerary-atacama.json`,
+  },
   europa: {
     id: 'europa',
     label: 'Europa',

@@ -1,0 +1,675 @@
+{
+  "version": "1.0-chile-norte-atacama",
+  "meta": {
+    "currency": "USD",
+    "intl_flight_estimate": 200,
+    "group_sizes": [
+      2
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "Altitud",
+      "title": "Aclimatación y soroche (mal de altura)",
+      "description": "San Pedro está a 2.400 m, pero los tours suben mucho: Lagunas Altiplánicas ~4.200 m y Géiseres del Tatio ~4.320 m. Sube gradual (deja el Tatio para el día 3+), hidrátate mucho, evita alcohol la primera noche y come liviano. Lleva pastillas para el soroche o mastica hoja de coca.",
+      "link": ""
+    },
+    {
+      "type": "Clima",
+      "title": "Invierno altiplánico (enero-febrero)",
+      "description": "En pleno verano el altiplano tiene el 'invierno boliviano': lluvias y tormentas de tarde en la cordillera. El Tatio y las lagunas altas se pueden cancelar por seguridad. Deja el Día 6 como buffer para reprogramar cualquier tour perdido.",
+      "link": "https://www.meteochile.gob.cl/"
+    },
+    {
+      "type": "Sol",
+      "title": "UV extremo — el desierto más árido del mundo",
+      "description": "El índice UV es de los más altos del planeta. Bloqueador FPS 50+, sombrero de ala ancha, lentes de sol y ropa de manga larga liviana. Reaplica bloqueador cada 2-3 horas.",
+      "link": ""
+    },
+    {
+      "type": "Efectivo",
+      "title": "Lleva pesos chilenos (CLP) en efectivo",
+      "description": "Muchos tours, entradas comunitarias (Valle de la Luna, Tatio, lagunas) y pueblos como Toconao operan con efectivo. En San Pedro hay pocos cajeros y suelen tener fila o quedarse sin dinero. Saca efectivo en Calama al llegar.",
+      "link": ""
+    },
+    {
+      "type": "Reservas",
+      "title": "Reserva tours y hospedaje con anticipación",
+      "description": "Enero es temporada alta: el hospedaje y los tours del Tatio y astronómico se llenan. Reserva con semanas de anticipación. Compara agencias en la calle Caracoles al llegar si quieres ajustar.",
+      "link": "https://www.getyourguide.com"
+    },
+    {
+      "type": "Ropa",
+      "title": "Amplitud térmica extrema — vístete por capas",
+      "description": "Puede haber 28°C al mediodía y cerca de 0°C al amanecer en el Tatio. Capas: camiseta + polar + cortavientos, gorro y guantes para las salidas de madrugada, y shorts para el mediodía.",
+      "link": ""
+    },
+    {
+      "type": "Conexión",
+      "title": "Señal e internet limitados",
+      "description": "Fuera de San Pedro casi no hay señal. Descarga mapas offline de Google Maps de toda la región de Antofagasta y ten los vouchers de tours descargados.",
+      "link": "https://www.airalo.com"
+    },
+    {
+      "type": "Entradas",
+      "title": "Entradas aparte del tour",
+      "description": "Varias atracciones cobran entrada a las comunidades además del tour: Valle de la Luna, Reserva Nacional Los Flamencos (Laguna Chaxa, Miscanti/Miñiques), Tatio y Termas de Puritama. Presupuesta ~USD 5-20 por sitio por persona.",
+      "link": ""
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-01-08",
+      "city": "Santiago → San Pedro de Atacama",
+      "country": "Chile",
+      "cityCode": "SCL-CJC-SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama (centro / Caracoles)",
+      "heroImageQuery": "San Pedro de Atacama town street adobe",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Calle_San_Pedro_Atacama.jpg",
+      "imageHints": [
+        "San Pedro de Atacama adobe town",
+        "Valle de la Luna sunset"
+      ],
+      "perks": [
+        "Si vienes desde Colombia, aterriza en Santiago la noche anterior y toma un vuelo temprano SCL→Calama",
+        "Saca efectivo (CLP) en el aeropuerto de Calama: en San Pedro hay pocos cajeros",
+        "Primer día = aclimatación: no exijas el cuerpo, hidrátate y come liviano"
+      ],
+      "accommodation": {
+        "name": "Hostal / hotel boutique en el centro de San Pedro",
+        "neighborhood": "Casco histórico (a pasos de Caracoles y la Plaza)",
+        "link": "https://www.booking.com/city/cl/san-pedro-de-atacama.html",
+        "notes": "Elige algo caminable al centro; casi todo se hace en tours con recogida en el hospedaje."
+      },
+      "mainActivities": [
+        {
+          "name": "Vuelo Santiago (SCL) → Calama (CJC)",
+          "start": "08:30",
+          "durationMin": 130,
+          "link": "https://www.google.com/maps/search/Aeropuerto+El+Loa+Calama",
+          "notes": "Vuelo doméstico ~2h (LATAM/JetSmart/SKY). Reserva el más temprano posible para aprovechar el día. Llega al aeropuerto El Loa (CJC).",
+          "imageQuery": "airplane wing desert view",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
+        {
+          "name": "Traslado Calama → San Pedro de Atacama",
+          "start": "11:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/dir/Aeropuerto+El+Loa+Calama/San+Pedro+de+Atacama",
+          "notes": "~100 km, 1h15-1h30 por la Ruta 23. Transfer compartido (Transvip/Licancabur) o van de la agencia. Check-in y almuerzo liviano en Caracoles.",
+          "imageQuery": "Atacama desert road to San Pedro",
+          "imageUrl": ""
+        },
+        {
+          "name": "Atardecer en el Valle de la Luna",
+          "start": "16:30",
+          "durationMin": 240,
+          "link": "https://www.google.com/maps/search/Valle+de+la+Luna+San+Pedro+de+Atacama",
+          "notes": "El clásico de bienvenida: Cordillera de la Sal, Duna Mayor y Piedra del Coyote para ver el atardecer sobre el valle. Tour de medio día con recogida ~16:00. Lleva agua y cortavientos.",
+          "imageQuery": "Valle de la Luna Atacama sunset",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/El_Valle_de_la_Luna_%28Chile%29.jpg/1280px-El_Valle_de_la_Luna_%28Chile%29.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 260,
+        "activitiesBase": 60,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 440,
+        "totalReal": 460
+      },
+      "mapPoints": [
+        "Aeropuerto El Loa Calama",
+        "San Pedro de Atacama",
+        "Valle de la Luna"
+      ],
+      "notes": "Día de viaje: Santiago → Calama → San Pedro. Tarde suave para aclimatar y atardecer en el Valle de la Luna.",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 8,
+        "conditions": "Soleado y muy seco. Tarde calurosa, noche fresca. UV extremo.",
+        "rainChance": "Muy baja",
+        "clothingTips": [
+          "Bloqueador FPS 50+, sombrero y lentes de sol desde ya",
+          "Camiseta y shorts de día; polar y cortavientos para el atardecer",
+          "Zapatillas cómodas para caminar en arena y sal"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-01-09",
+      "city": "Salar de Atacama & Lagunas Altiplánicas",
+      "country": "Chile",
+      "cityCode": "SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama",
+      "heroImageQuery": "Laguna Miscanti altiplano volcano",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Miscanti_Lagoon_near_San_Pedro_de_Atacama_Chile_Luca_Galuzzi_2006.jpg",
+      "imageHints": [
+        "Laguna Chaxa flamingos",
+        "Piedras Rojas Atacama"
+      ],
+      "perks": [
+        "Día de mucha altura (hasta ~4.200 m) pero casi todo en vehículo: buena aclimatación para el Tatio",
+        "Desayuno fuerte y lleva snacks, agua y protección solar",
+        "Ten a mano efectivo para las entradas de la Reserva Los Flamencos y Piedras Rojas"
+      ],
+      "accommodation": {
+        "name": "Misma base en San Pedro de Atacama",
+        "neighborhood": "Casco histórico",
+        "link": "",
+        "notes": "No cambias de hospedaje: San Pedro es la base de todos los tours."
+      },
+      "mainActivities": [
+        {
+          "name": "Laguna Chaxa — flamencos (Salar de Atacama)",
+          "start": "07:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Laguna+Chaxa+Salar+de+Atacama",
+          "notes": "Corazón de la Reserva Nacional Los Flamencos. Tres especies de flamencos sobre la costra de sal del salar, con volcanes de fondo. Mejor luz temprano.",
+          "imageQuery": "Laguna Chaxa flamingos salar Atacama",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laguna_Chaxa.jpg/1280px-Laguna_Chaxa.jpg"
+        },
+        {
+          "name": "Lagunas Altiplánicas Miscanti y Miñiques",
+          "start": "10:30",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Laguna+Miscanti+y+Miniques",
+          "notes": "A ~4.200 m: dos lagunas de un azul intenso al pie de los volcanes. Camina lento, el aire es delgado. Frío y viento aun de día.",
+          "imageQuery": "Laguna Miscanti Miñiques altiplano",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Miscanti_Lagoon_near_San_Pedro_de_Atacama_Chile_Luca_Galuzzi_2006.jpg"
+        },
+        {
+          "name": "Piedras Rojas y Salar de Talar",
+          "start": "13:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Piedras+Rojas+Atacama",
+          "notes": "Rocas rojizas por óxido de hierro junto a una laguna turquesa y blanco de sal: uno de los contrastes más fotogénicos del norte. Almuerzo en ruta (Socaire).",
+          "imageQuery": "Piedras Rojas Atacama red rocks lagoon",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Salar_de_Atacama.jpg/1280px-Salar_de_Atacama.jpg"
+        },
+        {
+          "name": "Pueblo de Toconao",
+          "start": "16:30",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Toconao+Chile",
+          "notes": "Pueblo de piedra de sillar (volcánica blanca) con su campanario de San Lucas. Buen lugar para comprar artesanía y probar helados/frutas del oasis.",
+          "imageQuery": "Toconao campanario San Lucas",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Campanario_de_San_Lucas%2C_Toconao.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 0,
+        "activitiesBase": 180,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 300,
+        "totalReal": 320
+      },
+      "mapPoints": [
+        "Laguna Chaxa",
+        "Laguna Miscanti",
+        "Piedras Rojas",
+        "Toconao"
+      ],
+      "notes": "Tour full-day al sur del salar: flamencos, lagunas altiplánicas de altura, Piedras Rojas y Toconao. ~12 horas.",
+      "weather": {
+        "tempHighC": 24,
+        "tempLowC": 6,
+        "conditions": "Soleado en el salar; frío y ventoso en las lagunas de altura. Posibles nubes de tarde en el altiplano.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Capas: polar y cortavientos para las lagunas a 4.200 m",
+          "Gorro y buff para el viento; bloqueador reforzado",
+          "Lleva agua extra: la altura deshidrata"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-01-10",
+      "city": "Géiseres del Tatio & noche de estrellas",
+      "country": "Chile",
+      "cityCode": "SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama",
+      "heroImageQuery": "El Tatio geysers steam sunrise Atacama",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG/1280px-G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG",
+      "imageHints": [
+        "Tatio geysers dawn steam",
+        "Atacama night sky stars Milky Way"
+      ],
+      "perks": [
+        "Salida de madrugada (~04:30): prepara ropa la noche anterior y duerme temprano",
+        "El Tatio está a 4.320 m y al amanecer puede estar bajo 0°C: gorro, guantes y varias capas",
+        "Lleva traje de baño por si el tour incluye las termas del Tatio"
+      ],
+      "accommodation": {
+        "name": "Misma base en San Pedro de Atacama",
+        "neighborhood": "Casco histórico",
+        "link": "",
+        "notes": "Tarde libre para descansar de la madrugada antes del tour astronómico."
+      },
+      "mainActivities": [
+        {
+          "name": "Géiseres del Tatio al amanecer",
+          "start": "04:30",
+          "durationMin": 360,
+          "link": "https://www.google.com/maps/search/Geiseres+del+Tatio",
+          "notes": "El campo geotérmico más alto del mundo. Las fumarolas se ven mejor con el frío del amanecer. Camina lento por la altura. Regreso a San Pedro ~12:00.",
+          "imageQuery": "El Tatio geysers steam sunrise",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG/1280px-G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG"
+        },
+        {
+          "name": "Pueblo de Machuca (en el regreso)",
+          "start": "10:30",
+          "durationMin": 45,
+          "link": "https://www.google.com/maps/search/Machuca+Atacama",
+          "notes": "Diminuto pueblo andino con su capilla blanca. Prueba las empanadas de queso de cabra y anticuchos de llama. Parada breve de camino a San Pedro.",
+          "imageQuery": "Machuca village chapel Atacama",
+          "imageUrl": ""
+        },
+        {
+          "name": "Tour astronómico nocturno",
+          "start": "21:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/tour+astronomico+san+pedro+de+atacama",
+          "notes": "Atacama tiene de los cielos más limpios del planeta. Observación con telescopios y guía. OJO: no operan en luna llena; revisa el calendario lunar de enero al reservar.",
+          "imageQuery": "Atacama stargazing milky way telescope",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 0,
+        "activitiesBase": 150,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 270,
+        "totalReal": 290
+      },
+      "mapPoints": [
+        "Geiseres del Tatio",
+        "Machuca",
+        "San Pedro de Atacama"
+      ],
+      "notes": "Madrugada al Tatio (4.320 m) + Machuca; tarde de descanso; noche de observación astronómica.",
+      "weather": {
+        "tempHighC": 26,
+        "tempLowC": 2,
+        "conditions": "Amanecer helado en el Tatio (bajo 0°C con sensación térmica), día soleado en San Pedro. Noche despejada ideal para estrellas.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Ropa térmica, gorro, guantes y chaqueta gruesa para el amanecer",
+          "Traje de baño y toalla si te bañas en las termas del Tatio",
+          "De noche, abrígate para el tour astronómico (hace frío parado al aire libre)"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-01-11",
+      "city": "Lagunas de sal — Cejar & Tebinquiche",
+      "country": "Chile",
+      "cityCode": "SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama",
+      "heroImageQuery": "Laguna Cejar floating salt lagoon Atacama",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Laguna_Cejar.jpg",
+      "imageHints": [
+        "Laguna Cejar turquoise salt",
+        "Laguna Tebinquiche sunset reflection"
+      ],
+      "perks": [
+        "Día más relajado y a baja altura tras el Tatio: perfecto para flotar",
+        "Lleva traje de baño, sandalias y toalla; hay duchas para quitar la sal en Cejar",
+        "No lleves joyas ni te metas con heridas: el agua es hipersalina"
+      ],
+      "accommodation": {
+        "name": "Misma base en San Pedro de Atacama",
+        "neighborhood": "Casco histórico",
+        "link": "",
+        "notes": ""
+      },
+      "mainActivities": [
+        {
+          "name": "Laguna Cejar (flotación)",
+          "start": "15:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Laguna+Cejar",
+          "notes": "Laguna de altísima salinidad donde flotas sin esfuerzo, como en el Mar Muerto, con los volcanes de fondo. Turquesa intenso.",
+          "imageQuery": "Laguna Cejar floating turquoise",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Laguna_Cejar.jpg"
+        },
+        {
+          "name": "Ojos del Salar",
+          "start": "17:00",
+          "durationMin": 40,
+          "link": "https://www.google.com/maps/search/Ojos+del+Salar",
+          "notes": "Dos pozos circulares gemelos de agua dulce en medio del salar, ideales para un clavado rápido de los valientes.",
+          "imageQuery": "Ojos del Salar Atacama",
+          "imageUrl": ""
+        },
+        {
+          "name": "Atardecer en Laguna Tebinquiche",
+          "start": "18:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Laguna+Tebinquiche",
+          "notes": "Enorme espejo de agua sobre el salar: al atardecer refleja los colores del cielo y los volcanes. Suelen ofrecer un aperitivo con pisco sour.",
+          "imageQuery": "Laguna Tebinquiche sunset reflection",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 0,
+        "activitiesBase": 80,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 200,
+        "totalReal": 220
+      },
+      "mapPoints": [
+        "Laguna Cejar",
+        "Ojos del Salar",
+        "Laguna Tebinquiche"
+      ],
+      "notes": "Tarde-noche de lagunas de sal: flotar en Cejar, Ojos del Salar y atardecer en Tebinquiche. Mañana libre para descansar.",
+      "weather": {
+        "tempHighC": 28,
+        "tempLowC": 9,
+        "conditions": "Caluroso y soleado, ideal para el agua. Atardecer templado en el salar.",
+        "rainChance": "Muy baja",
+        "clothingTips": [
+          "Traje de baño puesto y ropa fácil de cambiar",
+          "Sandalias para la costra de sal (corta)",
+          "Un abrigo liviano para cuando baje el sol en Tebinquiche"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-01-12",
+      "city": "Valle del Arcoíris & Termas de Puritama",
+      "country": "Chile",
+      "cityCode": "SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama",
+      "heroImageQuery": "Valle del Arcoiris colored hills Atacama",
+      "heroImageUrl": "",
+      "imageHints": [
+        "Valle del Arcoiris colorful mountains",
+        "Termas de Puritama hot springs canyon"
+      ],
+      "perks": [
+        "Combina cultura (petroglifos) con relax (termas): día variado y de altura media",
+        "Reserva el cupo de las Termas de Puritama con anticipación (aforo limitado)",
+        "Lleva traje de baño, toalla y sandalias para las termas"
+      ],
+      "accommodation": {
+        "name": "Misma base en San Pedro de Atacama",
+        "neighborhood": "Casco histórico",
+        "link": "",
+        "notes": ""
+      },
+      "mainActivities": [
+        {
+          "name": "Valle del Arcoíris",
+          "start": "08:30",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Valle+del+Arcoiris+Atacama",
+          "notes": "Cerros teñidos de rojo, verde, ocre y blanco por sus minerales, a ~1h de San Pedro. Paisaje muy distinto al resto del desierto.",
+          "imageQuery": "Valle del Arcoiris colored hills",
+          "imageUrl": ""
+        },
+        {
+          "name": "Petroglifos de Yerbas Buenas",
+          "start": "11:30",
+          "durationMin": 60,
+          "link": "https://www.google.com/maps/search/Petroglifos+Yerbas+Buenas+Atacama",
+          "notes": "Uno de los conjuntos de arte rupestre más importantes del norte: llamas, cazadores y figuras grabadas hace siglos en la roca por caravanas.",
+          "imageQuery": "Yerbas Buenas petroglyphs Atacama",
+          "imageUrl": ""
+        },
+        {
+          "name": "Termas de Puritama",
+          "start": "15:00",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Termas+de+Puritama",
+          "notes": "Ocho pozas termales escalonadas (~33°C) en una quebrada verde, a 3.500 m. El cierre perfecto y relajante del viaje.",
+          "imageQuery": "Termas de Puritama hot springs",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 0,
+        "activitiesBase": 120,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 240,
+        "totalReal": 260
+      },
+      "mapPoints": [
+        "Valle del Arcoiris",
+        "Petroglifos Yerbas Buenas",
+        "Termas de Puritama"
+      ],
+      "notes": "Mañana de color y arqueología (Arcoíris + Yerbas Buenas); tarde de relax en las Termas de Puritama.",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 8,
+        "conditions": "Soleado y seco. Agradable en las termas por la tarde.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Ropa cómoda para caminar entre los cerros de color",
+          "Traje de baño y toalla para Puritama",
+          "Bloqueador y sombrero: poca sombra"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-01-13",
+      "city": "Quitor, Tulor & tarde libre",
+      "country": "Chile",
+      "cityCode": "SPA",
+      "currencyLocal": "CLP",
+      "stayArea": "San Pedro de Atacama",
+      "heroImageQuery": "Pukara de Quitor ruins Atacama",
+      "heroImageUrl": "",
+      "imageHints": [
+        "Pukara de Quitor fortress",
+        "San Pedro de Atacama market crafts"
+      ],
+      "perks": [
+        "Día buffer: si un tour (Tatio/lagunas) se canceló por clima, reprográmalo hoy",
+        "Actividades cerca de San Pedro, ideal para tomarlo con calma antes del regreso",
+        "Buen día para comprar artesanía y lapislázuli en Caracoles"
+      ],
+      "accommodation": {
+        "name": "Última noche en San Pedro de Atacama",
+        "neighborhood": "Casco histórico",
+        "link": "",
+        "notes": "Confirma el horario del transfer a Calama para mañana según tu vuelo."
+      },
+      "mainActivities": [
+        {
+          "name": "Pukará de Quitor",
+          "start": "09:00",
+          "durationMin": 120,
+          "link": "https://www.google.com/maps/search/Pukara+de+Quitor",
+          "notes": "Fortaleza atacameña del siglo XII sobre una ladera, a 3 km de San Pedro. Subida corta con vistas al oasis y al valle del río San Pedro.",
+          "imageQuery": "Pukara de Quitor fortress ruins",
+          "imageUrl": ""
+        },
+        {
+          "name": "Aldea de Tulor",
+          "start": "11:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/search/Aldea+de+Tulor",
+          "notes": "El asentamiento más antiguo de la zona (~800 a.C.), con sus casas circulares de barro semienterradas por la arena. Pequeño museo de sitio.",
+          "imageQuery": "Aldea de Tulor circular houses",
+          "imageUrl": ""
+        },
+        {
+          "name": "Tarde libre: artesanía, bicicleta o sandboard",
+          "start": "15:30",
+          "durationMin": 180,
+          "link": "https://www.google.com/maps/search/Caracoles+San+Pedro+de+Atacama",
+          "notes": "Recorre la calle Caracoles, arrienda bici hasta el Valle de la Muerte, prueba sandboard en las dunas, o simplemente descansa. Último atardecer del norte.",
+          "imageQuery": "San Pedro de Atacama street crafts",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Calle_San_Pedro_Atacama.jpg"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 90,
+        "foodBase": 30,
+        "transportBase": 0,
+        "activitiesBase": 40,
+        "lodgingReal": 100,
+        "foodReal": 40
+      },
+      "totals": {
+        "totalBase": 160,
+        "totalReal": 180
+      },
+      "mapPoints": [
+        "Pukara de Quitor",
+        "Aldea de Tulor",
+        "San Pedro de Atacama"
+      ],
+      "notes": "Historia atacameña cerca del pueblo (Quitor + Tulor) y tarde libre de buffer/compras antes del regreso.",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 8,
+        "conditions": "Soleado y seco, como todo el viaje. Tarde ideal para caminar el pueblo.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Zapatillas para la subida corta al pukará",
+          "Sombrero y bloqueador: nada de sombra en las ruinas",
+          "Capa liviana para el último atardecer"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-01-14",
+      "city": "San Pedro de Atacama → Santiago",
+      "country": "Chile",
+      "cityCode": "SPA-CJC-SCL",
+      "currencyLocal": "CLP",
+      "stayArea": "Vuelo de regreso",
+      "heroImageQuery": "airplane departure Atacama Calama",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "imageHints": [
+        "Calama airport departure",
+        "Andes from airplane window"
+      ],
+      "perks": [
+        "Calcula el transfer a Calama con holgura: 1h30 de viaje + 2h antes del vuelo doméstico",
+        "Deja tiempo para una última compra de artesanía si tu vuelo es de tarde",
+        "Confirma el estado del vuelo la noche anterior"
+      ],
+      "accommodation": {
+        "name": "Sin hospedaje — día de regreso",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Noche en Santiago o conexión internacional según tu ruta."
+      },
+      "mainActivities": [
+        {
+          "name": "Traslado San Pedro → Calama (CJC)",
+          "start": "09:00",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
+          "notes": "Reserva el transfer con anticipación acorde a tu vuelo. ~100 km / 1h15-1h30 por la Ruta 23.",
+          "imageQuery": "road Atacama to Calama",
+          "imageUrl": ""
+        },
+        {
+          "name": "Vuelo Calama (CJC) → Santiago (SCL)",
+          "start": "12:30",
+          "durationMin": 130,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
+          "notes": "Vuelo doméstico ~2h de regreso a Santiago. Desde SCL conectas a tu vuelo internacional o pasas la noche en la ciudad.",
+          "imageQuery": "airplane over Andes mountains",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": {
+        "mode": "flight",
+        "from": "Calama El Loa (CJC)",
+        "to": "Santiago (SCL)",
+        "depart": "12:30",
+        "arrive": "14:40",
+        "durationMin": 130,
+        "code": "Vuelo doméstico (LATAM/JetSmart/SKY)",
+        "notes": "Cierre del viaje al norte. Reserva con margen para tu conexión internacional desde Santiago.",
+        "bookingLink": "https://www.google.com/travel/flights"
+      },
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 25,
+        "transportBase": 260,
+        "activitiesBase": 0,
+        "lodgingReal": 0,
+        "foodReal": 30
+      },
+      "totals": {
+        "totalBase": 285,
+        "totalReal": 290
+      },
+      "mapPoints": [
+        "San Pedro de Atacama",
+        "Aeropuerto El Loa Calama",
+        "Aeropuerto Arturo Merino Benitez Santiago"
+      ],
+      "notes": "Día de regreso: transfer a Calama y vuelo a Santiago.",
+      "weather": {
+        "tempHighC": 27,
+        "tempLowC": 8,
+        "conditions": "Soleado en el desierto para la despedida. Santiago más templado y húmedo.",
+        "rainChance": "Muy baja",
+        "clothingTips": [
+          "Ropa cómoda para volar",
+          "Ten a mano una capa: el avión y Santiago pueden estar más frescos",
+          "Guarda el bloqueador en la mano de equipaje por si el vuelo se retrasa"
+        ]
+      }
+    }
+  ]
+}
