@@ -1,8 +1,8 @@
 {
-  "version": "1.0-chile-atacama-patagonia-combinado",
+  "version": "1.0-chile-agil-9d-mde",
   "meta": {
     "currency": "USD",
-    "intl_flight_estimate": 400,
+    "intl_flight_estimate": 900,
     "group_sizes": [
       2
     ]
@@ -17,7 +17,7 @@
     {
       "type": "Clima",
       "title": "Invierno altiplánico (enero-febrero)",
-      "description": "En pleno verano el altiplano tiene el 'invierno boliviano': lluvias y tormentas de tarde en la cordillera. El Tatio y las lagunas altas se pueden cancelar por seguridad. Deja el Día 6 como buffer para reprogramar cualquier tour perdido.",
+      "description": "En pleno verano el altiplano tiene el 'invierno boliviano': lluvias y tormentas de tarde. El Tatio y las lagunas altas se pueden cancelar por seguridad; ten un plan B por si pierdes uno.",
       "link": "https://www.meteochile.gob.cl/"
     },
     {
@@ -115,21 +115,21 @@
     {
       "day": 1,
       "date": "2026-01-08",
-      "city": "Santiago → San Pedro de Atacama",
+      "city": "Medellín → San Pedro de Atacama",
       "country": "Chile",
-      "cityCode": "SCL-CJC-SPA",
+      "cityCode": "MDE-SCL-CJC-SPA",
       "currencyLocal": "CLP",
       "stayArea": "San Pedro de Atacama (centro / Caracoles)",
-      "heroImageQuery": "San Pedro de Atacama town street adobe",
+      "heroImageQuery": "airplane departure Medellin to Chile",
       "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Calle_San_Pedro_Atacama.jpg",
       "imageHints": [
         "San Pedro de Atacama adobe town",
         "Valle de la Luna sunset"
       ],
       "perks": [
-        "Si vienes desde Colombia, aterriza en Santiago la noche anterior y toma un vuelo temprano SCL→Calama",
-        "Saca efectivo (CLP) en el aeropuerto de Calama: en San Pedro hay pocos cajeros",
-        "Primer día = aclimatación: no exijas el cuerpo, hidrátate y come liviano"
+        "Vuelo largo desde Medellín: elige un MDE→SCL temprano o nocturno para poder conectar el mismo día con Calama",
+        "Saca efectivo (CLP) en el aeropuerto de Santiago o Calama",
+        "Día de puro traslado + primer atardecer; hidrátate desde ya para la altura"
       ],
       "accommodation": {
         "name": "Hostal / hotel boutique en el centro de San Pedro",
@@ -138,6 +138,15 @@
         "notes": "Elige algo caminable al centro; casi todo se hace en tours con recogida en el hospedaje."
       },
       "mainActivities": [
+        {
+          "name": "Vuelo Medellín (MDE) → Santiago (SCL)",
+          "start": "00:30",
+          "durationMin": 480,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
+          "notes": "Vuelo internacional ~7-8h (LATAM/Avianca). Idealmente nocturno o muy temprano para llegar a Santiago en la mañana y conectar con Calama el mismo día.",
+          "imageQuery": "international flight night",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
         {
           "name": "Vuelo Santiago (SCL) → Calama (CJC)",
           "start": "08:30",
@@ -185,7 +194,7 @@
         "San Pedro de Atacama",
         "Valle de la Luna"
       ],
-      "notes": "Día de viaje: Santiago → Calama → San Pedro. Tarde suave para aclimatar y atardecer en el Valle de la Luna.",
+      "notes": "Día de viaje desde Colombia: Medellín → Santiago → Calama → San Pedro. Tarde/atardecer en el Valle de la Luna si llegas a tiempo.",
       "weather": {
         "tempHighC": 27,
         "tempLowC": 8,
@@ -297,27 +306,27 @@
     {
       "day": 3,
       "date": "2026-01-10",
-      "city": "Géiseres del Tatio & noche de estrellas",
+      "city": "Géiseres del Tatio → Santiago",
       "country": "Chile",
-      "cityCode": "SPA",
+      "cityCode": "SPA-CJC-SCL",
       "currencyLocal": "CLP",
-      "stayArea": "San Pedro de Atacama",
-      "heroImageQuery": "El Tatio geysers steam sunrise Atacama",
+      "stayArea": "Santiago (noche de conexión)",
+      "heroImageQuery": "El Tatio geysers sunrise then travel",
       "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG/1280px-G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG",
       "imageHints": [
         "Tatio geysers dawn steam",
         "Atacama night sky stars Milky Way"
       ],
       "perks": [
-        "Salida de madrugada (~04:30): prepara ropa la noche anterior y duerme temprano",
-        "El Tatio está a 4.320 m y al amanecer puede estar bajo 0°C: gorro, guantes y varias capas",
-        "Lleva traje de baño por si el tour incluye las termas del Tatio"
+        "Madrugada al Tatio (~04:30): deja todo listo la noche anterior",
+        "Día ágil: Tatio en la mañana y vuelo a Santiago en la tarde",
+        "Empaca arriba el abrigo e impermeable para la Patagonia de mañana"
       ],
       "accommodation": {
-        "name": "Misma base en San Pedro de Atacama",
-        "neighborhood": "Casco histórico",
-        "link": "",
-        "notes": "Tarde libre para descansar de la madrugada antes del tour astronómico."
+        "name": "Hotel en Santiago (noche de conexión)",
+        "neighborhood": "Providencia / Lastarria",
+        "link": "https://www.booking.com/city/cl/santiago.html",
+        "notes": "Solo una noche para conectar el norte con el vuelo a la Patagonia."
       },
       "mainActivities": [
         {
@@ -339,13 +348,13 @@
           "imageUrl": ""
         },
         {
-          "name": "Tour astronómico nocturno",
-          "start": "21:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/tour+astronomico+san+pedro+de+atacama",
-          "notes": "Atacama tiene de los cielos más limpios del planeta. Observación con telescopios y guía. OJO: no operan en luna llena; revisa el calendario lunar de enero al reservar.",
-          "imageQuery": "Atacama stargazing milky way telescope",
-          "imageUrl": ""
+          "name": "Traslado a Calama + vuelo a Santiago (SCL)",
+          "start": "14:30",
+          "durationMin": 330,
+          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
+          "notes": "Tras el Tatio y un almuerzo rápido: transfer San Pedro→Calama (1h30) y vuelo CJC→SCL (~2h). Noche en Santiago para saltar al sur mañana.",
+          "imageQuery": "airplane over Andes",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
         }
       ],
       "secondaryActivities": [],
@@ -367,11 +376,11 @@
         "Machuca",
         "San Pedro de Atacama"
       ],
-      "notes": "Madrugada al Tatio (4.320 m) + Machuca; tarde de descanso; noche de observación astronómica.",
+      "notes": "Amanecer en el Tatio (4.320 m) y salida hacia el sur: vuelo a Santiago y noche de conexión.",
       "weather": {
         "tempHighC": 26,
         "tempLowC": 2,
-        "conditions": "Amanecer helado en el Tatio (bajo 0°C con sensación térmica), día soleado en San Pedro. Noche despejada ideal para estrellas.",
+        "conditions": "Amanecer helado en el Tatio (bajo 0°C), luego día de traslado a Santiago (templado).",
         "rainChance": "Baja",
         "clothingTips": [
           "Ropa térmica, gorro, guantes y chaqueta gruesa para el amanecer",
@@ -383,264 +392,6 @@
     {
       "day": 4,
       "date": "2026-01-11",
-      "city": "Lagunas de sal — Cejar & Tebinquiche",
-      "country": "Chile",
-      "cityCode": "SPA",
-      "currencyLocal": "CLP",
-      "stayArea": "San Pedro de Atacama",
-      "heroImageQuery": "Laguna Cejar floating salt lagoon Atacama",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Laguna_Cejar.jpg",
-      "imageHints": [
-        "Laguna Cejar turquoise salt",
-        "Laguna Tebinquiche sunset reflection"
-      ],
-      "perks": [
-        "Día más relajado y a baja altura tras el Tatio: perfecto para flotar",
-        "Lleva traje de baño, sandalias y toalla; hay duchas para quitar la sal en Cejar",
-        "No lleves joyas ni te metas con heridas: el agua es hipersalina"
-      ],
-      "accommodation": {
-        "name": "Misma base en San Pedro de Atacama",
-        "neighborhood": "Casco histórico",
-        "link": "",
-        "notes": ""
-      },
-      "mainActivities": [
-        {
-          "name": "Laguna Cejar (flotación)",
-          "start": "15:00",
-          "durationMin": 90,
-          "link": "https://www.google.com/maps/search/Laguna+Cejar",
-          "notes": "Laguna de altísima salinidad donde flotas sin esfuerzo, como en el Mar Muerto, con los volcanes de fondo. Turquesa intenso.",
-          "imageQuery": "Laguna Cejar floating turquoise",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Laguna_Cejar.jpg"
-        },
-        {
-          "name": "Ojos del Salar",
-          "start": "17:00",
-          "durationMin": 40,
-          "link": "https://www.google.com/maps/search/Ojos+del+Salar",
-          "notes": "Dos pozos circulares gemelos de agua dulce en medio del salar, ideales para un clavado rápido de los valientes.",
-          "imageQuery": "Ojos del Salar Atacama",
-          "imageUrl": ""
-        },
-        {
-          "name": "Atardecer en Laguna Tebinquiche",
-          "start": "18:00",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Laguna+Tebinquiche",
-          "notes": "Enorme espejo de agua sobre el salar: al atardecer refleja los colores del cielo y los volcanes. Suelen ofrecer un aperitivo con pisco sour.",
-          "imageQuery": "Laguna Tebinquiche sunset reflection",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 90,
-        "foodBase": 30,
-        "transportBase": 0,
-        "activitiesBase": 80,
-        "lodgingReal": 100,
-        "foodReal": 40
-      },
-      "totals": {
-        "totalBase": 200,
-        "totalReal": 220
-      },
-      "mapPoints": [
-        "Laguna Cejar",
-        "Ojos del Salar",
-        "Laguna Tebinquiche"
-      ],
-      "notes": "Tarde-noche de lagunas de sal: flotar en Cejar, Ojos del Salar y atardecer en Tebinquiche. Mañana libre para descansar.",
-      "weather": {
-        "tempHighC": 28,
-        "tempLowC": 9,
-        "conditions": "Caluroso y soleado, ideal para el agua. Atardecer templado en el salar.",
-        "rainChance": "Muy baja",
-        "clothingTips": [
-          "Traje de baño puesto y ropa fácil de cambiar",
-          "Sandalias para la costra de sal (corta)",
-          "Un abrigo liviano para cuando baje el sol en Tebinquiche"
-        ]
-      }
-    },
-    {
-      "day": 5,
-      "date": "2026-01-12",
-      "city": "Valle del Arcoíris & Termas de Puritama",
-      "country": "Chile",
-      "cityCode": "SPA",
-      "currencyLocal": "CLP",
-      "stayArea": "San Pedro de Atacama",
-      "heroImageQuery": "Valle del Arcoiris colored hills Atacama",
-      "heroImageUrl": "",
-      "imageHints": [
-        "Valle del Arcoiris colorful mountains",
-        "Termas de Puritama hot springs canyon"
-      ],
-      "perks": [
-        "Combina cultura (petroglifos) con relax (termas): día variado y de altura media",
-        "Reserva el cupo de las Termas de Puritama con anticipación (aforo limitado)",
-        "Lleva traje de baño, toalla y sandalias para las termas"
-      ],
-      "accommodation": {
-        "name": "Misma base en San Pedro de Atacama",
-        "neighborhood": "Casco histórico",
-        "link": "",
-        "notes": ""
-      },
-      "mainActivities": [
-        {
-          "name": "Valle del Arcoíris",
-          "start": "08:30",
-          "durationMin": 180,
-          "link": "https://www.google.com/maps/search/Valle+del+Arcoiris+Atacama",
-          "notes": "Cerros teñidos de rojo, verde, ocre y blanco por sus minerales, a ~1h de San Pedro. Paisaje muy distinto al resto del desierto.",
-          "imageQuery": "Valle del Arcoiris colored hills",
-          "imageUrl": ""
-        },
-        {
-          "name": "Petroglifos de Yerbas Buenas",
-          "start": "11:30",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/Petroglifos+Yerbas+Buenas+Atacama",
-          "notes": "Uno de los conjuntos de arte rupestre más importantes del norte: llamas, cazadores y figuras grabadas hace siglos en la roca por caravanas.",
-          "imageQuery": "Yerbas Buenas petroglyphs Atacama",
-          "imageUrl": ""
-        },
-        {
-          "name": "Termas de Puritama",
-          "start": "15:00",
-          "durationMin": 180,
-          "link": "https://www.google.com/maps/search/Termas+de+Puritama",
-          "notes": "Ocho pozas termales escalonadas (~33°C) en una quebrada verde, a 3.500 m. El cierre perfecto del tramo norte antes de volar al sur.",
-          "imageQuery": "Termas de Puritama hot springs",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 90,
-        "foodBase": 30,
-        "transportBase": 0,
-        "activitiesBase": 120,
-        "lodgingReal": 100,
-        "foodReal": 40
-      },
-      "totals": {
-        "totalBase": 240,
-        "totalReal": 260
-      },
-      "mapPoints": [
-        "Valle del Arcoiris",
-        "Petroglifos Yerbas Buenas",
-        "Termas de Puritama"
-      ],
-      "notes": "Mañana de color y arqueología (Arcoíris + Yerbas Buenas); tarde de relax en las Termas de Puritama. Último día del tramo norte.",
-      "weather": {
-        "tempHighC": 27,
-        "tempLowC": 8,
-        "conditions": "Soleado y seco. Agradable en las termas por la tarde.",
-        "rainChance": "Baja",
-        "clothingTips": [
-          "Ropa cómoda para caminar entre los cerros de color",
-          "Traje de baño y toalla para Puritama",
-          "Bloqueador y sombrero: poca sombra"
-        ]
-      }
-    },
-    {
-      "day": 6,
-      "date": "2026-01-13",
-      "city": "San Pedro de Atacama → Santiago",
-      "country": "Chile",
-      "cityCode": "SPA-CJC-SCL",
-      "currencyLocal": "CLP",
-      "stayArea": "Santiago (1 noche de conexión)",
-      "heroImageQuery": "airplane Andes Santiago Chile",
-      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-      "imageHints": [
-        "Santiago de Chile skyline",
-        "Andes from airplane window"
-      ],
-      "perks": [
-        "Día de transición norte→sur: aprovecha para re-empacar del calor del desierto al frío patagónico",
-        "Deja lista la ropa de abrigo/impermeable arriba en la maleta para mañana",
-        "Como ya conoces Santiago, la tarde queda libre para descansar o una buena cena (Bellavista/Lastarria)"
-      ],
-      "accommodation": {
-        "name": "Hotel en Santiago (1 noche de conexión)",
-        "neighborhood": "Providencia / Lastarria (cómodo y céntrico)",
-        "link": "https://www.booking.com/city/cl/santiago.html",
-        "notes": "Solo una noche para conectar el vuelo del norte con el del sur al día siguiente."
-      },
-      "mainActivities": [
-        {
-          "name": "Traslado San Pedro → Calama (CJC)",
-          "start": "09:00",
-          "durationMin": 90,
-          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
-          "notes": "~100 km / 1h15-1h30 por la Ruta 23. Reserva el transfer acorde a tu vuelo.",
-          "imageQuery": "road Atacama to Calama",
-          "imageUrl": ""
-        },
-        {
-          "name": "Vuelo Calama (CJC) → Santiago (SCL)",
-          "start": "12:30",
-          "durationMin": 130,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
-          "notes": "Vuelo doméstico ~2h. No hay vuelos directos Calama–Punta Arenas, por eso se conecta vía Santiago con noche intermedia.",
-          "imageQuery": "airplane over Andes",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        },
-        {
-          "name": "Tarde/noche libre en Santiago",
-          "start": "16:00",
-          "durationMin": 240,
-          "link": "https://www.google.com/maps/search/Barrio+Lastarria+Santiago",
-          "notes": "Descansa o pasea por Lastarria/Bellavista, cena y prepara el equipaje para la Patagonia. Ya conoces la ciudad, así que sin presión de turistear.",
-          "imageQuery": "Santiago Chile Lastarria evening",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 90,
-        "foodBase": 35,
-        "transportBase": 260,
-        "activitiesBase": 0,
-        "lodgingReal": 100,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 385,
-        "totalReal": 405
-      },
-      "mapPoints": [
-        "San Pedro de Atacama",
-        "Aeropuerto El Loa Calama",
-        "Santiago de Chile"
-      ],
-      "notes": "Transición del norte al sur: vuelo Calama → Santiago y noche de conexión en la capital.",
-      "weather": {
-        "tempHighC": 30,
-        "tempLowC": 14,
-        "conditions": "Santiago en verano: caluroso y seco de día, templado de noche.",
-        "rainChance": "Muy baja",
-        "clothingTips": [
-          "Ropa liviana para Santiago; guarda el abrigo a mano para mañana",
-          "Hidrátate: el vuelo y el calor de la capital cansan",
-          "Deja accesible la capa impermeable para la Patagonia"
-        ]
-      }
-    },
-    {
-      "day": 7,
-      "date": "2026-01-14",
       "city": "Santiago → Puerto Natales",
       "country": "Chile",
       "cityCode": "SCL-PUQ-PNT",
@@ -725,8 +476,8 @@
       }
     },
     {
-      "day": 8,
-      "date": "2026-01-15",
+      "day": 5,
+      "date": "2026-01-12",
       "city": "Torres del Paine — día escénico",
       "country": "Chile",
       "cityCode": "PNT",
@@ -812,8 +563,8 @@
       }
     },
     {
-      "day": 9,
-      "date": "2026-01-16",
+      "day": 6,
+      "date": "2026-01-13",
       "city": "Trekking a la Base de las Torres",
       "country": "Chile",
       "cityCode": "PNT",
@@ -889,8 +640,8 @@
       }
     },
     {
-      "day": 10,
-      "date": "2026-01-17",
+      "day": 7,
+      "date": "2026-01-14",
       "city": "Glaciar Grey",
       "country": "Chile",
       "cityCode": "PNT",
@@ -966,8 +717,8 @@
       }
     },
     {
-      "day": 11,
-      "date": "2026-01-18",
+      "day": 8,
+      "date": "2026-01-15",
       "city": "Glaciares Balmaceda y Serrano (fiordo)",
       "country": "Chile",
       "cityCode": "PNT",
@@ -1043,109 +794,23 @@
       }
     },
     {
-      "day": 12,
-      "date": "2026-01-19",
-      "city": "Cueva del Milodón & Puerto Natales",
+      "day": 9,
+      "date": "2026-01-16",
+      "city": "Puerto Natales → Medellín",
       "country": "Chile",
-      "cityCode": "PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Cueva del Milodon Puerto Natales cave",
-      "heroImageUrl": "",
-      "imageHints": [
-        "Cueva del Milodon giant cave",
-        "Mirador Cerro Dorotea view"
-      ],
-      "perks": [
-        "Día buffer: si el clima canceló un tour antes, reprográmalo hoy",
-        "Actividades cerca de Natales, ideal para bajar el ritmo antes del regreso",
-        "Buen día para artesanía, lana patagónica y cerveza/chocolate local"
-      ],
-      "accommodation": {
-        "name": "Última noche en Puerto Natales",
-        "neighborhood": "Centro",
-        "link": "",
-        "notes": "Confirma el horario del traslado a Punta Arenas para mañana según tu vuelo."
-      },
-      "mainActivities": [
-        {
-          "name": "Monumento Natural Cueva del Milodón",
-          "start": "09:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Cueva+del+Milodon",
-          "notes": "Enorme cueva de 200 m donde se hallaron restos del milodón (perezoso gigante prehistórico). Hay una réplica a tamaño real y senderos cortos. A 25 km de Natales.",
-          "imageQuery": "Cueva del Milodon cave",
-          "imageUrl": ""
-        },
-        {
-          "name": "Mirador Cerro Dorotea",
-          "start": "13:00",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Mirador+Cerro+Dorotea",
-          "notes": "Caminata guiada (en estancia privada) hasta la cima con vista panorámica del fiordo Última Esperanza y todo Puerto Natales. Suelen cerrar con once patagónica (cordero/torta).",
-          "imageQuery": "Cerro Dorotea viewpoint Puerto Natales",
-          "imageUrl": ""
-        },
-        {
-          "name": "Tarde libre en Puerto Natales",
-          "start": "16:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Puerto+Natales+centro",
-          "notes": "Recorre las tiendas de artesanía y lana, prueba cervezas locales, o descansa. Último atardecer sobre el fiordo (¡pasadas las 22:00!).",
-          "imageQuery": "Puerto Natales town crafts",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg"
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 30,
-        "activitiesBase": 30,
-        "lodgingReal": 120,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 205,
-        "totalReal": 225
-      },
-      "mapPoints": [
-        "Cueva del Milodon",
-        "Mirador Cerro Dorotea",
-        "Puerto Natales"
-      ],
-      "notes": "Día suave/buffer: Cueva del Milodón, mirador Cerro Dorotea y tarde libre en el pueblo.",
-      "weather": {
-        "tempHighC": 16,
-        "tempLowC": 6,
-        "conditions": "Variable con viento, como todo el viaje. Buen día para actividades cortas.",
-        "rainChance": "Moderada",
-        "clothingTips": [
-          "Capas y cortavientos para el mirador",
-          "Calzado cómodo para la subida al Cerro Dorotea",
-          "Un abrigo para el largo atardecer junto al fiordo"
-        ]
-      }
-    },
-    {
-      "day": 13,
-      "date": "2026-01-20",
-      "city": "Puerto Natales → Santiago",
-      "country": "Chile",
-      "cityCode": "PNT-PUQ-SCL",
+      "cityCode": "PNT-PUQ-SCL-MDE",
       "currencyLocal": "CLP",
       "stayArea": "Vuelo de regreso",
-      "heroImageQuery": "airplane Patagonia departure Punta Arenas",
+      "heroImageQuery": "airplane home Patagonia to Medellin",
       "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
       "imageHints": [
         "Punta Arenas airport",
         "Patagonia from airplane window"
       ],
       "perks": [
-        "Calcula el traslado a Punta Arenas con holgura: 3h de viaje + 2h antes del vuelo",
-        "Si tu vuelo es de tarde, hay tiempo para el mercado o los pingüinos cerca de Punta Arenas",
-        "Confirma el estado del vuelo la noche anterior (el viento a veces retrasa)"
+        "Día maratónico de regreso: sal de Puerto Natales temprano para la conexión internacional",
+        "Confirma que el vuelo PUQ→SCL calce con tu SCL→MDE",
+        "Ten a mano una capa: cambias del frío patagónico al calor de casa"
       ],
       "accommodation": {
         "name": "Sin hospedaje — día de regreso",
@@ -1171,18 +836,27 @@
           "notes": "Vuelo doméstico de ~3h20 de regreso a Santiago. Desde SCL conectas a tu vuelo internacional o pasas la noche en la ciudad.",
           "imageQuery": "airplane over Patagonia",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
+        {
+          "name": "Vuelo Santiago (SCL) → Medellín (MDE)",
+          "start": "19:00",
+          "durationMin": 480,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
+          "notes": "Vuelo internacional de regreso a casa (~7-8h). Conexión en Santiago; confirma que los tiempos entre el vuelo desde Punta Arenas y este calcen.",
+          "imageQuery": "airplane home night",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": {
         "mode": "flight",
         "from": "Punta Arenas (PUQ)",
-        "to": "Santiago (SCL)",
+        "to": "Medellín (MDE) vía Santiago",
         "depart": "13:30",
         "arrive": "16:50",
         "durationMin": 200,
         "code": "Vuelo doméstico (LATAM/JetSmart/SKY)",
-        "notes": "Cierre del viaje a la Patagonia. Reserva con margen para tu conexión internacional desde Santiago.",
+        "notes": "Cierre del viaje: Puerto Natales → Punta Arenas → Santiago → Medellín. Día largo; sal de Natales temprano.",
         "bookingLink": "https://www.google.com/travel/flights"
       },
       "costs": {
@@ -1202,7 +876,7 @@
         "Aeropuerto Punta Arenas",
         "Aeropuerto Arturo Merino Benitez Santiago"
       ],
-      "notes": "Día de regreso: traslado a Punta Arenas y vuelo a Santiago.",
+      "notes": "Regreso a casa: Puerto Natales → Punta Arenas → Santiago → Medellín. Día largo de traslados.",
       "weather": {
         "tempHighC": 16,
         "tempLowC": 7,
