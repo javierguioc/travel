@@ -62,7 +62,9 @@ export const useItineraryStore = create(
             const currentDay = days.some((d) => d.day === current)
               ? current
               : first?.day ?? 1;
-            set({ itineraryData: data, isLoading: false, tripStartDate: startDate, dayIndexOffset, currentDay });
+            // Si el viaje guardado ya no existe (p.ej. se removió del selector), normaliza.
+            const currentTrip = TRIPS[get().currentTrip] ? get().currentTrip : DEFAULT_TRIP;
+            set({ itineraryData: data, isLoading: false, tripStartDate: startDate, dayIndexOffset, currentDay, currentTrip });
           } catch (error) {
             set({ error: error.message, isLoading: false });
           }

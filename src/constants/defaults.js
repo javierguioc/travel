@@ -6,39 +6,20 @@ export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;
 
 // Viajes disponibles. Cada uno apunta a su propio JSON en /public/data.
+// Chile unificado: norte (Atacama) + sur (Patagonia) en un solo itinerario.
+// (El JSON de Europa se conserva en /public/data/itinerary-data.json, solo
+//  se quitó del selector.)
 export const TRIPS = {
   chile: {
     id: 'chile',
-    label: 'Chile · Patagonia',
-    emoji: '🏔️',
-    title: 'Itinerario Chile — Patagonia',
-    route: 'Santiago → Punta Arenas → Puerto Natales → Torres del Paine → Glaciar Grey → Fiordos → Santiago',
+    label: 'Chile',
+    emoji: '🇨🇱',
+    title: 'Itinerario Chile — Atacama + Patagonia',
+    route: 'Santiago → San Pedro de Atacama → Salar & Tatio → Santiago → Puerto Natales → Torres del Paine → Glaciar Grey → Fiordos',
     dateLabel: 'Enero 2026',
-    daysLabel: '7 días',
-    gradient: 'from-teal-600 via-cyan-700 to-blue-800',
+    daysLabel: '13 días',
+    gradient: 'from-amber-600 via-rose-600 to-teal-700',
     dataPath: `${import.meta.env.BASE_URL}data/itinerary-chile.json`,
-  },
-  atacama: {
-    id: 'atacama',
-    label: 'Chile · Atacama',
-    emoji: '🏜️',
-    title: 'Itinerario Chile — Norte (Atacama)',
-    route: 'Santiago → San Pedro de Atacama → Salar & Altiplano → Tatio → Lagunas de sal → Santiago',
-    dateLabel: 'Enero 2026',
-    daysLabel: '7 días',
-    gradient: 'from-orange-500 via-amber-600 to-red-600',
-    dataPath: `${import.meta.env.BASE_URL}data/itinerary-atacama.json`,
-  },
-  europa: {
-    id: 'europa',
-    label: 'Europa',
-    emoji: '🇪🇺',
-    title: 'Itinerario Europa',
-    route: 'Barcelona → París → Ámsterdam → Suiza → Milán → Venecia → Roma → Puglia → Madrid',
-    dateLabel: 'Septiembre 2026',
-    daysLabel: '23 días',
-    gradient: 'from-blue-600 via-indigo-600 to-purple-700',
-    dataPath: `${import.meta.env.BASE_URL}data/itinerary-data.json`,
   },
 };
 

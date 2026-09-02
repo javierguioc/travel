@@ -55,8 +55,8 @@ export function Header() {
       </div>
 
       <div className="relative">
-        {/* Selector de viaje */}
-        <div className="flex justify-center mb-5">
+        {/* Selector de viaje (solo si hay más de uno) */}
+        <div className={`flex justify-center mb-5 ${Object.keys(TRIPS).length > 1 ? '' : 'hidden'}`}>
           <div className="bg-black/15 backdrop-blur-sm inline-flex items-center gap-1 p-1 rounded-full border border-white/10">
             {Object.values(TRIPS).map((t) => {
               const active = t.id === currentTrip;
