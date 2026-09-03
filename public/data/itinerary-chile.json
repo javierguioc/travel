@@ -1,5 +1,5 @@
 {
-  "version": "1.0-chile-agil-9d-mde",
+  "version": "1.0-chile-agil-9d-sin-tatio-buffer",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -13,12 +13,6 @@
       "title": "Aclimatación y soroche (mal de altura)",
       "description": "San Pedro está a 2.400 m, pero los tours suben mucho: Lagunas Altiplánicas ~4.200 m y Géiseres del Tatio ~4.320 m. Sube gradual (deja el Tatio para el día 3+), hidrátate mucho, evita alcohol la primera noche y come liviano. Lleva pastillas para el soroche o mastica hoja de coca.",
       "link": ""
-    },
-    {
-      "type": "Clima",
-      "title": "Invierno altiplánico (enero-febrero)",
-      "description": "En pleno verano el altiplano tiene el 'invierno boliviano': lluvias y tormentas de tarde. El Tatio y las lagunas altas se pueden cancelar por seguridad; ten un plan B por si pierdes uno.",
-      "link": "https://www.meteochile.gob.cl/"
     },
     {
       "type": "Sol",
@@ -35,7 +29,7 @@
     {
       "type": "Reservas",
       "title": "Reserva tours y hospedaje con anticipación",
-      "description": "Enero es temporada alta: el hospedaje y los tours del Tatio y astronómico se llenan. Reserva con semanas de anticipación. Compara agencias en la calle Caracoles al llegar si quieres ajustar.",
+      "description": "Enero es temporada alta: el hospedaje y los tours se llenan (tanto en San Pedro como en Puerto Natales). Reserva con semanas de anticipación. En San Pedro puedes comparar agencias en la calle Caracoles al llegar si quieres ajustar.",
       "link": "https://www.getyourguide.com"
     },
     {
@@ -53,7 +47,7 @@
     {
       "type": "Entradas",
       "title": "Entradas aparte del tour",
-      "description": "Varias atracciones cobran entrada a las comunidades además del tour: Valle de la Luna, Reserva Nacional Los Flamencos (Laguna Chaxa, Miscanti/Miñiques), Tatio y Termas de Puritama. Presupuesta ~USD 5-20 por sitio por persona.",
+      "description": "Varias atracciones cobran entrada a la comunidad además del tour: Valle de la Luna y la Reserva Nacional Los Flamencos (Laguna Chaxa, Miscanti/Miñiques). Presupuesta ~USD 5-20 por sitio por persona.",
       "link": ""
     },
     {
@@ -306,141 +300,64 @@
     {
       "day": 3,
       "date": "2026-01-10",
-      "city": "Géiseres del Tatio → Santiago",
+      "city": "San Pedro de Atacama → Puerto Natales",
       "country": "Chile",
-      "cityCode": "SPA-CJC-SCL",
+      "cityCode": "SPA-CJC-SCL-PUQ-PNT",
       "currencyLocal": "CLP",
-      "stayArea": "Santiago (noche de conexión)",
-      "heroImageQuery": "El Tatio geysers sunrise then travel",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG/1280px-G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "airplane Patagonia travel day",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
       "imageHints": [
-        "Tatio geysers dawn steam",
-        "Atacama night sky stars Milky Way"
+        "long travel day",
+        "Patagonia arrival"
       ],
       "perks": [
-        "Madrugada al Tatio (~04:30): deja todo listo la noche anterior",
-        "Día ágil: Tatio en la mañana y vuelo a Santiago en la tarde",
-        "Empaca arriba el abrigo e impermeable para la Patagonia de mañana"
-      ],
-      "accommodation": {
-        "name": "Hotel en Santiago (noche de conexión)",
-        "neighborhood": "Providencia / Lastarria",
-        "link": "https://www.booking.com/city/cl/santiago.html",
-        "notes": "Solo una noche para conectar el norte con el vuelo a la Patagonia."
-      },
-      "mainActivities": [
-        {
-          "name": "Géiseres del Tatio al amanecer",
-          "start": "04:30",
-          "durationMin": 360,
-          "link": "https://www.google.com/maps/search/Geiseres+del+Tatio",
-          "notes": "El campo geotérmico más alto del mundo. Las fumarolas se ven mejor con el frío del amanecer. Camina lento por la altura. Regreso a San Pedro ~12:00.",
-          "imageQuery": "El Tatio geysers steam sunrise",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG/1280px-G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_51-53_HDR.JPG"
-        },
-        {
-          "name": "Pueblo de Machuca (en el regreso)",
-          "start": "10:30",
-          "durationMin": 45,
-          "link": "https://www.google.com/maps/search/Machuca+Atacama",
-          "notes": "Diminuto pueblo andino con su capilla blanca. Prueba las empanadas de queso de cabra y anticuchos de llama. Parada breve de camino a San Pedro.",
-          "imageQuery": "Machuca village chapel Atacama",
-          "imageUrl": ""
-        },
-        {
-          "name": "Traslado a Calama + vuelo a Santiago (SCL)",
-          "start": "14:30",
-          "durationMin": 330,
-          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
-          "notes": "Tras el Tatio y un almuerzo rápido: transfer San Pedro→Calama (1h30) y vuelo CJC→SCL (~2h). Noche en Santiago para saltar al sur mañana.",
-          "imageQuery": "airplane over Andes",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 90,
-        "foodBase": 30,
-        "transportBase": 0,
-        "activitiesBase": 150,
-        "lodgingReal": 100,
-        "foodReal": 40
-      },
-      "totals": {
-        "totalBase": 270,
-        "totalReal": 290
-      },
-      "mapPoints": [
-        "Geiseres del Tatio",
-        "Machuca",
-        "San Pedro de Atacama"
-      ],
-      "notes": "Amanecer en el Tatio (4.320 m) y salida hacia el sur: vuelo a Santiago y noche de conexión.",
-      "weather": {
-        "tempHighC": 26,
-        "tempLowC": 2,
-        "conditions": "Amanecer helado en el Tatio (bajo 0°C), luego día de traslado a Santiago (templado).",
-        "rainChance": "Baja",
-        "clothingTips": [
-          "Ropa térmica, gorro, guantes y chaqueta gruesa para el amanecer",
-          "Traje de baño y toalla si te bañas en las termas del Tatio",
-          "De noche, abrígate para el tour astronómico (hace frío parado al aire libre)"
-        ]
-      }
-    },
-    {
-      "day": 4,
-      "date": "2026-01-11",
-      "city": "Santiago → Puerto Natales",
-      "country": "Chile",
-      "cityCode": "SCL-PUQ-PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales (costanera / centro)",
-      "heroImageQuery": "Puerto Natales waterfront Ultima Esperanza sound",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg",
-      "imageHints": [
-        "Puerto Natales waterfront",
-        "Patagonia fjord town"
-      ],
-      "perks": [
-        "Cambio de clima radical: del desierto caluroso al frío ventoso patagónico — saca las capas de abrigo e impermeable",
-        "Día largo de traslado: vuelo ~3h20 + 3h de bus/van hasta Puerto Natales",
-        "Compra provisiones y agua en Natales para los días de parque"
+        "Día 100% de traslado norte→sur: que las conexiones de vuelo calcen es clave, resérvalas juntas",
+        "Cambio de clima radical: del desierto al frío ventoso patagónico — saca las capas de abrigo e impermeable",
+        "Compra provisiones y agua en Natales al llegar para los días de parque"
       ],
       "accommodation": {
         "name": "Hostal / hotel en el centro de Puerto Natales",
         "neighborhood": "Cerca de la costanera y la calle Baquedano",
         "link": "https://www.booking.com/city/cl/puerto-natales.html",
-        "notes": "Puerto Natales es la base de todas las excursiones al parque; elige algo caminable al centro."
+        "notes": "Base de todas las excursiones a Torres del Paine."
       },
       "mainActivities": [
         {
+          "name": "Traslado San Pedro → Calama (CJC)",
+          "start": "06:30",
+          "durationMin": 90,
+          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
+          "notes": "Salida temprano (~06:30) para alcanzar el primer vuelo. ~100 km / 1h30 por la Ruta 23.",
+          "imageQuery": "road Atacama to Calama dawn",
+          "imageUrl": ""
+        },
+        {
+          "name": "Vuelo Calama (CJC) → Santiago (SCL)",
+          "start": "09:30",
+          "durationMin": 130,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
+          "notes": "Primer tramo ~2h. Deja holgura en Santiago para la conexión al sur (mismo aeropuerto SCL).",
+          "imageQuery": "airplane over Atacama",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        },
+        {
           "name": "Vuelo Santiago (SCL) → Punta Arenas (PUQ)",
-          "start": "08:00",
+          "start": "14:00",
           "durationMin": 200,
           "link": "https://www.google.com/maps/search/Aeropuerto+Presidente+Carlos+Ibanez+Punta+Arenas",
-          "notes": "Vuelo doméstico de ~3h20 al extremo sur (LATAM/JetSmart/SKY). Reserva temprano para aprovechar el día. Llegas al aeropuerto de Punta Arenas (PUQ).",
-          "imageQuery": "airplane wing Patagonia",
+          "notes": "Segundo tramo ~3h20 al extremo sur. Reserva ambos vuelos en la misma emisión para proteger la conexión.",
+          "imageQuery": "airplane Patagonia",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
         },
         {
           "name": "Traslado Punta Arenas → Puerto Natales",
-          "start": "12:30",
+          "start": "18:30",
           "durationMin": 180,
           "link": "https://www.google.com/maps/dir/Punta+Arenas/Puerto+Natales",
-          "notes": "~250 km / 3h por la Ruta 9 a través de la estepa patagónica. Bus regular (Bus-Sur/Fernández) o transfer. Verás los primeros guanacos y ñandúes.",
+          "notes": "~250 km / 3h por la estepa patagónica. Bus (Bus-Sur/Fernández) o transfer. Llegas a Natales de noche (¡pero aún con luz en verano!).",
           "imageQuery": "Patagonian steppe road",
           "imageUrl": ""
-        },
-        {
-          "name": "Costanera y Seno Última Esperanza",
-          "start": "17:30",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Costanera+Puerto+Natales",
-          "notes": "Camina la costanera: el Muelle Histórico, el monumento 'Manos del Viento' y las vistas al fiordo con montañas nevadas. Cena de cordero patagónico o merluza austral.",
-          "imageQuery": "Puerto Natales waterfront sunset",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IMG_1884Puerto_Natales.jpg/1280px-IMG_1884Puerto_Natales.jpg"
         }
       ],
       "secondaryActivities": [],
@@ -448,36 +365,36 @@
       "costs": {
         "lodgingBase": 110,
         "foodBase": 35,
-        "transportBase": 300,
+        "transportBase": 320,
         "activitiesBase": 0,
         "lodgingReal": 120,
         "foodReal": 45
       },
       "totals": {
-        "totalBase": 445,
-        "totalReal": 465
+        "totalBase": 465,
+        "totalReal": 485
       },
       "mapPoints": [
+        "San Pedro de Atacama",
         "Aeropuerto Punta Arenas",
-        "Puerto Natales",
-        "Costanera Puerto Natales"
+        "Puerto Natales"
       ],
-      "notes": "Del norte al sur: vuelo Santiago → Punta Arenas y traslado a Puerto Natales, base de la Patagonia.",
+      "notes": "Día maratónico de traslado: San Pedro → Calama → Santiago → Punta Arenas → Puerto Natales. Llegas a la base de la Patagonia esa noche.",
       "weather": {
         "tempHighC": 16,
         "tempLowC": 7,
-        "conditions": "Variable: sol y nubes con viento fuerte. Frío al atardecer junto al fiordo.",
+        "conditions": "Del desierto seco al sur ventoso; clima marino variable al llegar a Natales.",
         "rainChance": "Moderada",
         "clothingTips": [
-          "Capas: base térmica + polar + cortavientos impermeable",
-          "Gorro y guantes livianos para el viento del fiordo",
-          "Zapatillas cómodas para caminar la costanera"
+          "Ropa cómoda por capas para un día largo de vuelos",
+          "Ten el abrigo e impermeable a mano al aterrizar en el sur",
+          "Hidrátate: varios vuelos seguidos cansan"
         ]
       }
     },
     {
-      "day": 5,
-      "date": "2026-01-12",
+      "day": 4,
+      "date": "2026-01-11",
       "city": "Torres del Paine — día escénico",
       "country": "Chile",
       "cityCode": "PNT",
@@ -563,8 +480,8 @@
       }
     },
     {
-      "day": 6,
-      "date": "2026-01-13",
+      "day": 5,
+      "date": "2026-01-12",
       "city": "Trekking a la Base de las Torres",
       "country": "Chile",
       "cityCode": "PNT",
@@ -640,8 +557,8 @@
       }
     },
     {
-      "day": 7,
-      "date": "2026-01-14",
+      "day": 6,
+      "date": "2026-01-13",
       "city": "Glaciar Grey",
       "country": "Chile",
       "cityCode": "PNT",
@@ -717,8 +634,8 @@
       }
     },
     {
-      "day": 8,
-      "date": "2026-01-15",
+      "day": 7,
+      "date": "2026-01-14",
       "city": "Glaciares Balmaceda y Serrano (fiordo)",
       "country": "Chile",
       "cityCode": "PNT",
@@ -790,6 +707,92 @@
           "Impermeable y cortavientos: en el fiordo casi siempre llovizna o rocía",
           "Capas cálidas para la cubierta del catamarán",
           "Calzado que aguante barro en la caminata al Serrano"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-01-15",
+      "city": "Colchón: Cueva del Milodón & Puerto Natales",
+      "country": "Chile",
+      "cityCode": "PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Cueva del Milodon Puerto Natales cave",
+      "heroImageUrl": "",
+      "imageHints": [
+        "Cueva del Milodon giant cave",
+        "Mirador Cerro Dorotea view"
+      ],
+      "perks": [
+        "Día COLCHÓN: si el viento/lluvia canceló el trekking, el Grey o el fiordo, reprográmalo HOY",
+        "Si todo salió bien, es un día suave cerca de Natales antes del regreso",
+        "Buen día para artesanía, lana patagónica y cordero/cerveza local"
+      ],
+      "accommodation": {
+        "name": "Última noche en Puerto Natales",
+        "neighborhood": "Centro",
+        "link": "",
+        "notes": "Confirma el traslado a Punta Arenas de mañana según tu vuelo de regreso."
+      },
+      "mainActivities": [
+        {
+          "name": "Monumento Natural Cueva del Milodón",
+          "start": "09:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Cueva+del+Milodon",
+          "notes": "Enorme cueva de 200 m donde se hallaron restos del milodón (perezoso gigante prehistórico). Réplica a tamaño real y senderos cortos. A 25 km de Natales.",
+          "imageQuery": "Cueva del Milodon cave",
+          "imageUrl": ""
+        },
+        {
+          "name": "Mirador Cerro Dorotea",
+          "start": "13:00",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Mirador+Cerro+Dorotea",
+          "notes": "Caminata guiada (estancia privada) hasta la cima con vista panorámica del fiordo Última Esperanza y todo Puerto Natales. Suelen cerrar con once patagónica.",
+          "imageQuery": "Cerro Dorotea viewpoint Puerto Natales",
+          "imageUrl": ""
+        },
+        {
+          "name": "Tarde libre en Puerto Natales",
+          "start": "16:30",
+          "durationMin": 150,
+          "link": "https://www.google.com/maps/search/Puerto+Natales+centro",
+          "notes": "Tiendas de artesanía y lana, cervezas locales, o descanso. Último atardecer sobre el fiordo (¡pasadas las 22:00 en verano!).",
+          "imageQuery": "Puerto Natales town crafts",
+          "imageUrl": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 35,
+        "transportBase": 30,
+        "activitiesBase": 30,
+        "lodgingReal": 120,
+        "foodReal": 45
+      },
+      "totals": {
+        "totalBase": 205,
+        "totalReal": 225
+      },
+      "mapPoints": [
+        "Cueva del Milodon",
+        "Mirador Cerro Dorotea",
+        "Puerto Natales"
+      ],
+      "notes": "Día colchón para el clima patagónico: Cueva del Milodón, Cerro Dorotea y tarde libre — o reprograma aquí lo que se haya cancelado.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 6,
+        "conditions": "Variable con viento, como todo el sur. Buen día para actividades cortas.",
+        "rainChance": "Moderada",
+        "clothingTips": [
+          "Capas y cortavientos para el mirador",
+          "Calzado cómodo para la subida al Cerro Dorotea",
+          "Un abrigo para el largo atardecer junto al fiordo"
         ]
       }
     },
