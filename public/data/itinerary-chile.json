@@ -1,5 +1,5 @@
 {
-  "version": "1.0-chile-agil-9d-sin-tatio-buffer",
+  "version": "1.0-chile-agil-vie-sab-9d",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -11,7 +11,7 @@
     {
       "type": "Altitud",
       "title": "Aclimatación y soroche (mal de altura)",
-      "description": "San Pedro está a 2.400 m, pero los tours suben mucho: Lagunas Altiplánicas ~4.200 m y Géiseres del Tatio ~4.320 m. Sube gradual (deja el Tatio para el día 3+), hidrátate mucho, evita alcohol la primera noche y come liviano. Lleva pastillas para el soroche o mastica hoja de coca.",
+      "description": "San Pedro está a 2.400 m, pero el tour del Salar sube a las Lagunas Altiplánicas (~4.200 m). Hidrátate mucho, evita alcohol la primera noche, come liviano y camina lento en la altura. Lleva pastillas para el soroche o mastica hoja de coca por si acaso.",
       "link": ""
     },
     {
@@ -108,10 +108,76 @@
   "days": [
     {
       "day": 1,
-      "date": "2026-01-08",
-      "city": "Medellín → San Pedro de Atacama",
+      "date": "2026-01-09",
+      "city": "Medellín → Santiago",
+      "country": "Colombia / Chile",
+      "cityCode": "MDE-SCL",
+      "currencyLocal": "COP/CLP",
+      "stayArea": "Vuelo nocturno",
+      "heroImageQuery": "night flight airplane departure",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "imageHints": [
+        "night red-eye flight",
+        "airplane departure"
+      ],
+      "perks": [
+        "Sales el VIERNES por la noche: llega al aeropuerto 3 h antes (vuelo internacional)",
+        "Vuelo nocturno: lleva cuello, medias y algo para dormir; intenta descansar",
+        "El sábado arrancas directo a Atacama, así que llega descansado"
+      ],
+      "accommodation": {
+        "name": "Vuelo nocturno — sin hospedaje",
+        "neighborhood": "N/A",
+        "link": "",
+        "notes": "Noche a bordo."
+      },
+      "mainActivities": [
+        {
+          "name": "Vuelo nocturno Medellín (MDE) → Santiago (SCL)",
+          "start": "23:00",
+          "durationMin": 480,
+          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
+          "notes": "Vuelo internacional nocturno (~7-8 h, LATAM/Avianca). Sale la noche del viernes y llega a Santiago el sábado por la mañana (Chile va +2 h). Duerme a bordo para rendir el sábado.",
+          "imageQuery": "red-eye night flight",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 15,
+        "transportBase": 0,
+        "activitiesBase": 0,
+        "lodgingReal": 0,
+        "foodReal": 20
+      },
+      "totals": {
+        "totalBase": 15,
+        "totalReal": 20
+      },
+      "mapPoints": [
+        "Aeropuerto Jose Maria Cordova Medellin"
+      ],
+      "notes": "Salida nocturna del viernes desde Medellín hacia Santiago (llegada el sábado).",
+      "weather": {
+        "tempHighC": 24,
+        "tempLowC": 14,
+        "conditions": "Noche en vuelo — temperatura de cabina. Medellín templado a la salida.",
+        "rainChance": "Baja",
+        "clothingTips": [
+          "Ropa cómoda para volar y una capa para el frío de cabina",
+          "Cuello y medias en el equipaje de mano",
+          "Ten a mano el abrigo para al llegar al sur más adelante"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-01-10",
+      "city": "Santiago → San Pedro de Atacama",
       "country": "Chile",
-      "cityCode": "MDE-SCL-CJC-SPA",
+      "cityCode": "SCL-CJC-SPA",
       "currencyLocal": "CLP",
       "stayArea": "San Pedro de Atacama (centro / Caracoles)",
       "heroImageQuery": "airplane departure Medellin to Chile",
@@ -121,9 +187,9 @@
         "Valle de la Luna sunset"
       ],
       "perks": [
-        "Vuelo largo desde Medellín: elige un MDE→SCL temprano o nocturno para poder conectar el mismo día con Calama",
+        "Aterrizas en Santiago el sábado en la mañana y conectas de inmediato a Calama",
         "Saca efectivo (CLP) en el aeropuerto de Santiago o Calama",
-        "Día de puro traslado + primer atardecer; hidrátate desde ya para la altura"
+        "Llegas a San Pedro por la tarde: aclimata suave e hidrátate; cierra con el Valle de la Luna"
       ],
       "accommodation": {
         "name": "Hostal / hotel boutique en el centro de San Pedro",
@@ -132,15 +198,6 @@
         "notes": "Elige algo caminable al centro; casi todo se hace en tours con recogida en el hospedaje."
       },
       "mainActivities": [
-        {
-          "name": "Vuelo Medellín (MDE) → Santiago (SCL)",
-          "start": "00:30",
-          "durationMin": 480,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
-          "notes": "Vuelo internacional ~7-8h (LATAM/Avianca). Idealmente nocturno o muy temprano para llegar a Santiago en la mañana y conectar con Calama el mismo día.",
-          "imageQuery": "international flight night",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        },
         {
           "name": "Vuelo Santiago (SCL) → Calama (CJC)",
           "start": "08:30",
@@ -188,7 +245,7 @@
         "San Pedro de Atacama",
         "Valle de la Luna"
       ],
-      "notes": "Día de viaje desde Colombia: Medellín → Santiago → Calama → San Pedro. Tarde/atardecer en el Valle de la Luna si llegas a tiempo.",
+      "notes": "Llegada a Chile: conexión Santiago → Calama → San Pedro. Tarde/atardecer en el Valle de la Luna.",
       "weather": {
         "tempHighC": 27,
         "tempLowC": 8,
@@ -202,8 +259,8 @@
       }
     },
     {
-      "day": 2,
-      "date": "2026-01-09",
+      "day": 3,
+      "date": "2026-01-11",
       "city": "Salar de Atacama & Lagunas Altiplánicas",
       "country": "Chile",
       "cityCode": "SPA",
@@ -298,8 +355,8 @@
       }
     },
     {
-      "day": 3,
-      "date": "2026-01-10",
+      "day": 4,
+      "date": "2026-01-12",
       "city": "San Pedro de Atacama → Puerto Natales",
       "country": "Chile",
       "cityCode": "SPA-CJC-SCL-PUQ-PNT",
@@ -393,8 +450,8 @@
       }
     },
     {
-      "day": 4,
-      "date": "2026-01-11",
+      "day": 5,
+      "date": "2026-01-13",
       "city": "Torres del Paine — día escénico",
       "country": "Chile",
       "cityCode": "PNT",
@@ -480,8 +537,8 @@
       }
     },
     {
-      "day": 5,
-      "date": "2026-01-12",
+      "day": 6,
+      "date": "2026-01-14",
       "city": "Trekking a la Base de las Torres",
       "country": "Chile",
       "cityCode": "PNT",
@@ -557,8 +614,8 @@
       }
     },
     {
-      "day": 6,
-      "date": "2026-01-13",
+      "day": 7,
+      "date": "2026-01-15",
       "city": "Glaciar Grey",
       "country": "Chile",
       "cityCode": "PNT",
@@ -634,8 +691,8 @@
       }
     },
     {
-      "day": 7,
-      "date": "2026-01-14",
+      "day": 8,
+      "date": "2026-01-16",
       "city": "Glaciares Balmaceda y Serrano (fiordo)",
       "country": "Chile",
       "cityCode": "PNT",
@@ -711,94 +768,8 @@
       }
     },
     {
-      "day": 8,
-      "date": "2026-01-15",
-      "city": "Colchón: Cueva del Milodón & Puerto Natales",
-      "country": "Chile",
-      "cityCode": "PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Cueva del Milodon Puerto Natales cave",
-      "heroImageUrl": "",
-      "imageHints": [
-        "Cueva del Milodon giant cave",
-        "Mirador Cerro Dorotea view"
-      ],
-      "perks": [
-        "Día COLCHÓN: si el viento/lluvia canceló el trekking, el Grey o el fiordo, reprográmalo HOY",
-        "Si todo salió bien, es un día suave cerca de Natales antes del regreso",
-        "Buen día para artesanía, lana patagónica y cordero/cerveza local"
-      ],
-      "accommodation": {
-        "name": "Última noche en Puerto Natales",
-        "neighborhood": "Centro",
-        "link": "",
-        "notes": "Confirma el traslado a Punta Arenas de mañana según tu vuelo de regreso."
-      },
-      "mainActivities": [
-        {
-          "name": "Monumento Natural Cueva del Milodón",
-          "start": "09:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Cueva+del+Milodon",
-          "notes": "Enorme cueva de 200 m donde se hallaron restos del milodón (perezoso gigante prehistórico). Réplica a tamaño real y senderos cortos. A 25 km de Natales.",
-          "imageQuery": "Cueva del Milodon cave",
-          "imageUrl": ""
-        },
-        {
-          "name": "Mirador Cerro Dorotea",
-          "start": "13:00",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Mirador+Cerro+Dorotea",
-          "notes": "Caminata guiada (estancia privada) hasta la cima con vista panorámica del fiordo Última Esperanza y todo Puerto Natales. Suelen cerrar con once patagónica.",
-          "imageQuery": "Cerro Dorotea viewpoint Puerto Natales",
-          "imageUrl": ""
-        },
-        {
-          "name": "Tarde libre en Puerto Natales",
-          "start": "16:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Puerto+Natales+centro",
-          "notes": "Tiendas de artesanía y lana, cervezas locales, o descanso. Último atardecer sobre el fiordo (¡pasadas las 22:00 en verano!).",
-          "imageQuery": "Puerto Natales town crafts",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 30,
-        "activitiesBase": 30,
-        "lodgingReal": 120,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 205,
-        "totalReal": 225
-      },
-      "mapPoints": [
-        "Cueva del Milodon",
-        "Mirador Cerro Dorotea",
-        "Puerto Natales"
-      ],
-      "notes": "Día colchón para el clima patagónico: Cueva del Milodón, Cerro Dorotea y tarde libre — o reprograma aquí lo que se haya cancelado.",
-      "weather": {
-        "tempHighC": 16,
-        "tempLowC": 6,
-        "conditions": "Variable con viento, como todo el sur. Buen día para actividades cortas.",
-        "rainChance": "Moderada",
-        "clothingTips": [
-          "Capas y cortavientos para el mirador",
-          "Calzado cómodo para la subida al Cerro Dorotea",
-          "Un abrigo para el largo atardecer junto al fiordo"
-        ]
-      }
-    },
-    {
       "day": 9,
-      "date": "2026-01-16",
+      "date": "2026-01-17",
       "city": "Puerto Natales → Medellín",
       "country": "Chile",
       "cityCode": "PNT-PUQ-SCL-MDE",
