@@ -6,6 +6,7 @@ export function DayNavigation() {
   const currentDay = useItineraryStore((state) => state.currentDay);
   const itineraryData = useItineraryStore((state) => state.itineraryData);
   const setCurrentDay = useItineraryStore((state) => state.setCurrentDay);
+  const setCurrentView = useItineraryStore((state) => state.setCurrentView);
 
   if (!itineraryData) return null;
 
@@ -17,6 +18,21 @@ export function DayNavigation() {
 
   return (
     <div className="bg-white rounded-2xl p-4 shadow-card border border-light-border mb-6">
+      <div className="flex items-center justify-between mb-4">
+        <button
+          type="button"
+          onClick={() => setCurrentView('summary')}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 font-semibold text-sm border border-blue-100 hover:bg-blue-100 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 transition-colors"
+          title="Volver al resumen general"
+          aria-label="Volver al resumen general"
+        >
+          <span aria-hidden="true" className="text-lg">🏠</span>
+          <span>Resumen general</span>
+        </button>
+        <span className="text-xs text-light-textMuted hidden sm:inline">
+          Usa Atrás para volver a la vista anterior
+        </span>
+      </div>
       <div className="flex items-center justify-between gap-4">
         <button
           onClick={() => setCurrentDay(currentDay - 1)}
