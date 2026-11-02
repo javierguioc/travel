@@ -6,7 +6,7 @@ export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;
 
 // Viajes disponibles. Cada uno apunta a su propio JSON en /public/data.
-// Chile unificado: norte (Atacama) + sur (Patagonia) en un solo itinerario.
+// Chile enero 2027: Patagonia de Aysén y Magallanes, sin Atacama.
 // (El JSON de Europa se conserva en /public/data/itinerary-data.json, solo
 //  se quitó del selector.)
 export const TRIPS = {
@@ -14,8 +14,8 @@ export const TRIPS = {
     id: 'chile',
     label: 'Chile',
     emoji: '🇨🇱',
-    title: 'Itinerario Chile — Atacama + Patagonia',
-    route: 'Medellín → San Pedro de Atacama → Salar & Altiplano → Puerto Natales → Torres del Paine → Glaciar Grey → Fiordos → Medellín',
+    title: 'Chile 2027 — Mármol, San Rafael, Rafting y Torres del Paine',
+    route: 'Medellín → Santiago → Capillas de Mármol → Río Baker → San Rafael → Torres del Paine → Santiago → Medellín',
     dateLabel: '8–16 enero 2027',
     daysLabel: '9 días',
     gradient: 'from-amber-600 via-rose-600 to-teal-700',
