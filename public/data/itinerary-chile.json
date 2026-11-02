@@ -1,108 +1,57 @@
 {
-  "version": "1.0-chile-agil-vie-sab-9d-2027",
+  "version": "2.0-patagonia-rafting-marmol-sanrafael-2027",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
     "group_sizes": [
       2
-    ]
+    ],
+    "region": "Patagonia Aysén y Magallanes, sin Atacama",
+    "return_local": "2027-01-16T02:00:00",
+    "flight_status": "Vuelos tentativos hasta reservar"
   },
   "recommendations": [
     {
-      "type": "Altitud",
-      "title": "Aclimatación y soroche (mal de altura)",
-      "description": "San Pedro está a 2.400 m, pero el tour del Salar sube a las Lagunas Altiplánicas (~4.200 m). Hidrátate mucho, evita alcohol la primera noche, come liviano y camina lento en la altura. Lleva pastillas para el soroche o mastica hoja de coca por si acaso.",
-      "link": ""
-    },
-    {
-      "type": "Sol",
-      "title": "UV extremo — el desierto más árido del mundo",
-      "description": "El índice UV es de los más altos del planeta. Bloqueador FPS 50+, sombrero de ala ancha, lentes de sol y ropa de manga larga liviana. Reaplica bloqueador cada 2-3 horas.",
-      "link": ""
-    },
-    {
-      "type": "Efectivo",
-      "title": "Lleva pesos chilenos (CLP) en efectivo",
-      "description": "Muchos tours, entradas comunitarias (Valle de la Luna, Tatio, lagunas) y pueblos como Toconao operan con efectivo. En San Pedro hay pocos cajeros y suelen tener fila o quedarse sin dinero. Saca efectivo en Calama al llegar.",
-      "link": ""
-    },
-    {
-      "type": "Reservas",
-      "title": "Reserva tours y hospedaje con anticipación",
-      "description": "Enero es temporada alta: el hospedaje y los tours se llenan (tanto en San Pedro como en Puerto Natales). Reserva con semanas de anticipación. En San Pedro puedes comparar agencias en la calle Caracoles al llegar si quieres ajustar.",
-      "link": "https://www.getyourguide.com"
-    },
-    {
-      "type": "Ropa",
-      "title": "Amplitud térmica extrema — vístete por capas",
-      "description": "Puede haber 28°C al mediodía y cerca de 0°C al amanecer en el Tatio. Capas: camiseta + polar + cortavientos, gorro y guantes para las salidas de madrugada, y shorts para el mediodía.",
-      "link": ""
-    },
-    {
-      "type": "Conexión",
-      "title": "Señal e internet limitados",
-      "description": "Fuera de San Pedro casi no hay señal. Descarga mapas offline de Google Maps de toda la región de Antofagasta y ten los vouchers de tours descargados.",
-      "link": "https://www.airalo.com"
-    },
-    {
-      "type": "Entradas",
-      "title": "Entradas aparte del tour",
-      "description": "Varias atracciones cobran entrada a la comunidad además del tour: Valle de la Luna y la Reserva Nacional Los Flamencos (Laguna Chaxa, Miscanti/Miñiques). Presupuesta ~USD 5-20 por sitio por persona.",
-      "link": ""
-    },
-    {
-      "type": "Viento",
-      "title": "El viento patagónico es extremo",
-      "description": "En verano son comunes ráfagas de 80-120 km/h, sobre todo en miradores abiertos y pasos de montaña. Lleva un cortavientos impermeable siempre y sujeta bien gorros, capuchas y trípodes. En puentes colgantes y bordes de laguna, precaución.",
-      "link": ""
-    },
-    {
-      "type": "Clima",
-      "title": "Las 4 estaciones en un mismo día",
-      "description": "Puede haber sol, lluvia, granizo y viento la misma tarde. Vístete SIEMPRE por capas: base térmica + polar + chaqueta impermeable/cortavientos. No confíes en el pronóstico: cambia cada hora.",
-      "link": "https://www.meteochile.gob.cl/"
-    },
-    {
-      "type": "Reservas",
-      "title": "Reserva con mucha anticipación (enero es peak)",
-      "description": "La navegación al Glaciar Grey, el catamarán a Balmaceda/Serrano, los buses al parque y el hospedaje en Puerto Natales se agotan semanas antes en temporada alta. Reserva todo con tiempo.",
-      "link": "https://www.getyourguide.com"
-    },
-    {
-      "type": "Entradas",
-      "title": "Entrada al Parque Torres del Paine (CONAF)",
-      "description": "Torres del Paine cobra entrada (extranjeros ~USD 35 por persona en temporada alta). Cómprala online en el sitio de CONAF con anticipación y guarda el ticket/QR: te lo piden en las porterías (Laguna Amarga, Serrano).",
-      "link": "https://www.pasesparques.cl/"
-    },
-    {
-      "type": "Luz",
-      "title": "Hasta 17 horas de luz en enero",
-      "description": "Amanece cerca de las 05:30 y atardece pasadas las 22:00. Aprovecha para caminatas largas sin apuro y para la mejor luz de fotos al final del día.",
-      "link": ""
-    },
-    {
-      "type": "Trekking",
-      "title": "Calzado, bastones y agua para la Base Torres",
-      "description": "La caminata a la Base de las Torres es exigente (~19-22 km, 7-9 h, subida final de morrena). Usa botas de trekking, bastones y lleva comida y ~2 L de agua (se puede rellenar en los arroyos del parque). Sal temprano.",
-      "link": ""
-    },
-    {
-      "type": "Conexión",
-      "title": "Señal limitada y efectivo",
-      "description": "Dentro del parque casi no hay señal. Descarga mapas offline (Maps.me/Google) y lleva algo de efectivo en pesos (CLP) para entradas comunitarias, cafés y propinas.",
-      "link": ""
-    },
-    {
-      "type": "Fauna",
-      "title": "Observa la fauna a distancia",
-      "description": "Verás guanacos, ñandúes, zorros y cóndores. No los alimentes ni te acerques. Hay pumas en el parque (verlos es raro y suele ser con guía); respeta las señalizaciones.",
-      "link": ""
+      "type": "Logística",
+      "title": "Ruta ambiciosa: tiempos factibles con conexiones confirmadas",
+      "description": "Los 4 atractivos caben, pero hay poco margen para clima. Confirmar primero MDE–SCL (viernes 8), SCL–BBA (sábado 9), DAP BBA–PUQ (martes 12) y PUQ–SCL (viernes 15).",
+      "link": "https://www.google.com/travel/flights"
     },
     {
       "type": "Vuelos",
-      "title": "Es un viaje de punta a punta: varios vuelos internos",
-      "description": "Chile mide >4.000 km. Este plan usa 4 tramos domésticos (Santiago–Calama ida/vuelta y Santiago–Punta Arenas ida/vuelta). Resérvalos temprano, ojalá con equipaje incluido, y dale holgura a las conexiones vía Santiago.",
+      "title": "DAP martes 12: Balmaceda → Punta Arenas 15:30",
+      "description": "Horario estacional publicado para 2026–27, sujeto a cupos y cambios de aerolínea.",
+      "link": "https://dapairline.com/vuelos-regulares/"
+    },
+    {
+      "type": "Regreso",
+      "title": "Sábado 16 salida de Santiago a las 02:00",
+      "description": "Llegar al aeropuerto SCL alrededor de las 22:30–23:00 del viernes 15. Priorizar vuelo doméstico de la mañana para tener amplio colchón.",
       "link": "https://www.google.com/travel/flights"
+    },
+    {
+      "type": "Rafting",
+      "title": "Capillas + rafting: reservar salida 14:00 en Baker",
+      "description": "Tour de rafting clase III, 3 h total, tarifa publicada CLP 49.000. Requiere auto o transfer privado desde Puerto Río Tranquilo.",
+      "link": "https://www.turismoriobaker.cl/rafting-aventura-duplicado/"
+    },
+    {
+      "type": "Glaciar",
+      "title": "San Rafael: 12 horas, sujeto a clima",
+      "description": "Salida desde Puerto Río Tranquilo lunes 11, desde CLP 190.000 de referencia. Confirmar operador, salida y políticas de cancelación.",
+      "link": "https://www.destinopatagonia.cl/"
+    },
+    {
+      "type": "Clima",
+      "title": "La semana no tiene día libre para reprogramar",
+      "description": "Capillas y San Rafael pueden cancelarse por viento. Evitar comprar tours no reembolsables antes de asegurar vuelos y transporte.",
+      "link": "https://turismo.rioibanez.cl/puerto-rio-tranquilo/"
+    },
+    {
+      "type": "Entradas",
+      "title": "Entrada Torres del Paine",
+      "description": "Comprar pase con anticipación y verificar horarios de senderos en CONAF.",
+      "link": "https://www.pasesparques.cl/"
     }
   ],
   "days": [
@@ -112,754 +61,726 @@
       "city": "Medellín → Santiago",
       "country": "Colombia / Chile",
       "cityCode": "MDE-SCL",
-      "currencyLocal": "COP/CLP",
-      "stayArea": "Vuelo nocturno",
-      "heroImageQuery": "night flight airplane departure",
-      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "currencyLocal": "CLP",
+      "stayArea": "Conexión internacional",
+      "heroImageQuery": "Medellín → Santiago",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
       "imageHints": [
-        "night red-eye flight",
-        "airplane departure"
+        "Medellín → Santiago"
       ],
       "perks": [
-        "Sales el VIERNES por la noche: llega al aeropuerto 3 h antes (vuelo internacional)",
-        "Vuelo nocturno: lleva cuello, medias y algo para dormir; intenta descansar",
-        "El sábado arrancas directo a Atacama, así que llega descansado"
+        "Prioridad: llegar a SCL el viernes 8",
+        "La ida es cuello de botella: no asumir horarios no comprados"
       ],
       "accommodation": {
-        "name": "Vuelo nocturno — sin hospedaje",
-        "neighborhood": "N/A",
+        "name": "En tránsito o aeropuerto SCL",
+        "neighborhood": "Santiago",
         "link": "",
-        "notes": "Noche a bordo."
+        "notes": "Si el vuelo llega viernes, dormir cerca del aeropuerto."
       },
       "mainActivities": [
         {
-          "name": "Vuelo nocturno Medellín (MDE) → Santiago (SCL)",
-          "start": "23:00",
-          "durationMin": 480,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
-          "notes": "Vuelo internacional nocturno (~7-8 h, LATAM/Avianca). Sale la noche del viernes y llega a Santiago el sábado por la mañana (Chile va +2 h). Duerme a bordo para rendir el sábado.",
-          "imageQuery": "red-eye night flight",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+          "name": "Vuelo Medellín → Santiago (por confirmar)",
+          "start": "08:00",
+          "durationMin": 420,
+          "notes": "Horario objetivo no confirmado. Llegar a Santiago el viernes 8 para tomar vuelo temprano el sábado 9. Si no encaja, viajar el jueves 7 por la noche o descartar alguna excursión.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Vuelo Medellín → Santiago (por confirmar)",
+          "link": "https://www.google.com/travel/flights"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": null,
       "costs": {
-        "lodgingBase": 0,
-        "foodBase": 15,
+        "lodgingBase": 70,
+        "foodBase": 30,
         "transportBase": 0,
         "activitiesBase": 0,
-        "lodgingReal": 0,
-        "foodReal": 20
+        "lodgingReal": 80,
+        "foodReal": 40
       },
       "totals": {
-        "totalBase": 15,
-        "totalReal": 20
+        "totalBase": 100,
+        "totalReal": 120
       },
       "mapPoints": [
-        "Aeropuerto Jose Maria Cordova Medellin"
+        "Aeropuerto José María Córdova Medellín",
+        "Aeropuerto Arturo Merino Benítez Santiago"
       ],
-      "notes": "Salida nocturna del viernes desde Medellín hacia Santiago (llegada el sábado).",
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
       "weather": {
-        "tempHighC": 24,
-        "tempLowC": 14,
-        "conditions": "Noche en vuelo — temperatura de cabina. Medellín templado a la salida.",
-        "rainChance": "Baja",
+        "tempHighC": 19,
+        "tempLowC": 7,
+        "conditions": "Referencia estacional de Aysén, no pronóstico.",
+        "rainChance": "Variable",
         "clothingTips": [
-          "Ropa cómoda para volar y una capa para el frío de cabina",
-          "Cuello y medias en el equipaje de mano",
-          "Ten a mano el abrigo para al llegar al sur más adelante"
+          "Ropa térmica y chaqueta impermeable",
+          "Calzado cómodo y protección solar",
+          "Consultar viento y navegación con el operador"
         ]
       }
     },
     {
       "day": 2,
       "date": "2027-01-09",
-      "city": "Santiago → San Pedro de Atacama",
+      "city": "Santiago → Balmaceda → Puerto Río Tranquilo",
       "country": "Chile",
-      "cityCode": "SCL-CJC-SPA",
+      "cityCode": "SCL-BBA-RTR",
       "currencyLocal": "CLP",
-      "stayArea": "San Pedro de Atacama (centro / Caracoles)",
-      "heroImageQuery": "airplane departure Medellin to Chile",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Calle_San_Pedro_Atacama.jpg",
+      "stayArea": "Puerto Río Tranquilo",
+      "heroImageQuery": "Santiago → Balmaceda → Puerto Río Tranquilo",
+      "heroImageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
       "imageHints": [
-        "San Pedro de Atacama adobe town",
-        "Valle de la Luna sunset"
+        "Santiago → Balmaceda → Puerto Río Tranquilo"
       ],
       "perks": [
-        "Aterrizas en Santiago el sábado en la mañana y conectas de inmediato a Calama",
-        "Saca efectivo (CLP) en el aeropuerto de Santiago o Calama",
-        "Llegas a San Pedro por la tarde: aclimata suave e hidrátate; cierra con el Valle de la Luna"
+        "Necesitan auto/traslado privado",
+        "Parada corta en Cerro Castillo si alcanza el tiempo"
       ],
       "accommodation": {
-        "name": "Hostal / hotel boutique en el centro de San Pedro",
-        "neighborhood": "Casco histórico (a pasos de Caracoles y la Plaza)",
-        "link": "https://www.booking.com/city/cl/san-pedro-de-atacama.html",
-        "notes": "Elige algo caminable al centro; casi todo se hace en tours con recogida en el hospedaje."
+        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
+        "neighborhood": "Centro",
+        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
+        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
       },
       "mainActivities": [
         {
-          "name": "Vuelo Santiago (SCL) → Calama (CJC)",
-          "start": "08:30",
-          "durationMin": 130,
-          "link": "https://www.google.com/maps/search/Aeropuerto+El+Loa+Calama",
-          "notes": "Vuelo doméstico ~2h (LATAM/JetSmart/SKY). Reserva el más temprano posible para aprovechar el día. Llega al aeropuerto El Loa (CJC).",
-          "imageQuery": "airplane wing desert view",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+          "name": "Vuelo Santiago → Balmaceda (horario de referencia)",
+          "start": "08:41",
+          "durationMin": 135,
+          "notes": "Salida 08:41 publicada por buscador para el sábado 9; verificar con aerolínea y reservar. No es boleto confirmado.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Vuelo Santiago → Balmaceda (horario de referencia)",
+          "link": "https://www.google.com/travel/flights"
         },
         {
-          "name": "Traslado Calama → San Pedro de Atacama",
-          "start": "11:00",
+          "name": "Recoger auto y conducir Carretera Austral",
+          "start": "12:30",
+          "durationMin": 300,
+          "notes": "Balmaceda → Puerto Río Tranquilo: unas 4–5 h por carretera, parte ripio. Contratar vehículo seguro, devolver el martes 12 en Balmaceda.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Recoger auto y conducir Carretera Austral",
+          "link": "https://www.google.com/maps/dir/Balmaceda+Airport/Puerto+Rio+Tranquilo"
+        },
+        {
+          "name": "Check-in y Lago General Carrera",
+          "start": "18:00",
           "durationMin": 90,
-          "link": "https://www.google.com/maps/dir/Aeropuerto+El+Loa+Calama/San+Pedro+de+Atacama",
-          "notes": "~100 km, 1h15-1h30 por la Ruta 23. Transfer compartido (Transvip/Licancabur) o van de la agencia. Check-in y almuerzo liviano en Caracoles.",
-          "imageQuery": "Atacama desert road to San Pedro",
-          "imageUrl": ""
-        },
-        {
-          "name": "Atardecer en el Valle de la Luna",
-          "start": "16:30",
-          "durationMin": 240,
-          "link": "https://www.google.com/maps/search/Valle+de+la+Luna+San+Pedro+de+Atacama",
-          "notes": "El clásico de bienvenida: Cordillera de la Sal, Duna Mayor y Piedra del Coyote para ver el atardecer sobre el valle. Tour de medio día con recogida ~16:00. Lleva agua y cortavientos.",
-          "imageQuery": "Valle de la Luna Atacama sunset",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/El_Valle_de_la_Luna_%28Chile%29.jpg/1280px-El_Valle_de_la_Luna_%28Chile%29.jpg"
+          "notes": "Actividad opcional si se llega de día. Confirmar excursiones del domingo y lunes.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Check-in y Lago General Carrera",
+          "link": ""
         }
       ],
       "secondaryActivities": [],
       "transportToNext": null,
       "costs": {
-        "lodgingBase": 90,
-        "foodBase": 30,
-        "transportBase": 260,
-        "activitiesBase": 60,
-        "lodgingReal": 100,
-        "foodReal": 40
-      },
-      "totals": {
-        "totalBase": 440,
-        "totalReal": 460
-      },
-      "mapPoints": [
-        "Aeropuerto El Loa Calama",
-        "San Pedro de Atacama",
-        "Valle de la Luna"
-      ],
-      "notes": "Llegada a Chile: conexión Santiago → Calama → San Pedro. Tarde/atardecer en el Valle de la Luna.",
-      "weather": {
-        "tempHighC": 27,
-        "tempLowC": 8,
-        "conditions": "Soleado y muy seco. Tarde calurosa, noche fresca. UV extremo.",
-        "rainChance": "Muy baja",
-        "clothingTips": [
-          "Bloqueador FPS 50+, sombrero y lentes de sol desde ya",
-          "Camiseta y shorts de día; polar y cortavientos para el atardecer",
-          "Zapatillas cómodas para caminar en arena y sal"
-        ]
-      }
-    },
-    {
-      "day": 3,
-      "date": "2027-01-10",
-      "city": "Salar de Atacama & Lagunas Altiplánicas",
-      "country": "Chile",
-      "cityCode": "SPA",
-      "currencyLocal": "CLP",
-      "stayArea": "San Pedro de Atacama",
-      "heroImageQuery": "Laguna Miscanti altiplano volcano",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Miscanti_Lagoon_near_San_Pedro_de_Atacama_Chile_Luca_Galuzzi_2006.jpg",
-      "imageHints": [
-        "Laguna Chaxa flamingos",
-        "Piedras Rojas Atacama"
-      ],
-      "perks": [
-        "Día de mucha altura (hasta ~4.200 m) pero casi todo en vehículo: buena aclimatación para el Tatio",
-        "Desayuno fuerte y lleva snacks, agua y protección solar",
-        "Ten a mano efectivo para las entradas de la Reserva Los Flamencos y Piedras Rojas"
-      ],
-      "accommodation": {
-        "name": "Misma base en San Pedro de Atacama",
-        "neighborhood": "Casco histórico",
-        "link": "",
-        "notes": "No cambias de hospedaje: San Pedro es la base de todos los tours."
-      },
-      "mainActivities": [
-        {
-          "name": "Laguna Chaxa — flamencos (Salar de Atacama)",
-          "start": "07:00",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Laguna+Chaxa+Salar+de+Atacama",
-          "notes": "Corazón de la Reserva Nacional Los Flamencos. Tres especies de flamencos sobre la costra de sal del salar, con volcanes de fondo. Mejor luz temprano.",
-          "imageQuery": "Laguna Chaxa flamingos salar Atacama",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laguna_Chaxa.jpg/1280px-Laguna_Chaxa.jpg"
-        },
-        {
-          "name": "Lagunas Altiplánicas Miscanti y Miñiques",
-          "start": "10:30",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Laguna+Miscanti+y+Miniques",
-          "notes": "A ~4.200 m: dos lagunas de un azul intenso al pie de los volcanes. Camina lento, el aire es delgado. Frío y viento aun de día.",
-          "imageQuery": "Laguna Miscanti Miñiques altiplano",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Miscanti_Lagoon_near_San_Pedro_de_Atacama_Chile_Luca_Galuzzi_2006.jpg"
-        },
-        {
-          "name": "Piedras Rojas y Salar de Talar",
-          "start": "13:00",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Piedras+Rojas+Atacama",
-          "notes": "Rocas rojizas por óxido de hierro junto a una laguna turquesa y blanco de sal: uno de los contrastes más fotogénicos del norte. Almuerzo en ruta (Socaire).",
-          "imageQuery": "Piedras Rojas Atacama red rocks lagoon",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Salar_de_Atacama.jpg/1280px-Salar_de_Atacama.jpg"
-        },
-        {
-          "name": "Pueblo de Toconao",
-          "start": "16:30",
-          "durationMin": 60,
-          "link": "https://www.google.com/maps/search/Toconao+Chile",
-          "notes": "Pueblo de piedra de sillar (volcánica blanca) con su campanario de San Lucas. Buen lugar para comprar artesanía y probar helados/frutas del oasis.",
-          "imageQuery": "Toconao campanario San Lucas",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Campanario_de_San_Lucas%2C_Toconao.jpg"
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 90,
-        "foodBase": 30,
-        "transportBase": 0,
-        "activitiesBase": 180,
-        "lodgingReal": 100,
-        "foodReal": 40
+        "lodgingBase": 95,
+        "foodBase": 40,
+        "transportBase": 165,
+        "activitiesBase": 0,
+        "lodgingReal": 105,
+        "foodReal": 50
       },
       "totals": {
         "totalBase": 300,
         "totalReal": 320
       },
       "mapPoints": [
-        "Laguna Chaxa",
-        "Laguna Miscanti",
-        "Piedras Rojas",
-        "Toconao"
+        "Aeropuerto Balmaceda",
+        "Villa Cerro Castillo",
+        "Puerto Río Tranquilo"
       ],
-      "notes": "Tour full-day al sur del salar: flamencos, lagunas altiplánicas de altura, Piedras Rojas y Toconao. ~12 horas.",
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
       "weather": {
-        "tempHighC": 24,
-        "tempLowC": 6,
-        "conditions": "Soleado en el salar; frío y ventoso en las lagunas de altura. Posibles nubes de tarde en el altiplano.",
-        "rainChance": "Baja",
-        "clothingTips": [
-          "Capas: polar y cortavientos para las lagunas a 4.200 m",
-          "Gorro y buff para el viento; bloqueador reforzado",
-          "Lleva agua extra: la altura deshidrata"
-        ]
-      }
-    },
-    {
-      "day": 4,
-      "date": "2027-01-11",
-      "city": "San Pedro de Atacama → Puerto Natales",
-      "country": "Chile",
-      "cityCode": "SPA-CJC-SCL-PUQ-PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "airplane Patagonia travel day",
-      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-      "imageHints": [
-        "long travel day",
-        "Patagonia arrival"
-      ],
-      "perks": [
-        "Día 100% de traslado norte→sur: que las conexiones de vuelo calcen es clave, resérvalas juntas",
-        "Cambio de clima radical: del desierto al frío ventoso patagónico — saca las capas de abrigo e impermeable",
-        "Compra provisiones y agua en Natales al llegar para los días de parque"
-      ],
-      "accommodation": {
-        "name": "Hostal / hotel en el centro de Puerto Natales",
-        "neighborhood": "Cerca de la costanera y la calle Baquedano",
-        "link": "https://www.booking.com/city/cl/puerto-natales.html",
-        "notes": "Base de todas las excursiones a Torres del Paine."
-      },
-      "mainActivities": [
-        {
-          "name": "Traslado San Pedro → Calama (CJC)",
-          "start": "06:30",
-          "durationMin": 90,
-          "link": "https://www.google.com/maps/dir/San+Pedro+de+Atacama/Aeropuerto+El+Loa+Calama",
-          "notes": "Salida temprano (~06:30) para alcanzar el primer vuelo. ~100 km / 1h30 por la Ruta 23.",
-          "imageQuery": "road Atacama to Calama dawn",
-          "imageUrl": ""
-        },
-        {
-          "name": "Vuelo Calama (CJC) → Santiago (SCL)",
-          "start": "09:30",
-          "durationMin": 130,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
-          "notes": "Primer tramo ~2h. Deja holgura en Santiago para la conexión al sur (mismo aeropuerto SCL).",
-          "imageQuery": "airplane over Atacama",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        },
-        {
-          "name": "Vuelo Santiago (SCL) → Punta Arenas (PUQ)",
-          "start": "14:00",
-          "durationMin": 200,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Presidente+Carlos+Ibanez+Punta+Arenas",
-          "notes": "Segundo tramo ~3h20 al extremo sur. Reserva ambos vuelos en la misma emisión para proteger la conexión.",
-          "imageQuery": "airplane Patagonia",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        },
-        {
-          "name": "Traslado Punta Arenas → Puerto Natales",
-          "start": "18:30",
-          "durationMin": 180,
-          "link": "https://www.google.com/maps/dir/Punta+Arenas/Puerto+Natales",
-          "notes": "~250 km / 3h por la estepa patagónica. Bus (Bus-Sur/Fernández) o transfer. Llegas a Natales de noche (¡pero aún con luz en verano!).",
-          "imageQuery": "Patagonian steppe road",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 320,
-        "activitiesBase": 0,
-        "lodgingReal": 120,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 465,
-        "totalReal": 485
-      },
-      "mapPoints": [
-        "San Pedro de Atacama",
-        "Aeropuerto Punta Arenas",
-        "Puerto Natales"
-      ],
-      "notes": "Día maratónico de traslado: San Pedro → Calama → Santiago → Punta Arenas → Puerto Natales. Llegas a la base de la Patagonia esa noche.",
-      "weather": {
-        "tempHighC": 16,
+        "tempHighC": 19,
         "tempLowC": 7,
-        "conditions": "Del desierto seco al sur ventoso; clima marino variable al llegar a Natales.",
-        "rainChance": "Moderada",
+        "conditions": "Referencia estacional de Aysén, no pronóstico.",
+        "rainChance": "Variable",
         "clothingTips": [
-          "Ropa cómoda por capas para un día largo de vuelos",
-          "Ten el abrigo e impermeable a mano al aterrizar en el sur",
-          "Hidrátate: varios vuelos seguidos cansan"
+          "Ropa térmica y chaqueta impermeable",
+          "Calzado cómodo y protección solar",
+          "Consultar viento y navegación con el operador"
         ]
       }
     },
     {
-      "day": 5,
-      "date": "2027-01-12",
-      "city": "Torres del Paine — día escénico",
+      "day": 3,
+      "date": "2027-01-10",
+      "city": "Capillas de Mármol + rafting Río Baker",
       "country": "Chile",
-      "cityCode": "PNT",
+      "cityCode": "RTR-PBR",
       "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Cuernos del Paine Lago Pehoe turquoise",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+      "stayArea": "Puerto Río Tranquilo",
+      "heroImageQuery": "Capillas de Mármol + rafting Río Baker",
+      "heroImageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
       "imageHints": [
-        "Cuernos del Paine from Lake Pehoe",
-        "guanacos Torres del Paine"
+        "Capillas de Mármol + rafting Río Baker"
       ],
       "perks": [
-        "Compra la entrada del parque online (CONAF) antes de salir y ten el QR a mano",
-        "Día de muchos miradores en auto/bus: cámara y batería cargada",
-        "Lleva almuerzo de picnic: los servicios dentro del parque son escasos y caros"
+        "Día doble viable si ambos operadores son puntuales",
+        "No depender de transporte público"
       ],
       "accommodation": {
-        "name": "Misma base en Puerto Natales",
+        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
         "neighborhood": "Centro",
-        "link": "",
-        "notes": "Regresas a dormir a Natales; el circuito escénico es ida y vuelta en el día."
+        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
+        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
       },
       "mainActivities": [
         {
-          "name": "Ingreso al parque y avistamiento de fauna",
-          "start": "07:30",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Porteria+Laguna+Amarga+Torres+del+Paine",
-          "notes": "Entrada por Laguna Amarga. La estepa de la mañana es ideal para ver guanacos, ñandúes y cóndores, con las Torres de fondo.",
-          "imageQuery": "guanaco Patagonia Torres del Paine",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Guanaco_Patagonico.jpg/1280px-Guanaco_Patagonico.jpg"
+          "name": "Navegación Capillas y Catedral de Mármol",
+          "start": "08:00",
+          "durationMin": 150,
+          "notes": "Reservar salida temprano, dura ~2h30. Viento del lago puede cancelar o aplazar.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Navegación Capillas y Catedral de Mármol",
+          "link": "https://turismo.rioibanez.cl/puerto-rio-tranquilo/"
         },
         {
-          "name": "Salto Grande y Mirador Cuernos",
+          "name": "Traslado a Puerto Bertrand y almuerzo",
           "start": "11:00",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Salto+Grande+Torres+del+Paine",
-          "notes": "Corta caminata al Salto Grande (entre lagos Nordenskjöld y Pehoé) y sigue al Mirador Cuernos: los picos de granito y basalto reflejados en el lago turquesa.",
-          "imageQuery": "Cuernos del Paine mirador",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg"
+          "durationMin": 90,
+          "notes": "Aprox. 67 km; contar hasta 1h30 para margen, en vehículo propio o privado.",
+          "imageUrl": "https://haciendatreslagos.com/images/galeria_productos/excursiones/IMG_0852-min-1560290817.JPG",
+          "imageQuery": "Traslado a Puerto Bertrand y almuerzo",
+          "link": "https://www.google.com/maps/dir/Puerto+Rio+Tranquilo/Puerto+Bertrand"
         },
         {
-          "name": "Lago Pehoé y Lago Grey (mirador)",
+          "name": "Rafting Aventura Río Baker",
           "start": "14:00",
           "durationMin": 180,
-          "link": "https://www.google.com/maps/search/Lago+Pehoe+Torres+del+Paine",
-          "notes": "El icónico Lago Pehoé de un turquesa irreal, y caminata por la playa de guijarros del Lago Grey para ver los primeros témpanos desprendidos del glaciar.",
-          "imageQuery": "Lago Pehoe turquoise Torres del Paine",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 0,
-        "activitiesBase": 160,
-        "lodgingReal": 120,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 305,
-        "totalReal": 325
-      },
-      "mapPoints": [
-        "Porteria Laguna Amarga",
-        "Salto Grande Torres del Paine",
-        "Lago Pehoe",
-        "Lago Grey"
-      ],
-      "notes": "Circuito escénico del parque en el día: fauna, Salto Grande, Cuernos, Lago Pehoé y Lago Grey.",
-      "weather": {
-        "tempHighC": 17,
-        "tempLowC": 6,
-        "conditions": "Cielo cambiante con viento fuerte en los miradores. Posibles chubascos breves.",
-        "rainChance": "Moderada",
-        "clothingTips": [
-          "Cortavientos impermeable imprescindible en los miradores",
-          "Bloqueador y lentes: el sol patagónico quema pese al frío",
-          "Zapatillas de trekking para las caminatas cortas"
-        ]
-      }
-    },
-    {
-      "day": 6,
-      "date": "2027-01-13",
-      "city": "Trekking a la Base de las Torres",
-      "country": "Chile",
-      "cityCode": "PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Base Torres del Paine granite towers lagoon",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
-      "imageHints": [
-        "Base de las Torres hike",
-        "Torres del Paine sunrise"
-      ],
-      "perks": [
-        "La caminata estrella y más exigente: sal temprano (bus ~07:00) para tener margen",
-        "Botas, bastones, capas y ~2 L de agua; la subida final de morrena es dura",
-        "Si prefieres algo más suave, alternativa: Mirador Cóndor + Lago Grey"
-      ],
-      "accommodation": {
-        "name": "Misma base en Puerto Natales",
-        "neighborhood": "Centro",
-        "link": "",
-        "notes": "Noche de descanso tras el trekking; cena reponedora en el pueblo."
-      },
-      "mainActivities": [
-        {
-          "name": "Caminata a la Base de las Torres",
-          "start": "08:00",
-          "durationMin": 540,
-          "link": "https://www.google.com/maps/search/Mirador+Base+Las+Torres",
-          "notes": "El trekking icónico: ~19-22 km ida y vuelta, 7-9 h. Sube por el valle Ascencio, cruza bosque y termina en una empinada morrena hasta la laguna al pie de las tres torres de granito. Exigente pero inolvidable.",
-          "imageQuery": "Base Las Torres granite towers lagoon",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg"
+          "notes": "Salida 14:00 publicada por Turismo Río Baker, clase III, 1 h en río/3 h total, CLP 49.000 por persona (referencia). Confirmar cupos para 10 de enero.",
+          "imageUrl": "https://haciendatreslagos.com/images/galeria_productos/excursiones/IMG_0852-min-1560290817.JPG",
+          "imageQuery": "Rafting Aventura Río Baker",
+          "link": "https://www.turismoriobaker.cl/rafting-aventura-duplicado/"
         },
         {
-          "name": "Regreso y traslado a Puerto Natales",
+          "name": "Regreso a Puerto Río Tranquilo",
           "start": "17:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/dir/Torres+del+Paine/Puerto+Natales",
-          "notes": "Descenso al Hotel Las Torres y bus de regreso a Natales (~2h). Estira las piernas y celebra con una cerveza artesanal patagónica.",
-          "imageQuery": "Patagonia road sunset",
-          "imageUrl": ""
+          "durationMin": 90,
+          "notes": "Vuelta para cena y descanso previo a San Rafael. Confluencia Baker-Nef solo si sobra tiempo.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Regreso a Puerto Río Tranquilo",
+          "link": ""
         }
       ],
       "secondaryActivities": [],
       "transportToNext": null,
       "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 60,
-        "activitiesBase": 70,
-        "lodgingReal": 120,
-        "foodReal": 45
-      },
-      "totals": {
-        "totalBase": 275,
-        "totalReal": 295
-      },
-      "mapPoints": [
-        "Hotel Las Torres",
-        "Mirador Base Las Torres",
-        "Puerto Natales"
-      ],
-      "notes": "Día de trekking a la Base de las Torres (exigente) y regreso a Puerto Natales.",
-      "weather": {
-        "tempHighC": 16,
-        "tempLowC": 5,
-        "conditions": "Frío en la mañana y en la morrena final; viento fuerte arriba. El clima puede cerrar las torres con nubes.",
-        "rainChance": "Moderada",
-        "clothingTips": [
-          "Capas para sudar subiendo y abrigarte en la cima ventosa",
-          "Botas de trekking y bastones; guantes y gorro en la mochila",
-          "Lleva comida energética y 2 L de agua"
-        ]
-      }
-    },
-    {
-      "day": 7,
-      "date": "2027-01-14",
-      "city": "Glaciar Grey",
-      "country": "Chile",
-      "cityCode": "PNT",
-      "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Glaciar Grey ice icebergs Torres del Paine",
-      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Glaciar_Grey%2C_Torres_del_Paine.jpg/1280px-Glaciar_Grey%2C_Torres_del_Paine.jpg",
-      "imageHints": [
-        "Grey Glacier navigation",
-        "blue icebergs Lago Grey"
-      ],
-      "perks": [
-        "Día más relajado tras la Base Torres: navegación con paisaje de hielo",
-        "Reserva la navegación con anticipación; sale de Guardería Grey",
-        "Lleva abrigo extra: en el frente del glaciar el viento es helado"
-      ],
-      "accommodation": {
-        "name": "Misma base en Puerto Natales",
-        "neighborhood": "Centro",
-        "link": "",
-        "notes": ""
-      },
-      "mainActivities": [
-        {
-          "name": "Navegación por el Lago Grey al glaciar",
-          "start": "09:30",
-          "durationMin": 210,
-          "link": "https://www.google.com/maps/search/Glaciar+Grey+Torres+del+Paine",
-          "notes": "Catamarán entre témpanos azules hasta el frente del Glaciar Grey (parte del Campo de Hielo Sur). Paredes de hielo de ~30 m. Suelen ofrecer un whisky con hielo glaciar a bordo.",
-          "imageQuery": "Grey Glacier boat icebergs",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Glaciar_Grey%2C_Torres_del_Paine.jpg/1280px-Glaciar_Grey%2C_Torres_del_Paine.jpg"
-        },
-        {
-          "name": "Caminata Mirador Grey y playa de témpanos",
-          "start": "13:30",
-          "durationMin": 150,
-          "link": "https://www.google.com/maps/search/Mirador+Grey+sendero",
-          "notes": "Corta caminata por bosque magallánico y la pasarela hasta la playa del Lago Grey, donde encallan los témpanos desprendidos. Vistas amplias del glaciar.",
-          "imageQuery": "Lago Grey icebergs beach",
-          "imageUrl": ""
-        }
-      ],
-      "secondaryActivities": [],
-      "transportToNext": null,
-      "costs": {
-        "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 0,
-        "activitiesBase": 240,
-        "lodgingReal": 120,
-        "foodReal": 45
+        "lodgingBase": 95,
+        "foodBase": 40,
+        "transportBase": 65,
+        "activitiesBase": 185,
+        "lodgingReal": 105,
+        "foodReal": 50
       },
       "totals": {
         "totalBase": 385,
         "totalReal": 405
       },
       "mapPoints": [
-        "Guarderia Grey",
-        "Glaciar Grey",
-        "Mirador Grey"
+        "Capillas de Mármol",
+        "Puerto Bertrand",
+        "Río Baker",
+        "Puerto Río Tranquilo"
       ],
-      "notes": "Navegación al Glaciar Grey entre témpanos + caminata al mirador. Día de hielo y bosque.",
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
       "weather": {
-        "tempHighC": 15,
-        "tempLowC": 6,
-        "conditions": "Viento catabático frío desde el glaciar. Cielo variable sobre el lago.",
-        "rainChance": "Moderada",
+        "tempHighC": 19,
+        "tempLowC": 7,
+        "conditions": "Referencia estacional de Aysén, no pronóstico.",
+        "rainChance": "Variable",
         "clothingTips": [
-          "Abrigo grueso y cortavientos para el frente del glaciar",
-          "Gorro y guantes: hace bastante frío en cubierta",
-          "Impermeable por si hay lluvia o rocío del lago"
+          "Ropa térmica y chaqueta impermeable",
+          "Calzado cómodo y protección solar",
+          "Consultar viento y navegación con el operador"
         ]
       }
     },
     {
-      "day": 8,
-      "date": "2027-01-15",
-      "city": "Glaciares Balmaceda y Serrano (fiordo)",
+      "day": 4,
+      "date": "2027-01-11",
+      "city": "Laguna y Glaciar San Rafael",
       "country": "Chile",
-      "cityCode": "PNT",
+      "cityCode": "RTR-SRF",
       "currencyLocal": "CLP",
-      "stayArea": "Puerto Natales",
-      "heroImageQuery": "Balmaceda Serrano glacier fjord Ultima Esperanza",
-      "heroImageUrl": "",
+      "stayArea": "Puerto Río Tranquilo",
+      "heroImageQuery": "Laguna y Glaciar San Rafael",
+      "heroImageUrl": "https://www.viajeroaustral.com/system/images/000/876/584/52fcfdc7f45c9a8ac2684e32dd63ffeb/banner/Lancha_Premium.jpg",
       "imageHints": [
-        "Serrano glacier fjord boat",
-        "Ultima Esperanza sound waterfalls"
+        "Laguna y Glaciar San Rafael"
       ],
       "perks": [
-        "Navegación de día completo por el fiordo directo desde Puerto Natales (sin madrugar tanto)",
-        "Verás cascadas, lobos marinos y colonias de cormoranes en el camino",
-        "Contraste verde y de agua tras los días de montaña y estepa"
+        "El día entero es para San Rafael",
+        "Si se cancela por viento, no hay día libre para reprogramarlo",
+        "No confundir con el trekking del Glaciar Exploradores, que está cerrado"
       ],
       "accommodation": {
-        "name": "Misma base en Puerto Natales",
+        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
         "neighborhood": "Centro",
-        "link": "",
-        "notes": "Última noche completa en Natales."
+        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
+        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
       },
       "mainActivities": [
         {
-          "name": "Navegación por el Seno Última Esperanza",
-          "start": "08:00",
-          "durationMin": 240,
-          "link": "https://www.google.com/maps/search/Parque+Nacional+Bernardo+O+Higgins+Puerto+Natales",
-          "notes": "Catamarán por el fiordo hacia el Parque Bernardo O'Higgins: cascadas colgantes, glaciar Balmaceda descolgándose al mar, lobos marinos y cormoranes en las rocas.",
-          "imageQuery": "Balmaceda glacier fjord Patagonia",
-          "imageUrl": ""
+          "name": "Full day navegación al Glaciar San Rafael",
+          "start": "06:30",
+          "durationMin": 720,
+          "notes": "Salida ilustrativa. Tour desde Río Tranquilo de aprox. 12 h; desde CLP 190.000 por persona (referencia). Confirmar salida lunes 11, clima, cupos y grupo mínimo.",
+          "imageUrl": "https://www.viajeroaustral.com/system/images/000/876/584/52fcfdc7f45c9a8ac2684e32dd63ffeb/banner/Lancha_Premium.jpg",
+          "imageQuery": "Full day navegación al Glaciar San Rafael",
+          "link": "https://www.destinopatagonia.cl/"
         },
         {
-          "name": "Caminata al Glaciar Serrano",
-          "start": "12:30",
-          "durationMin": 120,
-          "link": "https://www.google.com/maps/search/Glaciar+Serrano",
-          "notes": "Desembarco en Puerto Toro y caminata por bosque hasta la laguna con témpanos al pie del Glaciar Serrano. Almuerzo típico de cordero al palo en una estancia (opcional).",
-          "imageQuery": "Serrano glacier lagoon icebergs",
-          "imageUrl": ""
+          "name": "Cena y preparar salida a Balmaceda",
+          "start": "19:30",
+          "durationMin": 60,
+          "notes": "No añadir otra excursión. Confirmar ruta y equipaje para el vuelo regional del martes.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Cena y preparar salida a Balmaceda",
+          "link": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 95,
+        "foodBase": 40,
+        "transportBase": 35,
+        "activitiesBase": 195,
+        "lodgingReal": 105,
+        "foodReal": 50
+      },
+      "totals": {
+        "totalBase": 365,
+        "totalReal": 385
+      },
+      "mapPoints": [
+        "Puerto Río Tranquilo",
+        "Laguna San Rafael"
+      ],
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
+      "weather": {
+        "tempHighC": 19,
+        "tempLowC": 7,
+        "conditions": "Referencia estacional de Aysén, no pronóstico.",
+        "rainChance": "Variable",
+        "clothingTips": [
+          "Ropa térmica y chaqueta impermeable",
+          "Calzado cómodo y protección solar",
+          "Consultar viento y navegación con el operador"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2027-01-12",
+      "city": "Balmaceda → Punta Arenas → Puerto Natales",
+      "country": "Chile",
+      "cityCode": "RTR-BBA-PUQ-PNT",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Balmaceda → Punta Arenas → Puerto Natales",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+      "imageHints": [
+        "Balmaceda → Punta Arenas → Puerto Natales"
+      ],
+      "perks": [
+        "Día completo de traslados, sin tours",
+        "La conexión aérea DAP es indispensable y no tiene alternativa sencilla"
+      ],
+      "accommodation": {
+        "name": "Hostal / hotel Puerto Natales (3 noches)",
+        "neighborhood": "Centro",
+        "link": "https://www.booking.com/city/cl/puerto-natales.html",
+        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+      },
+      "mainActivities": [
+        {
+          "name": "Madrugar: Río Tranquilo → Aeropuerto Balmaceda",
+          "start": "07:00",
+          "durationMin": 300,
+          "notes": "Regreso de 4–5 h con margen por ripio y devolución del auto. Apuntar a estar en aeropuerto al mediodía.",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Madrugar: Río Tranquilo → Aeropuerto Balmaceda",
+          "link": "https://www.google.com/maps/dir/Puerto+Rio+Tranquilo/Aeropuerto+Balmaceda"
+        },
+        {
+          "name": "DAP Balmaceda → Punta Arenas",
+          "start": "15:30",
+          "durationMin": 90,
+          "notes": "DAP publica salida martes 15:30 para diciembre 2026-febrero 2027. Pocas frecuencias; reservar directamente.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "DAP Balmaceda → Punta Arenas",
+          "link": "https://dapairline.com/vuelos-regulares/"
+        },
+        {
+          "name": "Transfer Punta Arenas → Puerto Natales",
+          "start": "18:00",
+          "durationMin": 210,
+          "notes": "Traslado de unas 3 h, coordinar servicio de tarde/noche y check-in tardío. Horario solo ilustrativo.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Transfer Punta Arenas → Puerto Natales",
+          "link": "https://www.google.com/maps/dir/Aeropuerto+Punta+Arenas/Puerto+Natales"
         }
       ],
       "secondaryActivities": [],
       "transportToNext": null,
       "costs": {
         "lodgingBase": 110,
-        "foodBase": 35,
-        "transportBase": 0,
-        "activitiesBase": 260,
+        "foodBase": 40,
+        "transportBase": 360,
+        "activitiesBase": 0,
         "lodgingReal": 120,
-        "foodReal": 45
+        "foodReal": 50
       },
       "totals": {
-        "totalBase": 405,
-        "totalReal": 425
+        "totalBase": 510,
+        "totalReal": 530
+      },
+      "mapPoints": [
+        "Aeropuerto Balmaceda",
+        "Aeropuerto Punta Arenas",
+        "Puerto Natales"
+      ],
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
+      "weather": {
+        "tempHighC": 19,
+        "tempLowC": 7,
+        "conditions": "Referencia estacional de Aysén, no pronóstico.",
+        "rainChance": "Variable",
+        "clothingTips": [
+          "Ropa térmica y chaqueta impermeable",
+          "Calzado cómodo y protección solar",
+          "Consultar viento y navegación con el operador"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2027-01-13",
+      "city": "Torres del Paine: lagos y miradores",
+      "country": "Chile",
+      "cityCode": "PNT-TDP",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Torres del Paine: lagos y miradores",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+      "imageHints": [
+        "Torres del Paine: lagos y miradores"
+      ],
+      "perks": [
+        "No sobrecargar con trekking exigente",
+        "Se pueden añadir paradas fotográficas cortas"
+      ],
+      "accommodation": {
+        "name": "Hostal / hotel Puerto Natales (3 noches)",
+        "neighborhood": "Centro",
+        "link": "https://www.booking.com/city/cl/puerto-natales.html",
+        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+      },
+      "mainActivities": [
+        {
+          "name": "Salida de Natales a Torres del Paine",
+          "start": "07:00",
+          "durationMin": 150,
+          "notes": "Tour panorámico o auto. Comprar pase anticipado.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Salida de Natales a Torres del Paine",
+          "link": "https://www.pasesparques.cl/"
+        },
+        {
+          "name": "Salto Grande y Mirador Cuernos",
+          "start": "10:00",
+          "durationMin": 150,
+          "notes": "Recorrido escénico con vistas icónicas del macizo y cascadas.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Salto Grande y Mirador Cuernos",
+          "link": "https://www.google.com/maps/search/Salto+Grande+Mirador+Cuernos"
+        },
+        {
+          "name": "Lago Pehoé y miradores",
+          "start": "13:30",
+          "durationMin": 180,
+          "notes": "Fotos panorámicas y fauna. Mirador Cóndor opcional según viento y horario.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Lago Pehoé y miradores",
+          "link": "https://www.google.com/maps/search/Lago+Pehoe"
+        },
+        {
+          "name": "Regreso a Natales; preparar trekking",
+          "start": "17:00",
+          "durationMin": 150,
+          "notes": "Descanso y provisiones para Base Torres al día siguiente.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+          "imageQuery": "Regreso a Natales; preparar trekking",
+          "link": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 40,
+        "transportBase": 70,
+        "activitiesBase": 100,
+        "lodgingReal": 120,
+        "foodReal": 50
+      },
+      "totals": {
+        "totalBase": 320,
+        "totalReal": 340
+      },
+      "mapPoints": [
+        "Salto Grande Torres del Paine",
+        "Mirador Cuernos",
+        "Lago Pehoé"
+      ],
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 5,
+        "conditions": "Referencia estacional de Magallanes, no pronóstico.",
+        "rainChance": "Variable",
+        "clothingTips": [
+          "Capas, impermeable y cortavientos",
+          "Bastones, agua y snacks para trekking",
+          "Gorro, guantes y protección solar"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2027-01-14",
+      "city": "Trekking Base Las Torres",
+      "country": "Chile",
+      "cityCode": "PNT-TDP",
+      "currencyLocal": "CLP",
+      "stayArea": "Puerto Natales",
+      "heroImageQuery": "Trekking Base Las Torres",
+      "heroImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+      "imageHints": [
+        "Trekking Base Las Torres"
+      ],
+      "perks": [
+        "Imperdible del viaje, dedicar todo el día",
+        "No programar más excursiones intensas después"
+      ],
+      "accommodation": {
+        "name": "Hostal / hotel Puerto Natales (3 noches)",
+        "neighborhood": "Centro",
+        "link": "https://www.booking.com/city/cl/puerto-natales.html",
+        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+      },
+      "mainActivities": [
+        {
+          "name": "Traslado temprano al sector Las Torres",
+          "start": "05:30",
+          "durationMin": 150,
+          "notes": "Salir temprano desde Puerto Natales, según transporte real.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+          "imageQuery": "Traslado temprano al sector Las Torres",
+          "link": ""
+        },
+        {
+          "name": "Trekking Mirador Base Las Torres",
+          "start": "08:00",
+          "durationMin": 600,
+          "notes": "Trekking exigente de 20–22 km, 8–10h o más. Llevar impermeable, agua, comida y bastones. Respetar cierres de CONAF.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/1280px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg",
+          "imageQuery": "Trekking Mirador Base Las Torres",
+          "link": "https://www.google.com/maps/search/Mirador+Base+Las+Torres"
+        },
+        {
+          "name": "Regreso a Puerto Natales",
+          "start": "18:30",
+          "durationMin": 150,
+          "notes": "Hora variable según ritmo. Descansar: salida a PUQ de madrugada el viernes.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Regreso a Puerto Natales",
+          "link": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 110,
+        "foodBase": 45,
+        "transportBase": 80,
+        "activitiesBase": 90,
+        "lodgingReal": 120,
+        "foodReal": 55
+      },
+      "totals": {
+        "totalBase": 325,
+        "totalReal": 345
+      },
+      "mapPoints": [
+        "Centro de Bienvenida Las Torres",
+        "Mirador Base Las Torres",
+        "Puerto Natales"
+      ],
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
+      "weather": {
+        "tempHighC": 16,
+        "tempLowC": 5,
+        "conditions": "Referencia estacional de Magallanes, no pronóstico.",
+        "rainChance": "Variable",
+        "clothingTips": [
+          "Capas, impermeable y cortavientos",
+          "Bastones, agua y snacks para trekking",
+          "Gorro, guantes y protección solar"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2027-01-15",
+      "city": "Puerto Natales → Punta Arenas → Santiago",
+      "country": "Chile",
+      "cityCode": "PNT-PUQ-SCL",
+      "currencyLocal": "CLP",
+      "stayArea": "Aeropuerto de Santiago",
+      "heroImageQuery": "Puerto Natales → Punta Arenas → Santiago",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+      "imageHints": [
+        "Puerto Natales → Punta Arenas → Santiago"
+      ],
+      "perks": [
+        "Día de regreso, no añadir tours",
+        "Preferir llegada a Santiago hacia las 14:04 con margen amplio",
+        "Evitar excursiones a Papudo o Valparaíso"
+      ],
+      "accommodation": {
+        "name": "Sin alojamiento obligatorio",
+        "neighborhood": "Santiago / SCL",
+        "link": "",
+        "notes": "Esperar vuelo 02:00, o day-use si necesario."
+      },
+      "mainActivities": [
+        {
+          "name": "Transfer temprano Natales → Aeropuerto Punta Arenas",
+          "start": "05:00",
+          "durationMin": 210,
+          "notes": "Salida alrededor de las 05:00 para llegar a PUQ con margen a vuelo 10:41. Reservar transporte privado fiable.",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
+          "imageQuery": "Transfer temprano Natales → Aeropuerto Punta Arenas",
+          "link": "https://www.google.com/maps/dir/Puerto+Natales/Aeropuerto+Punta+Arenas"
+        },
+        {
+          "name": "Vuelo PUQ → SCL, objetivo LATAM LA84",
+          "start": "10:41",
+          "durationMin": 203,
+          "notes": "Horario viernes de enero 2027 publicado 10:41–14:04. Todavía no comprado; confirmar en LATAM.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Vuelo PUQ → SCL, objetivo LATAM LA84",
+          "link": "https://www.latamairlines.com/cl/es/destinos/vuelos-desde-punta-arenas-a-santiago"
+        },
+        {
+          "name": "Comida, margen y check-in internacional",
+          "start": "22:30",
+          "durationMin": 180,
+          "notes": "Presentarse en aeropuerto SCL el viernes 15 alrededor de 22:30–23:00 para vuelo internacional sábado 16 02:00.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Comida, margen y check-in internacional",
+          "link": ""
+        }
+      ],
+      "secondaryActivities": [],
+      "transportToNext": null,
+      "costs": {
+        "lodgingBase": 0,
+        "foodBase": 40,
+        "transportBase": 330,
+        "activitiesBase": 0,
+        "lodgingReal": 10,
+        "foodReal": 50
+      },
+      "totals": {
+        "totalBase": 370,
+        "totalReal": 390
       },
       "mapPoints": [
         "Puerto Natales",
-        "Glaciar Balmaceda",
-        "Glaciar Serrano"
+        "Aeropuerto Punta Arenas",
+        "Aeropuerto Arturo Merino Benítez Santiago"
       ],
-      "notes": "Navegación de día completo por el fiordo Última Esperanza a los glaciares Balmaceda y Serrano.",
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
       "weather": {
-        "tempHighC": 15,
-        "tempLowC": 7,
-        "conditions": "Fiordo con viento y posible llovizna; el clima marino cambia rápido.",
-        "rainChance": "Alta",
+        "tempHighC": 16,
+        "tempLowC": 5,
+        "conditions": "Referencia estacional de Magallanes, no pronóstico.",
+        "rainChance": "Variable",
         "clothingTips": [
-          "Impermeable y cortavientos: en el fiordo casi siempre llovizna o rocía",
-          "Capas cálidas para la cubierta del catamarán",
-          "Calzado que aguante barro en la caminata al Serrano"
+          "Capas, impermeable y cortavientos",
+          "Bastones, agua y snacks para trekking",
+          "Gorro, guantes y protección solar"
         ]
       }
     },
     {
       "day": 9,
       "date": "2027-01-16",
-      "city": "Puerto Natales → Medellín",
-      "country": "Chile",
-      "cityCode": "PNT-PUQ-SCL-MDE",
+      "city": "Santiago → Medellín (02:00)",
+      "country": "Colombia / Chile",
+      "cityCode": "SCL-MDE",
       "currencyLocal": "CLP",
       "stayArea": "Vuelo de regreso",
-      "heroImageQuery": "airplane home Patagonia to Medellin",
-      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "heroImageQuery": "Santiago → Medellín (02:00)",
+      "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
       "imageHints": [
-        "Punta Arenas airport",
-        "Patagonia from airplane window"
+        "Santiago → Medellín (02:00)"
       ],
       "perks": [
-        "Día maratónico de regreso: sal de Puerto Natales temprano para la conexión internacional",
-        "Confirma que el vuelo PUQ→SCL calce con tu SCL→MDE",
-        "Ten a mano una capa: cambias del frío patagónico al calor de casa"
+        "El check-in es el viernes por la noche",
+        "02:00 es salida objetivo, hasta validar la compra"
       ],
       "accommodation": {
-        "name": "Sin hospedaje — día de regreso",
-        "neighborhood": "N/A",
+        "name": "Sin alojamiento",
+        "neighborhood": "Vuelo",
         "link": "",
-        "notes": "Noche en Santiago o conexión internacional según tu ruta."
+        "notes": "Check-in hecho el viernes 15."
       },
       "mainActivities": [
         {
-          "name": "Traslado Puerto Natales → Punta Arenas (PUQ)",
-          "start": "08:30",
-          "durationMin": 180,
-          "link": "https://www.google.com/maps/dir/Puerto+Natales/Aeropuerto+Punta+Arenas",
-          "notes": "~250 km / 3h de vuelta por la estepa hasta el aeropuerto de Punta Arenas. Reserva el bus/transfer acorde a tu vuelo.",
-          "imageQuery": "Patagonian steppe road Punta Arenas",
-          "imageUrl": ""
-        },
-        {
-          "name": "Vuelo Punta Arenas (PUQ) → Santiago (SCL)",
-          "start": "13:30",
-          "durationMin": 200,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Arturo+Merino+Benitez+Santiago",
-          "notes": "Vuelo doméstico de ~3h20 de regreso a Santiago. Desde SCL conectas a tu vuelo internacional o pasas la noche en la ciudad.",
-          "imageQuery": "airplane over Patagonia",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
-        },
-        {
-          "name": "Vuelo Santiago (SCL) → Medellín (MDE)",
-          "start": "19:00",
-          "durationMin": 480,
-          "link": "https://www.google.com/maps/search/Aeropuerto+Jose+Maria+Cordova+Medellin",
-          "notes": "Vuelo internacional de regreso a casa (~7-8h). Conexión en Santiago; confirma que los tiempos entre el vuelo desde Punta Arenas y este calcen.",
-          "imageQuery": "airplane home night",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
+          "name": "Salida internacional Santiago → Medellín",
+          "start": "02:00",
+          "durationMin": 390,
+          "notes": "Horario objetivo que indicó el viajero: sábado 16 de enero de 2027 02:00 hora de Santiago. Verificar billete, conexiones y llegada a Medellín.",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Salida internacional Santiago → Medellín",
+          "link": "https://www.google.com/travel/flights"
         }
       ],
       "secondaryActivities": [],
-      "transportToNext": {
-        "mode": "flight",
-        "from": "Punta Arenas (PUQ)",
-        "to": "Medellín (MDE) vía Santiago",
-        "depart": "13:30",
-        "arrive": "16:50",
-        "durationMin": 200,
-        "code": "Vuelo doméstico (LATAM/JetSmart/SKY)",
-        "notes": "Cierre del viaje: Puerto Natales → Punta Arenas → Santiago → Medellín. Día largo; sal de Natales temprano.",
-        "bookingLink": "https://www.google.com/travel/flights"
-      },
+      "transportToNext": null,
       "costs": {
         "lodgingBase": 0,
-        "foodBase": 30,
-        "transportBase": 300,
+        "foodBase": 25,
+        "transportBase": 0,
         "activitiesBase": 0,
-        "lodgingReal": 0,
+        "lodgingReal": 10,
         "foodReal": 35
       },
       "totals": {
-        "totalBase": 330,
-        "totalReal": 335
+        "totalBase": 25,
+        "totalReal": 45
       },
       "mapPoints": [
-        "Puerto Natales",
-        "Aeropuerto Punta Arenas",
-        "Aeropuerto Arturo Merino Benitez Santiago"
+        "Aeropuerto Arturo Merino Benítez Santiago",
+        "Aeropuerto José María Córdova Medellín"
       ],
-      "notes": "Regreso a casa: Puerto Natales → Punta Arenas → Santiago → Medellín. Día largo de traslados.",
+      "notes": "Horarios locales orientativos, sujetos a reservas y condiciones meteorológicas.",
       "weather": {
         "tempHighC": 16,
-        "tempLowC": 7,
-        "conditions": "Estepa ventosa para la despedida. Santiago más cálido y seco al llegar.",
-        "rainChance": "Moderada",
+        "tempLowC": 5,
+        "conditions": "Referencia estacional de Magallanes, no pronóstico.",
+        "rainChance": "Variable",
         "clothingTips": [
-          "Ropa cómoda por capas para el traslado y el vuelo",
-          "Ten el cortavientos a mano hasta subir al avión",
-          "Guarda una capa liviana: Santiago puede estar caluroso"
+          "Capas, impermeable y cortavientos",
+          "Bastones, agua y snacks para trekking",
+          "Gorro, guantes y protección solar"
         ]
       }
     }
