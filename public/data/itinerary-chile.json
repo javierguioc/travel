@@ -1,57 +1,59 @@
 {
-  "version": "2.0-patagonia-rafting-marmol-sanrafael-2027",
+  "version": "2.1-patagonia-six-travelers-logistics-nov2026",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
     "group_sizes": [
-      2
+      6
     ],
     "region": "Patagonia Aysén y Magallanes, sin Atacama",
     "return_local": "2027-01-16T02:00:00",
-    "flight_status": "Vuelos tentativos hasta reservar"
+    "flight_status": "Vuelos tentativos hasta reservar",
+    "group_size_planned": 6,
+    "pricing_note": "CLP de operadores para 6; los costos antiguos de las tarjetas son estimaciones de planificación en USD, no cotizaciones ni reservas."
   },
   "recommendations": [
     {
-      "type": "Logística",
-      "title": "Ruta ambiciosa: tiempos factibles con conexiones confirmadas",
-      "description": "Los 4 atractivos caben, pero hay poco margen para clima. Confirmar primero MDE–SCL (viernes 8), SCL–BBA (sábado 9), DAP BBA–PUQ (martes 12) y PUQ–SCL (viernes 15).",
-      "link": "https://www.google.com/travel/flights"
+      "type": "Operadores",
+      "title": "Viajero Austral / Huente-Co — contacto para 6",
+      "description": "Rafting río Baker CLP $80.000/persona con traslado incluido desde Río Tranquilo; web publica 07:00–14:30, mínimo 4 y máximo 9. San Rafael Premium CLP $195.000/persona el 11 de enero, mínimo 12 pasajeros, con traslado, desayuno y almuerzo.",
+      "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium"
+    },
+    {
+      "type": "Agenda crítica",
+      "title": "Domingo 10: rafting, check-in San Rafael y Capillas",
+      "description": "El rafting Huente-Co ocupa 07:00–14:30; check-in San Rafael es presencial 15:00–18:20. Capillas después de 16:00 NO está confirmado y puede cancelarse por viento. No reservar dos excursiones que se solapen.",
+      "link": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786"
+    },
+    {
+      "type": "Reservas",
+      "title": "San Rafael: abono CLP $30.000 por persona y saldo el día anterior",
+      "description": "Para seis, abono total CLP $180.000. Registro presencial en costanera el domingo 10 de 15:00 a 18:20, saldo antes de las 18:30. El operador confirma hora de presentación.",
+      "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium"
+    },
+    {
+      "type": "Transporte",
+      "title": "Balmaceda a Río Tranquilo: 3h30–4h30 en carro",
+      "description": "Para 6 más maletas considerar van grande o transfer privado; respuesta de Viajero Austral sobre recogida en Balmaceda está pendiente. Revisar ripio, combustible y condiciones de devolución.",
+      "link": "https://www.discovercars.com/chile/balmaceda/balmaceda-airport"
+    },
+    {
+      "type": "Alojamiento",
+      "title": "Puerto Río Tranquilo: 3 noches para seis",
+      "description": "Viajero Austral ofrece Habitaciones JC desde CLP $50.000 por habitación doble/noche. Para 6 serían tres habitaciones si hay disponibilidad. También buscar Airbnb o cabaña para el grupo.",
+      "link": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo"
+    },
+    {
+      "type": "Aeropuerto",
+      "title": "Cierres PNT: 11–14, 18–21 y 25–28 enero 2027",
+      "description": "No afecta el 12 porque se entra vía Punta Arenas por tierra; el viernes 15 PNT está programado abierto, pero solo utilizarlo si hay vuelo confirmado a Santiago. Respaldo PUQ.",
+      "link": "https://aipchile.dgac.gob.cl/notam?designador=SCNT"
     },
     {
       "type": "Vuelos",
-      "title": "DAP martes 12: Balmaceda → Punta Arenas 15:30",
-      "description": "Horario estacional publicado para 2026–27, sujeto a cupos y cambios de aerolínea.",
-      "link": "https://dapairline.com/vuelos-regulares/"
-    },
-    {
-      "type": "Regreso",
-      "title": "Sábado 16 salida de Santiago a las 02:00",
-      "description": "Llegar al aeropuerto SCL alrededor de las 22:30–23:00 del viernes 15. Priorizar vuelo doméstico de la mañana para tener amplio colchón.",
+      "title": "Confirmar vuelos para seis antes de pagar tours",
+      "description": "Prioridad: Medellín→Santiago viernes 8, Santiago→Balmaceda sábado 9, DAP Balmaceda→Punta Arenas martes 12, PNT/PUQ→Santiago viernes 15 y Santiago→Medellín sábado 16 02:00.",
       "link": "https://www.google.com/travel/flights"
-    },
-    {
-      "type": "Rafting",
-      "title": "Capillas + rafting: reservar salida 14:00 en Baker",
-      "description": "Tour de rafting clase III, 3 h total, tarifa publicada CLP 49.000. Requiere auto o transfer privado desde Puerto Río Tranquilo.",
-      "link": "https://www.turismoriobaker.cl/rafting-aventura-duplicado/"
-    },
-    {
-      "type": "Glaciar",
-      "title": "San Rafael: 12 horas, sujeto a clima",
-      "description": "Salida desde Puerto Río Tranquilo lunes 11, desde CLP 190.000 de referencia. Confirmar operador, salida y políticas de cancelación.",
-      "link": "https://www.destinopatagonia.cl/"
-    },
-    {
-      "type": "Clima",
-      "title": "La semana no tiene día libre para reprogramar",
-      "description": "Capillas y San Rafael pueden cancelarse por viento. Evitar comprar tours no reembolsables antes de asegurar vuelos y transporte.",
-      "link": "https://turismo.rioibanez.cl/puerto-rio-tranquilo/"
-    },
-    {
-      "type": "Entradas",
-      "title": "Entrada Torres del Paine",
-      "description": "Comprar pase con anticipación y verificar horarios de senderos en CONAF.",
-      "link": "https://www.pasesparques.cl/"
     }
   ],
   "days": [
@@ -73,10 +75,10 @@
         "La ida es cuello de botella: no asumir horarios no comprados"
       ],
       "accommodation": {
-        "name": "En tránsito o aeropuerto SCL",
-        "neighborhood": "Santiago",
-        "link": "",
-        "notes": "Si el vuelo llega viernes, dormir cerca del aeropuerto."
+        "name": "Hotel cerca de SCL — por elegir",
+        "neighborhood": "Santiago (si el vuelo llega el viernes)",
+        "link": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
+        "notes": "Conviene dormir cerca del aeropuerto para salir temprano a Balmaceda el sábado. Si el vuelo internacional llega demasiado tarde, habrá que modificar la ruta."
       },
       "mainActivities": [
         {
@@ -118,7 +120,39 @@
           "Calzado cómodo y protección solar",
           "Consultar viento y navegación con el operador"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Santiago (si el vuelo llega el viernes)",
+        "dateLabel": "Noche del viernes 8 → sábado 9",
+        "name": "Hotel cerca de SCL — por elegir",
+        "status": "por confirmar",
+        "notes": "Conviene dormir cerca del aeropuerto para salir temprano a Balmaceda el sábado. Si el vuelo internacional llega demasiado tarde, habrá que modificar la ruta.",
+        "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-08&checkout=2027-01-09&adults=6",
+        "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
+        "referencePrice": "Cotizar 3 habitaciones dobles o apartamento para 6; nada reservado."
+      },
+      "transportLegs": [
+        {
+          "from": "Medellín (MDE)",
+          "to": "Santiago (SCL)",
+          "mode": "flight",
+          "duration": "Según escala, ~6–10 h",
+          "operator": "Aerolínea por elegir",
+          "notes": "Salida y llegada por confirmar. Es fundamental aterrizar el viernes 8 para conectar el sábado temprano a Balmaceda.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.google.com/travel/flights",
+          "departure": "Viernes 8, horario pendiente",
+          "originCoords": [
+            6.1645,
+            -75.4231
+          ],
+          "destinationCoords": [
+            -33.393,
+            -70.786
+          ]
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 2,
@@ -134,14 +168,16 @@
         "Santiago → Balmaceda → Puerto Río Tranquilo"
       ],
       "perks": [
-        "Necesitan auto/traslado privado",
-        "Parada corta en Cerro Castillo si alcanza el tiempo"
+        "El sábado 9 deben llegar a Balmaceda temprano para conducir 3 h 30 min–4 h 30 min a Puerto Río Tranquilo.",
+        "Viajero Austral recibió consulta para traslado privado de 6 desde Balmaceda: respuesta y precio PENDIENTES.",
+        "Comparar van de 7–9 plazas con maletero (DiscoverCars / LATAM Autos) contra transfer privado; consultar ripio y seguros.",
+        "Dormir 9–11 en Puerto Río Tranquilo; no hay alojamiento reservado."
       ],
       "accommodation": {
-        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
-        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "neighborhood": "Puerto Río Tranquilo",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael."
       },
       "mainActivities": [
         {
@@ -202,7 +238,60 @@
           "Calzado cómodo y protección solar",
           "Consultar viento y navegación con el operador"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Río Tranquilo",
+        "dateLabel": "Noche del 9 de enero · salida 12 de enero",
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "status": "por confirmar",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael.",
+        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-09&checkout=2027-01-12&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "contactUrl": "https://wa.me/56934341909"
+      },
+      "transportLegs": [
+        {
+          "from": "Santiago (SCL)",
+          "to": "Balmaceda (BBA)",
+          "mode": "flight",
+          "duration": "~2 h 15 min",
+          "operator": "LATAM / SKY (según oferta)",
+          "notes": "Objetivo: vuelo temprano el sábado 9. El horario de las 08:41 es una referencia previa, NO un boleto ni disponibilidad verificada.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.google.com/travel/flights",
+          "departure": "Sábado 9, primera mañana (pendiente)",
+          "originCoords": [
+            -33.393,
+            -70.786
+          ],
+          "destinationCoords": [
+            -45.916,
+            -71.69
+          ]
+        },
+        {
+          "from": "Aeropuerto Balmaceda",
+          "to": "Puerto Río Tranquilo",
+          "mode": "car",
+          "duration": "~3 h 30 min–4 h 30 min",
+          "operator": "Van/carro de alquiler para 6 o transfer privado",
+          "notes": "Carretera Austral, con sectores de ripio. El operador recomienda aprox. 4 h 20 min; Google Maps puede indicar menos sin paradas. Para 6 más maletas verificar vehículo de 7–9 plazas y devolución en Balmaceda.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.discovercars.com/chile/balmaceda/balmaceda-airport",
+          "departure": "Después de recoger equipaje y vehículo",
+          "originCoords": [
+            -45.916,
+            -71.69
+          ],
+          "destinationCoords": [
+            -46.632,
+            -72.673
+          ],
+          "price": "Cotizar vehículo grande y seguro para ripio; alternativa transfer para 6 pendiente de respuesta de Viajero Austral."
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 3,
@@ -218,51 +307,44 @@
         "Capillas de Mármol + rafting Río Baker"
       ],
       "perks": [
-        "Día doble viable si ambos operadores son puntuales",
-        "No depender de transporte público"
+        "ATENCIÓN: el rafting Huente-Co de 07:00 a 14:30 se cruza con las Capillas de Mármol de la mañana. Capillas a las 16:00 es una PROPUESTA sin cupos ni horario confirmados.",
+        "El domingo 10 es obligatorio hacer check-in presencial del glaciar San Rafael entre 15:00 y 18:20 y pagar el saldo antes de las 18:30.",
+        "Seis personas cumplen el mínimo de rafting (4–9), pero no garantizan el grupo mínimo de San Rafael (12).",
+        "Plan alternativo: Capillas temprano + rafting de otro operador a las 14:00, con transporte propio y reservas compatibles."
       ],
       "accommodation": {
-        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
-        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "neighborhood": "Puerto Río Tranquilo",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael."
       },
       "mainActivities": [
         {
-          "name": "Navegación Capillas y Catedral de Mármol",
-          "start": "08:00",
+          "name": "Rafting río Baker con Huente-Co · traslado incluido",
+          "start": "07:00",
+          "durationMin": 450,
+          "notes": "Horario publicado 07:00–14:30 desde Puerto Río Tranquilo; CLP $80.000 por persona con transporte ida/vuelta. 6 personas cumplen el mínimo de 4. Reservar y confirmar hora de regreso.",
+          "link": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg",
+          "imageQuery": "Rafting Río Baker Huente-Co"
+        },
+        {
+          "name": "Check-in obligatorio del glaciar San Rafael",
+          "start": "15:00",
+          "durationMin": 30,
+          "notes": "Presentarse en oficina local sector costanera entre 15:00 y 18:20 el domingo 10. Firmar, pagar saldo (a más tardar 18:30) y confirmar hora de salida del lunes. Abono CLP $30.000 por persona.",
+          "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "imageUrl": "",
+          "imageQuery": "Puerto Rio Tranquilo costanera"
+        },
+        {
+          "name": "Capillas de Mármol — salida tardía CONDICIONAL",
+          "start": "16:00",
           "durationMin": 150,
-          "notes": "Reservar salida temprano, dura ~2h30. Viento del lago puede cancelar o aplazar.",
+          "notes": "No hay salida a las 16:00 confirmada. Solo encaja si la navegación comienza después del rafting y del check-in de San Rafael, y si el viento permite navegar. Pedir confirmación antes de pagar; si no, cambiar a operador de rafting vespertino y Capillas temprano.",
+          "link": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
           "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
-          "imageQuery": "Navegación Capillas y Catedral de Mármol",
-          "link": "https://turismo.rioibanez.cl/puerto-rio-tranquilo/"
-        },
-        {
-          "name": "Traslado a Puerto Bertrand y almuerzo",
-          "start": "11:00",
-          "durationMin": 90,
-          "notes": "Aprox. 67 km; contar hasta 1h30 para margen, en vehículo propio o privado.",
-          "imageUrl": "https://haciendatreslagos.com/images/galeria_productos/excursiones/IMG_0852-min-1560290817.JPG",
-          "imageQuery": "Traslado a Puerto Bertrand y almuerzo",
-          "link": "https://www.google.com/maps/dir/Puerto+Rio+Tranquilo/Puerto+Bertrand"
-        },
-        {
-          "name": "Rafting Aventura Río Baker",
-          "start": "14:00",
-          "durationMin": 180,
-          "notes": "Salida 14:00 publicada por Turismo Río Baker, clase III, 1 h en río/3 h total, CLP 49.000 por persona (referencia). Confirmar cupos para 10 de enero.",
-          "imageUrl": "https://haciendatreslagos.com/images/galeria_productos/excursiones/IMG_0852-min-1560290817.JPG",
-          "imageQuery": "Rafting Aventura Río Baker",
-          "link": "https://www.turismoriobaker.cl/rafting-aventura-duplicado/"
-        },
-        {
-          "name": "Regreso a Puerto Río Tranquilo",
-          "start": "17:30",
-          "durationMin": 90,
-          "notes": "Vuelta para cena y descanso previo a San Rafael. Confluencia Baker-Nef solo si sobra tiempo.",
-          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
-          "imageQuery": "Regreso a Puerto Río Tranquilo",
-          "link": ""
+          "imageQuery": "Capillas de Mármol"
         }
       ],
       "secondaryActivities": [],
@@ -296,7 +378,96 @@
           "Calzado cómodo y protección solar",
           "Consultar viento y navegación con el operador"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Río Tranquilo",
+        "dateLabel": "Noche del 10 de enero · salida 12 de enero",
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "status": "por confirmar",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael.",
+        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-09&checkout=2027-01-12&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "contactUrl": "https://wa.me/56934341909"
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Río Tranquilo",
+          "to": "Puerto Bertrand / río Baker",
+          "mode": "transfer",
+          "duration": "~1 h 15 min–1 h 30 min",
+          "operator": "Huente-Co · incluido en rafting",
+          "notes": "La excursión publicada sale de Puerto Río Tranquilo a las 07:00 y regresa alrededor de las 14:30. Incluye equipo, guía y traslado ida/vuelta. No conducir por separado si se reserva este paquete.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+          "departure": "07:00 (horario publicado, confirmar fecha)",
+          "originCoords": [
+            -46.632,
+            -72.673
+          ],
+          "destinationCoords": [
+            -47.051,
+            -72.822
+          ],
+          "price": "Incluido en rafting CLP $80.000/persona, valor enviado por WhatsApp"
+        },
+        {
+          "from": "Puerto Bertrand / río Baker",
+          "to": "Puerto Río Tranquilo",
+          "mode": "transfer",
+          "duration": "~1 h 15 min–1 h 30 min",
+          "operator": "Huente-Co · regreso incluido",
+          "notes": "El retorno forma parte del paquete de rafting; horario de llegada al pueblo ~14:30, sujeto a operación.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+          "departure": "Regreso del tour, antes de 14:30 aprox.",
+          "originCoords": [
+            -47.051,
+            -72.822
+          ],
+          "destinationCoords": [
+            -46.632,
+            -72.673
+          ]
+        },
+        {
+          "from": "Muelle de Puerto Río Tranquilo",
+          "to": "Capillas de Mármol y regreso",
+          "mode": "boat",
+          "duration": "~2 h–2 h 30 min",
+          "operator": "Navegación local por reservar",
+          "notes": "Propuesta de salida 16:00 o posterior SOLO si el operador acepta y el lago permite navegar. Por viento, la tarde es menos segura. Si no hay salida compatible, habrá que priorizar o reordenar.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
+          "departure": "16:00 tentativo, NO confirmado",
+          "option": "Condicional"
+        }
+      ],
+      "toursToBook": [
+        {
+          "name": "Rafting Río Baker desde Puerto Río Tranquilo",
+          "operator": "Huente-Co · gestión Viajero Austral",
+          "pricePerPerson": 80000,
+          "groupSize": 6,
+          "details": "Precio comunicado por WhatsApp: CLP $80.000 por persona incluyendo traslado al río Baker y regreso, equipo y guía. Web: 07:00–14:30; mínimo 4 y máximo 9, grupo de 6 encaja. NO es el tour alternativo de CLP $49.000 de otro operador.",
+          "checkin": "Confirmar cupos para el domingo 10, hora de regreso y posibilidad de coordinar Capillas en la tarde.",
+          "url": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+          "whatsappUrl": "https://wa.me/56934341909",
+          "status": "por confirmar",
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg"
+        },
+        {
+          "name": "Capillas de Mármol — navegación tardía",
+          "operator": "Operador local por confirmar",
+          "pricePerPerson": 32000,
+          "groupSize": 6,
+          "details": "Navegación Full Mármol desde el pueblo, referencia publicada de CLP $32.000 por persona y duración 2,5 h. No hay salida de tarde confirmada. Si no es posible, evaluar otro operador de rafting a las 14:00 para hacer Capillas por la mañana.",
+          "checkin": "Preguntar por salida después de las 16:00 y viento. No pagar dos tours incompatibles.",
+          "url": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
+          "whatsappUrl": "https://wa.me/56934341909",
+          "status": "por confirmar"
+        }
+      ]
     },
     {
       "day": 4,
@@ -312,25 +483,26 @@
         "Laguna y Glaciar San Rafael"
       ],
       "perks": [
-        "El día entero es para San Rafael",
-        "Si se cancela por viento, no hay día libre para reprogramarlo",
-        "No confundir con el trekking del Glaciar Exploradores, que está cerrado"
+        "Reserva con CLP $30.000 de abono por persona; saldo y check-in presencial el domingo 10 antes de las 18:30.",
+        "El tour incluye traslado desde el pueblo, por lo que NO hace falta llevar carro al muelle.",
+        "Con 6 viajeros aún necesitan que el operador complete el grupo mínimo de 12 para garantizar la salida.",
+        "Si el operador cancela por clima, según folleto permite cambio de fecha o devolución total de lo pagado; verificar condiciones por escrito."
       ],
       "accommodation": {
-        "name": "Hostal / cabaña Puerto Río Tranquilo (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/searchresults.es.html?ss=Puerto%20Rio%20Tranquilo",
-        "notes": "Noche 9, 10 y 11. Ideal estar cerca del muelle."
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "neighborhood": "Puerto Río Tranquilo",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael."
       },
       "mainActivities": [
         {
-          "name": "Full day navegación al Glaciar San Rafael",
-          "start": "06:30",
-          "durationMin": 720,
-          "notes": "Salida ilustrativa. Tour desde Río Tranquilo de aprox. 12 h; desde CLP 190.000 por persona (referencia). Confirmar salida lunes 11, clima, cupos y grupo mínimo.",
-          "imageUrl": "https://www.viajeroaustral.com/system/images/000/876/584/52fcfdc7f45c9a8ac2684e32dd63ffeb/banner/Lancha_Premium.jpg",
-          "imageQuery": "Full day navegación al Glaciar San Rafael",
-          "link": "https://www.destinopatagonia.cl/"
+          "name": "Huente-Co · Laguna y Glaciar San Rafael, Lancha Premium",
+          "start": "06:00",
+          "durationMin": 690,
+          "notes": "Presentación 05:30–07:30 (hora exacta se confirma el domingo). Tour total 11–11,5 h con traslado Puerto Río Tranquilo–Muelle Grosse, lancha calefaccionada de 20 pasajeros, guía, desayuno y almuerzo. CLP $195.000 por persona el 11/01; mínimo 12 pasajeros para salida.",
+          "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg",
+          "imageQuery": "Glaciar San Rafael lancha premium Huente Co"
         },
         {
           "name": "Cena y preparar salida a Balmaceda",
@@ -371,7 +543,69 @@
           "Calzado cómodo y protección solar",
           "Consultar viento y navegación con el operador"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Río Tranquilo",
+        "dateLabel": "Noche del 11 de enero · salida 12 de enero",
+        "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
+        "status": "por confirmar",
+        "notes": "Viajero Austral publica Habitaciones JC desde CLP $50.000 por habitación doble y noche; para 6 se necesitan 3 habitaciones. Precio sujeto a disponibilidad y confirmación. Cerca de la costanera para el check-in San Rafael.",
+        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-09&checkout=2027-01-12&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
+        "contactUrl": "https://wa.me/56934341909"
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Río Tranquilo",
+          "to": "Muelle Grosse / Bahía Exploradores",
+          "mode": "transfer",
+          "duration": "Dentro del tour total de ~11 h",
+          "operator": "Huente-Co · traslado incluido",
+          "notes": "Recorrido de unos 90 km por Valle Exploradores hasta el embarcadero. No alquilar otro vehículo para este traslado si contratan paquete con salida desde el pueblo.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "departure": "Presentación 05:30–07:30; hora exacta se confirma el día anterior",
+          "option": "Incluido"
+        },
+        {
+          "from": "Muelle Grosse",
+          "to": "Laguna y Glaciar San Rafael",
+          "mode": "boat",
+          "duration": "Navegación ~6–7 h",
+          "operator": "Huente-Co · Lancha Premium (20 plazas)",
+          "notes": "Incluye desayuno, almuerzo, guía y aproximación al glaciar según clima. Tour completo de ~11–11,5 h con regreso a Puerto Río Tranquilo.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "departure": "Según embarque confirmado",
+          "option": "Incluido"
+        },
+        {
+          "from": "Muelle Grosse / Valle Exploradores",
+          "to": "Puerto Río Tranquilo",
+          "mode": "transfer",
+          "duration": "Incluido en las ~11 h totales",
+          "operator": "Huente-Co · regreso incluido",
+          "notes": "El traslado de vuelta está incluido; no se requiere otro transfer.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "option": "Incluido"
+        }
+      ],
+      "toursToBook": [
+        {
+          "name": "Laguna San Rafael · Lancha Premium",
+          "operator": "Huente-Co · Viajero Austral",
+          "pricePerPerson": 195000,
+          "groupSize": 6,
+          "details": "Tarifa publicada CLP $195.000 por persona hasta el 14/01/2027, con traslado desde Puerto Río Tranquilo, desayuno, almuerzo, guía, lancha calefaccionada de 20 plazas y aproximación al glaciar según clima. Tour de 11–11,5 h; mínimo 12 pasajeros en la lancha, por lo que seis no garantizan salida.",
+          "checkin": "Registro obligatorio DOMINGO 10 en oficina costanera 15:00–18:20; abono CLP $30.000/persona, saldo hasta 18:30 el día anterior. Hora de presentación 05:30–07:30 confirmada en oficina.",
+          "url": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+          "whatsappUrl": "https://wa.me/56934341909",
+          "status": "por confirmar",
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg"
+        }
+      ]
     },
     {
       "day": 5,
@@ -387,14 +621,15 @@
         "Balmaceda → Punta Arenas → Puerto Natales"
       ],
       "perks": [
-        "Día completo de traslados, sin tours",
-        "La conexión aérea DAP es indispensable y no tiene alternativa sencilla"
+        "El martes 12 PNT está cerrado según calendario, pero la llegada por Punta Arenas y bus/transfer a Puerto Natales sigue funcionando.",
+        "DAP Balmaceda→Punta Arenas a las 15:30 es horario estacional publicado, no boleto confirmado para 6.",
+        "Coordinar bus desde aeropuerto PUQ y check-in tardío en Puerto Natales."
       ],
       "accommodation": {
-        "name": "Hostal / hotel Puerto Natales (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/city/cl/puerto-natales.html",
-        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "neighborhood": "Puerto Natales",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-natales",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026."
       },
       "mainActivities": [
         {
@@ -455,7 +690,77 @@
           "Calzado cómodo y protección solar",
           "Consultar viento y navegación con el operador"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Natales",
+        "dateLabel": "Noche del 12 de enero · salida 15 de enero",
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "status": "por confirmar",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026.",
+        "referencePrice": "Cotizar habitación séxtuple, 3 dobles o apartamento; sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Natales--Chile/homes?checkin=2027-01-12&checkout=2027-01-15&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-natales"
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Río Tranquilo",
+          "to": "Aeropuerto Balmaceda",
+          "mode": "car",
+          "duration": "~3 h 30 min–4 h 30 min",
+          "operator": "Vehículo arrendado / transfer para 6",
+          "notes": "Salir temprano el martes 12, prever obras y ripio, combustible y devolución del vehículo. Objetivo: estar en el aeropuerto antes del mediodía.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.latamairlines.com/cl/es/autos/#/results?ptid=130.10",
+          "departure": "07:00 tentativo",
+          "originCoords": [
+            -46.632,
+            -72.673
+          ],
+          "destinationCoords": [
+            -45.916,
+            -71.69
+          ]
+        },
+        {
+          "from": "Balmaceda (BBA)",
+          "to": "Punta Arenas (PUQ)",
+          "mode": "flight",
+          "duration": "~1 h 30 min",
+          "operator": "DAP Airlines",
+          "notes": "La ruta estacional publica salida martes a las 15:30. Frecuencia escasa; comprobar directamente el vuelo del 12/01/2027 y sus cupos para seis antes de comprar otros servicios.",
+          "status": "por confirmar",
+          "bookingUrl": "https://dapairline.com/vuelos-regulares/",
+          "departure": "15:30 publicado, sin reserva",
+          "originCoords": [
+            -45.916,
+            -71.69
+          ],
+          "destinationCoords": [
+            -53.003,
+            -70.855
+          ]
+        },
+        {
+          "from": "Aeropuerto Punta Arenas",
+          "to": "Puerto Natales",
+          "mode": "bus",
+          "duration": "~3 h 15 min",
+          "operator": "Bus-Sur o transfer privado",
+          "notes": "Buscar salida de las 19:00 si el vuelo DAP aterriza y el equipaje sale a tiempo; confirmar que recoge en aeropuerto. Si no encaja, contratar transfer para seis y coordinar llegada tardía al alojamiento.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.bussur.com/destinos/",
+          "departure": "19:00 objetivo, por confirmar",
+          "originCoords": [
+            -53.003,
+            -70.855
+          ],
+          "destinationCoords": [
+            -51.73,
+            -72.506
+          ]
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 6,
@@ -475,10 +780,10 @@
         "Se pueden añadir paradas fotográficas cortas"
       ],
       "accommodation": {
-        "name": "Hostal / hotel Puerto Natales (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/city/cl/puerto-natales.html",
-        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "neighborhood": "Puerto Natales",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-natales",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026."
       },
       "mainActivities": [
         {
@@ -548,7 +853,67 @@
           "Bastones, agua y snacks para trekking",
           "Gorro, guantes y protección solar"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Natales",
+        "dateLabel": "Noche del 13 de enero · salida 15 de enero",
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "status": "por confirmar",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026.",
+        "referencePrice": "Cotizar habitación séxtuple, 3 dobles o apartamento; sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Natales--Chile/homes?checkin=2027-01-12&checkout=2027-01-15&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-natales"
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Natales",
+          "to": "Torres del Paine (sector Lago Pehoé)",
+          "mode": "bus",
+          "duration": "~2 h–2 h 30 min",
+          "operator": "Tour panorámico o vehículo para 6",
+          "notes": "Salida temprana; conviene contratar full day con recogida en hospedaje o van privado para visitar miradores dispersos.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.pasesparques.cl/",
+          "departure": "07:00 orientativo",
+          "originCoords": [
+            -51.73,
+            -72.506
+          ],
+          "destinationCoords": [
+            -51.068,
+            -73.096
+          ]
+        },
+        {
+          "from": "Lago Pehoé / Salto Grande",
+          "to": "Mirador Cuernos y miradores cercanos",
+          "mode": "walk",
+          "duration": "~1 h–2 h según paradas",
+          "operator": "Caminata en el parque",
+          "notes": "Caminatas panorámicas y paradas fotográficas. No es un traslado motorizado de punto a punto; tiempos dependen del sendero y del viento.",
+          "status": "por confirmar",
+          "departure": "Media mañana"
+        },
+        {
+          "from": "Torres del Paine",
+          "to": "Puerto Natales",
+          "mode": "bus",
+          "duration": "~2 h–2 h 30 min",
+          "operator": "Regreso del tour / van",
+          "notes": "Vuelta al mismo hospedaje. Confirmar hora de regreso y entrada al parque.",
+          "status": "por confirmar",
+          "departure": "Tarde, por definir",
+          "originCoords": [
+            -51.068,
+            -73.096
+          ],
+          "destinationCoords": [
+            -51.73,
+            -72.506
+          ]
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 7,
@@ -568,10 +933,10 @@
         "No programar más excursiones intensas después"
       ],
       "accommodation": {
-        "name": "Hostal / hotel Puerto Natales (3 noches)",
-        "neighborhood": "Centro",
-        "link": "https://www.booking.com/city/cl/puerto-natales.html",
-        "notes": "Noches 12, 13 y 14. Coordinar llegada tardía del martes."
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "neighborhood": "Puerto Natales",
+        "link": "https://www.viajeroaustral.com/hostales-en-puerto-natales",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026."
       },
       "mainActivities": [
         {
@@ -632,12 +997,71 @@
           "Bastones, agua y snacks para trekking",
           "Gorro, guantes y protección solar"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Puerto Natales",
+        "dateLabel": "Noche del 14 de enero · salida 15 de enero",
+        "name": "Hostal o Airbnb para 6 — por elegir",
+        "status": "por confirmar",
+        "notes": "Elegir alojamiento cerca del terminal de buses o costanera, con check-in tardío el martes 12 y salida temprana el viernes 15. Viajero Austral lista hostales, pero las tarifas publicadas para algunos vencen en diciembre 2026.",
+        "referencePrice": "Cotizar habitación séxtuple, 3 dobles o apartamento; sin reserva.",
+        "airbnbUrl": "https://www.airbnb.com/s/Puerto-Natales--Chile/homes?checkin=2027-01-12&checkout=2027-01-15&adults=6",
+        "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-natales"
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Natales",
+          "to": "Centro de Bienvenida Las Torres",
+          "mode": "transfer",
+          "duration": "~2 h–2 h 30 min",
+          "operator": "Transfer o tour trekking para 6",
+          "notes": "Salir muy temprano para respetar las horas límite del sendero; entrada comprada antes.",
+          "status": "por confirmar",
+          "departure": "05:30 orientativo",
+          "originCoords": [
+            -51.73,
+            -72.506
+          ],
+          "destinationCoords": [
+            -50.973,
+            -73.007
+          ]
+        },
+        {
+          "from": "Centro de Bienvenida Las Torres",
+          "to": "Mirador Base Las Torres y regreso",
+          "mode": "walk",
+          "duration": "~8–10 h / 20–22 km",
+          "operator": "Trekking de montaña",
+          "notes": "Caminata exigente, con desnivel. No usar Google Maps como guía de senderismo: seguir señalización y guardaparques.",
+          "status": "por confirmar",
+          "departure": "08:00 orientativo"
+        },
+        {
+          "from": "Centro de Bienvenida Las Torres",
+          "to": "Puerto Natales",
+          "mode": "transfer",
+          "duration": "~2 h–2 h 30 min",
+          "operator": "Regreso del tour / van",
+          "notes": "Confirmar regreso compatible con el ritmo del grupo; descansar antes del vuelo del viernes.",
+          "status": "por confirmar",
+          "departure": "Tras finalizar trekking",
+          "originCoords": [
+            -50.973,
+            -73.007
+          ],
+          "destinationCoords": [
+            -51.73,
+            -72.506
+          ]
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 8,
       "date": "2027-01-15",
-      "city": "Puerto Natales → Punta Arenas → Santiago",
+      "city": "Puerto Natales → Santiago (PNT o PUQ)",
       "country": "Chile",
       "cityCode": "PNT-PUQ-SCL",
       "currencyLocal": "CLP",
@@ -648,43 +1072,43 @@
         "Puerto Natales → Punta Arenas → Santiago"
       ],
       "perks": [
-        "Día de regreso, no añadir tours",
-        "Preferir llegada a Santiago hacia las 14:04 con margen amplio",
-        "Evitar excursiones a Papudo o Valparaíso"
+        "Aeródromo Puerto Natales (PNT) ABIERTO el viernes 15 según calendario de obras; confirmar vuelo PNT→SCL y cupos para 6 antes de elegir esta opción.",
+        "Si no hay vuelo PNT→SCL, regresar por carretera a PUQ y volar a Santiago temprano. El aeropuerto cerrado NO significa que Torres del Paine esté cerrado.",
+        "No ir a Papudo o Valparaíso el viernes: conservar margen amplio para el vuelo internacional de las 02:00."
       ],
       "accommodation": {
-        "name": "Sin alojamiento obligatorio",
-        "neighborhood": "Santiago / SCL",
+        "name": "Sin noche de hotel prevista — vuelo 02:00",
+        "neighborhood": "Santiago / Aeropuerto SCL",
         "link": "",
-        "notes": "Esperar vuelo 02:00, o day-use si necesario."
+        "notes": "Llegar a Santiago por la tarde y presentarse en SCL el viernes 15 hacia las 22:30–23:00 para el vuelo del sábado 16."
       },
       "mainActivities": [
         {
-          "name": "Transfer temprano Natales → Aeropuerto Punta Arenas",
+          "name": "Opción A: traslado a aeródromo Puerto Natales (PNT)",
+          "start": "08:00",
+          "durationMin": 25,
+          "notes": "Preferida SOLO si existe vuelo confirmado PNT→SCL el viernes 15 por la mañana. El aeródromo está programado como abierto, pero no garantiza operación de aerolíneas ni cupos.",
+          "link": "https://www.google.com/travel/flights",
+          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
+          "imageQuery": "Aeropuerto Puerto Natales"
+        },
+        {
+          "name": "Opción B: bus/transfer Puerto Natales → Punta Arenas (PUQ)",
           "start": "05:00",
           "durationMin": 210,
-          "notes": "Salida alrededor de las 05:00 para llegar a PUQ con margen a vuelo 10:41. Reservar transporte privado fiable.",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
-          "imageQuery": "Transfer temprano Natales → Aeropuerto Punta Arenas",
-          "link": "https://www.google.com/maps/dir/Puerto+Natales/Aeropuerto+Punta+Arenas"
+          "notes": "Plan de respaldo si no hay vuelo desde PNT: salir de madrugada y tomar vuelo matutino PUQ→SCL. No realizar ambas opciones; escoger una al comprar.",
+          "link": "https://www.bussur.com/destinos/",
+          "imageUrl": "",
+          "imageQuery": "Bus Sur Puerto Natales Punta Arenas"
         },
         {
-          "name": "Vuelo PUQ → SCL, objetivo LATAM LA84",
-          "start": "10:41",
-          "durationMin": 203,
-          "notes": "Horario viernes de enero 2027 publicado 10:41–14:04. Todavía no comprado; confirmar en LATAM.",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
-          "imageQuery": "Vuelo PUQ → SCL, objetivo LATAM LA84",
-          "link": "https://www.latamairlines.com/cl/es/destinos/vuelos-desde-punta-arenas-a-santiago"
-        },
-        {
-          "name": "Comida, margen y check-in internacional",
+          "name": "Llegada a Santiago y check-in internacional",
           "start": "22:30",
           "durationMin": 180,
-          "notes": "Presentarse en aeropuerto SCL el viernes 15 alrededor de 22:30–23:00 para vuelo internacional sábado 16 02:00.",
-          "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
-          "imageQuery": "Comida, margen y check-in internacional",
-          "link": ""
+          "notes": "Buscar llegar a Santiago antes de las 18:00; estar en aeropuerto SCL el viernes hacia 22:30–23:00 para salida del sábado 16 a las 02:00.",
+          "link": "https://www.google.com/travel/flights",
+          "imageUrl": "",
+          "imageQuery": "Aeropuerto Santiago"
         }
       ],
       "secondaryActivities": [],
@@ -717,7 +1141,94 @@
           "Bastones, agua y snacks para trekking",
           "Gorro, guantes y protección solar"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "Santiago / Aeropuerto SCL",
+        "dateLabel": "Viernes 15 por la noche",
+        "name": "Sin noche de hotel prevista — vuelo 02:00",
+        "noNight": true,
+        "notes": "Llegar a Santiago por la tarde y presentarse en SCL el viernes 15 hacia las 22:30–23:00 para el vuelo del sábado 16."
+      },
+      "transportLegs": [
+        {
+          "from": "Puerto Natales (centro)",
+          "to": "Aeródromo Puerto Natales (PNT)",
+          "mode": "transfer",
+          "duration": "~15–25 min",
+          "operator": "Taxi / transfer local",
+          "notes": "OPCIÓN PREFERIDA solo si existe vuelo PNT→SCL el viernes 15 por la mañana con 6 cupos. Aeródromo reabre el 15 según calendario; abierto no significa que haya vuelo.",
+          "status": "por confirmar",
+          "departure": "Según vuelo confirmado",
+          "option": "Opción A — preferida",
+          "originCoords": [
+            -51.73,
+            -72.506
+          ],
+          "destinationCoords": [
+            -51.67,
+            -72.529
+          ]
+        },
+        {
+          "from": "Puerto Natales (PNT)",
+          "to": "Santiago (SCL)",
+          "mode": "flight",
+          "duration": "~3 h",
+          "operator": "LATAM / SKY (por verificar)",
+          "notes": "Comprar únicamente tras comprobar operación real el 15 de enero y llegada con margen antes del vuelo internacional de las 02:00 del sábado.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.google.com/travel/flights",
+          "option": "Opción A — preferida",
+          "originCoords": [
+            -51.67,
+            -72.529
+          ],
+          "destinationCoords": [
+            -33.393,
+            -70.786
+          ]
+        },
+        {
+          "from": "Puerto Natales",
+          "to": "Aeropuerto Punta Arenas (PUQ)",
+          "mode": "transfer",
+          "duration": "~3 h–3 h 30 min",
+          "operator": "Bus-Sur o transfer privado",
+          "notes": "PLAN B si no hay vuelo desde PNT: salida de madrugada para alcanzar vuelo matutino desde PUQ. Confirmar traslado para seis.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.bussur.com/destinos/",
+          "departure": "~05:00 tentativo para vuelo temprano",
+          "option": "Opción B — respaldo",
+          "originCoords": [
+            -51.73,
+            -72.506
+          ],
+          "destinationCoords": [
+            -53.003,
+            -70.855
+          ]
+        },
+        {
+          "from": "Punta Arenas (PUQ)",
+          "to": "Santiago (SCL)",
+          "mode": "flight",
+          "duration": "~3 h 20 min",
+          "operator": "LATAM / SKY (por verificar)",
+          "notes": "Elegir vuelo que llegue a Santiago idealmente antes de las 18:00. Horarios como 10:41–14:04 son referencias no reservadas.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.google.com/travel/flights",
+          "option": "Opción B — respaldo",
+          "originCoords": [
+            -53.003,
+            -70.855
+          ],
+          "destinationCoords": [
+            -33.393,
+            -70.786
+          ]
+        }
+      ],
+      "toursToBook": []
     },
     {
       "day": 9,
@@ -737,10 +1248,10 @@
         "02:00 es salida objetivo, hasta validar la compra"
       ],
       "accommodation": {
-        "name": "Sin alojamiento",
-        "neighborhood": "Vuelo",
+        "name": "Sin alojamiento — vuelo de regreso",
+        "neighborhood": "En vuelo hacia Medellín",
         "link": "",
-        "notes": "Check-in hecho el viernes 15."
+        "notes": "La salida a las 02:00 es la hora objetivo indicada; verificar en el tiquete."
       },
       "mainActivities": [
         {
@@ -782,7 +1293,91 @@
           "Bastones, agua y snacks para trekking",
           "Gorro, guantes y protección solar"
         ]
-      }
+      },
+      "nightStay": {
+        "city": "En vuelo hacia Medellín",
+        "dateLabel": "Madrugada del sábado 16",
+        "name": "Sin alojamiento — vuelo de regreso",
+        "noNight": true,
+        "notes": "La salida a las 02:00 es la hora objetivo indicada; verificar en el tiquete."
+      },
+      "transportLegs": [
+        {
+          "from": "Santiago (SCL)",
+          "to": "Medellín (MDE)",
+          "mode": "flight",
+          "duration": "Según vuelo / escala",
+          "operator": "Aerolínea por confirmar",
+          "notes": "Salida objetivo sábado 16 a las 02:00, hora de Santiago. Check-in internacional el viernes 15 alrededor de las 22:30–23:00.",
+          "status": "por confirmar",
+          "bookingUrl": "https://www.google.com/travel/flights",
+          "departure": "02:00 sábado 16 (objetivo, no tiquete)",
+          "originCoords": [
+            -33.393,
+            -70.786
+          ],
+          "destinationCoords": [
+            6.1645,
+            -75.4231
+          ]
+        }
+      ],
+      "toursToBook": []
     }
-  ]
+  ],
+  "tripLogistics": {
+    "groupSize": 6,
+    "stays": [
+      {
+        "dates": "8 ene",
+        "city": "Santiago (si llegan el viernes)",
+        "nights": 1
+      },
+      {
+        "dates": "9–11 ene",
+        "city": "Puerto Río Tranquilo",
+        "nights": 3
+      },
+      {
+        "dates": "12–14 ene",
+        "city": "Puerto Natales",
+        "nights": 3
+      }
+    ],
+    "operator": {
+      "name": "Viajero Austral / Huente-Co",
+      "phone": "+56 9 343 41 909",
+      "whatsappUrl": "https://wa.me/56934341909",
+      "sanRafaelUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
+      "raftingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+      "notes": "Cotización recibida por WhatsApp para 6: rafting CLP $80.000 con traslado. San Rafael Premium CLP $195.000 el 11 de enero con traslado, 11 h y registro presencial el día anterior. Pendiente respuesta sobre transfer privado para seis desde Balmaceda."
+    },
+    "airport": {
+      "closed": [
+        "11–14",
+        "18–21",
+        "25–28"
+      ],
+      "open": [
+        "1–10",
+        "15–17",
+        "22–24",
+        "29–31"
+      ],
+      "explanation": "Por obras y restricciones programadas de pista, el aeródromo de Puerto Natales no opera comercialmente en determinados días de enero de 2027. La ciudad y Torres del Paine NO están cerrados.",
+      "plan": "Nuestro viaje sigue siendo posible: el martes 12 llegamos a Punta Arenas y viajamos por tierra a Puerto Natales; el viernes 15 se puede salir de PNT a Santiago solo si hay vuelo confirmado. Si no, salir desde Punta Arenas con margen.",
+      "sourceUrl": "https://aipchile.dgac.gob.cl/notam?designador=SCNT"
+    },
+    "transportWarning": "Las vistas de mapa son mapas de zona OpenStreetMap y no muestran el recorrido vial exacto; el botón de Google Maps abre indicaciones reales y tiempos actualizados.",
+    "openItems": [
+      "Confirmar vuelo SCL→BBA 9 enero",
+      "Confirmar 6 cupos DAP BBA→PUQ 12 enero",
+      "Confirmar rafting Huente-Co 10 enero y navegación Capillas por la tarde",
+      "Confirmar grupo mínimo San Rafael 11 enero y check-in 10 enero",
+      "Confirmar transfer 6 personas Balmaceda↔Río Tranquilo",
+      "Elegir alojamiento para seis en Santiago, Río Tranquilo y Natales",
+      "Confirmar vuelo PNT→SCL 15 enero o respaldo PUQ→SCL",
+      "Confirmar vuelo internacional SCL→MDE 16 enero 02:00"
+    ]
+  }
 }
