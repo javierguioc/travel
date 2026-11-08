@@ -35,7 +35,19 @@ function osmEmbed(leg) {
 
 function RouteMap({ leg }) {
   const [showMap, setShowMap] = useState(true);
-  const embed = ['car', 'bus', 'transfer', 'walk'].includes(leg.mode) ? osmEmbed(leg) : null;
+  const isGround = ['car', 'bus', 'transfer', 'walk'].includes(leg.mode);
+  // Si se configura una clave válida de Google Maps Embed API, mostrar la ruta
+  // vial real en el mapa de Google. Sin clave, usar mapa de zona OSM y link.
+  const googleKey = import.meta.env.VITE_GOOGLE_MAPS_EMBED_API_KEY;
+  const googleEmbed = isGround && googleKey
+    ? 'https://www.google.com/maps/embed/v1/directions?' + new URLSearchParams({
+        key: googleKey,
+        origin: leg.from,
+        destination: leg.to,
+        mode: leg.mode === 'walk' ? 'walking' : 'driving',
+      }).toString()
+    : null;
+  const embed = googleEmbed || (isGround ? osmEmbed(leg) : null);
   return (
     <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
       {embed && showMap ? (
@@ -48,7 +60,7 @@ function RouteMap({ leg }) {
             className="h-40 w-full border-0 bg-slate-100"
           />
           <div className="absolute bottom-1 left-2 rounded bg-white/95 px-2 py-1 text-[10px] font-medium text-slate-600 shadow">
-            Mapa de zona · © OpenStreetMap · no muestra ruta vial
+            {googleEmbed ? 'Ruta Google Maps · tiempo en vivo en Google' : 'Mapa de zona · © OpenStreetMap · no muestra ruta vial'}
           </div>
           <button type="button" onClick={() => setShowMap(false)}
             className="absolute right-2 top-2 rounded-md bg-white/95 px-2 py-1 text-xs font-semibold text-slate-700 shadow">
