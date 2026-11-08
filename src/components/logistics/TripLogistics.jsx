@@ -204,12 +204,13 @@ export function DayLogistics({ day }) {
 
 export function TripLogisticsOverview({ itineraryData }) {
   if (!itineraryData?.tripLogistics) return null;
-  const { groupSize, operator, airport, stays, openItems } = itineraryData.tripLogistics;
+  const { groupSize, operator, airport, stays, openItems, transportWarning } = itineraryData.tripLogistics;
   return (
     <section className="space-y-4">
       <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-5 shadow-sm">
         <h2 className="text-xl font-bold text-slate-900">🧳 Logística de las {groupSize} personas</h2>
         <p className="mt-2 text-sm text-slate-700">Hospedajes, transporte y actividades están en cada día. Los enlaces llevan a búsquedas u operadores: todavía no equivalen a reservas. Los costos generales del resumen son estimaciones previas en USD; para tours usa las cotizaciones CLP mostradas en cada tarjeta.</p>
+        {transportWarning && <p className="mt-2 text-xs font-medium text-sky-800">🗺️ {transportWarning}</p>}
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           {stays?.map((s, i) => <div key={i} className="rounded-xl border border-sky-100 bg-white p-3">
             <p className="text-xs font-bold text-sky-800">{s.dates}</p>
