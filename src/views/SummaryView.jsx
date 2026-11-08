@@ -2,6 +2,7 @@
 import { useMemo } from 'react';
 import { useItineraryStore } from '../store/store';
 import DayCardCompact from '../components/day/DayCardCompact';
+import { TripLogisticsOverview } from '../components/logistics/TripLogistics';
 import { Button, Badge, Toggle, Spinner } from '../components/ui';
 import useCurrency from '../hooks/useCurrency';
 import useCalendar from '../hooks/useCalendar';
@@ -136,6 +137,9 @@ export function SummaryView() {
           </div>
         </div>
       </div>
+
+      {/* Alojamiento, operador y cierres aeroportuarios de este viaje */}
+      <TripLogisticsOverview itineraryData={itineraryData} />
 
       {/* Estadísticas principales */}
       <div className="bg-gradient-blue rounded-2xl p-6 md:p-8 shadow-elevated">
