@@ -867,40 +867,50 @@
       "transportLegs": [
         {
           "from": "Puerto Natales",
-          "to": "Torres del Paine (sector Lago Pehoé)",
-          "mode": "bus",
+          "to": "Sector Salto Grande, Torres del Paine",
+          "mode": "transfer",
           "duration": "~2 h–2 h 30 min",
-          "operator": "Tour panorámico o vehículo para 6",
-          "notes": "Salida temprana; conviene contratar full day con recogida en hospedaje o van privado para visitar miradores dispersos.",
+          "operator": "Tour panorámico o van para 6",
+          "notes": "Salir temprano. Comprar entrada al parque y coordinar recogida en hospedaje.",
           "status": "por confirmar",
-          "bookingUrl": "https://www.pasesparques.cl/",
           "departure": "07:00 orientativo",
           "originCoords": [
             -51.73,
             -72.506
           ],
           "destinationCoords": [
-            -51.068,
-            -73.096
-          ]
+            -51.07,
+            -73
+          ],
+          "bookingUrl": "https://www.pasesparques.cl/"
         },
         {
-          "from": "Lago Pehoé / Salto Grande",
-          "to": "Mirador Cuernos y miradores cercanos",
+          "from": "Salto Grande",
+          "to": "Mirador Cuernos y regreso",
           "mode": "walk",
-          "duration": "~1 h–2 h según paradas",
-          "operator": "Caminata en el parque",
-          "notes": "Caminatas panorámicas y paradas fotográficas. No es un traslado motorizado de punto a punto; tiempos dependen del sendero y del viento.",
+          "duration": "~1 h–1 h 30 min",
+          "operator": "Sendero panorámico",
+          "notes": "Caminata corta/moderada desde sector Salto Grande; respetar viento, cierres y señalización.",
           "status": "por confirmar",
           "departure": "Media mañana"
         },
         {
-          "from": "Torres del Paine",
+          "from": "Salto Grande / Mirador Cuernos",
+          "to": "Lago Pehoé",
+          "mode": "car",
+          "duration": "~15–30 min",
+          "operator": "Mismo tour o vehículo",
+          "notes": "Traslado interno por carretera para miradores del lago. Tiempo aproximado sujeto a paradas y punto exacto.",
+          "status": "por confirmar",
+          "departure": "Mediodía"
+        },
+        {
+          "from": "Lago Pehoé, Torres del Paine",
           "to": "Puerto Natales",
-          "mode": "bus",
+          "mode": "transfer",
           "duration": "~2 h–2 h 30 min",
           "operator": "Regreso del tour / van",
-          "notes": "Vuelta al mismo hospedaje. Confirmar hora de regreso y entrada al parque.",
+          "notes": "Volver al hospedaje, comprar snacks y descansar antes de Base Torres.",
           "status": "por confirmar",
           "departure": "Tarde, por definir",
           "originCoords": [
