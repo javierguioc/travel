@@ -56,7 +56,7 @@ function RouteMap({ leg }) {
             title={`Mapa de zona: ${leg.from} a ${leg.to}`}
             src={embed}
             loading="lazy"
-            referrerPolicy="no-referrer"
+            referrerPolicy={googleEmbed ? "strict-origin-when-cross-origin" : "no-referrer"}
             className="h-40 w-full border-0 bg-slate-100"
           />
           <div className="absolute bottom-1 left-2 rounded bg-white/95 px-2 py-1 text-[10px] font-medium text-slate-600 shadow">
