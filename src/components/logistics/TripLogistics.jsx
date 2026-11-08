@@ -192,7 +192,7 @@ export function DayLogistics({ day }) {
 
 export function TripLogisticsOverview({ itineraryData }) {
   if (!itineraryData?.tripLogistics) return null;
-  const { groupSize, operator, airport, stays } = itineraryData.tripLogistics;
+  const { groupSize, operator, airport, stays, openItems } = itineraryData.tripLogistics;
   return (
     <section className="space-y-4">
       <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-5 shadow-sm">
@@ -214,6 +214,20 @@ export function TripLogisticsOverview({ itineraryData }) {
           <a className={linkClass} href={operator.sanRafaelUrl} target="_blank" rel="noopener noreferrer">Glaciar San Rafael ↗</a>
           <a className={linkClass} href={operator.raftingUrl} target="_blank" rel="noopener noreferrer">Rafting Baker ↗</a>
         </div>
+      </div>}
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <h3 className="text-lg font-bold text-slate-900">🚐 ¿Van o transfer privado para seis?</h3>
+        <p className="mt-2 text-sm text-slate-700">La consulta a Viajero Austral para recogida en Balmaceda sigue pendiente. Comparar con una van de 7–9 plazas y espacio real para seis maletas; confirmar seguros, ripio, kilometraje y devolución en el mismo aeropuerto.</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <a className={linkClass} href="https://www.discovercars.com/chile/balmaceda/balmaceda-airport" target="_blank" rel="noopener noreferrer">Comparar autos en DiscoverCars ↗</a>
+          <a className={linkClass} href="https://www.latamairlines.com/cl/es/autos/#/results?ptid=130.10" target="_blank" rel="noopener noreferrer">Autos LATAM ↗</a>
+        </div>
+      </div>
+      {openItems?.length > 0 && <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <h3 className="text-lg font-bold text-slate-900">📋 Pendientes antes de reservar</h3>
+        <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+          {openItems.map((item, i) => <li key={i} className="flex items-start gap-2 text-sm text-slate-700"><span aria-hidden="true" className="mt-0.5 text-amber-600">○</span>{item}</li>)}
+        </ul>
       </div>}
       {airport && <div className="rounded-2xl border border-amber-300 bg-amber-50 p-5 shadow-sm">
         <h3 className="text-lg font-bold text-amber-950">✈️ Puerto Natales (PNT): cierre parcial por obras de pista</h3>
