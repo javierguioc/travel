@@ -160,6 +160,12 @@ export function TourOperatorCard({ tours }) {
             </div>
             <span className={`rounded-full px-3 py-1 text-xs font-bold ${tag(tour.status || 'por confirmar')}`}>{tour.status || 'Por confirmar'}</span>
           </div>
+          {tour.imageUrl && (
+            <img src={tour.imageUrl} alt={tour.name} loading="lazy"
+              className="mt-3 h-40 w-full rounded-xl bg-teal-100 object-cover"
+              onError={(event) => { event.currentTarget.style.display = 'none'; }}
+            />
+          )}
           {tour.pricePerPerson && <p className="mt-2 text-sm text-slate-800"><strong>{clp(tour.pricePerPerson)} por persona</strong>{tour.groupSize ? ` · ${clp(tour.pricePerPerson * tour.groupSize)} para ${tour.groupSize}` : ''}</p>}
           {tour.details && <p className="mt-2 text-sm leading-relaxed text-slate-700">{tour.details}</p>}
           {tour.checkin && <p className="mt-2 rounded-lg bg-white/70 p-3 text-sm font-semibold text-teal-900">⚠️ {tour.checkin}</p>}
