@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useItineraryStore } from '../../store/store';
 import ActivityCard from '../activity/ActivityCard';
 import TransportCard from '../transport/TransportCard';
+import { DayLogistics } from '../logistics/TripLogistics';
 import CostBreakdown from '../costs/CostBreakdown';
 import useCalendar from '../../hooks/useCalendar';
 import { getCountryFlag } from '../../utils/icons';
@@ -152,36 +153,8 @@ export function DayCard({ day }) {
           </div>
         )}
 
-        {/* Accommodation Section */}
-        {day.accommodation && (
-          <div className="mb-6 bg-gradient-to-r from-indigo-50 to-purple-50 border-l-4 border-indigo-400 p-4 rounded-r-xl shadow-sm">
-            <div className="flex items-start gap-3">
-              <div className="bg-gradient-to-br from-indigo-400 to-purple-500 w-10 h-10 rounded-xl flex items-center justify-center shadow-sm flex-shrink-0">
-                <span className="text-xl">🏨</span>
-              </div>
-              <div className="flex-1">
-                <h4 className="text-indigo-800 font-semibold">Hospedaje de esta noche</h4>
-                <p className="text-indigo-700 font-medium">{day.accommodation.name}</p>
-                {day.accommodation.neighborhood && (
-                  <p className="text-indigo-600/80 text-sm">📍 Barrio: {day.accommodation.neighborhood}</p>
-                )}
-                {day.accommodation.notes && (
-                  <p className="text-indigo-600/70 text-sm mt-1">{day.accommodation.notes}</p>
-                )}
-                {day.accommodation.link && (
-                  <a
-                    href={day.accommodation.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-indigo-600 hover:text-indigo-700 text-sm font-medium mt-2 inline-flex items-center gap-1"
-                  >
-                    🔗 Ver reserva →
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Cada noche y todos los trayectos, con mapa y links de reserva */}
+        <DayLogistics day={day} />
 
         {/* Activities Section */}
         <div className="mb-6">
