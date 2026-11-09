@@ -1,92 +1,12 @@
 // Logística Chile: alojamiento por noche, traslados tramo a tramo y reservas.
 // Los mapas de fondo usan OpenStreetMap (sin claves privadas); el botón abre
 // las indicaciones de Google Maps para consultar el trayecto vial real.
-import { useState } from 'react';
+import RoutePreview from './RoutePreview';
 
 const linkClass = 'inline-flex items-center justify-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-500';
 const tag = (kind) => kind === 'confirmado' ? 'bg-emerald-100 text-emerald-800' : kind === 'por confirmar' ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-700';
 const icons = { car: '🚗', bus: '🚌', flight: '✈️', boat: '🛥️', walk: '🥾', transfer: '🚐', tour: '🧭' };
 const clp = (value) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(value);
-
-function mapLink(leg) {
-  if (leg.mapUrl) return leg.mapUrl;
-  const params = new URLSearchParams({ api: '1', origin: leg.from, destination: leg.to });
-  if (['car', 'bus', 'transfer'].includes(leg.mode)) params.set('travelmode', 'driving');
-  if (leg.mode === 'walk') params.set('travelmode', 'walking');
-  return 'https://www.google.com/maps/dir/?' + params.toString();
-}
-
-function osmEmbed(leg) {
-  if (!leg.originCoords || !leg.destinationCoords) return null;
-  const [aLat, aLon] = leg.originCoords;
-  const [bLat, bLon] = leg.destinationCoords;
-  if (![aLat, aLon, bLat, bLon].every(Number.isFinite)) return null;
-  const marginLat = Math.max(Math.abs(aLat - bLat) * 0.25, 0.035);
-  const marginLon = Math.max(Math.abs(aLon - bLon) * 0.25, 0.035);
-  const bbox = [
-    Math.min(aLon, bLon) - marginLon,
-    Math.min(aLat, bLat) - marginLat,
-    Math.max(aLon, bLon) + marginLon,
-    Math.max(aLat, bLat) + marginLat,
-  ].join(',');
-  return 'https://www.openstreetmap.org/export/embed.html?bbox=' +
-    encodeURIComponent(bbox) + '&layer=mapnik&marker=' + bLat + '%2C' + bLon;
-}
-
-function RouteMap({ leg }) {
-  const [showMap, setShowMap] = useState(true);
-  const isGround = ['car', 'bus', 'transfer', 'walk'].includes(leg.mode);
-  // Si se configura una clave válida de Google Maps Embed API, mostrar la ruta
-  // vial real en el mapa de Google. Sin clave, usar mapa de zona OSM y link.
-  const googleKey = import.meta.env.VITE_GOOGLE_MAPS_EMBED_API_KEY;
-  const googleEmbed = isGround && googleKey
-    ? 'https://www.google.com/maps/embed/v1/directions?' + new URLSearchParams({
-        key: googleKey,
-        origin: leg.from,
-        destination: leg.to,
-        mode: leg.mode === 'walk' ? 'walking' : 'driving',
-      }).toString()
-    : null;
-  const embed = googleEmbed || (isGround ? osmEmbed(leg) : null);
-  return (
-    <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
-      {embed && showMap ? (
-        <div className="relative">
-          <iframe
-            title={`Mapa de zona: ${leg.from} a ${leg.to}`}
-            src={embed}
-            loading="lazy"
-            referrerPolicy={googleEmbed ? "strict-origin-when-cross-origin" : "no-referrer"}
-            className="h-40 w-full border-0 bg-slate-100"
-          />
-          <div className="absolute bottom-1 left-2 rounded bg-white/95 px-2 py-1 text-[10px] font-medium text-slate-600 shadow">
-            {googleEmbed ? 'Ruta Google Maps · tiempo en vivo en Google' : 'Mapa de zona · © OpenStreetMap · no muestra ruta vial'}
-          </div>
-          <button type="button" onClick={() => setShowMap(false)}
-            className="absolute right-2 top-2 rounded-md bg-white/95 px-2 py-1 text-xs font-semibold text-slate-700 shadow">
-            Ocultar mapa
-          </button>
-        </div>
-      ) : (
-        <div className="flex items-center justify-between gap-3 bg-gradient-to-r from-sky-50 to-indigo-50 px-4 py-4">
-          <div className="flex min-w-0 flex-1 items-center gap-2 text-xs font-semibold text-slate-700">
-            <span className="truncate">{leg.from}</span>
-            <span className="h-0.5 min-w-5 flex-1 bg-gradient-to-r from-sky-500 to-indigo-500" aria-hidden="true" />
-            <span className="truncate">{leg.to}</span>
-          </div>
-          {embed && <button type="button" onClick={() => setShowMap(true)} className="shrink-0 text-xs font-bold text-blue-700">Ver mapa</button>}
-        </div>
-      )}
-      <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-2">
-        <span className="text-xs text-slate-600">Duración estimada, no tráfico en vivo</span>
-        <a href={mapLink(leg)} target="_blank" rel="noopener noreferrer"
-          className="text-xs font-bold text-blue-700 underline underline-offset-2">
-          Abrir recorrido en Google Maps ↗
-        </a>
-      </div>
-    </div>
-  );
-}
 
 export function NightStayCard({ stay }) {
   if (!stay) return null;
@@ -149,7 +69,7 @@ export function DayTransportCards({ legs }) {
             </div>
             {leg.notes && <p className="mt-3 text-sm leading-relaxed text-slate-600">{leg.notes}</p>}
             {leg.price && <p className="mt-2 text-sm font-semibold text-slate-800">💰 {leg.price}</p>}
-            <RouteMap leg={leg} />
+            <RoutePreview leg={leg} />
             {leg.bookingUrl && <a className={`${linkClass} mt-3 w-full`} href={leg.bookingUrl} target="_blank" rel="noopener noreferrer">Consultar / reservar transporte ↗</a>}
           </article>
         ))}
