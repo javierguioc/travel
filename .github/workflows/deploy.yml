@@ -10,6 +10,11 @@ permissions:
   pages: write
   id-token: write
 
+# Serializar despliegues para evitar conflictos si se hacen varios commits seguidos.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
