@@ -161,13 +161,15 @@ export default function RoutePreview({ leg }) {
   const map = useMemo(() => buildMap(geometry), [roadRoute, start, end]);
   const distance = Number.isFinite(leg.distanceKm)
     ? `${Math.round(leg.distanceKm)} km`
-    : roadRoute?.distanceKm
-      ? `${Math.round(roadRoute.distanceKm)} km`
-      : hasPoints
-        ? `~${Math.round(straightKm(start, end))} km`
-        : (leg.distanceLabel || 'Distancia por confirmar');
-  const distanceKind = Number.isFinite(leg.distanceKm)
-    ? (leg.distanceSource || 'Referencia de distancia')
+    : leg.distanceLabel
+      ? leg.distanceLabel
+      : roadRoute?.distanceKm
+        ? `${Math.round(roadRoute.distanceKm)} km`
+        : hasPoints
+          ? `~${Math.round(straightKm(start, end))} km`
+          : 'Distancia por confirmar';
+  const distanceKind = (Number.isFinite(leg.distanceKm) || leg.distanceLabel)
+    ? (leg.distanceSource || 'Distancia de referencia')
     : roadRoute?.distanceKm
       ? 'Ruta por carretera · OSRM / OpenStreetMap'
       : hasPoints
