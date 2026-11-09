@@ -1,5 +1,5 @@
 {
-  "version": "3.1-scl-pnt-google-flights-reference",
+  "version": "3.2-daily-budget-by-day",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -11,7 +11,10 @@
     "flight_status": "Vuelos tentativos hasta reservar",
     "group_size_planned": 6,
     "pricing_note": "Precios CLP/COP mezclan cotizaciones de operadores y referencias publicadas; se indica explícitamente qué está confirmado y qué es estimación.",
-    "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Punta Arenas → Balmaceda → Puerto Río Tranquilo → Santiago → Medellín"
+    "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Punta Arenas → Balmaceda → Puerto Río Tranquilo → Santiago → Medellín",
+    "daily_budget_fx_clp_cop": 3.3,
+    "daily_budget_updated": "2026-11-09",
+    "daily_budget_note": "Presupuesto diario para 6. CLP convertidos a COP usando 1 CLP ≈ 3,3 COP. Los valores estimados no son reserva."
   },
   "recommendations": [
     {
@@ -148,7 +151,46 @@
           "price": "Referencia monitoreada previamente: COP $1.646.930 ida y vuelta por persona; alerta ≤ $1.500.000."
         }
       ],
-      "toursToBook": []
+      "toursToBook": [],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 180000,
+            "cop": 594000
+          },
+          "food": {
+            "clp": 150000,
+            "cop": 495000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 0,
+            "cop": 0
+          },
+          "flights": {
+            "cop": 4940790
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 330000,
+          "cop": 6029790,
+          "perPersonCop": 1004965
+        },
+        "notes": [
+          "Vuelo internacional repartido 50/50 entre ida y regreso para no duplicarlo.",
+          "Hotel aeropuerto Santiago estimado para 6; no reservado.",
+          "Comidas: cena + desayuno/snacks para 6."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 2,
@@ -302,7 +344,46 @@
           },
           "visualAsset": "assets/flights/scl-pnt-2027-01-09-reference.svg"
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 210000,
+            "cop": 693000
+          },
+          "food": {
+            "clp": 180000,
+            "cop": 594000
+          },
+          "transport": {
+            "clp": 20000,
+            "cop": 66000
+          },
+          "activities": {
+            "clp": 0,
+            "cop": 0
+          },
+          "flights": {
+            "cop": 2859822
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 410000,
+          "cop": 4212822,
+          "perPersonCop": 702137
+        },
+        "notes": [
+          "SCL→PNT usa la captura más reciente: COP $476.637 pp.",
+          "Traslado PNT→centro estimado CLP $20.000 grupo.",
+          "Alojamiento Natales estimado en punto medio del rango."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 3,
@@ -432,7 +513,46 @@
           "url": "https://www.nomades.com/puerto-natales/full-day-torres-del-paine-id273",
           "status": "por confirmar"
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 210000,
+            "cop": 693000
+          },
+          "food": {
+            "clp": 210000,
+            "cop": 693000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 330000,
+            "cop": 1089000
+          },
+          "flights": {
+            "cop": 0
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 750000,
+          "cop": 2475000,
+          "perPersonCop": 412500
+        },
+        "notes": [
+          "Full Day Torres del Paine: CLP $55.000 pp.",
+          "Entrada 2027 aún no incluida porque la tarifa oficial no está publicada.",
+          "Alojamiento y comidas estimados para 6."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 4,
@@ -580,7 +700,45 @@
           "url": "https://caminostours.com/tour/puerto-natales/base-torres-desde-puerto-natales",
           "status": "por confirmar"
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 210000,
+            "cop": 693000
+          },
+          "food": {
+            "clp": 210000,
+            "cop": 693000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 480000,
+            "cop": 1584000
+          },
+          "flights": {
+            "cop": 0
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 900000,
+          "cop": 2970000,
+          "perPersonCop": 495000
+        },
+        "notes": [
+          "Base Torres guiada: CLP $80.000 pp.",
+          "Entrada 2027 no incluida; comida del trekking sí está estimada aquí."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 5,
@@ -742,7 +900,46 @@
           "price": "Cotizar van 7–9 plazas o transfer para 6; no hay precio confirmado."
         }
       ],
-      "toursToBook": []
+      "toursToBook": [],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 150000,
+            "cop": 495000
+          },
+          "food": {
+            "clp": 180000,
+            "cop": 594000
+          },
+          "transport": {
+            "clp": 391000,
+            "cop": 1290300
+          },
+          "activities": {
+            "clp": 0,
+            "cop": 0
+          },
+          "flights": {
+            "cop": 1079652
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 721000,
+          "cop": 3458952,
+          "perPersonCop": 576492
+        },
+        "notes": [
+          "Bus-Sur: CLP $11.000 pp → $66.000 grupo.",
+          "DAP PUQ→BBA estimado ~COP $179.942 pp; confirmar directo.",
+          "Van/auto BBA↔Río Tranquilo estimado CLP $650.000 total ida/vuelta; mitad imputada hoy."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 6,
@@ -930,7 +1127,46 @@
           "status": "por confirmar",
           "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg"
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 150000,
+            "cop": 495000
+          },
+          "food": {
+            "clp": 180000,
+            "cop": 594000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 636000,
+            "cop": 2098800
+          },
+          "flights": {
+            "cop": 0
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 966000,
+          "cop": 3187800,
+          "perPersonCop": 531300
+        },
+        "notes": [
+          "Full Mármol con descuento: CLP $26.000 pp.",
+          "Rafting: CLP $80.000 pp con traslado.",
+          "Actividades del día: CLP $636.000 grupo."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 7,
@@ -1074,7 +1310,46 @@
           "status": "por confirmar",
           "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg"
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 150000,
+            "cop": 495000
+          },
+          "food": {
+            "clp": 90000,
+            "cop": 297000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 1215000,
+            "cop": 4009500
+          },
+          "flights": {
+            "cop": 0
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 1455000,
+          "cop": 4801500,
+          "perPersonCop": 800250
+        },
+        "notes": [
+          "San Rafael usa el punto medio del rango CLP $1.170.000–$1.260.000 para 6.",
+          "Incluye desayuno y almuerzo; solo estimamos cena/snacks.",
+          "Puede variar ±CLP $45.000."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 8,
@@ -1250,7 +1525,46 @@
           ],
           "monitoring": "Preferir LA76 por mayor colchón antes del vuelo internacional de las 02:00."
         }
-      ]
+      ],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 0,
+            "cop": 0
+          },
+          "food": {
+            "clp": 150000,
+            "cop": 495000
+          },
+          "transport": {
+            "clp": 325000,
+            "cop": 1072500
+          },
+          "activities": {
+            "clp": 0,
+            "cop": 0
+          },
+          "flights": {
+            "cop": 1200000
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 475000,
+          "cop": 2767500,
+          "perPersonCop": 461250
+        },
+        "notes": [
+          "BBA→SCL: estimación conservadora COP $200.000 pp hasta cotizar el 15.",
+          "Segunda mitad del costo estimado de van/auto BBA↔Río Tranquilo.",
+          "Sin hotel esa noche."
+        ],
+        "sources": []
+      }
     },
     {
       "day": 9,
@@ -1345,7 +1659,45 @@
           "price": "Incluido en el monitoreo Medellín–Santiago 8–16 enero."
         }
       ],
-      "toursToBook": []
+      "toursToBook": [],
+      "dailyBudget": {
+        "groupSize": 6,
+        "exchangeRateClpToCop": 3.3,
+        "categories": {
+          "lodging": {
+            "clp": 0,
+            "cop": 0
+          },
+          "food": {
+            "clp": 60000,
+            "cop": 198000
+          },
+          "transport": {
+            "clp": 0,
+            "cop": 0
+          },
+          "activities": {
+            "clp": 0,
+            "cop": 0
+          },
+          "flights": {
+            "cop": 4940790
+          },
+          "other": {
+            "cop": 0
+          }
+        },
+        "totals": {
+          "clp": 60000,
+          "cop": 5138790,
+          "perPersonCop": 856465
+        },
+        "notes": [
+          "Segunda mitad del vuelo internacional de referencia.",
+          "Solo snacks/comida de aeropuerto; sin alojamiento."
+        ],
+        "sources": []
+      }
     }
   ],
   "tripLogistics": {
@@ -1486,7 +1838,13 @@
         "Van/transfer BBA↔Río Tranquilo",
         "Entradas Torres del Paine 2027 (tarifas aún no publicadas)"
       ],
-      "summary": "Gastos conocidos en Chile para 6, sin DAP/BBA-SCL/van/entradas/PN hotel: ~CLP 3.132.000–3.222.000 + COP 12.741.402. No sumar CLP y COP directamente; faltan rubros importantes."
+      "summary": "Gastos conocidos en Chile para 6, sin DAP/BBA-SCL/van/entradas/PN hotel: ~CLP 3.132.000–3.222.000 + COP 12.741.402. No sumar CLP y COP directamente; faltan rubros importantes.",
+      "dailyEstimatedTotals": {
+        "totalCop": 35042154,
+        "totalPerPersonCop": 5840359,
+        "totalClpEmbedded": 6067000,
+        "note": "Total aproximado. Aún excluye entradas Torres del Paine 2027 y cualquier diferencia real de DAP, BBA→SCL, van/hoteles."
+      }
     }
   }
 }
