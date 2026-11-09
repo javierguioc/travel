@@ -156,6 +156,51 @@ export function DayCard({ day }) {
         {/* Cada noche y todos los trayectos, con mapa y links de reserva */}
         <DayLogistics day={day} />
 
+        {day.dailyBudget && (
+          <section className="mb-6 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-lime-50 p-4 sm:p-5 shadow-sm">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">💰 Presupuesto estimado del día · 6 personas</p>
+                <h3 className="mt-1 text-2xl font-extrabold text-slate-900">
+                  {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.cop)}
+                </h3>
+                <p className="text-sm font-semibold text-emerald-800">
+                  ≈ {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.perPersonCop)} por persona
+                </p>
+              </div>
+              {day.dailyBudget.totals.clp > 0 && (
+                <span className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-slate-700 shadow-sm">
+                  CLP ${day.dailyBudget.totals.clp.toLocaleString('es-CL')} + vuelos COP
+                </span>
+              )}
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {[
+                ['🏠 Alojamiento', day.dailyBudget.categories.lodging],
+                ['🍽️ Comidas', day.dailyBudget.categories.food],
+                ['🚐 Transporte', day.dailyBudget.categories.transport],
+                ['🎟️ Actividades', day.dailyBudget.categories.activities],
+                ['✈️ Vuelos', day.dailyBudget.categories.flights],
+                ['➕ Otros', day.dailyBudget.categories.other],
+              ].map(([label, value]) => {
+                const copValue = value?.cop || 0;
+                if (!copValue) return null;
+                return (
+                  <div key={label} className="rounded-xl border border-emerald-100 bg-white p-3">
+                    <p className="text-xs font-semibold text-slate-500">{label}</p>
+                    <p className="mt-1 font-bold text-slate-900">{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(copValue)}</p>
+                    {value.clp > 0 && <p className="text-[11px] text-slate-500">CLP ${value.clp.toLocaleString('es-CL')}</p>}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mt-4 space-y-1">
+              {day.dailyBudget.notes?.map((note, i) => <p key={i} className="text-xs leading-relaxed text-slate-600">• {note}</p>)}
+            </div>
+            <p className="mt-3 text-[11px] font-medium text-emerald-800">Conversión usada: 1 CLP ≈ {day.dailyBudget.exchangeRateClpToCop.toLocaleString('es-CO')} COP. Presupuesto, no cotización final.</p>
+          </section>
+        )}
+
         {/* Activities Section */}
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-4">
