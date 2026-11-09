@@ -70,6 +70,10 @@ export function SummaryView() {
   }
 
   const totalCost = useRealisticCosts ? stats.totalCostReal : stats.totalCostBase;
+  const dailyBudgetTotal = itineraryData.days?.reduce((sum, day) => sum + (day.dailyBudget?.totals?.cop || 0), 0) || 0;
+  const dailyBudgetPerPerson = dailyBudgetTotal && itineraryData.meta?.group_size_planned
+    ? Math.round(dailyBudgetTotal / itineraryData.meta.group_size_planned)
+    : 0;
   const lastDay = itineraryData.days[itineraryData.days.length - 1];
   const endDate = calculateDayDate(lastDay.day);
 
@@ -163,7 +167,16 @@ export function SummaryView() {
           <div className="text-center bg-white/10 rounded-xl p-4">
             <div className="text-4xl mb-2">💰</div>
             <p className="text-white/80 text-sm mb-1">Presupuesto</p>
-            <p className="text-white font-bold text-xl">{itineraryData.tripLogistics?.budget ? 'Ver detalle arriba' : formatCost(totalCost)}</p>
+            <p className="text-white font-bold text-xl">
+              {dailyBudgetTotal
+                ? new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(dailyBudgetTotal)
+                : (itineraryData.tripLogistics?.budget ? 'Ver detalle arriba' : formatCost(totalCost))}
+            </p>
+            {dailyBudgetPerPerson > 0 && (
+              <p className="mt-1 text-xs text-white/75">
+                ≈ {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(dailyBudgetPerPerson)} por persona
+              </p>
+            )}
           </div>
         </div>
       </div>
