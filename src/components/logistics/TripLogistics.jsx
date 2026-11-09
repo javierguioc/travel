@@ -8,6 +8,58 @@ const tag = (kind) => kind === 'confirmado' ? 'bg-emerald-100 text-emerald-800' 
 const icons = { car: '🚗', bus: '🚌', flight: '✈️', boat: '🛥️', walk: '🥾', transfer: '🚐', tour: '🧭' };
 const clp = (value) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(value);
 
+
+function cop(value) {
+  return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(value);
+}
+
+export function FlightPriceReferenceCard({ references }) {
+  if (!references?.length) return null;
+  return (
+    <section className="mb-6 space-y-4">
+      {references.map((ref, idx) => (
+        <article key={idx} className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-950 text-white shadow-lg">
+          <div className="border-b border-slate-700 bg-gradient-to-r from-slate-900 to-slate-800 p-4 sm:p-5">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-sky-300">✈️ Precio de vuelo guardado</p>
+                <h3 className="mt-1 text-lg font-bold">{ref.title}</h3>
+                <p className="mt-1 text-xs text-slate-400">{ref.source} · referencia vista {ref.observedAt}</p>
+              </div>
+              {ref.cheapestTabCop && <span className="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-bold text-emerald-300">Más económicos desde {cop(ref.cheapestTabCop)}</span>}
+            </div>
+          </div>
+          <div className="divide-y divide-slate-800">
+            {ref.options?.map((flight, i) => (
+              <div key={i} className={`grid gap-3 p-4 sm:grid-cols-[1.1fr_1fr_.7fr] sm:items-center ${flight.recommended ? 'bg-sky-500/10' : ''}`}>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold">{flight.airline}</span>
+                    {flight.recommended && <span className="rounded bg-sky-400/15 px-2 py-0.5 text-[10px] font-bold uppercase text-sky-300">Objetivo</span>}
+                  </div>
+                  <p className="mt-1 text-sm text-slate-300">{flight.departure} → {flight.arrival}</p>
+                </div>
+                <div className="text-sm text-slate-300">
+                  <p>{flight.duration}</p>
+                  <p className="text-xs text-slate-500">{flight.stops}</p>
+                </div>
+                <p className="text-right text-lg font-extrabold text-emerald-300">{cop(flight.priceCop)}</p>
+              </div>
+            ))}
+          </div>
+          <div className="space-y-2 border-t border-slate-800 p-4">
+            <p className="text-xs leading-relaxed text-slate-400">{ref.note}</p>
+            {ref.monitoring && <p className="rounded-lg bg-amber-400/10 p-3 text-xs font-semibold text-amber-200">🔔 {ref.monitoring}</p>}
+            <a href={ref.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white hover:bg-blue-500">
+              Abrir esta búsqueda en Google Flights ↗
+            </a>
+          </div>
+        </article>
+      ))}
+    </section>
+  );
+}
+
 export function NightStayCard({ stay }) {
   if (!stay) return null;
   const noNight = stay.noNight;
@@ -125,6 +177,7 @@ export function DayLogistics({ day }) {
   if (!day) return null;
   return (
     <>
+      <FlightPriceReferenceCard references={day.flightPriceReferences} />
       <NightStayCard stay={day.nightStay} />
       <DayTransportCards legs={day.transportLegs} />
       <TourOperatorCard tours={day.toursToBook} />
