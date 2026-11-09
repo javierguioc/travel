@@ -1,5 +1,5 @@
 {
-  "version": "2.2-viajero-austral-bundle-prices-nov2026",
+  "version": "2.3-flight-price-reference-and-bba-paine-route",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -13,6 +13,12 @@
     "pricing_note": "CLP de operadores para 6; los costos antiguos de las tarjetas son estimaciones de planificación en USD, no cotizaciones ni reservas."
   },
   "recommendations": [
+    {
+      "type": "Vuelo SCL→BBA",
+      "title": "Referencia Google Flights · 9 enero",
+      "description": "SKY directo 08:48–11:07: COP $313.406 pp. LATAM directo 09:30–11:48: COP $335.095 pp. Captura del 8 nov 2026 para 1 pasajero; comprobar tarifa y 6 cupos al comprar. Monitoreo activo.",
+      "link": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI3LTAxLTA5agwIAxIIL20vMGRscXZyBwgBEgNCQkFAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC&hl=es-419&gl=CO"
+    },
     {
       "type": "Combo Viajero Austral",
       "title": "Tres actividades con la misma empresa",
@@ -301,7 +307,47 @@
           "distanceSourceUrl": "https://www.google.com/maps/dir/Balmaceda,+Coyhaique,+Ays%C3%A9n,+Chile/Puerto+R%C3%ADo+Tranquilo,+Chile/"
         }
       ],
-      "toursToBook": []
+      "toursToBook": [],
+      "flightPriceReferences": [
+        {
+          "title": "Santiago (SCL) → Balmaceda (BBA) · sábado 9 de enero",
+          "observedAt": "8 de noviembre de 2026",
+          "source": "Google Flights",
+          "link": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI3LTAxLTA5agwIAxIIL20vMGRscXZyBwgBEgNCQkFAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC&hl=es-419&gl=CO",
+          "note": "Referencia capturada para 1 pasajero. Para el grupo hay que comprobar disponibilidad y precio para 6 antes de comprar.",
+          "options": [
+            {
+              "airline": "SKY Airline",
+              "departure": "08:48",
+              "arrival": "11:07",
+              "duration": "2 h 19 min",
+              "stops": "Directo",
+              "priceCop": 313406,
+              "recommended": true
+            },
+            {
+              "airline": "LATAM",
+              "departure": "09:30",
+              "arrival": "11:48",
+              "duration": "2 h 18 min",
+              "stops": "Directo",
+              "priceCop": 335095,
+              "recommended": false
+            },
+            {
+              "airline": "LATAM",
+              "departure": "13:26",
+              "arrival": "15:44",
+              "duration": "2 h 18 min",
+              "stops": "Directo",
+              "priceCop": 380097,
+              "recommended": false
+            }
+          ],
+          "cheapestTabCop": 240542,
+          "monitoring": "Monitoreo activo 2 veces al día hasta el 8 de enero. Alertas: SKY ≤ $280.000, LATAM ≤ $300.000, cualquier directo ≤ $280.000, cambios de horario, desaparición o subida >10%."
+        }
+      ]
     },
     {
       "day": 3,
@@ -662,9 +708,10 @@
         "Balmaceda → Punta Arenas → Puerto Natales"
       ],
       "perks": [
-        "El martes 12 PNT está cerrado según calendario, pero la llegada por Punta Arenas y bus/transfer a Puerto Natales sigue funcionando.",
-        "DAP Balmaceda→Punta Arenas a las 15:30 es horario estacional publicado, no boleto confirmado para 6.",
-        "Coordinar bus desde aeropuerto PUQ y check-in tardío en Puerto Natales."
+        "MEJOR CONEXIÓN hacia Torres del Paine el martes 12: vuelo directo DAP Balmaceda (BBA) → Punta Arenas (PUQ) a las 15:30 (horario estacional publicado), ~1 h 30 min.",
+        "No hay vuelo directo regular BBA → Puerto Natales; además PNT está cerrado del 11 al 14 de enero. Por eso no conviene intentar llegar por PNT el día 12.",
+        "Desde PUQ, lo más eficiente es ir por tierra a Puerto Natales (~3 h) y dormir allí. Al día siguiente se entra a Torres del Paine desde Puerto Natales (~1,5–2,5 h según portería/servicio).",
+        "Ir directamente desde PUQ al parque el mismo martes sería una llegada muy tardía y sin valor real para excursiones; Puerto Natales es la base práctica."
       ],
       "accommodation": {
         "name": "Hostal o Airbnb para 6 — por elegir",
