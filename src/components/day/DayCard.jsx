@@ -196,13 +196,8 @@ export function DayCard({ day }) {
           </div>
         )}
 
-        {/* Costs: las cotizaciones reales CLP están arriba en tours */}
-        {day.nightStay && (
-          <p className="mb-2 rounded-lg bg-amber-50 p-3 text-xs text-amber-900">
-            💡 Los importes del desglose siguiente son estimaciones anteriores en USD; no incluyen necesariamente la cotización real para 6 personas. Para rafting y San Rafael, revisa los valores CLP del operador en las tarjetas de arriba.
-          </p>
-        )}
-        <CostBreakdown day={day} />
+        {/* Mostrar el desglose legado solo si hay valores cargados. El viaje Chile usa presupuesto CLP/COP en Logística. */}
+        {(day.totals?.totalBase > 0 || day.totals?.totalReal > 0) && <CostBreakdown day={day} />}
 
         {/* Map Link */}
         {day.mapPoints && day.mapPoints.length > 0 && (
