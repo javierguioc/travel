@@ -1063,8 +1063,8 @@
             -72.506
           ],
           "destinationCoords": [
-            -50.973,
-            -73.007
+            -50.96518,
+            -72.86348
           ]
         },
         {
@@ -1073,11 +1073,19 @@
           "mode": "walk",
           "duration": "~8–10 h / 20–22 km",
           "operator": "Trekking de montaña",
-          "notes": "Caminata exigente, con desnivel. No usar Google Maps como guía de senderismo: seguir señalización y guardaparques.",
+          "notes": "Caminata exigente, con desnivel. No usar Google Maps como guía de senderismo: seguir señalización y guardaparques. Coordenadas del Centro de Bienvenida y del mirador contrastadas con OpenStreetMap; la línea dibujada NO sigue el sendero. Seguir exclusivamente la ruta señalizada del parque.",
           "status": "por confirmar",
           "departure": "08:00 orientativo",
           "distanceLabel": "20–22 km ida y vuelta",
-          "distanceSource": "Trekking de montaña · distancia estimada"
+          "distanceSource": "Trekking de montaña · distancia estimada",
+          "originCoords": [
+            -50.96518,
+            -72.86348
+          ],
+          "destinationCoords": [
+            -50.94267,
+            -72.94966
+          ]
         },
         {
           "from": "Centro de Bienvenida Las Torres",
@@ -1089,8 +1097,8 @@
           "status": "por confirmar",
           "departure": "Tras finalizar trekking",
           "originCoords": [
-            -50.973,
-            -73.007
+            -50.96518,
+            -72.86348
           ],
           "destinationCoords": [
             -51.73,
