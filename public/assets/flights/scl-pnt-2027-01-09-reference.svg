@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" rx="28" fill="#202124"/>
+<text x="54" y="70" fill="#9aa0a6" font-family="Arial,sans-serif" font-size="24">Google Flights · referencia guardada</text>
+<text x="54" y="125" fill="#fff" font-family="Arial,sans-serif" font-size="38" font-weight="700">Santiago de Chile → Puerto Natales</text>
+<text x="54" y="168" fill="#bdc1c6" font-family="Arial,sans-serif" font-size="24">sábado, 9 de enero de 2027 · LATAM · directo</text>
+<rect x="54" y="215" width="1092" height="190" rx="18" fill="#292a2d" stroke="#5f6368"/>
+<text x="90" y="270" fill="#fff" font-family="Arial,sans-serif" font-size="32" font-weight="700">05:03 a. m.</text>
+<text x="330" y="270" fill="#8ab4f8" font-family="Arial,sans-serif" font-size="28">SCL</text>
+<text x="440" y="270" fill="#9aa0a6" font-family="Arial,sans-serif" font-size="28">→ 3 h 18 min →</text>
+<text x="720" y="270" fill="#8ab4f8" font-family="Arial,sans-serif" font-size="28">PNT</text>
+<text x="860" y="270" fill="#fff" font-family="Arial,sans-serif" font-size="32" font-weight="700">08:21 a. m.</text>
+<text x="90" y="340" fill="#81c995" font-family="Arial,sans-serif" font-size="40" font-weight="700">COP $476.637</text>
+<text x="430" y="340" fill="#bdc1c6" font-family="Arial,sans-serif" font-size="22">por persona · referencia para 1 adulto</text>
+<text x="90" y="382" fill="#fdd663" font-family="Arial,sans-serif" font-size="20">Google lo clasifica como precio estándar</text>
+<rect x="54" y="442" width="1092" height="118" rx="16" fill="#303134"/>
+<text x="84" y="485" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700">Rango típico mostrado</text>
+<line x1="84" y1="525" x2="1020" y2="525" stroke="#81c995" stroke-width="8"/>
+<circle cx="620" cy="525" r="12" fill="#8ab4f8" stroke="#fff" stroke-width="3"/>
+<text x="84" y="554" fill="#bdc1c6" font-family="Arial,sans-serif" font-size="18">COP $345.000</text>
+<text x="920" y="554" fill="#bdc1c6" font-family="Arial,sans-serif" font-size="18">COP $570.000</text>
+</svg>
