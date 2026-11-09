@@ -1,5 +1,5 @@
 {
-  "version": "3.0-torres-first-aysen-second-2027",
+  "version": "3.1-scl-pnt-google-flights-reference",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -22,9 +22,9 @@
     },
     {
       "type": "Vuelo 9 enero",
-      "title": "SCL→PNT LA251 08:50–12:08",
-      "description": "Horario publicado para sábado 9. LATAM publica enero desde COP $361.800 pp; monitoreo activo para 6 pasajeros. Confirmar tarifa exacta.",
-      "link": "https://www.latamairlines.com/co/es/destinos/chile/vuelos-desde-santiago-a-puerto-natales"
+      "title": "SCL→PNT LATAM 05:03–08:21 · COP $476.637 pp",
+      "description": "Google Flights, captura del 8 nov 2026. Precio estándar; rango típico mostrado COP $345.000–$570.000. Para 6: referencia COP $2.859.822 antes de equipaje/opcionales. Monitoreo activo.",
+      "link": "https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI3LTAxLTA5agwIAxIIL20vMGRscXZyDQgDEgkvbS8wYmIxNHFAAUgBcAGCAQsI____________AZgBAg&hl=es-419&gl=CO"
     },
     {
       "type": "Conexión 12 enero",
@@ -279,21 +279,28 @@
         {
           "title": "Santiago (SCL) → Puerto Natales (PNT) · sábado 9 de enero",
           "observedAt": "8 de noviembre de 2026",
-          "source": "LATAM / horario publicado",
-          "link": "https://www.latamairlines.com/co/es/destinos/chile/vuelos-desde-santiago-a-puerto-natales",
-          "note": "Tarifa mensual de referencia; confirmar precio para el 9 y 6 pasajeros.",
+          "source": "Google Flights · captura compartida",
+          "link": "https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI3LTAxLTA5agwIAxIIL20vMGRscXZyDQgDEgkvbS8wYmIxNHFAAUgBcAGCAQsI____________AZgBAg&hl=es-419&gl=CO",
+          "note": "Captura para 1 adulto. Google Flights muestra este precio como estándar; para el grupo hay que verificar tarifa y 6 cupos al comprar.",
           "options": [
             {
-              "airline": "LATAM LA251",
-              "departure": "08:50",
-              "arrival": "12:08",
+              "airline": "LATAM",
+              "departure": "05:03",
+              "arrival": "08:21",
               "duration": "3 h 18 min",
               "stops": "Directo",
-              "priceCop": 361800,
+              "priceCop": 476637,
               "recommended": true
             }
           ],
-          "monitoring": "Monitoreo actualizado: 2 veces al día hasta el 8 de enero; alerta ≤ COP $330.000, cambios importantes, desaparición o disponibilidad limitada para 6."
+          "monitoring": "Monitoreo activo 2 veces al día hasta el 8 de enero; alertar si baja a COP $400.000 o menos, cambia mucho el horario, desaparece el directo, se limita para 6 o sube >10%.",
+          "imageUrl": "${import.meta.env.BASE_URL}",
+          "cheapestTabCop": 476637,
+          "priceRangeCop": {
+            "min": 345000,
+            "max": 570000
+          },
+          "visualAsset": "assets/flights/scl-pnt-2027-01-09-reference.svg"
         }
       ]
     },
@@ -1465,10 +1472,10 @@
           "status": "referencia actual"
         },
         {
-          "label": "SCL→PNT enero LATAM",
-          "perPerson": 361800,
-          "group": 2170800,
-          "status": "desde / referencia mensual"
+          "label": "SCL→PNT 9 enero · Google Flights",
+          "perPerson": 476637,
+          "group": 2859822,
+          "status": "captura actual · precio estándar"
         }
       ],
       "pending": [
@@ -1479,7 +1486,7 @@
         "Van/transfer BBA↔Río Tranquilo",
         "Entradas Torres del Paine 2027 (tarifas aún no publicadas)"
       ],
-      "summary": "Gastos conocidos en Chile para 6, sin DAP/BBA-SCL/van/entradas/PN hotel: ~CLP 3.132.000–3.222.000 + COP 12.052.380. No sumar CLP y COP directamente; faltan rubros importantes."
+      "summary": "Gastos conocidos en Chile para 6, sin DAP/BBA-SCL/van/entradas/PN hotel: ~CLP 3.132.000–3.222.000 + COP 12.741.402. No sumar CLP y COP directamente; faltan rubros importantes."
     }
   }
 }
