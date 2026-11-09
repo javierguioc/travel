@@ -1,5 +1,5 @@
 {
-  "version": "4.2-fix-day3-day4-route-labels",
+  "version": "4.3-complete-daily-costs",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -14,7 +14,7 @@
     "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Puerto Río Tranquilo → Santiago → Medellín",
     "daily_budget_fx_clp_cop": 3.3,
     "daily_budget_updated": "2026-11-09",
-    "daily_budget_note": "Presupuesto diario para 6. CLP convertidos a COP usando 1 CLP ≈ 3,3 COP. Los valores estimados no son reserva.",
+    "daily_budget_note": "Cada día muestra un estimado completo para 6 y por persona, incluyendo tours/actividades, comidas, viajes/traslados/vuelos y hospedaje cuando corresponde.",
     "start_date": "2027-01-08"
   },
   "recommendations": [
@@ -1801,7 +1801,13 @@
       "dailyEstimatedTotals": {
         "totalCop": 35238879,
         "totalPerPersonCop": 5873147,
-        "note": "Total provisional del nuevo orden. El servicio panorámico con retorno anticipado puede costar más que un full day compartido estándar y varios vuelos aún necesitan tarifa exacta."
+        "includes": [
+          "tours y actividades",
+          "comidas",
+          "vuelos y traslados",
+          "hospedaje"
+        ],
+        "note": "Estimación completa por día. Los rubros sin tarifa cerrada usan referencias de planificación y pueden cambiar al reservar."
       }
     }
   }
