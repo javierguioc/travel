@@ -162,8 +162,8 @@ export function SummaryView() {
           </div>
           <div className="text-center bg-white/10 rounded-xl p-4">
             <div className="text-4xl mb-2">💰</div>
-            <p className="text-white/80 text-sm mb-1">Costo Total</p>
-            <p className="text-white font-bold text-2xl">{formatCost(totalCost)}</p>
+            <p className="text-white/80 text-sm mb-1">Presupuesto</p>
+            <p className="text-white font-bold text-xl">{itineraryData.tripLogistics?.budget ? 'Ver detalle arriba' : formatCost(totalCost)}</p>
           </div>
         </div>
       </div>
