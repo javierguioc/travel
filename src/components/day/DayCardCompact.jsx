@@ -2,8 +2,6 @@
 import { useState } from 'react';
 import { useItineraryStore } from '../../store/store';
 import useCalendar from '../../hooks/useCalendar';
-import useCurrency from '../../hooks/useCurrency';
-import { calculateDayTotal } from '../../utils/calculations';
 import { getCountryFlag, getActivityIcon } from '../../utils/icons';
 import { isTransportActivity, getTransportType } from '../../utils/transport';
 
@@ -34,15 +32,18 @@ export function DayCardCompact({ day }) {
   const [imageError, setImageError] = useState(false);
   const setCurrentDay = useItineraryStore((state) => state.setCurrentDay);
   const setCurrentView = useItineraryStore((state) => state.setCurrentView);
-  const useRealisticCosts = useItineraryStore((state) => state.useRealisticCosts);
   const { getShortDate, getFormattedDate } = useCalendar();
-  const { formatCost } = useCurrency();
 
   if (!day) return null;
 
   const flag = getCountryFlag(day.country);
   const shortDate = getShortDate(day.day);
-  const dayTotal = calculateDayTotal(day, useRealisticCosts);
+  const dailyBudget = day.dailyBudget?.totals;
+  const formatCompactCOP = (value) => {
+    if (!value) return '≈ $0';
+    if (value >= 1_000_000) return `≈ ${(value / 1_000_000).toFixed(2).replace('.', ',')} M`;
+    return `≈ ${Math.round(value / 1000)} mil`;
+  };
 
   // Fallback: usar primera actividad con imagen si no hay heroImageUrl
   const firstActivityWithImage = day.mainActivities?.find(a => a.imageUrl);
@@ -109,9 +110,16 @@ export function DayCardCompact({ day }) {
                 Descartado
               </span>
             ) : (
-              <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
-                {formatCost(dayTotal)}
-              </span>
+              <div className="text-right">
+                <span className="inline-block bg-emerald-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
+                  {dailyBudget ? formatCompactCOP(dailyBudget.cop) : 'Por estimar'}
+                </span>
+                {dailyBudget && (
+                  <p className="mt-1 text-[10px] font-semibold text-white drop-shadow">
+                    {formatCompactCOP(dailyBudget.perPersonCop)} pp
+                  </p>
+                )}
+              </div>
             )}
           </div>
           <div>
@@ -168,6 +176,12 @@ export function DayCardCompact({ day }) {
         )}
         {day.transportLegs?.length > 0 && (
           <p className="mt-2 text-xs font-semibold text-sky-800">🧭 {day.transportLegs.length} tramos/opciones con mapa y tiempos</p>
+        )}
+        {dailyBudget && (
+          <div className="mt-2 rounded-lg border border-emerald-100 bg-emerald-50 px-3 py-2">
+            <p className="text-[11px] font-bold text-emerald-800">💰 Estimado completo del día</p>
+            <p className="mt-0.5 text-[10px] text-emerald-700">Incluye tours/actividades, comidas, viajes y hospedaje cuando aplica.</p>
+          </div>
         )}
 
         {/* Footer con temperatura */}
