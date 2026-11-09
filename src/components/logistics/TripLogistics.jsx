@@ -187,7 +187,7 @@ export function DayLogistics({ day }) {
 
 export function TripLogisticsOverview({ itineraryData }) {
   if (!itineraryData?.tripLogistics) return null;
-  const { groupSize, operator, airport, stays, openItems, transportWarning } = itineraryData.tripLogistics;
+  const { groupSize, operator, airport, stays, openItems, transportWarning, budget } = itineraryData.tripLogistics;
   return (
     <section className="space-y-4">
       <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-5 shadow-sm">
@@ -209,6 +209,42 @@ export function TripLogisticsOverview({ itineraryData }) {
           <a className={linkClass} href={operator.whatsappUrl} target="_blank" rel="noopener noreferrer">💬 WhatsApp {operator.phone}</a>
           <a className={linkClass} href={operator.sanRafaelUrl} target="_blank" rel="noopener noreferrer">Glaciar San Rafael ↗</a>
           <a className={linkClass} href={operator.raftingUrl} target="_blank" rel="noopener noreferrer">Rafting Baker ↗</a>
+        </div>
+      </div>}
+      {budget && <div className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-5 shadow-sm">
+        <h3 className="text-lg font-bold text-slate-900">💰 Presupuesto actualizado para {budget.groupSize} personas</h3>
+        <p className="mt-2 text-sm text-slate-700">{budget.summary}</p>
+        <div className="mt-4 grid gap-4 lg:grid-cols-2">
+          <div>
+            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Valores en CLP</p>
+            <div className="space-y-2">
+              {budget.knownClp?.map((item, i) => <div key={i} className="rounded-lg border border-emerald-100 bg-white p-3 text-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <span className="font-semibold text-slate-800">{item.label}</span>
+                  <span className="shrink-0 font-bold text-emerald-800">{item.groupMin ? `CLP ${item.groupMin.toLocaleString('es-CL')}–${item.groupMax.toLocaleString('es-CL')}` : `CLP ${item.group.toLocaleString('es-CL')}`}</span>
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{item.status}</p>
+              </div>)}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Valores en COP</p>
+            <div className="space-y-2">
+              {budget.knownCop?.map((item, i) => <div key={i} className="rounded-lg border border-emerald-100 bg-white p-3 text-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <span className="font-semibold text-slate-800">{item.label}</span>
+                  <span className="shrink-0 font-bold text-emerald-800">{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(item.group)}</span>
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{item.status}</p>
+              </div>)}
+              <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                <p className="text-xs font-bold uppercase tracking-wide text-amber-800">Aún falta cotizar</p>
+                <ul className="mt-2 space-y-1 text-xs text-amber-950">
+                  {budget.pending?.map((item, i) => <li key={i}>• {item}</li>)}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>}
       <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
