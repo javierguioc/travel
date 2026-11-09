@@ -6,7 +6,7 @@ export const DEFAULT_SHOW_COP_CONVERSION = true;
 export const DEFAULT_USE_REALISTIC_COSTS = true;
 
 // Viajes disponibles. Cada uno apunta a su propio JSON en /public/data.
-// Chile enero 2027: Patagonia de Aysén y Magallanes, sin Atacama.
+// Chile enero 2027: Torres del Paine primero, Aysén después, sin Atacama.
 // (El JSON de Europa se conserva en /public/data/itinerary-data.json, solo
 //  se quitó del selector.)
 export const TRIPS = {
@@ -15,7 +15,7 @@ export const TRIPS = {
     label: 'Chile',
     emoji: '🇨🇱',
     title: 'Chile 2027 — Mármol, San Rafael, Rafting y Torres del Paine',
-    route: 'Medellín → Santiago → Capillas de Mármol → Río Baker → San Rafael → Torres del Paine → Santiago → Medellín',
+    route: 'Medellín → Santiago → Puerto Natales → Torres del Paine → Punta Arenas → Balmaceda → Río Tranquilo → Santiago → Medellín',
     dateLabel: '8–16 enero 2027',
     daysLabel: '9 días',
     gradient: 'from-amber-600 via-rose-600 to-teal-700',
