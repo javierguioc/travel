@@ -1,5 +1,5 @@
 {
-  "version": "4.1-remove-base-torres-free-day-15",
+  "version": "4.2-fix-day3-day4-route-labels",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -10,8 +10,8 @@
     "return_local": "2027-01-16T02:00:00",
     "flight_status": "Vuelos tentativos hasta reservar",
     "group_size_planned": 6,
-    "pricing_note": "Plan de 9 días. Se eliminó Base Las Torres. El 15 de enero queda libre completo en Santiago. El panorámico del 10 debe usar retorno anticipado para tomar PNT→SCL 19:00.",
-    "route": "Medellín → Santiago → Puerto Natales → Torres del Paine panorámico → Santiago → Balmaceda → Puerto Río Tranquilo → Santiago → Medellín",
+    "pricing_note": "Plan de 9 días. Día 3 es Full Day Torres del Paine. Día 4 representa el traslado completo Torres/Puerto Natales→Puerto Río Tranquilo; Santiago es solo una escala técnica nocturna para enlazar con Balmaceda.",
+    "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Puerto Río Tranquilo → Santiago → Medellín",
     "daily_budget_fx_clp_cop": 3.3,
     "daily_budget_updated": "2026-11-09",
     "daily_budget_note": "Presupuesto diario para 6. CLP convertidos a COP usando 1 CLP ≈ 3,3 COP. Los valores estimados no son reserva.",
@@ -20,14 +20,14 @@
   "recommendations": [
     {
       "type": "Cambio principal",
-      "title": "Base Las Torres eliminada",
-      "description": "Nos quedamos con el panorámico de Torres del Paine el domingo 10 y usamos el día ganado para tener el viernes 15 libre completo en Santiago.",
+      "title": "Día 3: Full Day Torres del Paine",
+      "description": "El domingo 10 es el día completo de Torres del Paine. Al terminar comenzamos la conexión hacia Aysén; Santiago aparece solo como escala técnica nocturna.",
       "link": "https://chile.travel/atractivos/parque-nacional-torres-del-paine/"
     },
     {
       "type": "Conexión clave",
-      "title": "10 ene: PNT→SCL 19:00",
-      "description": "LATAM LA45 tiene horario publicado 19:00–22:06. El panorámico debe terminar antes de lo habitual para llegar al aeropuerto con margen.",
+      "title": "Día 4: Torres del Paine → Puerto Río Tranquilo",
+      "description": "Ruta completa: Puerto Natales/Torres → PNT → SCL (escala técnica) → BBA → Puerto Río Tranquilo. El lunes 11 DAP no opera PUQ→BBA; en verano 2026–27 esa ruta directa funciona martes y jueves.",
       "link": "https://aviability.com/es/vuelo/la45-latam-airlines-group/pnt-scl"
     },
     {
@@ -377,7 +377,7 @@
     {
       "day": 3,
       "date": "2027-01-10",
-      "city": "Torres del Paine panorámico + vuelo a Santiago",
+      "city": "Torres del Paine — Full Day panorámico",
       "country": "Chile",
       "cityCode": "PNT-TDP",
       "currencyLocal": "CLP",
@@ -388,9 +388,9 @@
         "Torres del Paine — full day panorámico"
       ],
       "perks": [
-        "Quitamos Base Las Torres completamente.",
-        "Concentramos Torres del Paine en un solo día panorámico con sus mejores paisajes.",
-        "La clave es salir del parque temprano: vuelo LATAM LA45 PNT→SCL 19:00."
+        "Día completo dedicado a Torres del Paine: Lago Pehoé, Salto Grande, Mirador Cuernos, Laguna Amarga y los mejores miradores.",
+        "Quitamos Base Las Torres como trekking independiente; este es el único día completo dentro del parque.",
+        "Al terminar, comenzamos la conexión hacia Aysén. El vuelo nocturno PNT→SCL es solo una escala técnica para poder continuar a Balmaceda al día siguiente."
       ],
       "accommodation": {
         "name": "Mismo alojamiento en Puerto Natales",
@@ -400,19 +400,19 @@
       },
       "mainActivities": [
         {
-          "name": "Torres del Paine panorámico optimizado",
+          "name": "Full Day Torres del Paine",
           "start": "06:30",
           "durationMin": 510,
-          "notes": "Vehículo privado o tour ajustado para ver los mejores puntos — Lago Pehoé, Salto Grande, Mirador Cuernos, Laguna Amarga y miradores — y salir del parque ~15:00–15:30. NO usar un tour estándar que regrese tarde.",
+          "notes": "Día panorámico completo con los puntos que más valen la pena: Lago Pehoé, Salto Grande, Mirador Cuernos, Laguna Amarga y miradores principales. El regreso debe coordinarse para enlazar con la salida nocturna desde PNT.",
           "link": "https://www.nomades.com/puerto-natales/full-day-torres-del-paine-id273",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg/1280px-Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg",
           "imageQuery": "Torres del Paine Lago Pehoe Cuernos Salto Grande"
         },
         {
-          "name": "LATAM LA45 Puerto Natales → Santiago",
+          "name": "Conexión nocturna hacia Aysén · PNT → SCL",
           "start": "19:00",
           "durationMin": 186,
-          "notes": "Horario publicado: 19:00–22:06 el domingo 10. Confirmar antes de pagar el traslado panorámico.",
+          "notes": "Este vuelo NO convierte Santiago en destino del viaje. Es únicamente una escala técnica nocturna para continuar al día siguiente SCL→BBA→Puerto Río Tranquilo.",
           "link": "https://aviability.com/es/vuelo/la45-latam-airlines-group/pnt-scl",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
           "imageQuery": "Puerto Natales Santiago flight"
@@ -494,7 +494,7 @@
           "operator": "LATAM LA45",
           "departure": "19:00 publicado · llegada 22:06",
           "status": "horario publicado",
-          "notes": "Vuelo publicado para el domingo 10. Esta conexión es la que permite eliminar Base Torres y mover el día libre al 15.",
+          "notes": "Escala técnica nocturna. La ruta que estamos haciendo es Torres del Paine / Puerto Natales → Puerto Río Tranquilo; Santiago solo sirve para conectar con Balmaceda porque el lunes 11 no hay DAP directo PUQ→BBA.",
           "bookingUrl": "https://www.google.com/travel/flights",
           "originCoords": [
             -51.6715,
@@ -563,7 +563,7 @@
     {
       "day": 4,
       "date": "2027-01-11",
-      "city": "Santiago → Balmaceda → Puerto Río Tranquilo",
+      "city": "Torres del Paine / Puerto Natales → Puerto Río Tranquilo",
       "country": "Chile",
       "cityCode": "RTR-BBA-PUQ-PNT",
       "currencyLocal": "CLP",
@@ -574,8 +574,9 @@
         "Puerto Natales → Punta Arenas → Balmaceda → Río Tranquilo"
       ],
       "perks": [
-        "Este cambio reemplaza el antiguo Día 4 de Base Las Torres.",
-        "Ya no dependemos de DAP el lunes: llegamos a Aysén vía Santiago y SKY."
+        "La ruta completa de este día es continuación de Torres del Paine hacia Aysén.",
+        "Santiago aparece únicamente como escala técnica de la noche anterior; NO es el origen real del trayecto ni un destino turístico.",
+        "El lunes 11 no hay vuelo directo DAP Punta Arenas→Balmaceda: DAP publica esa ruta solo martes y jueves en verano 2026–27. Por eso la conexión vía SCL es la forma práctica de conservar Puerto Río Tranquilo el 11."
       ],
       "accommodation": {
         "name": "Habitaciones JC / cabaña / Airbnb — por reservar",
@@ -585,10 +586,10 @@
       },
       "mainActivities": [
         {
-          "name": "SKY Santiago → Balmaceda vía Puerto Montt",
+          "name": "Continuación hacia Aysén · escala SCL → Balmaceda",
           "start": "09:00",
           "durationMin": 220,
-          "notes": "Horario publicado para el 11 de enero: llegada aproximada 12:40 a Balmaceda.",
+          "notes": "Venimos desde Torres del Paine/Puerto Natales. Santiago es solo la escala técnica nocturna; este tramo continúa hacia Balmaceda y luego Puerto Río Tranquilo.",
           "link": "https://www.visitchile.com/es/tours/carretera-austral-sur-8-dias-7-noches/",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
           "imageQuery": "Santiago Balmaceda flight"
@@ -646,6 +647,17 @@
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
       },
       "transportLegs": [
+        {
+          "from": "Torres del Paine / Puerto Natales",
+          "to": "Puerto Río Tranquilo",
+          "mode": "connection",
+          "duration": "Conexión en 2 etapas · noche 10 + día 11",
+          "operator": "LATAM/SKY + transfer terrestre",
+          "departure": "Comienza al terminar el Full Day del 10",
+          "status": "por confirmar",
+          "notes": "Ruta completa: Torres del Paine → PNT → SCL (escala técnica nocturna) → BBA → Puerto Río Tranquilo. No existe un vuelo directo PNT→BBA y DAP PUQ→BBA no opera el lunes 11.",
+          "bookingUrl": "https://www.google.com/travel/flights"
+        },
         {
           "from": "Santiago (SCL)",
           "to": "Balmaceda (BBA)",
@@ -1707,7 +1719,7 @@
       "Confirmar SCL→PNT sábado 9 para 6",
       "Reservar alojamiento Puerto Natales noche del 9",
       "Confirmar panorámico Torres del Paine con retorno anticipado el 10 (salir parque ~15:00–15:30)",
-      "Confirmar LATAM LA45 PNT→SCL domingo 10 19:00 para 6",
+      "Confirmar conexión del 10 al 11: PNT→SCL nocturno + SCL→BBA temprano, para que el Día 4 sea Torres/Puerto Natales→Puerto Río Tranquilo",
       "Confirmar SKY H2 1621 SCL→PMC→BBA lunes 11 09:00–12:40 para 6",
       "Cerrar van/transfer BBA↔Puerto Río Tranquilo para 6",
       "Confirmar Full Mármol + rafting martes 12",
