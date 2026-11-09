@@ -47,6 +47,16 @@ export function FlightPriceReferenceCard({ references }) {
               </div>
             ))}
           </div>
+          {ref.visualAsset && (
+            <div className="border-t border-slate-800 bg-slate-900 p-4">
+              <img
+                src={`${import.meta.env.BASE_URL}${ref.visualAsset}`}
+                alt={`Referencia visual de precio: ${ref.title}`}
+                loading="lazy"
+                className="w-full rounded-xl border border-slate-700 bg-slate-900"
+              />
+            </div>
+          )}
           <div className="space-y-2 border-t border-slate-800 p-4">
             <p className="text-xs leading-relaxed text-slate-400">{ref.note}</p>
             {ref.monitoring && <p className="rounded-lg bg-amber-400/10 p-3 text-xs font-semibold text-amber-200">🔔 {ref.monitoring}</p>}
