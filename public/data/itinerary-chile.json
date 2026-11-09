@@ -1,5 +1,5 @@
 {
-  "version": "2.1-patagonia-six-travelers-logistics-nov2026",
+  "version": "2.2-viajero-austral-bundle-prices-nov2026",
   "meta": {
     "currency": "USD",
     "intl_flight_estimate": 900,
@@ -14,16 +14,22 @@
   },
   "recommendations": [
     {
-      "type": "Operadores",
-      "title": "Viajero Austral / Huente-Co — contacto para 6",
-      "description": "Rafting río Baker CLP $80.000/persona con traslado incluido desde Río Tranquilo; web publica 07:00–14:30, mínimo 4 y máximo 9. San Rafael Premium CLP $195.000/persona el 11 de enero, mínimo 12 pasajeros, con traslado, desayuno y almuerzo.",
-      "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium"
+      "type": "Combo Viajero Austral",
+      "title": "Tres actividades con la misma empresa",
+      "description": "Full Mármol CLP $26.000 pp con descuento por reservar junto con rafting con ≥15 días de anticipación (normal $32.000); rafting Río Baker CLP $80.000 pp con traslado; San Rafael Premium CLP $195.000–$210.000 pp con traslado desde Puerto Río Tranquilo. Para 6: CLP $1.806.000–$1.896.000 en las tres actividades usando el descuento de Mármol.",
+      "link": "https://www.viajeroaustral.com/"
     },
     {
-      "type": "Agenda crítica",
-      "title": "Domingo 10: rafting, check-in San Rafael y Capillas",
-      "description": "El rafting Huente-Co ocupa 07:00–14:30; check-in San Rafael es presencial 15:00–18:20. Capillas después de 16:00 NO está confirmado y puede cancelarse por viento. No reservar dos excursiones que se solapen.",
+      "type": "Agenda",
+      "title": "Capillas + rafting el mismo día: confirmado por el operador",
+      "description": "Viajero Austral confirmó por WhatsApp que la Navegación Full Mármol en bote y el rafting Río Baker pueden hacerse el mismo día. Full Mármol sale 08:20 y dura 2,5 h; el horario combinado definitivo del rafting debe confirmarse con ellos antes de pagar.",
       "link": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786"
+    },
+    {
+      "type": "Alternativa",
+      "title": "Kayak en Capillas de Mármol",
+      "description": "Opción kayak: CLP $55.000 por persona, salidas 08:00 o 12:00 y duración aproximada 3 h. Para 6 serían CLP $330.000. No es la opción seleccionada para el combo.",
+      "link": "https://www.viajeroaustral.com/"
     },
     {
       "type": "Reservas",
@@ -311,10 +317,11 @@
         "Capillas de Mármol + rafting Río Baker"
       ],
       "perks": [
-        "ATENCIÓN: el rafting Huente-Co de 07:00 a 14:30 se cruza con las Capillas de Mármol de la mañana. Capillas a las 16:00 es una PROPUESTA sin cupos ni horario confirmados.",
-        "El domingo 10 es obligatorio hacer check-in presencial del glaciar San Rafael entre 15:00 y 18:20 y pagar el saldo antes de las 18:30.",
-        "Seis personas cumplen el mínimo de rafting (4–9), pero no garantizan el grupo mínimo de San Rafael (12).",
-        "Plan alternativo: Capillas temprano + rafting de otro operador a las 14:00, con transporte propio y reservas compatibles."
+        "Viajero Austral confirmó directamente que Full Mármol en bote + rafting Río Baker se pueden hacer el mismo día.",
+        "Combo para 6: Full Mármol con descuento CLP $156.000 + rafting CLP $480.000 = CLP $636.000 total para las dos actividades, si se reserva con al menos 15 días de anticipación.",
+        "Sin descuento, Full Mármol sería CLP $192.000 para 6; el kayak cuesta CLP $330.000 para 6 y es una alternativa, no la opción elegida.",
+        "El horario exacto combinado de rafting sigue pendiente; no asumir que se mantiene la salida web 07:00–14:30 si se contrata el paquete con Mármol.",
+        "Ese mismo día hay que completar el check-in presencial de San Rafael entre 15:00 y 18:20."
       ],
       "accommodation": {
         "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
@@ -324,31 +331,31 @@
       },
       "mainActivities": [
         {
-          "name": "Rafting río Baker con Huente-Co · traslado incluido",
-          "start": "07:00",
-          "durationMin": 450,
-          "notes": "Horario publicado 07:00–14:30 desde Puerto Río Tranquilo; CLP $80.000 por persona con transporte ida/vuelta. 6 personas cumplen el mínimo de 4. Reservar y confirmar hora de regreso.",
-          "link": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
-          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg",
-          "imageQuery": "Rafting Río Baker Huente-Co"
+          "name": "Viajero Austral · Navegación Full Mármol",
+          "start": "08:20",
+          "durationMin": 150,
+          "notes": "Salida publicada 08:20 desde Puerto Río Tranquilo, duración aproximada 2,5 h. Precio normal CLP $32.000 por persona; Viajero Austral ofreció CLP $26.000 por persona si se reserva junto con rafting con al menos 15 días de anticipación. El operador confirmó por WhatsApp que Full Mármol en bote + rafting se pueden hacer el mismo día. El horario exacto del rafting dentro del paquete debe quedar confirmado por ellos antes de pagar.",
+          "link": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "imageQuery": "Capillas de Mármol Lago General Carrera"
         },
         {
-          "name": "Check-in obligatorio del glaciar San Rafael",
-          "start": "15:00",
+          "name": "Viajero Austral / Huente-Co · Rafting Río Baker",
+          "start": "11:30",
+          "durationMin": 180,
+          "notes": "CLP $80.000 por persona incluyendo traslado Puerto Río Tranquilo ↔ Puerto Bertrand. La hora 11:30 es SOLO una ventana de planificación después de Full Mármol, no un horario confirmado. Viajero Austral confirmó que ambas actividades pueden hacerse el mismo día; pedirles el horario combinado definitivo.",
+          "link": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg",
+          "imageQuery": "Rafting Rio Baker Chile"
+        },
+        {
+          "name": "Check-in obligatorio Laguna San Rafael Premium",
+          "start": "15:30",
           "durationMin": 30,
-          "notes": "Presentarse en oficina local sector costanera entre 15:00 y 18:20 el domingo 10. Firmar, pagar saldo (a más tardar 18:30) y confirmar hora de salida del lunes. Abono CLP $30.000 por persona.",
+          "notes": "Pasar por la oficina local sector costanera entre 15:00 y 18:20 para firmar, pagar el saldo y confirmar la hora de presentación del día siguiente. Abono CLP $30.000 por persona. El horario exacto debe coordinarse con la combinación Mármol + rafting.",
           "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
           "imageUrl": "",
           "imageQuery": "Puerto Rio Tranquilo costanera"
-        },
-        {
-          "name": "Capillas de Mármol — salida tardía CONDICIONAL",
-          "start": "16:00",
-          "durationMin": 150,
-          "notes": "No hay salida a las 16:00 confirmada. Solo encaja si la navegación comienza después del rafting y del check-in de San Rafael, y si el viento permite navegar. Pedir confirmación antes de pagar; si no, cambiar a operador de rafting vespertino y Capillas temprano.",
-          "link": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
-          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
-          "imageQuery": "Capillas de Mármol"
         }
       ],
       "secondaryActivities": [],
@@ -399,12 +406,12 @@
           "from": "Puerto Río Tranquilo",
           "to": "Puerto Bertrand / río Baker",
           "mode": "transfer",
-          "duration": "~1 h 15 min–1 h 30 min",
+          "duration": "~1 h 15 min–1 h 30 min por tramo + actividad",
           "operator": "Huente-Co · incluido en rafting",
-          "notes": "La excursión publicada sale de Puerto Río Tranquilo a las 07:00 y regresa alrededor de las 14:30. Incluye equipo, guía y traslado ida/vuelta. No conducir por separado si se reserva este paquete.",
+          "notes": "Traslado ida/vuelta incluido por Viajero Austral/Huente-Co. El operador confirmó que puede combinarse el mismo día con Full Mármol; el horario exacto del paquete debe ser confirmado por ellos.",
           "status": "por confirmar",
           "bookingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
-          "departure": "07:00 (horario publicado, confirmar fecha)",
+          "departure": "Después de Full Mármol · horario exacto por confirmar",
           "originCoords": [
             -46.632,
             -72.673
@@ -413,7 +420,7 @@
             -47.051,
             -72.822
           ],
-          "price": "Incluido en rafting CLP $80.000/persona, valor enviado por WhatsApp"
+          "price": "Incluido en rafting CLP $80.000/persona · CLP $480.000 para 6"
         },
         {
           "from": "Puerto Bertrand / río Baker",
@@ -421,10 +428,10 @@
           "mode": "transfer",
           "duration": "~1 h 15 min–1 h 30 min",
           "operator": "Huente-Co · regreso incluido",
-          "notes": "El retorno forma parte del paquete de rafting; horario de llegada al pueblo ~14:30, sujeto a operación.",
+          "notes": "Regreso a Puerto Río Tranquilo incluido en el paquete. Coordinarlo para alcanzar el check-in presencial de San Rafael antes de las 18:20.",
           "status": "por confirmar",
           "bookingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
-          "departure": "Regreso del tour, antes de 14:30 aprox.",
+          "departure": "Regreso incluido · horario por confirmar",
           "originCoords": [
             -47.051,
             -72.822
@@ -458,27 +465,41 @@
       ],
       "toursToBook": [
         {
+          "name": "Navegación Full Mármol",
+          "operator": "Viajero Austral",
+          "pricePerPerson": 26000,
+          "priceLabel": "CLP $26.000 pp con combo · normal $32.000 pp",
+          "groupSize": 6,
+          "groupPriceLabel": "CLP $156.000 para 6 con descuento · normal $192.000",
+          "details": "Full Mármol en bote, salida 08:20, duración aproximada 2,5 h. Incluye sector Capillas/Catedral/Cavernas y sector adicional cercano a Puerto Sánchez. Descuento ofrecido por Viajero Austral al reservar Full Mármol + rafting con al menos 15 días de anticipación.",
+          "checkin": "El operador confirmó por WhatsApp que Full Mármol en bote y rafting Río Baker se pueden hacer el mismo día. Confirmar el horario combinado exacto antes de pagar.",
+          "url": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
+          "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
+          "status": "por confirmar",
+          "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
+          "alternatives": [
+            {
+              "name": "Kayak Capillas de Mármol",
+              "pricePerPerson": 55000,
+              "groupPrice": 330000,
+              "schedule": "08:00 o 12:00",
+              "duration": "3 h"
+            }
+          ]
+        },
+        {
           "name": "Rafting Río Baker desde Puerto Río Tranquilo",
           "operator": "Huente-Co · gestión Viajero Austral",
           "pricePerPerson": 80000,
+          "priceLabel": "CLP $80.000 por persona",
           "groupSize": 6,
-          "details": "Precio comunicado por WhatsApp: CLP $80.000 por persona incluyendo traslado al río Baker y regreso, equipo y guía. Web: 07:00–14:30; mínimo 4 y máximo 9, grupo de 6 encaja. NO es el tour alternativo de CLP $49.000 de otro operador.",
-          "checkin": "Confirmar cupos para el domingo 10, hora de regreso y posibilidad de coordinar Capillas en la tarde.",
+          "groupPriceLabel": "CLP $480.000 para 6",
+          "details": "Incluye traslado Puerto Río Tranquilo ↔ Puerto Bertrand, equipo y guía. Viajero Austral confirmó que puede combinarse el mismo día con Full Mármol en bote.",
+          "checkin": "Solicitar a Jorge/Viajero Austral el horario exacto del rafting cuando se reserve el combo, para garantizar tiempo suficiente para el check-in de San Rafael.",
           "url": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
           "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
           "status": "por confirmar",
           "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg"
-        },
-        {
-          "name": "Capillas de Mármol — navegación tardía",
-          "operator": "Operador local por confirmar",
-          "pricePerPerson": 32000,
-          "groupSize": 6,
-          "details": "Navegación Full Mármol desde el pueblo, referencia publicada de CLP $32.000 por persona y duración 2,5 h. No hay salida de tarde confirmada. Si no es posible, evaluar otro operador de rafting a las 14:00 para hacer Capillas por la mañana.",
-          "checkin": "Preguntar por salida después de las 16:00 y viento. No pagar dos tours incompatibles.",
-          "url": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
-          "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
-          "status": "por confirmar"
         }
       ]
     },
@@ -496,10 +517,10 @@
         "Laguna y Glaciar San Rafael"
       ],
       "perks": [
-        "Reserva con CLP $30.000 de abono por persona; saldo y check-in presencial el domingo 10 antes de las 18:30.",
-        "El tour incluye traslado desde el pueblo, por lo que NO hace falta llevar carro al muelle.",
-        "Con 6 viajeros aún necesitan que el operador complete el grupo mínimo de 12 para garantizar la salida.",
-        "Si el operador cancela por clima, según folleto permite cambio de fecha o devolución total de lo pagado; verificar condiciones por escrito."
+        "Precio actualizado comunicado por Viajero Austral: CLP $195.000–$210.000 por persona desde Puerto Río Tranquilo.",
+        "Para 6 personas: CLP $1.170.000–$1.260.000; abono inicial CLP $180.000 en total.",
+        "Desde Muelle Grosse cuesta CLP $180.000–$195.000 pp, pero implicaría gestionar por separado el traslado terrestre; para este viaje conviene cotizar el paquete desde Puerto Río Tranquilo.",
+        "La salida depende de clima y del grupo mínimo que establezca el operador; confirmar cupos antes de cerrar vuelos no reembolsables."
       ],
       "accommodation": {
         "name": "Habitaciones JC (opción) / Airbnb o cabaña por elegir",
@@ -512,7 +533,7 @@
           "name": "Huente-Co · Laguna y Glaciar San Rafael, Lancha Premium",
           "start": "06:00",
           "durationMin": 690,
-          "notes": "Presentación 05:30–07:30 (hora exacta se confirma el domingo). Tour total 11–11,5 h con traslado Puerto Río Tranquilo–Muelle Grosse, lancha calefaccionada de 20 pasajeros, guía, desayuno y almuerzo. CLP $195.000 por persona el 11/01; mínimo 12 pasajeros para salida.",
+          "notes": "Tour Premium de aproximadamente 11 h. Precio comunicado por Viajero Austral: CLP $195.000–$210.000 por persona incluyendo traslado terrestre desde Puerto Río Tranquilo; CLP $180.000–$195.000 por persona saliendo desde Muelle Grosse. Para este itinerario usamos salida desde Puerto Río Tranquilo. Incluye desayuno, almuerzo, guía, lancha premium calefaccionada de 20 pasajeros y al menos ~1 h frente al glaciar, sujeto a clima.",
           "link": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
           "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg",
           "imageQuery": "Glaciar San Rafael lancha premium Huente Co"
@@ -615,9 +636,11 @@
           "name": "Laguna San Rafael · Lancha Premium",
           "operator": "Huente-Co · Viajero Austral",
           "pricePerPerson": 195000,
+          "priceLabel": "CLP $195.000–$210.000 pp desde Puerto Río Tranquilo",
           "groupSize": 6,
-          "details": "Tarifa publicada CLP $195.000 por persona hasta el 14/01/2027, con traslado desde Puerto Río Tranquilo, desayuno, almuerzo, guía, lancha calefaccionada de 20 plazas y aproximación al glaciar según clima. Tour de 11–11,5 h; mínimo 12 pasajeros en la lancha, por lo que seis no garantizan salida.",
-          "checkin": "Registro obligatorio DOMINGO 10 en oficina costanera 15:00–18:20; abono CLP $30.000/persona, saldo hasta 18:30 el día anterior. Hora de presentación 05:30–07:30 confirmada en oficina.",
+          "groupPriceLabel": "CLP $1.170.000–$1.260.000 para 6",
+          "details": "Incluye traslado terrestre desde Puerto Río Tranquilo, desayuno y almuerzo (sin bebestibles), guía, navegación en lancha premium de 20 plazas, doble calefacción, brindis con whisky/hielo milenario y aproximadamente 1 h frente al Glaciar San Rafael, según condiciones. Desde Muelle Grosse el rango informado es CLP $180.000–$195.000 pp.",
+          "checkin": "Reserva con abono CLP $30.000 por persona (CLP $180.000 para 6). Check-in presencial el día anterior entre 15:00 y 18:20; saldo máximo 18:30 y hora de presentación 05:30–07:30 confirmada en oficina.",
           "url": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
           "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
           "status": "por confirmar",
@@ -1400,7 +1423,19 @@
       "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
       "sanRafaelUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
       "raftingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
-      "notes": "Cotización recibida por WhatsApp para 6: rafting CLP $80.000 con traslado. San Rafael Premium CLP $195.000 el 11 de enero con traslado, 11 h y registro presencial el día anterior. Pendiente respuesta sobre transfer privado para seis desde Balmaceda."
+      "notes": "Para 6 personas: Full Mármol normal CLP $32.000 pp o CLP $26.000 pp reservando junto con rafting con ≥15 días de anticipación; rafting CLP $80.000 pp con traslado Río Tranquilo↔Puerto Bertrand; San Rafael Premium CLP $195.000–$210.000 pp con traslado desde Puerto Río Tranquilo. Viajero Austral confirmó que Full Mármol en bote + rafting pueden hacerse el mismo día. Horario combinado exacto pendiente.",
+      "marbleUrl": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
+      "bundle": {
+        "marbleDiscountPerPerson": 26000,
+        "marbleNormalPerPerson": 32000,
+        "raftingPerPerson": 80000,
+        "sanRafaelMinPerPerson": 195000,
+        "sanRafaelMaxPerPerson": 210000,
+        "groupSize": 6,
+        "totalThreeMin": 1806000,
+        "totalThreeMax": 1896000,
+        "note": "Total mínimo usa Full Mármol con descuento + rafting + San Rafael al valor mínimo. Total máximo usa Full Mármol con descuento + rafting + San Rafael al valor máximo."
+      }
     },
     "airport": {
       "closed": [
