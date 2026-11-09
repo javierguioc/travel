@@ -98,7 +98,17 @@ export function TourOperatorCard({ tours }) {
               onError={(event) => { event.currentTarget.style.display = 'none'; }}
             />
           )}
-          {tour.pricePerPerson && <p className="mt-2 text-sm text-slate-800"><strong>{clp(tour.pricePerPerson)} por persona</strong>{tour.groupSize ? ` · ${clp(tour.pricePerPerson * tour.groupSize)} para ${tour.groupSize}` : ''}</p>}
+          {(tour.priceLabel || tour.pricePerPerson) && <p className="mt-2 text-sm text-slate-800"><strong>{tour.priceLabel || `${clp(tour.pricePerPerson)} por persona`}</strong>{tour.groupPriceLabel ? ` · ${tour.groupPriceLabel}` : (tour.groupSize && tour.pricePerPerson ? ` · ${clp(tour.pricePerPerson * tour.groupSize)} para ${tour.groupSize}` : '')}</p>}
+          {tour.alternatives?.length > 0 && (
+            <div className="mt-2 rounded-lg border border-teal-200 bg-white/70 p-3">
+              <p className="text-xs font-bold uppercase tracking-wide text-teal-800">Alternativa</p>
+              {tour.alternatives.map((alt, altIndex) => (
+                <p key={altIndex} className="mt-1 text-sm text-slate-700">
+                  <strong>{alt.name}:</strong> {clp(alt.pricePerPerson)} pp · {clp(alt.groupPrice)} para 6 · {alt.schedule} · {alt.duration}
+                </p>
+              ))}
+            </div>
+          )}
           {tour.details && <p className="mt-2 text-sm leading-relaxed text-slate-700">{tour.details}</p>}
           {tour.checkin && <p className="mt-2 rounded-lg bg-white/70 p-3 text-sm font-semibold text-teal-900">⚠️ {tour.checkin}</p>}
           <div className="mt-3 flex flex-wrap gap-2">
