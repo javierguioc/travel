@@ -288,7 +288,11 @@
             -46.632,
             -72.673
           ],
-          "price": "Cotizar vehículo grande y seguro para ripio; alternativa transfer para 6 pendiente de respuesta de Viajero Austral."
+          "price": "Cotizar vehículo grande y seguro para ripio; alternativa transfer para 6 pendiente de respuesta de Viajero Austral.",
+          "distanceKm": 190,
+          "mapDuration": "3 h 33 min",
+          "distanceSource": "Google Maps · captura aportada · 190 km",
+          "distanceSourceUrl": "https://www.google.com/maps/dir/Balmaceda,+Coyhaique,+Ays%C3%A9n,+Chile/Puerto+R%C3%ADo+Tranquilo,+Chile/"
         }
       ],
       "toursToBook": []
@@ -436,11 +440,20 @@
           "mode": "boat",
           "duration": "~2 h–2 h 30 min",
           "operator": "Navegación local por reservar",
-          "notes": "Propuesta de salida 16:00 o posterior SOLO si el operador acepta y el lago permite navegar. Por viento, la tarde es menos segura. Si no hay salida compatible, habrá que priorizar o reordenar.",
+          "notes": "Propuesta de salida 16:00 o posterior SOLO si el operador acepta y el lago permite navegar. Por viento, la tarde es menos segura. Si no hay salida compatible, habrá que priorizar o reordenar. El mapa muestra solo la dirección aproximada hacia la Catedral, no el circuito real de la lancha.",
           "status": "por confirmar",
           "bookingUrl": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
           "departure": "16:00 tentativo, NO confirmado",
-          "option": "Condicional"
+          "option": "Condicional",
+          "originCoords": [
+            -46.632,
+            -72.673
+          ],
+          "destinationCoords": [
+            -46.6457,
+            -72.6089
+          ],
+          "distanceSource": "Línea recta · navegación ida y vuelta"
         }
       ],
       "toursToBook": [
@@ -560,13 +573,16 @@
           "from": "Puerto Río Tranquilo",
           "to": "Muelle Grosse / Bahía Exploradores",
           "mode": "transfer",
-          "duration": "Dentro del tour total de ~11 h",
+          "duration": "~2 h en vehículo (incluido en tour)",
           "operator": "Huente-Co · traslado incluido",
-          "notes": "Recorrido de unos 90 km por Valle Exploradores hasta el embarcadero. No alquilar otro vehículo para este traslado si contratan paquete con salida desde el pueblo.",
+          "notes": "Recorrido de unos 90 km por Valle Exploradores hasta el embarcadero. No alquilar otro vehículo para este traslado si contratan paquete con salida desde el pueblo. Distancia terrestre de referencia 90 km; ruta exacta del operador pendiente de confirmación.",
           "status": "por confirmar",
           "bookingUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
           "departure": "Presentación 05:30–07:30; hora exacta se confirma el día anterior",
-          "option": "Incluido"
+          "option": "Incluido",
+          "distanceKm": 90,
+          "distanceSource": "Parque Nacional Laguna San Rafael · 90 km por Ruta X-728",
+          "distanceSourceUrl": "https://parquenacionallagunasanrafael.cl/transporte/"
         },
         {
           "from": "Muelle Grosse",
@@ -584,12 +600,14 @@
           "from": "Muelle Grosse / Valle Exploradores",
           "to": "Puerto Río Tranquilo",
           "mode": "transfer",
-          "duration": "Incluido en las ~11 h totales",
+          "duration": "~2 h en vehículo (incluido en tour)",
           "operator": "Huente-Co · regreso incluido",
-          "notes": "El traslado de vuelta está incluido; no se requiere otro transfer.",
+          "notes": "El traslado de vuelta está incluido; no se requiere otro transfer. La navegación y ambos traslados forman parte de la duración total del tour.",
           "status": "por confirmar",
           "bookingUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
-          "option": "Incluido"
+          "option": "Incluido",
+          "distanceKm": 90,
+          "distanceSource": "Referencia ruta X-728 · ~90 km"
         }
       ],
       "toursToBook": [
@@ -719,7 +737,9 @@
           "destinationCoords": [
             -45.916,
             -71.69
-          ]
+          ],
+          "distanceKm": 190,
+          "distanceSource": "Referencia del trayecto de ida; verificar regreso"
         },
         {
           "from": "Balmaceda (BBA)",
@@ -888,11 +908,21 @@
           "from": "Salto Grande",
           "to": "Mirador Cuernos y regreso",
           "mode": "walk",
-          "duration": "~1 h–1 h 30 min",
+          "duration": "~1 h 30 min–2 h 30 min",
           "operator": "Sendero panorámico",
-          "notes": "Caminata corta/moderada desde sector Salto Grande; respetar viento, cierres y señalización.",
+          "notes": "Caminata corta/moderada desde sector Salto Grande; respetar viento, cierres y señalización. Distancia total del sendero de ida y vuelta ~6,2 km. La línea del mapa no representa el sendero real.",
           "status": "por confirmar",
-          "departure": "Media mañana"
+          "departure": "Media mañana",
+          "originCoords": [
+            -51.065,
+            -72.9973
+          ],
+          "destinationCoords": [
+            -51.04829,
+            -73.01234
+          ],
+          "distanceLabel": "6,2 km ida y vuelta",
+          "distanceSource": "Sendero Salto Grande–Mirador Cuernos · ida y vuelta"
         },
         {
           "from": "Salto Grande / Mirador Cuernos",
@@ -1045,7 +1075,9 @@
           "operator": "Trekking de montaña",
           "notes": "Caminata exigente, con desnivel. No usar Google Maps como guía de senderismo: seguir señalización y guardaparques.",
           "status": "por confirmar",
-          "departure": "08:00 orientativo"
+          "departure": "08:00 orientativo",
+          "distanceLabel": "20–22 km ida y vuelta",
+          "distanceSource": "Trekking de montaña · distancia estimada"
         },
         {
           "from": "Centro de Bienvenida Las Torres",
@@ -1378,7 +1410,7 @@
       "plan": "Nuestro viaje sigue siendo posible: el martes 12 llegamos a Punta Arenas y viajamos por tierra a Puerto Natales; el viernes 15 se puede salir de PNT a Santiago solo si hay vuelo confirmado. Si no, salir desde Punta Arenas con margen.",
       "sourceUrl": "https://aipchile.dgac.gob.cl/notam?designador=SCNT"
     },
-    "transportWarning": "Las vistas de mapa son mapas de zona OpenStreetMap y no muestran el recorrido vial exacto; el botón de Google Maps abre indicaciones reales y tiempos actualizados.",
+    "transportWarning": "Cada traslado muestra mapa, kilómetros y tiempo cuando hay datos disponibles. En trayectos por carretera, el recorrido se consulta con OSRM/OpenStreetMap al visualizar la tarjeta; si falla, se muestra línea orientativa y un enlace a Google Maps. Los vuelos, senderos y navegaciones no se representan como carreteras. El tramo Balmaceda–Río Tranquilo usa la captura compartida: 190 km y 3 h 33 min, con margen recomendado hasta 4 h 30 min.",
     "openItems": [
       "Confirmar vuelo SCL→BBA 9 enero",
       "Confirmar 6 cupos DAP BBA→PUQ 12 enero",
