@@ -160,12 +160,12 @@ export function DayCard({ day }) {
           <section className="mb-6 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-lime-50 p-4 sm:p-5 shadow-sm">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">💰 Presupuesto estimado del día · 6 personas</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">💰 Presupuesto estimado por persona</p>
                 <h3 className="mt-1 text-2xl font-extrabold text-slate-900">
-                  {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.cop)}
+                  {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.perPersonCop)}
                 </h3>
                 <p className="text-sm font-semibold text-emerald-800">
-                  ≈ {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.perPersonCop)} por persona
+                  Total para 6: {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.cop)}
                 </p>
               </div>
               <span className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-emerald-800 shadow-sm">
@@ -186,7 +186,8 @@ export function DayCard({ day }) {
                 return (
                   <div key={label} className="rounded-xl border border-emerald-100 bg-white p-3">
                     <p className="text-xs font-semibold text-slate-500">{label}</p>
-                    <p className="mt-1 font-bold text-slate-900">{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(copValue)}</p>
+                    <p className="mt-1 font-bold text-slate-900">{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(Math.round(copValue / (day.dailyBudget.groupSize || 6)))} pp</p>
+                    <p className="text-[11px] text-slate-500">Grupo: {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(copValue)}</p>
                     {value.clp > 0 && <p className="text-[11px] text-slate-500">Conversión incluida</p>}
                   </div>
                 );
