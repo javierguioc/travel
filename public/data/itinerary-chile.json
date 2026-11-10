@@ -1,5 +1,5 @@
 {
-  "version": "4.4-cop-primary-pricing",
+  "version": "4.5-full-marble-option-2",
   "meta": {
     "currency": "COP",
     "intl_flight_estimate": 900,
@@ -772,7 +772,7 @@
           "name": "Navegación Full Mármol",
           "start": "08:20",
           "durationMin": 150,
-          "notes": "CLP $26.000 pp con descuento del combo reservado ≥15 días antes; normal $32.000 pp. Viajero Austral confirmó por WhatsApp que se puede combinar con rafting el mismo día.",
+          "notes": "Opción 2 normal: CLP $32.000 por persona (≈ COP $108.160), salida 08:20 y duración 2,5 h. Incluye Santuario Capillas/Catedral/Cavernas + sector adicional cercano a Puerto Sánchez con más formaciones y vista del pueblo. Con combo + rafting reservado ≥15 días antes, Viajero Austral ofreció CLP $26.000 pp (≈ COP $87.880).",
           "link": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
           "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
           "imageQuery": "Navegación Full Mármol"
@@ -896,16 +896,27 @@
           "name": "Navegación Full Mármol",
           "operator": "Viajero Austral",
           "pricePerPerson": 26000,
-          "priceLabel": "COP $87.880 pp con combo · normal COP $108.160 pp",
+          "priceLabel": "COP $87.880 pp con combo · Opción 2 normal COP $108.160 pp",
           "groupSize": 6,
-          "groupPriceLabel": "COP $527.280 para 6 con descuento · normal COP $648.960",
-          "details": "Full Mármol en bote, salida 08:20, duración aproximada 2,5 h. Incluye sector Capillas/Catedral/Cavernas y sector adicional cercano a Puerto Sánchez. Descuento ofrecido por Viajero Austral al reservar Full Mármol + rafting con al menos 15 días de anticipación.",
+          "groupPriceLabel": "COP $527.280 para 6 con combo · Opción 2 normal COP $648.960 para 6",
+          "details": "Full Mármol en bote. Salida 08:20, duración aproximada 2,5 h. Incluye todo el sector del Santuario de la Naturaleza Capillas de Mármol (Capillas, Catedral y Cavernas) y además otro sector cercano a Puerto Sánchez con formaciones adicionales y vista de Puerto Sánchez, al norte del lago. Precio normal informado: CLP $32.000 por persona; con combo junto al rafting y reserva anticipada se mantiene la referencia promocional de CLP $26.000 por persona.",
           "checkin": "El operador confirmó por WhatsApp que Full Mármol en bote y rafting Río Baker se pueden hacer el mismo día. Confirmar el horario combinado exacto antes de pagar.",
           "url": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
           "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
           "status": "por confirmar",
           "imageUrl": "https://www.museoregionalaysen.gob.cl/sites/www.museoregionalaysen.gob.cl/files/styles/16x9_grande/public/2024-05/for44221_fot27393.jpg?h=f4e581a2&itok=ynMo1AD1",
           "alternatives": [
+            {
+              "name": "Opción 2 · Navegación Full Mármol",
+              "pricePerPerson": 32000,
+              "groupPrice": 192000,
+              "priceCopPerPerson": 108160,
+              "groupPriceCop": 648960,
+              "schedule": "08:20",
+              "duration": "2,5 h",
+              "details": "En bote. Incluye todo el sector del Santuario de la Naturaleza Capillas de Mármol y además un sector cercano a Puerto Sánchez con formaciones adicionales y vista del mismo Puerto Sánchez, al norte del lago.",
+              "sourcePriceLabel": "CLP $32.000 por persona"
+            },
             {
               "name": "Kayak Capillas de Mármol",
               "pricePerPerson": 55000,
