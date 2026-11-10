@@ -1,7 +1,7 @@
 {
-  "version": "4.3-complete-daily-costs",
+  "version": "4.4-cop-primary-pricing",
   "meta": {
-    "currency": "USD",
+    "currency": "COP",
     "intl_flight_estimate": 900,
     "group_sizes": [
       6
@@ -12,9 +12,9 @@
     "group_size_planned": 6,
     "pricing_note": "Plan de 9 días. Día 3 es Full Day Torres del Paine. Día 4 representa el traslado completo Torres/Puerto Natales→Puerto Río Tranquilo; Santiago es solo una escala técnica nocturna para enlazar con Balmaceda.",
     "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Puerto Río Tranquilo → Santiago → Medellín",
-    "daily_budget_fx_clp_cop": 3.3,
+    "daily_budget_fx_clp_cop": 3.38,
     "daily_budget_updated": "2026-11-09",
-    "daily_budget_note": "Cada día muestra un estimado completo para 6 y por persona, incluyendo tours/actividades, comidas, viajes/traslados/vuelos y hospedaje cuando corresponde.",
+    "daily_budget_note": "Todos los presupuestos visibles se muestran en COP. Para cotizaciones originalmente en CLP se usa 1 CLP ≈ 3,38 COP (referencia de mercado del 9 nov 2026).",
     "start_date": "2027-01-08"
   },
   "recommendations": [
@@ -33,7 +33,7 @@
     {
       "type": "Aysén",
       "title": "11 ene: SCL→BBA 09:00–12:40 vía PMC",
-      "description": "SKY H2 1621 publica esta salida el 11 de enero; después son ~4 h por carretera hasta Puerto Río Tranquilo.",
+      "description": "Mantiene las actividades principales con Viajero Austral. Mármol + rafting para 6 ≈ COP $2.149.680; San Rafael ≈ COP $3.954.600–COP $4.258.800 para 6.",
       "link": "https://www.visitchile.com/es/tours/carretera-austral-sur-8-dias-7-noches/"
     },
     {
@@ -116,7 +116,7 @@
         "notes": "Necesitamos dormir cerca del aeropuerto porque el vuelo objetivo a Puerto Natales sale temprano el sábado.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-08&checkout=2027-01-09&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
-        "referencePrice": "Estimación: CLP $150.000–$240.000 la noche para 6, según 3 dobles o apartamento. No reservado."
+        "referencePrice": "Estimación: COP $507.000–COP $811.200 la noche para 6, según 3 dobles o apartamento. No reservado."
       },
       "transportLegs": [
         {
@@ -143,15 +143,15 @@
       "toursToBook": [],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "food": {
             "clp": 150000,
-            "cop": 495000
+            "cop": 507000
           },
           "transport": {
             "clp": 0,
@@ -170,8 +170,8 @@
         },
         "totals": {
           "clp": 330000,
-          "cop": 6029790,
-          "perPersonCop": 1004965
+          "cop": 6056190,
+          "perPersonCop": 1009365
         },
         "notes": [
           "Vuelo internacional repartido 50/50 entre ida y regreso para no duplicarlo.",
@@ -263,7 +263,7 @@
         "notes": "Primera de 3 noches en Puerto Natales. Conviene zona centro/costanera o cerca del terminal para tours y salida del martes.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Natales--Chile/homes?checkin=2027-01-09&checkout=2027-01-12&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Puerto+Natales+Chile&checkin=2027-01-09&checkout=2027-01-12&group_adults=6",
-        "referencePrice": "Estimación para 6: CLP $150.000–$300.000 por noche según apartamento/3 dobles. No reservado."
+        "referencePrice": "Estimación para 6: COP $507.000–COP $1.014.000 por noche según apartamento/3 dobles. No reservado."
       },
       "transportLegs": [
         {
@@ -284,7 +284,7 @@
             -51.6715,
             -72.5284
           ],
-          "price": "LATAM publica enero 2027 desde COP $361.800 pp; precio exacto del 9 pendiente."
+          "price": "Google Flights: COP $476.637 por persona · COP $2.859.822 para 6."
         },
         {
           "from": "Aeródromo Puerto Natales (PNT)",
@@ -302,7 +302,7 @@
             -51.73,
             -72.506
           ],
-          "price": "Estimación local: CLP $10.000–$25.000 por vehículo; confirmar para 6."
+          "price": "Estimación local: COP $33.800–COP $84.500 por vehículo; confirmar para 6."
         }
       ],
       "toursToBook": [],
@@ -336,19 +336,19 @@
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 210000,
-            "cop": 693000
+            "cop": 709800
           },
           "food": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "transport": {
             "clp": 20000,
-            "cop": 66000
+            "cop": 67600
           },
           "activities": {
             "clp": 0,
@@ -363,8 +363,8 @@
         },
         "totals": {
           "clp": 410000,
-          "cop": 4212822,
-          "perPersonCop": 702137
+          "cop": 4245622,
+          "perPersonCop": 707604
         },
         "notes": [
           "SCL→PNT usa la captura más reciente: COP $476.637 pp.",
@@ -457,7 +457,7 @@
         "notes": "Después del recorrido panorámico regresamos temprano a Puerto Natales para tomar el vuelo LATAM LA45 PNT→SCL de las 19:00. Hay que usar transporte privado/recorrido optimizado; un full day estándar que termine tarde no sirve.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-10&checkout=2027-01-11&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-10&checkout=2027-01-11&group_adults=6",
-        "referencePrice": "Estimación CLP $180.000 para 6; no reservado."
+        "referencePrice": "Estimación: COP $608.400 para 6; no reservado."
       },
       "transportLegs": [
         {
@@ -470,7 +470,7 @@
           "status": "por confirmar",
           "notes": "Recorrido temprano enfocado en Lago Pehoé, Salto Grande, Mirador Cuernos, Laguna Amarga y miradores. Debe terminar a tiempo para volver a PNT.",
           "bookingUrl": "https://www.nomades.com/puerto-natales/full-day-torres-del-paine-id273",
-          "price": "Referencia tour estándar: CLP $55.000 pp. Un servicio privado con retorno temprano puede costar más."
+          "price": "Referencia tour estándar: COP $185.900 por persona · COP $1.115.400 para 6. Servicio privado con retorno temprano puede costar más."
         },
         {
           "from": "Puerto Natales / parque",
@@ -512,34 +512,36 @@
           "name": "Full Day Torres del Paine",
           "operator": "Nomades / alternativa TorresdelPaine.com",
           "pricePerPerson": 55000,
-          "priceLabel": "CLP $55.000 pp (referencia Nomades)",
+          "priceLabel": "COP $185.900 por persona",
           "groupSize": 6,
-          "groupPriceLabel": "CLP $330.000 para 6",
+          "groupPriceLabel": "COP $1.115.400 para 6",
           "details": "Tour compartido de ~11 h con recogida urbana y guía. Alternativa publicada: CLP $65.000 pp sin almuerzo en TorresdelPaine.com. Para este itinerario el retorno debe ser anticipado para llegar al vuelo PNT→SCL 19:00; confirmar servicio privado o adaptado.",
           "checkin": "Entrada al parque NO incluida. Tarifas 2027 aún no publicadas; Pases Parques habilitará venta 2027 desde diciembre 2026.",
           "url": "https://www.nomades.com/puerto-natales/full-day-torres-del-paine-id273",
-          "status": "por confirmar horario especial"
+          "status": "por confirmar horario especial",
+          "priceCopPerPerson": 185900,
+          "priceCopGroup": 1115400
         }
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "food": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "transport": {
             "clp": 30000,
-            "cop": 99000
+            "cop": 101400
           },
           "activities": {
             "clp": 330000,
-            "cop": 1089000
+            "cop": 1115400
           },
           "flights": {
             "cop": 1328877
@@ -550,8 +552,8 @@
         },
         "totals": {
           "clp": 720000,
-          "cop": 3704877,
-          "perPersonCop": 617480
+          "cop": 3762477,
+          "perPersonCop": 627080
         },
         "notes": [
           "Panorámico calculado con referencia mínima CLP $55.000 pp; servicio privado/retorno temprano puede costar más.",
@@ -641,7 +643,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Primera de 3 noches. Llegamos a Balmaceda al mediodía y seguimos por carretera a Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -676,7 +678,7 @@
             -45.916,
             -71.69
           ],
-          "price": "Tarifa exacta para 6 pendiente; usar como referencia de planificación."
+          "price": "Referencia de planificación del vuelo: ~COP $288.800 por persona · ~COP $1.732.800 para 6; tarifa exacta pendiente."
         },
         {
           "from": "Aeropuerto Balmaceda",
@@ -699,25 +701,25 @@
           "distanceKm": 190,
           "mapDuration": "3 h 33 min",
           "distanceSource": "Google Maps · captura aportada",
-          "price": "Van/auto total ida/vuelta estimado CLP $650.000; confirmar."
+          "price": "Van/auto ida y vuelta estimado: COP $2.197.000 para el grupo; confirmar."
         }
       ],
       "toursToBook": [],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 150000,
-            "cop": 495000
+            "cop": 507000
           },
           "food": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "transport": {
             "clp": 325000,
-            "cop": 1072500
+            "cop": 1098500
           },
           "activities": {
             "clp": 0,
@@ -732,8 +734,8 @@
         },
         "totals": {
           "clp": 655000,
-          "cop": 3894300,
-          "perPersonCop": 649050
+          "cop": 3946700,
+          "perPersonCop": 657783
         },
         "notes": [
           "SCL→BBA mantiene referencia provisional ~COP $288.800 pp hasta cotizar SKY para 6.",
@@ -832,7 +834,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Segunda noche en Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -848,7 +850,7 @@
           "status": "por confirmar",
           "departure": "08:20",
           "bookingUrl": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
-          "price": "Combo: CLP $26.000 pp si se reserva junto con rafting ≥15 días antes; CLP $156.000 para 6. Normal: $32.000 pp."
+          "price": "Combo: COP $87.880 pp si se reserva con rafting ≥15 días antes · COP $527.280 para 6. Normal: COP $108.160 pp."
         },
         {
           "from": "Puerto Río Tranquilo",
@@ -868,7 +870,7 @@
             -47.051,
             -72.822
           ],
-          "price": "CLP $80.000 pp con traslado · CLP $480.000 para 6."
+          "price": "COP $270.400 pp con traslado · COP $1.622.400 para 6."
         },
         {
           "from": "Puerto Bertrand / Río Baker",
@@ -894,9 +896,9 @@
           "name": "Navegación Full Mármol",
           "operator": "Viajero Austral",
           "pricePerPerson": 26000,
-          "priceLabel": "CLP $26.000 pp con combo · normal $32.000 pp",
+          "priceLabel": "COP $87.880 pp con combo · normal COP $108.160 pp",
           "groupSize": 6,
-          "groupPriceLabel": "CLP $156.000 para 6 con descuento · normal $192.000",
+          "groupPriceLabel": "COP $527.280 para 6 con descuento · normal COP $648.960",
           "details": "Full Mármol en bote, salida 08:20, duración aproximada 2,5 h. Incluye sector Capillas/Catedral/Cavernas y sector adicional cercano a Puerto Sánchez. Descuento ofrecido por Viajero Austral al reservar Full Mármol + rafting con al menos 15 días de anticipación.",
           "checkin": "El operador confirmó por WhatsApp que Full Mármol en bote y rafting Río Baker se pueden hacer el mismo día. Confirmar el horario combinado exacto antes de pagar.",
           "url": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
@@ -909,36 +911,42 @@
               "pricePerPerson": 55000,
               "groupPrice": 330000,
               "schedule": "08:00 o 12:00",
-              "duration": "3 h"
+              "duration": "3 h",
+              "priceCopPerPerson": 185900,
+              "groupPriceCop": 1115400
             }
-          ]
+          ],
+          "priceCopPerPerson": 87880,
+          "priceCopGroup": 527280
         },
         {
           "name": "Rafting Río Baker desde Puerto Río Tranquilo",
           "operator": "Huente-Co · gestión Viajero Austral",
           "pricePerPerson": 80000,
-          "priceLabel": "CLP $80.000 por persona",
+          "priceLabel": "COP $270.400 por persona",
           "groupSize": 6,
-          "groupPriceLabel": "CLP $480.000 para 6",
+          "groupPriceLabel": "COP $1.622.400 para 6",
           "details": "Incluye traslado Puerto Río Tranquilo ↔ Puerto Bertrand, equipo y guía. Viajero Austral confirmó que puede combinarse el mismo día con Full Mármol en bote.",
           "checkin": "Solicitar a Jorge/Viajero Austral el horario exacto del rafting cuando se reserve el combo, para garantizar tiempo suficiente para el check-in de San Rafael.",
           "url": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
           "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
           "status": "por confirmar",
-          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg"
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/746/072/fc5b0cf6d681c63244e8e772113e4033/1200gt/Imagen_de_WhatsApp_2023-10-16_a_las_17_50_08_b8ef2fd2.jpg",
+          "priceCopPerPerson": 270400,
+          "priceCopGroup": 1622400
         }
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 150000,
-            "cop": 495000
+            "cop": 507000
           },
           "food": {
             "clp": 180000,
-            "cop": 594000
+            "cop": 608400
           },
           "transport": {
             "clp": 0,
@@ -946,7 +954,7 @@
           },
           "activities": {
             "clp": 636000,
-            "cop": 2098800
+            "cop": 2149680
           },
           "flights": {
             "cop": 0
@@ -957,8 +965,8 @@
         },
         "totals": {
           "clp": 966000,
-          "cop": 3187800,
-          "perPersonCop": 531300
+          "cop": 3265080,
+          "perPersonCop": 544180
         },
         "notes": [
           "Full Mármol CLP $26.000 pp con descuento combo.",
@@ -1047,7 +1055,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Tercera y última noche en Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: CLP $150.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -1099,28 +1107,32 @@
           "name": "Laguna San Rafael · Lancha Premium",
           "operator": "Huente-Co · Viajero Austral",
           "pricePerPerson": 195000,
-          "priceLabel": "CLP $195.000–$210.000 pp desde Puerto Río Tranquilo",
+          "priceLabel": "COP $659.100–COP $709.800 pp desde Puerto Río Tranquilo",
           "groupSize": 6,
-          "groupPriceLabel": "CLP $1.170.000–$1.260.000 para 6",
-          "details": "Incluye traslado terrestre desde Puerto Río Tranquilo, desayuno y almuerzo (sin bebestibles), guía, navegación en lancha premium de 20 plazas, doble calefacción, brindis con whisky/hielo milenario y aproximadamente 1 h frente al Glaciar San Rafael, según condiciones. Desde Muelle Grosse el rango informado es CLP $180.000–$195.000 pp.",
-          "checkin": "Reserva con abono CLP $30.000 por persona (CLP $180.000 para 6). Check-in presencial el día anterior entre 15:00 y 18:20; saldo máximo 18:30 y hora de presentación 05:30–07:30 confirmada en oficina.",
+          "groupPriceLabel": "COP $3.954.600–COP $4.258.800 para 6",
+          "details": "Incluye traslado terrestre desde Puerto Río Tranquilo, desayuno y almuerzo (sin bebestibles), guía, navegación en lancha premium de 20 plazas, doble calefacción, brindis con whisky/hielo milenario y aproximadamente 1 h frente al Glaciar San Rafael, según condiciones. Desde Muelle Grosse el rango informado es COP $608.400–COP $659.100 pp.",
+          "checkin": "Reserva con abono de COP $101.400 por persona (COP $608.400 para 6). Check-in presencial el día anterior entre 15:00 y 18:20; saldo máximo 18:30 y hora de presentación 05:30–07:30 confirmada en oficina.",
           "url": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
           "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
           "status": "por confirmar",
-          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg"
+          "imageUrl": "https://vl-prod-static.b-cdn.net/system/images/000/877/749/df442dd27d9611006688a661381c330a/original/15_glaciar_san_rafael.jpg",
+          "priceCopPerPersonMin": 659100,
+          "priceCopPerPersonMax": 709800,
+          "priceCopGroupMin": 3954600,
+          "priceCopGroupMax": 4258800
         }
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 150000,
-            "cop": 495000
+            "cop": 507000
           },
           "food": {
             "clp": 90000,
-            "cop": 297000
+            "cop": 304200
           },
           "transport": {
             "clp": 0,
@@ -1128,7 +1140,7 @@
           },
           "activities": {
             "clp": 1215000,
-            "cop": 4009500
+            "cop": 4106700
           },
           "flights": {
             "cop": 0
@@ -1139,8 +1151,8 @@
         },
         "totals": {
           "clp": 1455000,
-          "cop": 4801500,
-          "perPersonCop": 800250
+          "cop": 4917900,
+          "perPersonCop": 819650
         },
         "notes": [
           "San Rafael usa punto medio del rango CLP $1.170.000–$1.260.000 para 6.",
@@ -1230,7 +1242,7 @@
         "notes": "Dormimos en Santiago para que el viernes 15 quede completamente libre. Ideal alojarse con buena conexión al centro y al aeropuerto.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-14&checkout=2027-01-15&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Santiago+Chile&checkin=2027-01-14&checkout=2027-01-15&group_adults=6",
-        "referencePrice": "Estimación CLP $180.000–$240.000 grupo."
+        "referencePrice": "Estimación: COP $608.400–COP $811.200 para 6."
       },
       "transportLegs": [
         {
@@ -1273,7 +1285,7 @@
             -33.393,
             -70.786
           ],
-          "price": "Tarifa exacta pendiente de cotizar."
+          "price": "Estimación: COP $200.000 por persona · COP $1.200.000 para 6; tarifa exacta pendiente."
         }
       ],
       "toursToBook": [],
@@ -1309,19 +1321,19 @@
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 210000,
-            "cop": 693000
+            "cop": 709800
           },
           "food": {
             "clp": 150000,
-            "cop": 495000
+            "cop": 507000
           },
           "transport": {
             "clp": 325000,
-            "cop": 1072500
+            "cop": 1098500
           },
           "activities": {
             "clp": 0,
@@ -1336,8 +1348,8 @@
         },
         "totals": {
           "clp": 685000,
-          "cop": 3460500,
-          "perPersonCop": 576750
+          "cop": 3515300,
+          "perPersonCop": 585883
         },
         "notes": [
           "BBA→SCL se mantiene con estimación COP $200.000 pp hasta cotizar.",
@@ -1441,7 +1453,7 @@
             -33.393,
             -70.786
           ],
-          "price": "Estimación CLP $25.000–$40.000 grupo."
+          "price": "Estimación: COP $84.500–COP $135.200 para el grupo."
         }
       ],
       "toursToBook": [],
@@ -1477,7 +1489,7 @@
       ],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 0,
@@ -1485,11 +1497,11 @@
           },
           "food": {
             "clp": 210000,
-            "cop": 693000
+            "cop": 709800
           },
           "transport": {
             "clp": 35000,
-            "cop": 115500
+            "cop": 118300
           },
           "activities": {
             "clp": 0,
@@ -1504,8 +1516,8 @@
         },
         "totals": {
           "clp": 245000,
-          "cop": 808500,
-          "perPersonCop": 134750
+          "cop": 828100,
+          "perPersonCop": 138017
         },
         "notes": [
           "Día libre: solo comidas + traslado final al aeropuerto.",
@@ -1610,7 +1622,7 @@
       "toursToBook": [],
       "dailyBudget": {
         "groupSize": 6,
-        "exchangeRateClpToCop": 3.3,
+        "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
             "clp": 0,
@@ -1618,7 +1630,7 @@
           },
           "food": {
             "clp": 60000,
-            "cop": 198000
+            "cop": 202800
           },
           "transport": {
             "clp": 0,
@@ -1637,8 +1649,8 @@
         },
         "totals": {
           "clp": 60000,
-          "cop": 5138790,
-          "perPersonCop": 856465
+          "cop": 5143590,
+          "perPersonCop": 857265
         },
         "notes": [
           "Segunda mitad del vuelo internacional de referencia.",
@@ -1683,7 +1695,7 @@
       "whatsappUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias.",
       "sanRafaelUrl": "https://www.viajeroaustral.com/tour-laguna-san-rafael-premium",
       "raftingUrl": "https://www.viajeroaustral.com/tours/rafting-rio-baker-huente-co-137786",
-      "notes": "Para 6 personas: Full Mármol normal CLP $32.000 pp o CLP $26.000 pp reservando junto con rafting con ≥15 días de anticipación; rafting CLP $80.000 pp con traslado Río Tranquilo↔Puerto Bertrand; San Rafael Premium CLP $195.000–$210.000 pp con traslado desde Puerto Río Tranquilo. Viajero Austral confirmó que Full Mármol en bote + rafting pueden hacerse el mismo día. Horario combinado exacto pendiente.",
+      "notes": "Para 6 personas: Full Mármol COP $108.160 pp normal o COP $87.880 pp reservando junto con rafting con ≥15 días; rafting COP $270.400 pp con traslado Río Tranquilo↔Puerto Bertrand; San Rafael Premium COP $659.100–COP $709.800 pp con traslado desde Puerto Río Tranquilo. Viajero Austral confirmó que Full Mármol en bote + rafting pueden hacerse el mismo día. Valores convertidos desde la cotización original en CLP usando 1 CLP ≈ 3,38 COP.",
       "marbleUrl": "https://www.viajeroaustral.com/tour-capillas-de-m%C3%A1rmol-fullday-coyhaique",
       "bundle": {
         "marbleDiscountPerPerson": 26000,
@@ -1694,7 +1706,15 @@
         "groupSize": 6,
         "totalThreeMin": 1806000,
         "totalThreeMax": 1896000,
-        "note": "Total mínimo usa Full Mármol con descuento + rafting + San Rafael al valor mínimo. Total máximo usa Full Mármol con descuento + rafting + San Rafael al valor máximo."
+        "note": "Total mínimo usa Full Mármol con descuento + rafting + San Rafael al valor mínimo. Total máximo usa Full Mármol con descuento + rafting + San Rafael al valor máximo.",
+        "copRate": 3.38,
+        "marbleDiscountPerPersonCop": 87880,
+        "marbleNormalPerPersonCop": 108160,
+        "raftingPerPersonCop": 270400,
+        "sanRafaelMinPerPersonCop": 659100,
+        "sanRafaelMaxPerPersonCop": 709800,
+        "totalThreeMinCop": 6104280,
+        "totalThreeMaxCop": 6408480
       }
     },
     "airport": {
@@ -1735,31 +1755,41 @@
           "label": "Bus Puerto Natales→PUQ",
           "perPerson": 11000,
           "group": 66000,
-          "status": "desde"
+          "status": "desde",
+          "groupCop": 223080,
+          "perPersonCop": 37180
         },
         {
           "label": "Full Day Torres del Paine",
           "perPerson": 55000,
           "group": 330000,
-          "status": "referencia publicada"
+          "status": "referencia publicada",
+          "groupCop": 1115400,
+          "perPersonCop": 185900
         },
         {
           "label": "Base Torres guiada",
           "perPerson": 80000,
           "group": 480000,
-          "status": "referencia publicada"
+          "status": "referencia publicada",
+          "groupCop": 1622400,
+          "perPersonCop": 270400
         },
         {
           "label": "Full Mármol con descuento combo",
           "perPerson": 26000,
           "group": 156000,
-          "status": "oferta directa operador"
+          "status": "oferta directa operador",
+          "groupCop": 527280,
+          "perPersonCop": 87880
         },
         {
           "label": "Rafting Río Baker",
           "perPerson": 80000,
           "group": 480000,
-          "status": "cotización directa operador"
+          "status": "cotización directa operador",
+          "groupCop": 1622400,
+          "perPersonCop": 270400
         },
         {
           "label": "San Rafael Premium",
@@ -1767,12 +1797,17 @@
           "perPersonMax": 210000,
           "groupMin": 1170000,
           "groupMax": 1260000,
-          "status": "cotización directa operador"
+          "status": "cotización directa operador",
+          "groupMinCop": 3954600,
+          "groupMaxCop": 4258800,
+          "perPersonMinCop": 659100,
+          "perPersonMaxCop": 709800
         },
         {
           "label": "Alojamiento Río Tranquilo 3 noches (3 dobles)",
           "group": 450000,
-          "status": "referencia desde CLP 50.000/hab/noche"
+          "status": "referencia desde CLP 50.000/hab/noche",
+          "groupCop": 1521000
         }
       ],
       "knownCop": [
@@ -1797,18 +1832,19 @@
         "Van/transfer BBA↔Río Tranquilo",
         "Entradas Torres del Paine 2027 (tarifas aún no publicadas)"
       ],
-      "summary": "Gastos conocidos en Chile para 6, sin DAP/BBA-SCL/van/entradas/PN hotel: ~CLP 3.132.000–3.222.000 + COP 12.741.402. No sumar CLP y COP directamente; faltan rubros importantes.",
+      "summary": "Todos los precios visibles están expresados en pesos colombianos (COP). Los valores originalmente cotizados en CLP se convierten con 1 CLP ≈ 3,38 COP; los cobros reales pueden variar por la tasa del día.",
       "dailyEstimatedTotals": {
-        "totalCop": 35238879,
-        "totalPerPersonCop": 5873147,
+        "totalCop": 35680959,
+        "totalPerPersonCop": 5946827,
         "includes": [
           "tours y actividades",
           "comidas",
           "vuelos y traslados",
           "hospedaje"
         ],
-        "note": "Estimación completa por día. Los rubros sin tarifa cerrada usan referencias de planificación y pueden cambiar al reservar."
-      }
+        "note": "Total estimado en COP. Incluye tours/actividades, comidas, vuelos/traslados y hospedaje; algunos rubros siguen siendo referencias hasta reservar."
+      },
+      "fxClpToCop": 3.38
     }
   }
 }
