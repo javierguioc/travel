@@ -168,11 +168,9 @@ export function DayCard({ day }) {
                   ≈ {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(day.dailyBudget.totals.perPersonCop)} por persona
                 </p>
               </div>
-              {day.dailyBudget.totals.clp > 0 && (
-                <span className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-slate-700 shadow-sm">
-                  CLP ${day.dailyBudget.totals.clp.toLocaleString('es-CL')} + vuelos COP
-                </span>
-              )}
+              <span className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-emerald-800 shadow-sm">
+                Todo expresado en COP
+              </span>
             </div>
             <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
               {[
@@ -189,7 +187,7 @@ export function DayCard({ day }) {
                   <div key={label} className="rounded-xl border border-emerald-100 bg-white p-3">
                     <p className="text-xs font-semibold text-slate-500">{label}</p>
                     <p className="mt-1 font-bold text-slate-900">{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(copValue)}</p>
-                    {value.clp > 0 && <p className="text-[11px] text-slate-500">CLP ${value.clp.toLocaleString('es-CL')}</p>}
+                    {value.clp > 0 && <p className="text-[11px] text-slate-500">Conversión incluida</p>}
                   </div>
                 );
               })}
@@ -197,7 +195,7 @@ export function DayCard({ day }) {
             <div className="mt-4 space-y-1">
               {day.dailyBudget.notes?.map((note, i) => <p key={i} className="text-xs leading-relaxed text-slate-600">• {note}</p>)}
             </div>
-            <p className="mt-3 text-[11px] font-medium text-emerald-800">Conversión usada: 1 CLP ≈ {day.dailyBudget.exchangeRateClpToCop.toLocaleString('es-CO')} COP. Presupuesto, no cotización final.</p>
+            <p className="mt-3 text-[11px] font-medium text-emerald-800">Todo en pesos colombianos. Para valores originalmente en CLP: 1 CLP ≈ {day.dailyBudget.exchangeRateClpToCop.toLocaleString('es-CO')} COP. Presupuesto, no cotización final.</p>
           </section>
         )}
 
