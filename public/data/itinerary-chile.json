@@ -1,5 +1,5 @@
 {
-  "version": "4.5-full-marble-option-2",
+  "version": "4.6-cop-per-person-primary",
   "meta": {
     "currency": "COP",
     "intl_flight_estimate": 900,
@@ -15,7 +15,8 @@
     "daily_budget_fx_clp_cop": 3.38,
     "daily_budget_updated": "2026-11-09",
     "daily_budget_note": "Todos los presupuestos visibles se muestran en COP. Para cotizaciones originalmente en CLP se usa 1 CLP ≈ 3,38 COP (referencia de mercado del 9 nov 2026).",
-    "start_date": "2027-01-08"
+    "start_date": "2027-01-08",
+    "price_display": "COP por persona como principal; total para 6 como referencia secundaria."
   },
   "recommendations": [
     {
@@ -116,7 +117,7 @@
         "notes": "Necesitamos dormir cerca del aeropuerto porque el vuelo objetivo a Puerto Natales sale temprano el sábado.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-08&checkout=2027-01-09&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
-        "referencePrice": "Estimación: COP $507.000–COP $811.200 la noche para 6, según 3 dobles o apartamento. No reservado."
+        "referencePrice": "≈ COP $84.500–COP $135.200 por persona · total grupo COP $507.000–COP $811.200."
       },
       "transportLegs": [
         {
@@ -263,7 +264,7 @@
         "notes": "Primera de 3 noches en Puerto Natales. Conviene zona centro/costanera o cerca del terminal para tours y salida del martes.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Natales--Chile/homes?checkin=2027-01-09&checkout=2027-01-12&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Puerto+Natales+Chile&checkin=2027-01-09&checkout=2027-01-12&group_adults=6",
-        "referencePrice": "Estimación para 6: COP $507.000–COP $1.014.000 por noche según apartamento/3 dobles. No reservado."
+        "referencePrice": "≈ COP $84.500–COP $169.000 por persona · total grupo COP $507.000–COP $1.014.000."
       },
       "transportLegs": [
         {
@@ -302,7 +303,7 @@
             -51.73,
             -72.506
           ],
-          "price": "Estimación local: COP $33.800–COP $84.500 por vehículo; confirmar para 6."
+          "price": "≈ COP $5.700–COP $14.100 por persona si se divide entre 6 · total vehículo COP $33.800–COP $84.500."
         }
       ],
       "toursToBook": [],
@@ -457,7 +458,7 @@
         "notes": "Después del recorrido panorámico regresamos temprano a Puerto Natales para tomar el vuelo LATAM LA45 PNT→SCL de las 19:00. Hay que usar transporte privado/recorrido optimizado; un full day estándar que termine tarde no sirve.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-10&checkout=2027-01-11&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-10&checkout=2027-01-11&group_adults=6",
-        "referencePrice": "Estimación: COP $608.400 para 6; no reservado."
+        "referencePrice": "≈ COP $101.400 por persona · total grupo COP $608.400."
       },
       "transportLegs": [
         {
@@ -643,7 +644,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Primera de 3 noches. Llegamos a Balmaceda al mediodía y seguimos por carretera a Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "≈ COP $84.500 por persona · total grupo COP $507.000.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -701,7 +702,7 @@
           "distanceKm": 190,
           "mapDuration": "3 h 33 min",
           "distanceSource": "Google Maps · captura aportada",
-          "price": "Van/auto ida y vuelta estimado: COP $2.197.000 para el grupo; confirmar."
+          "price": "≈ COP $366.200 por persona si se divide entre 6 · total ida/vuelta del grupo ≈ COP $2.197.000."
         }
       ],
       "toursToBook": [],
@@ -834,7 +835,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Segunda noche en Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "≈ COP $84.500 por persona · total grupo COP $507.000.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -1066,7 +1067,7 @@
         "name": "Habitaciones JC / Airbnb o cabaña por elegir",
         "status": "por confirmar",
         "notes": "Tercera y última noche en Puerto Río Tranquilo.",
-        "referencePrice": "Referencia: COP $507.000 por noche para 6 en tres habitaciones dobles, sujeto a disponibilidad.",
+        "referencePrice": "≈ COP $84.500 por persona · total grupo COP $507.000.",
         "airbnbUrl": "https://www.airbnb.com/s/Puerto-Rio-Tranquilo--Chile/homes?checkin=2027-01-11&checkout=2027-01-14&adults=6",
         "hotelUrl": "https://www.viajeroaustral.com/hostales-en-puerto-rio-tranquilo",
         "contactUrl": "https://wa.me/56934341909?text=Hola%2C%20somos%206%20personas%20y%20planeamos%20llegar%20a%20Balmaceda%20el%20s%C3%A1bado%209%20de%20enero%20de%202027.%20%C2%BFNos%20pueden%20cotizar%20transfer%20Balmaceda%20%E2%86%94%20Puerto%20R%C3%ADo%20Tranquilo%20para%206%20con%20equipaje%3F%20Queremos%20rafting%20r%C3%ADo%20Baker%20el%20domingo%2010%20y%20Laguna%20San%20Rafael%20Premium%20el%20lunes%2011.%20%C2%BFEs%20posible%20hacer%20Capillas%20de%20M%C3%A1rmol%20despu%C3%A9s%20del%20rafting%20el%20domingo%20y%20pasar%20antes%20por%20el%20check-in%20de%20San%20Rafael%3F%20%C2%BFHay%20cupos%20y%20cu%C3%A1les%20ser%C3%ADan%20las%20condiciones%20de%20reserva%3F%20Gracias."
@@ -1253,7 +1254,7 @@
         "notes": "Dormimos en Santiago para que el viernes 15 quede completamente libre. Ideal alojarse con buena conexión al centro y al aeropuerto.",
         "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-14&checkout=2027-01-15&adults=6",
         "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Santiago+Chile&checkin=2027-01-14&checkout=2027-01-15&group_adults=6",
-        "referencePrice": "Estimación: COP $608.400–COP $811.200 para 6."
+        "referencePrice": "≈ COP $101.400–COP $135.200 por persona · total grupo COP $608.400–COP $811.200."
       },
       "transportLegs": [
         {
@@ -1464,7 +1465,7 @@
             -33.393,
             -70.786
           ],
-          "price": "Estimación: COP $84.500–COP $135.200 para el grupo."
+          "price": "≈ COP $14.100–COP $22.500 por persona si se divide entre 6 · total grupo COP $84.500–COP $135.200."
         }
       ],
       "toursToBook": [],
