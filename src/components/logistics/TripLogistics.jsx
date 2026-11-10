@@ -224,8 +224,15 @@ export function TripLogisticsOverview({ itineraryData }) {
         </div>
       </div>}
       {budget && <div className="rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-5 shadow-sm">
-        <h3 className="text-lg font-bold text-slate-900">💰 Presupuesto actualizado para {budget.groupSize} personas</h3>
+        <h3 className="text-lg font-bold text-slate-900">💰 Presupuesto estimado por persona</h3>
         <p className="mt-2 text-sm text-slate-700">{budget.summary}</p>
+        {budget.dailyEstimatedTotals?.totalPerPersonCop && (
+          <div className="mt-3 rounded-xl border border-emerald-200 bg-white p-4">
+            <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">Estimado total del viaje por persona</p>
+            <p className="mt-1 text-2xl font-extrabold text-slate-900">{cop(budget.dailyEstimatedTotals.totalPerPersonCop)}</p>
+            <p className="mt-1 text-xs text-slate-500">Total para 6: {cop(budget.dailyEstimatedTotals.totalCop)}</p>
+          </div>
+        )}
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
           <div>
             <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Tours y gastos locales en COP</p>
