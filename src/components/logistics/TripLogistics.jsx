@@ -7,6 +7,8 @@ const linkClass = 'inline-flex items-center justify-center gap-1.5 rounded-lg bo
 const tag = (kind) => kind === 'confirmado' ? 'bg-emerald-100 text-emerald-800' : kind === 'por confirmar' ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-700';
 const icons = { car: '🚗', bus: '🚌', flight: '✈️', boat: '🛥️', walk: '🥾', transfer: '🚐', tour: '🧭' };
 const clp = (value) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 }).format(value);
+const DEFAULT_CLP_COP = 3.38;
+const clpToCop = (value, rate = DEFAULT_CLP_COP) => Math.round(value * rate);
 
 
 function cop(value) {
@@ -160,13 +162,13 @@ export function TourOperatorCard({ tours }) {
               onError={(event) => { event.currentTarget.style.display = 'none'; }}
             />
           )}
-          {(tour.priceLabel || tour.pricePerPerson) && <p className="mt-2 text-sm text-slate-800"><strong>{tour.priceLabel || `${clp(tour.pricePerPerson)} por persona`}</strong>{tour.groupPriceLabel ? ` · ${tour.groupPriceLabel}` : (tour.groupSize && tour.pricePerPerson ? ` · ${clp(tour.pricePerPerson * tour.groupSize)} para ${tour.groupSize}` : '')}</p>}
+          {(tour.priceLabel || tour.pricePerPerson) && <p className="mt-2 text-sm text-slate-800"><strong>{tour.priceLabel || `${cop(clpToCop(tour.pricePerPerson))} por persona`}</strong>{tour.groupPriceLabel ? ` · ${tour.groupPriceLabel}` : (tour.groupSize && tour.pricePerPerson ? ` · ${cop(clpToCop(tour.pricePerPerson * tour.groupSize))} para ${tour.groupSize}` : '')}</p>}
           {tour.alternatives?.length > 0 && (
             <div className="mt-2 rounded-lg border border-teal-200 bg-white/70 p-3">
               <p className="text-xs font-bold uppercase tracking-wide text-teal-800">Alternativa</p>
               {tour.alternatives.map((alt, altIndex) => (
                 <p key={altIndex} className="mt-1 text-sm text-slate-700">
-                  <strong>{alt.name}:</strong> {clp(alt.pricePerPerson)} pp · {clp(alt.groupPrice)} para 6 · {alt.schedule} · {alt.duration}
+                  <strong>{alt.name}:</strong> {cop(alt.priceCopPerPerson || clpToCop(alt.pricePerPerson))} pp · {cop(alt.groupPriceCop || clpToCop(alt.groupPrice))} para 6 · {alt.schedule} · {alt.duration}
                 </p>
               ))}
             </div>
@@ -202,7 +204,7 @@ export function TripLogisticsOverview({ itineraryData }) {
     <section className="space-y-4">
       <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-5 shadow-sm">
         <h2 className="text-xl font-bold text-slate-900">🧳 Logística de las {groupSize} personas</h2>
-        <p className="mt-2 text-sm text-slate-700">Hospedajes, transporte y actividades están en cada día. Los enlaces llevan a búsquedas u operadores: todavía no equivalen a reservas. Los costos generales del resumen son estimaciones previas en USD; para tours usa las cotizaciones CLP mostradas en cada tarjeta.</p>
+        <p className="mt-2 text-sm text-slate-700">Hospedajes, transporte, vuelos y actividades están en cada día. Todos los precios visibles están expresados en pesos colombianos (COP). Las cotizaciones originales en CLP se convierten con la tasa de referencia indicada.</p>
         {transportWarning && <p className="mt-2 text-xs font-medium text-sky-800">🗺️ {transportWarning}</p>}
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           {stays?.map((s, i) => <div key={i} className="rounded-xl border border-sky-100 bg-white p-3">
@@ -226,19 +228,19 @@ export function TripLogisticsOverview({ itineraryData }) {
         <p className="mt-2 text-sm text-slate-700">{budget.summary}</p>
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
           <div>
-            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Valores en CLP</p>
+            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Tours y gastos locales en COP</p>
             <div className="space-y-2">
               {budget.knownClp?.map((item, i) => <div key={i} className="rounded-lg border border-emerald-100 bg-white p-3 text-sm">
                 <div className="flex items-start justify-between gap-3">
                   <span className="font-semibold text-slate-800">{item.label}</span>
-                  <span className="shrink-0 font-bold text-emerald-800">{item.groupMin ? `CLP ${item.groupMin.toLocaleString('es-CL')}–${item.groupMax.toLocaleString('es-CL')}` : `CLP ${item.group.toLocaleString('es-CL')}`}</span>
+                  <span className="shrink-0 font-bold text-emerald-800">{item.groupMinCop ? `${cop(item.groupMinCop)}–${cop(item.groupMaxCop)}` : cop(item.groupCop || clpToCop(item.group, budget.fxClpToCop || DEFAULT_CLP_COP))}</span>
                 </div>
                 <p className="mt-1 text-xs text-slate-500">{item.status}</p>
               </div>)}
             </div>
           </div>
           <div>
-            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Valores en COP</p>
+            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-emerald-800">Vuelos y referencias en COP</p>
             <div className="space-y-2">
               {budget.knownCop?.map((item, i) => <div key={i} className="rounded-lg border border-emerald-100 bg-white p-3 text-sm">
                 <div className="flex items-start justify-between gap-3">
