@@ -112,11 +112,11 @@ export function DayCardCompact({ day }) {
             ) : (
               <div className="text-right">
                 <span className="inline-block bg-emerald-600 text-white px-2 py-1 rounded-md text-xs font-bold shadow">
-                  {dailyBudget ? formatCompactCOP(dailyBudget.cop) : 'Por estimar'}
+                  {dailyBudget ? `${formatCompactCOP(dailyBudget.perPersonCop)} pp` : 'Por estimar'}
                 </span>
                 {dailyBudget && (
                   <p className="mt-1 text-[10px] font-semibold text-white drop-shadow">
-                    {formatCompactCOP(dailyBudget.perPersonCop)} pp
+                    Grupo: {formatCompactCOP(dailyBudget.cop)}
                   </p>
                 )}
               </div>
