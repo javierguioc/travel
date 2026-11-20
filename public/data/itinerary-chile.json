@@ -1857,7 +1857,9 @@
           "groupConfirmed": 2,
           "confirmedTotal": 2412905,
           "projectedGroup6": 7238718,
-          "status": "2 pasajeros confirmados · otros 4 pendientes"
+          "status": "2 pasajeros confirmados · otros 4 pendientes",
+          "group": 2412905,
+          "groupLabel": "2 pasajeros confirmados"
         },
         {
           "label": "SCL→PNT 9 enero · Google Flights",
