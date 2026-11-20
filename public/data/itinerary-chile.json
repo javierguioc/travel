@@ -1,5 +1,5 @@
 {
-  "version": "4.6-cop-per-person-primary",
+  "version": "4.7-confirmed-international-flights",
   "meta": {
     "currency": "COP",
     "intl_flight_estimate": 900,
@@ -7,16 +7,67 @@
       6
     ],
     "region": "Patagonia: Torres del Paine panorámico + Aysén",
-    "return_local": "2027-01-16T02:00:00",
-    "flight_status": "Vuelos tentativos hasta reservar",
+    "return_local": "2027-01-16T06:07:00",
+    "flight_status": "Vuelo internacional confirmado para 2 pasajeros; vuelos internos pendientes",
     "group_size_planned": 6,
-    "pricing_note": "Plan de 9 días. Día 3 es Full Day Torres del Paine. Día 4 representa el traslado completo Torres/Puerto Natales→Puerto Río Tranquilo; Santiago es solo una escala técnica nocturna para enlazar con Balmaceda.",
+    "pricing_note": "Vuelo internacional JetSMART confirmado para 2 pasajeros. Presupuesto general sigue calculado para 6 y proyecta provisionalmente el mismo precio por persona para los 4 restantes.",
     "route": "Medellín → Santiago → Puerto Natales → Torres del Paine → Puerto Río Tranquilo → Santiago → Medellín",
     "daily_budget_fx_clp_cop": 3.38,
     "daily_budget_updated": "2026-11-09",
     "daily_budget_note": "Todos los presupuestos visibles se muestran en COP. Para cotizaciones originalmente en CLP se usa 1 CLP ≈ 3,38 COP (referencia de mercado del 9 nov 2026).",
     "start_date": "2027-01-08",
-    "price_display": "COP por persona como principal; total para 6 como referencia secundaria."
+    "price_display": "COP por persona como principal; total para 6 como referencia secundaria.",
+    "international_booking": {
+      "status": "confirmado",
+      "passengersConfirmed": 2,
+      "totalPaidCop": 2412905,
+      "roundTripPerPersonCop": 1206453,
+      "airline": "JetSMART",
+      "outbound": {
+        "date": "2027-01-08",
+        "flight": "JA 5838",
+        "route": "MDE → SCL",
+        "departure": "17:01",
+        "arrival": "01:13 (+1)",
+        "duration": "6 h 12 min",
+        "stops": "Directo"
+      },
+      "return": {
+        "date": "2027-01-16",
+        "route": "SCL → LIM → MDE",
+        "departure": "06:07",
+        "arrival": "16:46",
+        "totalDuration": "12 h 39 min",
+        "legs": [
+          {
+            "flight": "JA 7730",
+            "route": "SCL → LIM",
+            "departure": "06:07",
+            "arrival": "08:00",
+            "duration": "3 h 53 min"
+          },
+          {
+            "connection": "Lima",
+            "duration": "5 h 35 min",
+            "changePlane": true
+          },
+          {
+            "flight": "JA 7752",
+            "route": "LIM → MDE",
+            "departure": "13:35",
+            "arrival": "16:46",
+            "duration": "3 h 11 min"
+          }
+        ]
+      },
+      "baggage": {
+        "included": "1 maleta pequeña bajo el asiento por pasajero",
+        "dimensions": "25 × 35 × 45 cm",
+        "cabinBag": "No incluida en la tarifa mostrada",
+        "checkedBag": "No incluida en la tarifa mostrada"
+      },
+      "privacyNote": "No se publican localizadores, nombres, documentos, fechas de nacimiento, correos ni teléfonos."
+    }
   },
   "recommendations": [
     {
@@ -59,24 +110,25 @@
         "Medellín → Santiago"
       ],
       "perks": [
-        "La conexión del sábado 9 es mucho más limpia si dormimos cerca de SCL.",
-        "No comprar SCL→PNT hasta comprobar que el vuelo desde Medellín deja margen suficiente."
+        "Vuelo internacional confirmado para 2 pasajeros.",
+        "Llegada a Santiago a la 01:13 del sábado 9: no tiene sentido pagar hotel si tomamos SCL→PNT esa misma madrugada.",
+        "El equipaje incluido es solo una maleta pequeña de 25 × 35 × 45 cm bajo el asiento."
       ],
       "accommodation": {
-        "name": "Hotel cerca de SCL — por reservar",
-        "neighborhood": "Santiago / aeropuerto",
-        "link": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
-        "notes": "Necesitamos dormir cerca del aeropuerto porque el vuelo objetivo a Puerto Natales sale temprano el sábado."
+        "name": "Sin hotel previsto",
+        "neighborhood": "Aeropuerto SCL",
+        "link": "",
+        "notes": "Llegamos 01:13 y continuamos hacia Puerto Natales el mismo sábado."
       },
       "mainActivities": [
         {
-          "name": "Vuelo Medellín → Santiago",
+          "name": "JetSMART JA 5838 · Medellín → Santiago",
           "start": "17:01",
-          "durationMin": 420,
-          "notes": "Hora objetivo previa de JetSMART, no reserva. Si el horario real no permite estar en Santiago el viernes por la noche, el itinerario completo debe ajustarse.",
-          "link": "https://www.google.com/travel/flights",
+          "durationMin": 372,
+          "notes": "CONFIRMADO para 2 pasajeros. Vuelo directo MDE→SCL, llegada 01:13 del sábado 9. Duración 6 h 12 min.",
+          "link": "https://jetsmart.com/",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
-          "imageQuery": "Vuelo Medellín → Santiago"
+          "imageQuery": "JetSMART flight Medellin Santiago"
         }
       ],
       "secondaryActivities": [],
@@ -110,26 +162,24 @@
         ]
       },
       "nightStay": {
-        "city": "Santiago / aeropuerto",
-        "dateLabel": "Noche viernes 8 → sábado 9",
-        "name": "Hotel cerca de SCL — por reservar",
-        "status": "por confirmar",
-        "notes": "Necesitamos dormir cerca del aeropuerto porque el vuelo objetivo a Puerto Natales sale temprano el sábado.",
-        "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-08&checkout=2027-01-09&adults=6",
-        "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Aeropuerto+Santiago+Chile&checkin=2027-01-08&checkout=2027-01-09&group_adults=6",
-        "referencePrice": "≈ COP $84.500–COP $135.200 por persona · total grupo COP $507.000–COP $811.200."
+        "city": "Aeropuerto de Santiago (SCL)",
+        "dateLabel": "Madrugada viernes 8 → sábado 9",
+        "name": "Conexión en aeropuerto — sin hotel previsto",
+        "noNight": true,
+        "status": "confirmado",
+        "notes": "Llegada 01:13. La idea es permanecer en SCL y conectar con el vuelo a Puerto Natales esa misma madrugada/mañana."
       },
       "transportLegs": [
         {
           "from": "Medellín (MDE)",
           "to": "Santiago (SCL)",
           "mode": "flight",
-          "duration": "Según vuelo/escala",
-          "operator": "JetSMART objetivo u otra aerolínea",
-          "notes": "Monitoreo ya activo para viaje 8–16 enero. Prioridad: llegar el viernes 8 con suficiente margen para dormir y tomar SCL→PNT temprano.",
-          "status": "por confirmar",
-          "departure": "Viernes 8 · horario por confirmar",
-          "bookingUrl": "https://www.google.com/travel/flights",
+          "duration": "6 h 12 min",
+          "operator": "JetSMART · JA 5838",
+          "notes": "CONFIRMADO para 2 pasajeros. Directo. Llegada 01:13 del sábado 9. Incluye solo maleta pequeña 25 × 35 × 45 cm bajo el asiento.",
+          "status": "confirmado",
+          "departure": "Viernes 8 · 17:01",
+          "bookingUrl": "https://jetsmart.com/",
           "originCoords": [
             6.1645,
             -75.4231
@@ -138,7 +188,7 @@
             -33.393,
             -70.786
           ],
-          "price": "Referencia monitoreada previamente: COP $1.646.930 ida y vuelta por persona; alerta ≤ $1.500.000."
+          "price": "Compra confirmada: COP $2.412.905 total para 2 · COP $1.206.453 por persona ida y vuelta."
         }
       ],
       "toursToBook": [],
@@ -147,8 +197,8 @@
         "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
-            "clp": 180000,
-            "cop": 608400
+            "clp": 0,
+            "cop": 0
           },
           "food": {
             "clp": 150000,
@@ -163,21 +213,22 @@
             "cop": 0
           },
           "flights": {
-            "cop": 4940790
+            "cop": 3619359
           },
           "other": {
             "cop": 0
           }
         },
         "totals": {
-          "clp": 330000,
-          "cop": 6056190,
-          "perPersonCop": 1009365
+          "clp": 150000,
+          "cop": 4126359,
+          "perPersonCop": 687727
         },
         "notes": [
-          "Vuelo internacional repartido 50/50 entre ida y regreso para no duplicarlo.",
-          "Hotel aeropuerto Santiago estimado para 6; no reservado.",
-          "Comidas: cena + desayuno/snacks para 6."
+          "Vuelo internacional confirmado para 2: COP $2.412.905 total / COP $1.206.453 por persona ida y vuelta.",
+          "Para mantener el presupuesto de 6, se proyecta provisionalmente COP $7.238.718 si los otros 4 consiguen el mismo precio por persona.",
+          "La mitad del costo internacional proyectado se imputa a la ida.",
+          "Sin hotel en Santiago: llegada 01:13 y conexión hacia Puerto Natales."
         ],
         "sources": []
       }
@@ -1384,31 +1435,32 @@
         "Puerto Río Tranquilo → Balmaceda → Santiago"
       ],
       "perks": [
-        "Este es el día vacío que movimos desde el antiguo Día 4.",
-        "Ya estamos en Santiago desde el 14, así que el 15 no depende de vuelos domésticos."
+        "Día libre completo en Santiago.",
+        "Ahora sí conviene dormir la noche del 15: el vuelo internacional sale a las 06:07 del sábado 16.",
+        "Salir hacia SCL alrededor de las 02:30–03:00 para tener margen."
       ],
       "accommodation": {
-        "name": "Sin noche de hotel prevista — vuelo internacional 02:00",
-        "neighborhood": "Santiago / Aeropuerto SCL",
-        "link": "",
-        "notes": "Llegada prevista a Santiago por la tarde; permanecer cerca del aeropuerto y hacer check-in internacional el viernes ~22:30–23:00."
+        "name": "Hotel / Airbnb en Santiago — por reservar",
+        "neighborhood": "Santiago o cerca de SCL",
+        "link": "https://www.booking.com/searchresults.es.html?ss=Santiago+Chile&checkin=2027-01-15&checkout=2027-01-16&group_adults=6",
+        "notes": "El regreso sale 06:07. Recomendación: dormir el 15 y salir al aeropuerto ~02:30–03:00."
       },
       "mainActivities": [
         {
           "name": "Día libre en Santiago",
           "start": "09:00",
           "durationMin": 720,
-          "notes": "Nada obligatorio. Descanso, paseo, compras o comida. El objetivo es disfrutar sin conexiones internas ni tours críticos.",
+          "notes": "Nada obligatorio. Paseo, compras, descanso y comida.",
           "link": "https://www.google.com/maps/search/Santiago+Chile",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
           "imageQuery": "Santiago Chile skyline"
         },
         {
-          "name": "Ir al aeropuerto para vuelo internacional",
+          "name": "Dormir y salir a SCL de madrugada",
           "start": "22:30",
-          "durationMin": 180,
-          "notes": "Estar en SCL con margen para el vuelo de las 02:00 del sábado 16.",
-          "link": "https://www.google.com/travel/flights",
+          "durationMin": 240,
+          "notes": "Dormir unas horas. Salida al aeropuerto recomendada ~02:30–03:00 para el vuelo de las 06:07.",
+          "link": "https://jetsmart.com/",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
           "imageQuery": "Santiago airport"
         }
@@ -1445,22 +1497,25 @@
         ]
       },
       "nightStay": {
-        "city": "Santiago / Aeropuerto SCL",
-        "dateLabel": "Viernes 15 por la noche",
-        "name": "Sin noche de hotel prevista — vuelo 02:00",
-        "noNight": true,
-        "notes": "Día libre completo en Santiago. Dejar equipaje en el hotel después del check-out o usar consigna y llegar a SCL hacia 22:30–23:00."
+        "city": "Santiago",
+        "dateLabel": "Noche viernes 15 → madrugada sábado 16",
+        "name": "Hotel / Airbnb — por reservar",
+        "status": "por confirmar",
+        "notes": "Dormir unas horas antes del vuelo JetSMART de las 06:07. Salida al aeropuerto ~02:30–03:00.",
+        "airbnbUrl": "https://www.airbnb.com/s/Santiago--Chile/homes?checkin=2027-01-15&checkout=2027-01-16&adults=6",
+        "hotelUrl": "https://www.booking.com/searchresults.es.html?ss=Santiago+Chile&checkin=2027-01-15&checkout=2027-01-16&group_adults=6",
+        "referencePrice": "≈ COP $101.400 por persona · total grupo ≈ COP $608.400."
       },
       "transportLegs": [
         {
-          "from": "Santiago centro",
+          "from": "Santiago",
           "to": "Aeropuerto SCL",
           "mode": "transfer",
           "duration": "~30–60 min según tráfico",
           "operator": "Uber / transfer / taxi",
-          "departure": "~22:00–22:30",
+          "departure": "~02:30–03:00 del sábado 16",
           "status": "por confirmar",
-          "notes": "Traslado al aeropuerto al final del día libre.",
+          "notes": "Traslado de madrugada para vuelo internacional confirmado 06:07.",
           "destinationCoords": [
             -33.393,
             -70.786
@@ -1469,43 +1524,13 @@
         }
       ],
       "toursToBook": [],
-      "flightPriceReferences": [
-        {
-          "title": "Balmaceda (BBA) → Santiago (SCL) · viernes 15 de enero",
-          "observedAt": "8 de noviembre de 2026",
-          "source": "Horarios publicados / buscadores",
-          "link": "https://www.google.com/travel/flights",
-          "note": "Horario publicado; precio exacto para el 15 y 6 pasajeros debe cotizarse.",
-          "options": [
-            {
-              "airline": "LATAM LA76",
-              "departure": "15:25",
-              "arrival": "17:45",
-              "duration": "2 h 20 min",
-              "stops": "Directo",
-              "priceCop": 0,
-              "recommended": true
-            },
-            {
-              "airline": "LATAM LA190",
-              "departure": "17:05",
-              "arrival": "19:25",
-              "duration": "2 h 20 min",
-              "stops": "Directo",
-              "priceCop": 0,
-              "recommended": false
-            }
-          ],
-          "monitoring": "Preferir LA76 por mayor colchón antes del vuelo internacional de las 02:00."
-        }
-      ],
       "dailyBudget": {
         "groupSize": 6,
         "exchangeRateClpToCop": 3.38,
         "categories": {
           "lodging": {
-            "clp": 0,
-            "cop": 0
+            "clp": 180000,
+            "cop": 608400
           },
           "food": {
             "clp": 210000,
@@ -1527,13 +1552,14 @@
           }
         },
         "totals": {
-          "clp": 245000,
-          "cop": 828100,
-          "perPersonCop": 138017
+          "clp": 425000,
+          "cop": 1436500,
+          "perPersonCop": 239417
         },
         "notes": [
-          "Día libre: solo comidas + traslado final al aeropuerto.",
-          "Cualquier actividad opcional se suma aparte."
+          "Día libre + noche de hotel antes del vuelo 06:07.",
+          "Alojamiento estimado; falta reservar.",
+          "Traslado al aeropuerto de madrugada incluido como estimación."
         ]
       },
       "freeDay": true
@@ -1541,35 +1567,36 @@
     {
       "day": 9,
       "date": "2027-01-16",
-      "city": "Santiago → Medellín (02:00)",
+      "city": "Santiago → Lima → Medellín",
       "country": "Colombia / Chile",
       "cityCode": "SCL-MDE",
       "currencyLocal": "CLP",
-      "stayArea": "Vuelo de regreso",
+      "stayArea": "Regreso internacional confirmado",
       "heroImageQuery": "Santiago → Medellín (02:00)",
       "heroImageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
       "imageHints": [
         "Santiago → Medellín (02:00)"
       ],
       "perks": [
-        "No programar nada más el viernes por la noche.",
-        "La prioridad es llegar a SCL con gran margen desde Balmaceda."
+        "Vuelo internacional confirmado para 2 pasajeros.",
+        "Hay cambio de avión en Lima con escala de 5 h 35 min.",
+        "Llegada a Medellín 16:46."
       ],
       "accommodation": {
         "name": "Sin alojamiento",
-        "neighborhood": "En vuelo hacia Medellín",
+        "neighborhood": "En viaje hacia Medellín",
         "link": "",
-        "notes": "Check-in realizado el viernes 15."
+        "notes": "Se duerme unas horas en Santiago la noche anterior y se sale a SCL de madrugada."
       },
       "mainActivities": [
         {
-          "name": "Vuelo Santiago → Medellín",
-          "start": "02:00",
-          "durationMin": 390,
-          "notes": "Salida objetivo del viaje. Estar en SCL desde el viernes por la noche.",
-          "link": "https://www.google.com/travel/flights",
+          "name": "JetSMART · Santiago → Lima → Medellín",
+          "start": "06:07",
+          "durationMin": 759,
+          "notes": "CONFIRMADO para 2. JA 7730 SCL→LIM 06:07–08:00; escala 5 h 35 min con cambio de avión; JA 7752 LIM→MDE 13:35–16:46.",
+          "link": "https://jetsmart.com/",
           "imageUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000",
-          "imageQuery": "Vuelo Santiago → Medellín"
+          "imageQuery": "JetSMART Santiago Lima Medellin"
         }
       ],
       "secondaryActivities": [],
@@ -1603,23 +1630,23 @@
         ]
       },
       "nightStay": {
-        "city": "En vuelo hacia Medellín",
-        "dateLabel": "Madrugada sábado 16",
+        "city": "En tránsito hacia Medellín",
+        "dateLabel": "Sábado 16",
         "name": "Sin alojamiento",
         "noNight": true,
-        "notes": "Check-in realizado el viernes 15."
+        "notes": "Vuelo confirmado: salida SCL 06:07 y llegada MDE 16:46."
       },
       "transportLegs": [
         {
           "from": "Santiago (SCL)",
-          "to": "Medellín (MDE)",
+          "to": "Medellín (MDE) vía Lima (LIM)",
           "mode": "flight",
-          "duration": "Según vuelo / escala",
-          "operator": "JetSMART objetivo u otra aerolínea",
-          "notes": "Salida objetivo 02:00 hora Santiago. Confirmar billete y escala.",
-          "status": "por confirmar",
-          "departure": "02:00 sábado 16",
-          "bookingUrl": "https://www.google.com/travel/flights",
+          "duration": "12 h 39 min total",
+          "operator": "JetSMART · JA 7730 + JA 7752",
+          "notes": "CONFIRMADO para 2 pasajeros. SCL→LIM 06:07–08:00; escala 5 h 35 min con cambio de avión; LIM→MDE 13:35–16:46. Incluye solo maleta pequeña bajo el asiento.",
+          "status": "confirmado",
+          "departure": "Sábado 16 · 06:07",
+          "bookingUrl": "https://jetsmart.com/",
           "originCoords": [
             -33.393,
             -70.786
@@ -1628,7 +1655,7 @@
             6.1645,
             -75.4231
           ],
-          "price": "Incluido en el monitoreo Medellín–Santiago 8–16 enero."
+          "price": "Incluido en la compra ida y vuelta: COP $2.412.905 para 2 · COP $1.206.453 por persona."
         }
       ],
       "toursToBook": [],
@@ -1653,7 +1680,7 @@
             "cop": 0
           },
           "flights": {
-            "cop": 4940790
+            "cop": 3619359
           },
           "other": {
             "cop": 0
@@ -1661,12 +1688,13 @@
         },
         "totals": {
           "clp": 60000,
-          "cop": 5143590,
-          "perPersonCop": 857265
+          "cop": 3822159,
+          "perPersonCop": 637027
         },
         "notes": [
-          "Segunda mitad del vuelo internacional de referencia.",
-          "Solo snacks/comida de aeropuerto; sin alojamiento."
+          "Vuelo internacional confirmado para 2: COP $2.412.905 total ida y vuelta.",
+          "La mitad del costo internacional proyectado para 6 se imputa al regreso.",
+          "Solo snacks/comidas durante el viaje; el hotel corresponde a la noche anterior (Día 8)."
         ],
         "sources": []
       }
@@ -1747,7 +1775,7 @@
     },
     "transportWarning": "Cada traslado muestra mapa, kilómetros y tiempo cuando hay datos disponibles. En trayectos por carretera, el recorrido se consulta con OSRM/OpenStreetMap al visualizar la tarjeta; si falla, se muestra línea orientativa y un enlace a Google Maps. Los vuelos, senderos y navegaciones no se representan como carreteras. El tramo Balmaceda–Río Tranquilo usa la captura compartida: 190 km y 3 h 33 min, con margen recomendado hasta 4 h 30 min.",
     "openItems": [
-      "Confirmar vuelo MDE→SCL viernes 8 y SCL→MDE sábado 16 02:00",
+      "Vuelo internacional MDE↔SCL confirmado para 2; faltan los otros 4 si el grupo final sigue siendo de 6",
       "Confirmar SCL→PNT sábado 9 para 6",
       "Reservar alojamiento Puerto Natales noche del 9",
       "Confirmar panorámico Torres del Paine con retorno anticipado el 10 (salir parque ~15:00–15:30)",
@@ -1758,7 +1786,7 @@
       "Confirmar San Rafael Premium miércoles 13",
       "Confirmar LATAM LA274 BBA→SCL jueves 14 14:00–16:20",
       "Reservar hotel Santiago noche del 14",
-      "Mantener viernes 15 completamente libre y salir a SCL ~22:30"
+      "Reservar hotel Santiago noche del 15 y traslado de madrugada a SCL (~02:30–03:00)"
     ],
     "budget": {
       "groupSize": 6,
@@ -1824,10 +1852,12 @@
       ],
       "knownCop": [
         {
-          "label": "MDE↔SCL referencia monitoreada",
-          "perPerson": 1646930,
-          "group": 9881580,
-          "status": "referencia actual"
+          "label": "MDE↔SCL JetSMART · compra confirmada",
+          "perPerson": 1206453,
+          "groupConfirmed": 2,
+          "confirmedTotal": 2412905,
+          "projectedGroup6": 7238718,
+          "status": "2 pasajeros confirmados · otros 4 pendientes"
         },
         {
           "label": "SCL→PNT 9 enero · Google Flights",
@@ -1837,24 +1867,25 @@
         }
       ],
       "pending": [
+        "Comprar/confirmar MDE↔SCL para los 4 pasajeros restantes, si siguen viajando los 6",
         "Precio exacto DAP PUQ→BBA",
         "Precio exacto BBA→SCL 15 enero",
         "Alojamiento Puerto Natales 3 noches",
-        "Hotel aeropuerto Santiago 1 noche",
         "Van/transfer BBA↔Río Tranquilo",
-        "Entradas Torres del Paine 2027 (tarifas aún no publicadas)"
+        "Entradas Torres del Paine 2027 (tarifas aún no publicadas)",
+        "Hotel Santiago noche del 15 antes del vuelo 06:07"
       ],
-      "summary": "Todos los precios visibles están expresados en pesos colombianos (COP). Los valores originalmente cotizados en CLP se convierten con 1 CLP ≈ 3,38 COP; los cobros reales pueden variar por la tasa del día.",
+      "summary": "Vuelo internacional confirmado para 2 pasajeros: COP $2.412.905 total, COP $1.206.453 por persona ida y vuelta. El presupuesto de 6 proyecta temporalmente el mismo precio por persona para los 4 restantes.",
       "dailyEstimatedTotals": {
-        "totalCop": 35680959,
-        "totalPerPersonCop": 5946827,
+        "totalCop": 33038097,
+        "totalPerPersonCop": 5506350,
         "includes": [
           "tours y actividades",
           "comidas",
           "vuelos y traslados",
           "hospedaje"
         ],
-        "note": "Total estimado en COP. Incluye tours/actividades, comidas, vuelos/traslados y hospedaje; algunos rubros siguen siendo referencias hasta reservar."
+        "note": "Total estimado para 6. El vuelo internacional está confirmado solo para 2; para los otros 4 se proyecta provisionalmente el mismo precio por persona."
       },
       "fxClpToCop": 3.38
     }
